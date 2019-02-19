@@ -35,3 +35,11 @@ function show(elementToFade) {
 }
 
 window.loaded(show('wrapper-elements'));
+
+//click Sobre
+
+var header = document.getElementById('head');
+var textDesBottom = document.getElementsByTagName('a');
+function fadeElementsAndShowS () {
+    header.style.filter  = 'alpha(opacity=90)';
+}

@@ -82,29 +82,43 @@ html {
 }
 
 #text-mainnome {
-    margin: 1em;
+    margin: 40px 10px;
     font-family: sans-serif;
     color: white;
 
-    font-weight: 800;
+    font-weight: 500;
     font-size: 2em;
     text-shadow: 0 1px 100px black;
 }
 
-#text-rigth-buttom {
+.text-rigth-button {
     position: absolute;
-
-    margin: 43px 290px;
+    margin: 45px 225px;
     font-family: sans-serif;
     color: white;
+    font-weight: 500;
     text-shadow: 0 1px 65px black;
-
     transition: 600ms;
     transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
+.text-rigth-button-servicos {
+    position: absolute;
+    margin: 45px 307px;
+    font-family: sans-serif;
+    color: white;
+    font-weight: 500;
+    text-shadow: 0 1px 65px black;
+    transition: 600ms;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
 
-#text-rigth-buttom:hover {
+.text-rigth-button:hover {
+    color: #ffffff6e;
+    transform: translateY(-10px);
+}
+
+.text-rigth-button-servicos:hover {
     color: #ffffff6e;
     transform: translateY(-10px);
 }
