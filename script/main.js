@@ -21,7 +21,10 @@ card.addEventListener("click", function () {
     text.style.transform = 'translateY(-3em)';
     text.style.transform += 'scale(0.85, 0.85)';
     text.classList.toggle("text-shadow");
-    divCardsProjetos.classList.toggle("crd-projetos-f");
+    setTimeout(function() {
+        divCardsProjetos.classList.toggle("crd-projetos-f");
+    }, 250);
+   
 }, false);
 
 card.addEventListener("mouseout", function () {
@@ -38,7 +41,7 @@ window.loaded(show('wrapper-elements'));
 
 //click Sobre
 
-var header = document.getElementById('head');
+var header = document.querySelectorAll('header');
 var textDesBottom = document.getElementsByTagName('a');
 function fadeElementsAndShowS () {
     header.style.filter  = 'alpha(opacity=90)';
