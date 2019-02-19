@@ -51,9 +51,9 @@
     background: linear-gradient(270deg, #4b90b1, #00c698, #4098ca, #d72482);
     background-size: 800% 800%;
 
-    -webkit-animation: AnimationName 25s ease infinite;
-    -moz-animation: AnimationName 25s ease infinite;
-    animation: AnimationName 25s ease infinite;
+    -webkit-animation: AnimationName 23s ease infinite;
+    -moz-animation: AnimationName 23s ease infinite;
+    animation: AnimationName 23s ease infinite;
 }
 .img-profile {
     margin: 3px 80px;
@@ -103,8 +103,8 @@
     background: linear-gradient(270deg, #4b90b1, #00c698, #4098ca, #d72482);
     background-size: 800% 800%;
 
-    -webkit-animation: AnimationName 50s ease infinite;
-    -moz-animation: AnimationName 50s ease infinite;
-    animation: AnimationName 50s ease infinite;
+    -webkit-animation: AnimationName 32s ease infinite;
+    -moz-animation: AnimationName 32s ease infinite;
+    animation: AnimationName 32s ease infinite;
 }
 

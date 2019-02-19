@@ -7,9 +7,6 @@ var textCenter = document.getElementById('text-center');
 
 var cards = document.getElementsByClassName('opc');
 
-function fadeElementsAndShowS () {
-    divCardsProjetos.style.transform = "translateY(15em)";
-}
 
 function textCenterFade() {
     textCenter.style.transform = "translateY(15em)";
