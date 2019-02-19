@@ -7,7 +7,7 @@
     <title>Portifolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style/main.css" />
-
+    <link rel="stylesheet" type="text/css" media="screen" href="style/sobremain.css"/>
     <link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
 </head>
 
@@ -16,8 +16,8 @@
     <header>
         <div class="wrapper-header">
             <h2 id="text-mainnome">Anthony José</h2>
-             <a style="margin: 0px -13.4em;" href="#Sobre"><h2 class="text-rigth-button" onclick="fadeElementsAndShowS()">Sobre</h2></a>
-            <h2 class="text-rigth-button-servicos" onclick="fadeElementsAndShowS()">Serviços</h2>
+             <a style="margin: 0px -13.4em;" href="#Sobre" onmouseover="fadeElementsAndShowS()"><h2 class="text-rigth-button" onclick="fadeElementsAndShowS()">Sobre</h2></a>
+            <a style="margin: 0px 13.4em;" href="#servicos"><h2 class="text-rigth-button-servicos" onclick="fadeElementsAndShowS()">Serviços</h2></a>
             <h2 id="text-rigth-cpl">Curriculo</h2>
         </div>
     </header>
@@ -116,13 +116,68 @@
 
                 <div class="content3 opc">
                     <img class="img-card3" src="img/card3.jpg">
-
                     <h1 id="text-card" class="text-card">Front-end</h1>
                 </div>
             </div>
         </div>
 
-        <div
+        <div id="Sobre">
+                <div>
+                   <img class="img-profile" id="img-profile" src="img/profile.jpg">
+                   <h2 id="text-img-sobre">Anthony José</h2>
+                </div>
+                <div class="container-sobre">
+                <div class="beffore-sobre">
+                    <div class="texts-head">
+                        <div class="text-head">
+                            <h1 style="font-size: 5em; font-family: sans-serif; ">Sobre</h1>
+                        </div>
+
+                        <div class="text-sub-head">
+                            <h2 style="font-size: 2em; font-family: sans-serif; ">Desenvolvedor apaixonado por criar</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <p style="font-size: 1.5em;
+                    font-family: sans-serif;
+                    color: white;
+                    margin: 37px 0;">
+                        Começando aos 10 anos, descobri minha paixão, desde então eu tomava conhecimento</br>
+                        de tornar-me melhor de eu mesmo para descobrir a</br>melhor forma de vencer, experiencias ampliaram minha visão,</br>
+                        uma delas foi descobrir como criar algo visionario com a harmonia e trabalho em equipe.
+                    </p>
+
+                    <p style="font-size: 1.5em;
+                    font-family: sans-serif;
+                    color: white;
+                    margin: 37px 0;">
+                        Programação para mim é algo extraordinario e visionario, justamente por ser uma coisa que</br> eu sou apaixonado,
+                        defini que eu devo sempre me cobrar a ser pontual, com</br> Front-end inovador, e escalabilidade em seu Back-End  
+                    </p>
+
+                    <p style="font-size: 1.5em;
+                    font-family: sans-serif;
+                    color: white;
+                    margin: 37px 0;">
+                        Buscando ser um Full-stack comprometido com a experiencia do usuario  
+                    </p>
+                 </div>
+            </div>
+        </div>
+
+        <div id="servicos">
+        <div class="texts-head-servicos">
+                <div class="text-head">
+                    <h1 style="font-size: 5em; font-family: sans-serif; ">Serviços</h1>
+                </div>
+
+                <div class="text-sub-head">
+                    <h2 style="font-size: 2em; font-family: sans-serif; ">Códigos no github</h2>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 <script src="script/main.js"></script>

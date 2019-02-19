@@ -1,9 +1,11 @@
 
 header {
+    height: 6em;
     margin: 0 84px;
     position: fixed;
-    width: 100%;
+    width: 87%;
     z-index: 1;
+  
 }
 
 img {
@@ -43,7 +45,7 @@ html {
     right: 0;
     font-weight: 1000;
     position: absolute;
-    margin: 34px 253px;
+    margin: 34px 9px;
     border-radius: 13px;
     color: #475a82;
     border: #53648b 2px solid;

@@ -7,6 +7,10 @@ var textCenter = document.getElementById('text-center');
 
 var cards = document.getElementsByClassName('opc');
 
+function fadeElementsAndShowS () {
+    divCardsProjetos.style.transform = "translateY(15em)";
+}
+
 function textCenterFade() {
     textCenter.style.transform = "translateY(15em)";
 
@@ -14,6 +18,7 @@ function textCenterFade() {
         textCenter.style.transform = "translateY(0)";
     }, 1000)
 }
+
 
 
 card.addEventListener("click", function () {
@@ -32,17 +37,9 @@ card.addEventListener("mouseout", function () {
     divCardsProjetos.classList.remove("crd-projetos-f");
 }, false);
 
-function show(elementToFade) {
-    var element = document.querySelector(elementToFade);
-    element.classList.add("wrapper-elements-fade-in");
-}
 
-window.loaded(show('wrapper-elements'));
 
 //click Sobre
 
-var header = document.querySelectorAll('header');
+var header = document.getElementsByTagName('header');
 var textDesBottom = document.getElementsByTagName('a');
-function fadeElementsAndShowS () {
-    header.style.filter  = 'alpha(opacity=90)';
-}

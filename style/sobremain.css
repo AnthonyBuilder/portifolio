@@ -1,0 +1,110 @@
+#Sobre {
+    padding-top: 8em;
+    margin: 65em 5px;
+    
+}
+
+.texts-head {
+    padding: 15px;
+    margin: 5px;
+    width: 55.5em;
+    border-radius: 25px;
+    color: #000000b0;
+    background: linear-gradient(270deg, #4b90b1, #00c698, #4098ca, #d72482);
+    background-size: 800% 800%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+    box-shadow: 0 1px 50px;
+
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+#Sobre {
+    width: 100%;
+}
+
+.beffore-sobre {
+    padding: 15px;
+    margin: 5px;
+    width: 58em;
+    border-radius: 25px;
+    color: #000000b0;
+    
+    box-shadow: 0 1px 50px;
+
+    background: linear-gradient(270deg, #4b90b1, #00c698, #4098ca, #d72482);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 25s ease infinite;
+    -moz-animation: AnimationName 25s ease infinite;
+    animation: AnimationName 25s ease infinite;
+}
+.img-profile {
+    margin: 3px 80px;
+    width: 28em;
+    border-radius: 50px;
+    position: absolute;
+    right: 0;
+}
+
+#text-img-sobre {
+    text-align: center;
+    margin: 18.6em 7.9em;
+    position: absolute;
+    right: 0;
+    font-size: 27px;
+    color: white;
+    transition: 800ms;
+}
+
+#text-img-sobre:hover {
+
+    text-shadow: 0 1px 80px;
+}
+#servicos {
+    position: absolute;
+    padding: 9px;
+    margin: -48em 0em;
+    width: 60.8em;
+    border-radius: 25px;
+    color: #000000b0;
+    background: linear-gradient(270deg, #4b90b1, #00c698, #4098ca, #d72482);
+    background-size: 800% 800%;
+    -webkit-animation: AnimationName 25s ease infinite;
+    -moz-animation: AnimationName 25s ease infinite;
+    animation: AnimationName 25s ease infinite;
+}
+
+.texts-head-servicos {
+    padding: 15px;
+    margin: 5px;
+    width: 58em;
+    border-radius: 25px;
+    color: #000000b0;
+    
+    box-shadow: 0 1px 50px;
+
+    background: linear-gradient(270deg, #4b90b1, #00c698, #4098ca, #d72482);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 50s ease infinite;
+    -moz-animation: AnimationName 50s ease infinite;
+    animation: AnimationName 50s ease infinite;
+}
+
