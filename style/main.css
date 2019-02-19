@@ -4,7 +4,6 @@ header {
     position: fixed;
     width: 100%;
     z-index: 1;
-
 }
 
 img {
@@ -24,8 +23,8 @@ body {
 }
 
 html {
-    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
     scroll-behavior: smooth;
+    overflow-y: -webkit-paged-x;
 }
 
 #arrow {
@@ -34,7 +33,7 @@ html {
 
 #li-bottom {
     position: absolute;
-    margin: -70px 24em;
+    margin: -70px 25em;
     text-decoration: none;
     color: #cd7553;
     font-size: 2em;
@@ -59,16 +58,19 @@ html {
 
 .cards {
     position: absolute;
-    margin: 7em 10px;
-
+    margin: 2em -1.6em;
 }
     
 .text-center h1{
     font-size: 10em;
     border: none;
     color: white;
-    padding: 336px 318px;
+    padding: 336px 2em;
     font-weight: 700;
+}
+
+.text-center {
+    transition: all 700ms;
 }
 
 #text-rigth-cpl:hover {
@@ -80,11 +82,11 @@ html {
 }
 
 #text-mainnome {
-    margin: 37px;
+    margin: 1em;
     font-family: sans-serif;
     color: white;
 
-    font-weight: 1000;
+    font-weight: 800;
     font-size: 2em;
     text-shadow: 0 1px 100px black;
 }
@@ -131,10 +133,10 @@ html {
     position: relative;
     z-index: 1;
     top: 0;
-    margin: -5.5em 43px;
+    margin: -6.96em 93px;
     font-family: sans-serif;
     color: white;
-    font-size: 5.3em;
+    font-size: 4.3em;
     text-shadow: 0 1px 33px black;
 }
 
@@ -143,7 +145,7 @@ html {
     position: relative;
     z-index: 1;
     top: 0;
-    margin: -5.5em 71px;
+    margin: -5.6em .5em;
     font-family: sans-serif;
     color: white;
     font-size: 5.3em;
@@ -208,16 +210,16 @@ html {
 
 .wrapper-all-elements {
     position: absolute;
-    margin: 20px 16px;
+    margin: 20px 6em;
 }
 
 #text-card-2 {
     font-family: sans-serif;
     font-weight: 1000;
-    font-size: 5em;
+    font-size: 4em;
     position: absolute;
     z-index: 1;
-    margin: 351px 13px;
+    margin: 361px 0.6em;
     text-shadow: 0 1px 2em black;
     color: white;
 }
@@ -229,6 +231,7 @@ html {
     width: 40em;
     height: 44.5em;
     border-radius: 32px;
+    margin-left: 15px;
     position: relative;
     box-shadow: 0 8px 58px -10px;
 
@@ -271,7 +274,7 @@ html {
 .img-card3 {
     width: 475px;
     border-radius: 32px;
-    margin: 101px 5px;
+    margin: 121px 30px;
     box-shadow: 0 1px 89px -7px;
     height: 44.5em;
 }
@@ -296,23 +299,36 @@ html {
   }
 
 .text-card {
-    transition: 700ms;
+    transition: 500ms;
     transition-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
-
   }
 
+
   .row-cards {
-    display: inline-flex;
+    flex-wrap: wrap;
+    display: flex;
     position: absolute;
+    margin: 17em 0;
   }
 
 .card-prj {
     background: white;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 10px;
-    margin: 15em 26px;
+    margin: 1em 30px;
     box-shadow: 0 1px 50px;
 }
 
+.crd-projetos {
+    opacity: 0;  
+    transition: 350ms;
+    transition-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+}
 
+.crd-projetos-f {
+    opacity: 1;
+    transform: scale(.8, .8);
+    transition: 165ms;
+    transition-duration: 1.5s;
+}
