@@ -65,12 +65,16 @@
 
 #text-img-sobre {
     text-align: center;
-    margin: 18.6em 7.9em;
+    margin: 18.3em 7.6em;
     position: absolute;
     right: 0;
     font-size: 27px;
     color: white;
     transition: 800ms;
+
+    padding: 12px;
+    border: 2px solid;
+    border-radius: 14px;
 }
 
 #text-img-sobre:hover {
@@ -106,5 +110,23 @@
     -webkit-animation: AnimationName 32s ease infinite;
     -moz-animation: AnimationName 32s ease infinite;
     animation: AnimationName 32s ease infinite;
+}
+
+
+
+.hcard {
+    transition: 880ms;
+    opacity: .98;
+    border-radius: 20px;
+}
+
+.hcard:hover {
+    box-shadow: 0 -1px 100px;
+    transform: scale( .98, .98);
+}
+
+.hcard2 { 
+    transition: 480ms;
+    
 }
 
