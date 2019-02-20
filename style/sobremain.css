@@ -1,7 +1,7 @@
 #Sobre {
     padding-top: 8em;
     margin: 65em 5px;
-    
+    position: absolute;
 }
 
 .texts-head {
@@ -81,43 +81,6 @@
     box-shadow: 0 1px 30px rgba(255, 255, 255, 0.342);
     text-shadow: 0 1px 80px;
 }
-#servicos-beffore {
-    position: absolute;
-    padding: 3px;
-    margin: -48em 0em;
-    width: 59.8em;
-    border-radius: 25px;
-    color: #000000b0;
-    background: linear-gradient(270deg, #4b90b1, #00c698, #4098ca, #d72482);
-    background-size: 800% 800%;
-    -webkit-animation: AnimationName 25s ease infinite;
-    -moz-animation: AnimationName 25s ease infinite;
-    animation: AnimationName 25s ease infinite;
-}
-
-#servicos-container {
-    width: 105em;
-    margin-bottom: 2em;
-    border-bottom: 2px solid black;
-}
-
-.texts-head-servicos {
-    padding: 9px;
-    margin: 5px;
-    width: 58em;
-    border-radius: 25px;
-    color: #000000b0;
-    
-    box-shadow: 0 1px 50px;
-
-    background: linear-gradient(270deg, #4b90b1, #00c698, #4098ca, #d72482);
-    background-size: 800% 800%;
-
-    -webkit-animation: AnimationName 32s ease infinite;
-    -moz-animation: AnimationName 32s ease infinite;
-    animation: AnimationName 32s ease infinite;
-}
-
 
 
 .hcard {
