@@ -22,11 +22,7 @@
     width: 59.8em;
     border-radius: 25px;
     color: #000000b0;
-    background: linear-gradient(270deg, #4b90b1, #00c698, #4098ca, #d72482);
-    background-size: 800% 800%;
-    -webkit-animation: AnimationName 25s ease infinite;
-    -moz-animation: AnimationName 25s ease infinite;
-    animation: AnimationName 25s ease infinite;
+
 }
 
 #servicos-container {
@@ -40,20 +36,14 @@
 }
 
 .texts-head-servicos {
-    padding: 9px;
+    padding: 22px;
     margin: 5px;
-    width: 58em;
+    width: 47em;
     border-radius: 25px;
     color: #000000b0;
     
-    box-shadow: 0 1px 50px;
+    border: 2.3px solid black;
 
-    background: linear-gradient(270deg, #4b90b1, #00c698, #4098ca, #d72482);
-    background-size: 800% 800%;
-
-    -webkit-animation: AnimationName 32s ease infinite;
-    -moz-animation: AnimationName 32s ease infinite;
-    animation: AnimationName 32s ease infinite;
 }
 
 
@@ -81,16 +71,58 @@
 }
 
 .card-serv{
-    width: 42em;
-    border-radius: 15px;
-    height: 393px;
     margin-top: 19px;
-    background: black;
 }
 
+.card-serv-img {
+    width: 35em;
+    border-radius: 15px;
+    height: 478px;
+}
 .text-bottom-serv {
     text-align: center;
-    margin: 3.3em 0em;
-    font-size: 3em;
+    margin: -7.7em 1em;
+    text-shadow: 0 1px 20px black;
+    font-size: 2em;
     color: white;
+    position: absolute;
+}
+
+
+.card-serv2{
+    margin: 1.2em 16em;
+
+}
+
+.card-serv-img2 {
+    width: 15em;
+    border-radius: 15px;
+}
+
+/** card-devAndroid */
+.card-serv3 {
+    margin: 12em -4em;
+}
+
+.card-serv-img3 {
+    width: 15em;
+    height: 19em;
+    border-radius: 15px;
+}
+
+.card-shadow-scale {
+    box-shadow: 0 1px 35px -5px;
+}
+
+.card-shadow-scale:hover {
+    box-shadow: 0 1px 45px -5px;
+    transform: scale(1.05, 1.05);
+}
+
+#contents {
+    margin: 7em 100em;
+    width: 99em;
+    height: 48em;
+    transition: 980ms;
+    transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
 }

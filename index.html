@@ -23,7 +23,7 @@
         </div>
     </header>
 
-    <div class="wrapper-all-elements">
+    <div class="wrapper-all-elements" id="allElements">
 
         <div class="text-center" id="text-center">
             <h1>Anthony José</h1>
@@ -174,23 +174,39 @@
                         <h1 style="font-size: 5em; font-family: sans-serif; font-weight: 400 ">Serviços</h1>
                     </div>
                     <div class="text-sub-head">
-                        <h2 style="font-size: 2em; font-family: sans-serif; font-weight: 400">Códigos no github</h2>
+                        <h2 style="    font-size: 2.5em;
+                        font-family: sans-serif;
+                        font-weight: 400;">Códigos no github</h2>
                     </div>
                 </div>
 
             </div>
             <div class="container-content"> 
-                <div class="contents" style="
-                    margin: 7em 0em;
-                    width: 99em;
-                    height: 48em;">
-                    <div class="row-serv">
+                <div id="contents" class="contents">
+                    <div class="row-serv" style="transition: 600ms" id="cardRowMain">
                         <div class="card-serv">
+                        <img class="card-shadow-scale card-serv-img" style="transition: 400ms" src="img/card2.jpg">
                             <div class="text-bottom-serv">
                                 <h2 style="font-weight: 500;">Desenvolvimento Web</h2>
                             </div>
                         </div>
+                        
+                            <div class="card-serv2">
+                            <img class="card-shadow-scale card-serv-img2" style="transition: 500ms" src="img/phpCode.jpg">
+                                <div class="text-bottom-serv2" style="margin: -6em 3em; position: absolute">
+                                    <h2 style="font-weight: 800; color: white; text-shadow: 0 1px 50px black;">PHP/MySql</h2>
+                                </div>
+                            </div>
+
+                            <div class="card-serv3">
+                            <img class="card-shadow-scale card-serv-img3" style="transition: 500ms" src="img/androidCard.jpg">
+                                <div class="text-bottom-serv2" style="margin: -10em 3em; position:absolute;">
+                                    <h2 style="font-weight: 800; color: white; text-shadow: 0 1px 50px black;">Dev Android</h2>
+                                </div>
+                            </div>
+                        
                     </div>
+                    
                 </div>
             </div>
         </div>

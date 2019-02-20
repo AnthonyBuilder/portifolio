@@ -22,7 +22,11 @@ var textMainNome = document.getElementById("text-mainnome");
 var body = document.getElementsByTagName('body')[0];
 var btnCurriculo = document.getElementById('text-rigth-cpl');
 
+var cardsMainServ = document.getElementById('contents');
+var cards2Serv = document.getElementById('cardRow');
+
 var linkAndWhiteWall = function () {
+    textsHead[1].style.color = "#52B271";
     if (window.pageYOffset > 500) {
         elementsSwitch();
     }
@@ -50,16 +54,21 @@ function elementsSwitchToWhite() {
 
     body.style.background = "white"; 
     textsHead[0].style.color = "black";
+    
     textsHead[1].style.color = "black";
     textMainNome.style.color = "black"; 
+    
+    cardsMainServ.style.transform = "translateX(-100em)";
     
 }
 
 function elementsSwitchToBlack() {
-    body.style.background = "black"; 
+    body.style.background = "rgb(19, 19, 19)"; 
     textsHead[0].style.color = "white";
     textsHead[1].style.color = "white";
     textMainNome.style.color = "white";
+    
+    cardsMainServ.style.transform = "translateX(0)";
     
 }
 

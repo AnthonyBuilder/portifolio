@@ -20,8 +20,8 @@ h2, h1 {
 }
 
 body {
-    transition: 2500ms;
-    background: black;
+    transition: 2100ms;
+    background: rgb(39, 39, 39);
 }
 
 * { 
@@ -32,6 +32,7 @@ body {
 html {
     scroll-behavior: smooth;
     overflow-y: -webkit-paged-x;
+    overflow-x: hidden;
 }
 
 #arrow {
@@ -65,7 +66,9 @@ html {
 
 .cards {
     position: absolute;
-    margin: 2em -1.6em;
+    margin: 10em -1.6em;
+    border-bottom: 1px solid white;
+    padding-bottom: 39px;
 }
     
 .text-center h1{
@@ -144,7 +147,7 @@ html {
     width: 475px;
     border-radius: 32px;
     margin: 101px 5px;
-    box-shadow: 0 1px 89px -7px;
+    box-shadow: 0px 2px 40px 0px;
     
 }
 
@@ -253,8 +256,7 @@ html {
     border-radius: 32px;
     margin-left: 15px;
     position: relative;
-    box-shadow: 0 8px 58px -10px;
-
+    box-shadow: 0px 2px 40px 0px;
 }
 
 /** Conhecimentos container elements **/
@@ -295,8 +297,9 @@ html {
     width: 475px;
     border-radius: 32px;
     margin: 121px 30px;
-    box-shadow: 0 1px 89px -7px;
-    height: 44.5em;
+    box-shadow: 0px 2px 40px 0px;
+    height: 43.3em;
+
 }
 
 
