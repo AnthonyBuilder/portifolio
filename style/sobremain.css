@@ -40,7 +40,7 @@
 }
 
 .beffore-sobre {
-    padding: 15px;
+    padding: 3px;
     margin: 5px;
     width: 58em;
     border-radius: 25px;
@@ -65,20 +65,20 @@
 
 #text-img-sobre {
     text-align: center;
-    margin: 18.3em 7.6em;
+    margin: 17.3em 2.8em;
     position: absolute;
     right: 0;
     font-size: 27px;
     color: white;
     transition: 800ms;
-
-    padding: 12px;
+    padding: 12px 5em;
     border: 2px solid;
     border-radius: 14px;
 }
 
 #text-img-sobre:hover {
-
+    transform:scale(1.05, 1.05);
+    box-shadow: 0 1px 30px rgba(255, 255, 255, 0.342);
     text-shadow: 0 1px 80px;
 }
 #servicos {
@@ -96,7 +96,7 @@
 }
 
 .texts-head-servicos {
-    padding: 15px;
+    padding: 3px;
     margin: 5px;
     width: 58em;
     border-radius: 25px;
