@@ -81,7 +81,7 @@
     box-shadow: 0 1px 30px rgba(255, 255, 255, 0.342);
     text-shadow: 0 1px 80px;
 }
-#servicos {
+#servicos-beffore {
     position: absolute;
     padding: 3px;
     margin: -48em 0em;
@@ -93,6 +93,12 @@
     -webkit-animation: AnimationName 25s ease infinite;
     -moz-animation: AnimationName 25s ease infinite;
     animation: AnimationName 25s ease infinite;
+}
+
+#servicos-container {
+    width: 105em;
+    margin-bottom: 2em;
+    border-bottom: 2px solid black;
 }
 
 .texts-head-servicos {
