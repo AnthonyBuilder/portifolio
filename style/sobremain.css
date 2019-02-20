@@ -83,9 +83,9 @@
 }
 #servicos {
     position: absolute;
-    padding: 9px;
+    padding: 3px;
     margin: -48em 0em;
-    width: 60.8em;
+    width: 59.8em;
     border-radius: 25px;
     color: #000000b0;
     background: linear-gradient(270deg, #4b90b1, #00c698, #4098ca, #d72482);
@@ -96,7 +96,7 @@
 }
 
 .texts-head-servicos {
-    padding: 3px;
+    padding: 9px;
     margin: 5px;
     width: 58em;
     border-radius: 25px;
