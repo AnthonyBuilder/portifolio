@@ -20,14 +20,16 @@ h2, h1 {
 }
 
 body {
-    transition: 2100ms;
-    background: rgb(39, 39, 39);
+    transition: 2100ms ;
+    background: rgb(0, 0, 0);
+    transition-duration: 1s;
     opacity: 0;
 }
 
 
 .js body.render {
-	opacity: 1;
+    opacity: 1;
+    
 }
 
 
