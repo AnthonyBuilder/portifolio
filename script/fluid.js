@@ -1,7 +1,7 @@
 
 
-
-class MorphingBG {
+//execute animation
+class FluidAnimate {
     constructor(el) {
         this.DOM = {};
         this.DOM.el = el;
@@ -13,15 +13,15 @@ class MorphingBG {
             setTimeout(() => {
                 anime({
                     targets: path,
-                    duration: anime.random(3000, 5000),
+                    duration: anime.random(5000, 7000),
                     easing: [0.5, 0, 0.5, 1],
                     d: path.getAttribute('pathdata:id'),
                     loop: true,
                     direction: 'alternate'
                 });
-            }, anime.random(0, 1000));
+            }, anime.random(0, 2000));
         });
     }
 };
 
-new MorphingBG(document.querySelector('svg.scene'));
+new FluidAnimate(document.querySelector('svg.scene'));

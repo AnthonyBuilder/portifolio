@@ -29,11 +29,11 @@ var cards2Serv = document.getElementById('cardRow');
 
 var linkAndWhiteWall = function () {
     textsHead[1].style.color = "#52B271";
-    if (window.pageYOffset > 500) {
+    if (window.pageYOffset > 2500) {
         elementsSwitchToWhite();
     }
     window.onscroll = function () {
-        if (window.pageYOffset < 5000) {
+        if (window.pageYOffset < 2500) {
             elementsSwitchToBlack();
         }
     }
