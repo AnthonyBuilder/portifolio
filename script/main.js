@@ -28,14 +28,13 @@ var cardsMainServ = document.getElementById('contents');
 var cards2Serv = document.getElementById('cardRow');
 
 var linkAndWhiteWall = function () {
-    textsHead[1].style.color = "#52B271";
     if (window.pageYOffset > 2500) {
+        textsHead[1].style.color = "#52B271";
         elementsSwitchToWhite();
     }
-    window.onscroll = function () {
-        if (window.pageYOffset < 2500) {
-            elementsSwitchToBlack();
-        }
+    if (window.pageYOffset < 2500) {
+        elementsSwitchToBlack();
+
     }
 }
 

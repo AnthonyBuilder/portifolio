@@ -11,12 +11,25 @@
     <link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="style/servicomain.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="style/fluid.css" />
-    <link rel="stylesheet" type="text/css" href="pater/pater.css" />
+   
 
 
 </head>
 
 <body>
+        <header>
+        <div class="wrapper-header">
+            <h2 id="text-mainnome">Anthony José</h2>
+            <a style=" margin: 0px -13.4em;" href="#Sobre" onclick="linkAndWhiteWall()">
+                <h2 class="text-rigth-button">Sobre</h2>
+            </a>
+            <a style="margin: 0px 13.4em;" href="#servicos-container" onclick="linkAndWhiteWall()">
+                <h2 class="text-rigth-button-servicos">Serviços</h2>
+            </a>
+            <h2 id="text-rigth-cpl">Curriculo</h2>
+        </div>
+    </header>
+
     <div>
         <svg class="scene" style="position: absolute" width="100%" height="100vh" preserveAspectRatio="none" viewBox="0 0 1440 800">
             <path d="M -84.52,-81.13 C -94.62,-73.4 -88.88,-59.55 -90.33,-48.91 -89.29,27.31 -89.61,103.5 -88.33,179.8 -85.99,416.1 -81.32,888.9 -81.32,888.9 -81.32,888.9 974.5,888.7 1587,891.9 1518,719.9 1487,644 1429,533 1388,437.7 1447,259.7 1400,187 1362,132 1270,90.53 1207,39.93 1161,2.932 1071,-74.45 1071,-74.45 1071,-74.45 914.5,-77.77 848.2,-80.17 537.6,-80.84 227,-81.38 -83.6,-81.6 -83.91,-81.44 -84.21,-81.29 -84.52,-81.13 Z"
@@ -34,20 +47,8 @@
             <path d="M -85.59,444.4 -85.59,890.6 489,895.6 C 489,895.6 436.8,745.3 382.5,690.8 258.1,565.8 57.98,629.2 -85.59,444.4 Z"
                 pathdata:id="M -85.59,444.4 -85.59,890.6 546.9,895.6 C 546.9,895.6 517.4,695.4 339.9,593.4 187.7,505.9 57.98,629.2 -85.59,444.4 Z"></path>
         </svg>
-        <h2 class="title">Fluid Life</h2>
+        
     </div>
-    <header>
-        <div class="wrapper-header">
-            <h2 id="text-mainnome">Anthony José</h2>
-            <a style=" margin: 0px -13.4em;" href="#Sobre" onclick="linkAndWhiteWall()">
-                <h2 class="text-rigth-button">Sobre</h2>
-            </a>
-            <a style="margin: 0px 13.4em;" href="#servicos-container" onclick="linkAndWhiteWall()">
-                <h2 class="text-rigth-button-servicos">Serviços</h2>
-            </a>
-            <h2 id="text-rigth-cpl">Curriculo</h2>
-        </div>
-    </header>
 
     <div class="wrapper-all-elements" id="allElements">
 
@@ -256,12 +257,13 @@
             </div>
         </div>
     </div>
+    <script src="script/main.js"></script>
     <script src="script/anime.min.js"></script>
 </body>
 
 <script src="script/fluid.js"></script>
 <script src="script/demo.js"></script>
-<script src="script/main.js"></script>
+
 
 <script>document.documentElement.className = "js"; var supportsCssVars = function () { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e }; supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 

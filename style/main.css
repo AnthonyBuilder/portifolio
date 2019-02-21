@@ -50,7 +50,7 @@ html {
     position: absolute;
     margin: -70px 25em;
     text-decoration: none;
-    color: #cd7553;
+    color: #221f7e;
     font-size: 2em;
 }
 
@@ -60,8 +60,8 @@ html {
     position: absolute;
     margin: 34px 9px;
     border-radius: 13px;
-    color: #475a82;
-    border: #53648b 2px solid;
+    color: #52b270;
+    border: #567e2b 2px solid;
     padding: 10px;
     font-weight: 500;
     background-color: #00000087;
@@ -69,13 +69,15 @@ html {
     /* text-shadow: 0px 1px 13px #395278; */
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 1px 40px -10px;
+
 }
 
 .cards {
     position: absolute;
     margin: 10em -1.6em;
+    padding-top: 3em;
     border-bottom: 1px solid white;
-    padding-bottom: 39px;
+    padding-bottom: 10px;
 }
     
 .text-center h1{
@@ -91,7 +93,7 @@ html {
 }
 
 #text-rigth-cpl:hover {
-    background-color: white;   
+    background-color: #52b270;   
     color: black;
     text-shadow: none;
     border-color: white;
