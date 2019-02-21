@@ -22,7 +22,14 @@ h2, h1 {
 body {
     transition: 2100ms;
     background: rgb(39, 39, 39);
+    opacity: 0;
 }
+
+
+.js body.render {
+	opacity: 1;
+}
+
 
 * { 
     margin:0;
@@ -99,6 +106,14 @@ html {
     font-weight: 500;
     font-size: 2em;
     text-shadow: 0 1px 100px black;
+    
+}
+
+#text-mainnome:hover {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
 }
 
 .text-rigth-button {
@@ -178,11 +193,6 @@ html {
 .wrapper-header {
     display: flex;
     flex-direction: row;
-}
-
-.content {
-    margin-left: 12px;
-    
 }
 
 .transform {
@@ -355,3 +365,10 @@ html {
     transition: 1000ms;
     transition-duration: .9s;
 }
+
+/**.text-center-animation {
+    animation: scale-text 34s infinite;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+}*/
+
+
