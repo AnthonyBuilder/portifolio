@@ -49,9 +49,7 @@ window.onscroll = function () {
 }
 
 function elementsSwitchToWhite() {
-    btnCurriculo.style.color = "black";
-    btnCurriculo.style.borderColor = "black";
-    btnCurriculo.style.backgroundColor = "white";
+  
 
     body.style.background = "white";
     textsHead[0].style.color = "black";
@@ -70,7 +68,6 @@ function elementsSwitchToBlack() {
     textMainNome.style.color = "white";
 
     cardsMainServ.style.transform = "translateX(0)";
-
 }
 
 card.addEventListener("click", function () {

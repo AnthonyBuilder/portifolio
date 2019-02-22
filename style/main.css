@@ -26,12 +26,9 @@ body {
     opacity: 0;
 }
 
-
 .js body.render {
     opacity: 1;
-    
 }
-
 
 * { 
     margin:0;
@@ -76,7 +73,7 @@ html {
 
 .cards {
     position: absolute;
-    margin: 10em -1.6em;
+    margin: 9em -1.095em;
     padding-top: 3em;
     border-bottom: 1px solid white;
     padding-bottom: 10px;
@@ -125,7 +122,6 @@ html {
     margin: 45px 225px;
     font-family: sans-serif;
     font-weight: 500;
-    text-shadow: 0 1px 65px black;
     transition: 600ms;
     transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
     
@@ -136,10 +132,10 @@ html {
     margin: 45px 307px;
     font-family: sans-serif;
     font-weight: 500;
-    text-shadow: 0 1px 65px black;
-    transition: 600ms;
+    transition: 700ms;
     transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
+
 
 .text-rigth-button:hover {
     color: #8585856e;
@@ -175,7 +171,7 @@ html {
     position: relative;
     z-index: 1;
     top: 0;
-    margin: -6.96em 93px;
+    margin: -6.96em 85px;
     font-family: sans-serif;
     color: white;
     font-size: 4.3em;
@@ -264,6 +260,13 @@ html {
     margin: 101px 22px;
 }
 
+.content p {
+    font-size: 1.5em;
+    font-family: sans-serif;
+    color: white;
+    margin: 37px 0;
+}
+
 .img-card-2 {
     width: 40em;
     height: 44.5em;
@@ -310,10 +313,9 @@ html {
 .img-card3 {
     width: 475px;
     border-radius: 32px;
-    margin: 121px 30px;
+    margin: 100px 30px;
     box-shadow: 0px 2px 40px 0px;
-    height: 43.3em;
-
+    height: 44.7em;
 }
 
 
