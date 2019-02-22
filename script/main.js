@@ -57,7 +57,8 @@ function elementsSwitchToWhite() {
     textsHead[1].style.color = "black";
     textMainNome.style.color = "black";
 
-    cardsMainServ.style.transform = "translateX(-100em)";
+    cardsMainServ.style.transform = "translateX(-50em)";
+    cardsMainServ.style.opacity = 1;
 
 }
 
@@ -68,6 +69,7 @@ function elementsSwitchToBlack() {
     textMainNome.style.color = "white";
 
     cardsMainServ.style.transform = "translateX(0)";
+    cardsMainServ.style.opacity = 0;
 }
 
 card.addEventListener("click", function () {

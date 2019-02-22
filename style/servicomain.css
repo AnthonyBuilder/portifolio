@@ -22,17 +22,14 @@
     width: 59.8em;
     border-radius: 25px;
     color: #000000b0;
-
 }
 
 #servicos-container {
     width: 105em;
     position: absolute;
-    margin-bottom: 2em;
-    border-bottom: 2px solid black;
-    margin: 114em 0em;
-    height: 30em;
-    padding: 13em 0em;
+    margin: 112em 0em;
+    height: 31em;
+    padding: 14em 0em;
 }
 
 .texts-head-servicos {
@@ -121,9 +118,10 @@
 }
 
 #contents {
-    margin: 7em 100em;
+    margin: 7em 50em;
     width: 99em;
     height: 48em;
     transition: 980ms;
+    opacity: 0;
     transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
 }

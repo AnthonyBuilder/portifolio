@@ -22,7 +22,7 @@ h2, h1 {
 body {
     transition: 2100ms ;
     background: rgb(0, 0, 0);
-    transition-duration: 1s;
+    transition-duration: 1.26s;
     opacity: 0;
 }
 
@@ -47,9 +47,9 @@ html {
 
 #li-bottom {
     position: absolute;
-    margin: -70px 25em;
+    margin: -1em 25em;
     text-decoration: none;
-    color: #221f7e;
+    color: #43abff;
     font-size: 2em;
 }
 
@@ -64,19 +64,26 @@ html {
     padding: 10px;
     font-weight: 500;
     background-color: #00000087;
-    transition: 400ms;
+    transition: 415ms;
     /* text-shadow: 0px 1px 13px #395278; */
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 1px 40px -10px;
 
 }
 
+#text-rigth-cpl:hover {
+    background-color: #1768c3;   
+    color: black;
+    text-shadow: none;
+    border-color: #1d5595;
+    transform: translateY(-10px);
+    box-shadow: 0 4px 30px -10px;
+}
 .cards {
     position: absolute;
     margin: 9em -1.095em;
-    padding-top: 3em;
+    padding-top: 2em;
     border-bottom: 1px solid white;
-    padding-bottom: 10px;
 }
     
 .text-center h1{
@@ -91,13 +98,7 @@ html {
     transition: all 700ms;
 }
 
-#text-rigth-cpl:hover {
-    background-color: #52b270;   
-    color: black;
-    text-shadow: none;
-    border-color: white;
-    transform: translateY(-10px);
-}
+
 
 #text-mainnome {
     margin: 40px 10px;
@@ -372,6 +373,14 @@ html {
     transition-duration: .9s;
 }
 
+#icGithub {
+    width: 40px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    margin: 3em 5.5em;
+}
 /**.text-center-animation {
     animation: scale-text 34s infinite;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
