@@ -7,15 +7,6 @@ var liBottom = document.getElementById('li-bottom');
 var textCenter = document.getElementById('text-center');
 
 var cards = document.getElementsByClassName('opc');
-
-function textCenterFade() {
-    textCenter.style.transform = "translateY(15em)";
-
-    setTimeout(function () {
-        textCenter.style.transform = "translateY(0)";
-    }, 1000)
-}
-
 var header = document.getElementsByTagName('header')[0];
 var textsHead = document.getElementsByTagName('a');
 var textDesBottom = document.getElementsByTagName('a');
@@ -26,6 +17,14 @@ var btnCurriculo = document.getElementById('text-rigth-cpl');
 
 var cardsMainServ = document.getElementById('contents');
 var cards2Serv = document.getElementById('cardRow');
+
+function textCenterFade() {
+    textCenter.style.transform = "translateY(15em)";
+
+    setTimeout(function () {
+        textCenter.style.transform = "translateY(0)";
+    }, 1000)
+}
 
 var linkAndWhiteWall = function () {
     if (window.pageYOffset > 2500) {
@@ -70,6 +69,7 @@ function elementsSwitchToBlack() {
     cardsMainServ.style.opacity = 0;
 }
 
+
 card.addEventListener("click", function () {
     console.log('click');
     text.style.transform = 'translateY(-3em)';
@@ -90,8 +90,8 @@ let tr = false;
 var doc = document.getElementsByClassName('in-feed');
 var txtFed = document.getElementsByClassName('feed-txt')[0];
 var feedComentsDiv = document.getElementsByClassName('feedbacks-coments')[0];
-function checkSubmit(e) {
 
+function checkSubmit(e) {
     var animConfigZoomOut = "zoomOutRight 1.4s cubic-bezier(0.77, 0, 0.175, 1)";
 
     function callFlashTxt() {
@@ -101,10 +101,11 @@ function checkSubmit(e) {
     if (!tr && e.keyCode == 13) {
         doc[0].style.animation = animConfigZoomOut;
         callFlashTxt();
-
+        setInterval(() => { txtFed.innerHTML = "Escreva seu nome"; }, 200);
         setTimeout(function () {
             doc[0].style.display = "none";
             txtFed.style.animation = null;
+
             //txtFed.style.display = "none";
             if (!tr) {
                 doc[1].style.animation = "fadeInLeft 1.4s cubic-bezier(0.77, 0, 0.175, 1)";
@@ -116,18 +117,17 @@ function checkSubmit(e) {
                     doc[1].style.animation = null;
                 }, 1350);
             }
-
-
         }, 1350);
 
     } else if (tr && e.keyCode == 13) {
         doc[1].style.animation = animConfigZoomOut;
         callFlashTxt();
+
         setTimeout(function () {
             doc[1].style.display = "none";
             txtFed.style.display = "none";
             feedComentsDiv.style.animation = "slideInUp 1.3s cubic-bezier(0.77, 0, 0.175, 1)";
-            feedComentsDiv.style.display = "block";
+            setInterval(() => { feedComentsDiv.style.display = "block"; }, 500);
         }, 1295);
     }
 }
