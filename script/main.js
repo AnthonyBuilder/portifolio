@@ -101,7 +101,7 @@ function checkSubmit(e) {
     if (!tr && e.keyCode == 13) {
         doc[0].style.animation = animConfigZoomOut;
         callFlashTxt();
-        setInterval(() => { txtFed.innerHTML = "Escreva seu nome"; }, 200);
+        setTimeout(() => { txtFed.innerHTML = "Escreva seu nome"; }, 200);
         setTimeout(function () {
             doc[0].style.display = "none";
             txtFed.style.animation = null;
@@ -122,12 +122,13 @@ function checkSubmit(e) {
     } else if (tr && e.keyCode == 13) {
         doc[1].style.animation = animConfigZoomOut;
         callFlashTxt();
+        setTimeout(() => { txtFed.innerHTML = "Feedbacks"; }, 200);
 
         setTimeout(function () {
             doc[1].style.display = "none";
-            txtFed.style.display = "none";
+            txtFed.style.transform = "translateY(-6em)";
             feedComentsDiv.style.animation = "slideInUp 1.3s cubic-bezier(0.77, 0, 0.175, 1)";
-            setInterval(() => { feedComentsDiv.style.display = "block"; }, 500);
+            setInterval(() => { feedComentsDiv.style.display = "block"; }, 300);
         }, 1295);
     }
 }
