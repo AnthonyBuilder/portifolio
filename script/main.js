@@ -49,7 +49,7 @@ window.onscroll = function () {
 }
 
 function elementsSwitchToWhite() {
-  
+
 
     body.style.background = "white";
     textsHead[0].style.color = "black";
@@ -88,6 +88,16 @@ card.addEventListener("mouseout", function () {
     divCardsProjetos.classList.remove("crd-projetos-f");
 }, false);
 
+class cardScaleHover {
+    constructor(el) {
+        this.DOM = {}
+        this.DOM.el = el;
+        this.hover();
+    }
 
-//click Sobre
+    hover() {
+        this.el.addEventListener('mouseover', function () { this.el.style.transform = "scale(1.05, 1.05)"; })
+    }
+}
 
+new cardScaleHover(document.querySelector('div.crd'));
