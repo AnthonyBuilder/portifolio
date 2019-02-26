@@ -126,7 +126,7 @@ function checkSubmit(e) {
         setTimeout(function () {
             doc[1].style.display = "none";
             txtFed.style.display = "none";
-            feedComentsDiv.style.animation = "slideInUp 1.5s cubic-bezier(0.77, 0, 0.175, 1)";
+            feedComentsDiv.style.animation = "slideInUp 1.3s cubic-bezier(0.77, 0, 0.175, 1)";
             feedComentsDiv.style.display = "block";
         }, 1295);
     }
