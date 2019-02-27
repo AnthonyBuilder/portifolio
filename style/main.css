@@ -1,4 +1,11 @@
 
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+ }
+
+
 header {
     height: 6em;
     margin: 0 84px;
@@ -351,6 +358,7 @@ html {
     display: flex;
     position: absolute;
     margin: 17em 0;
+    width: 350px;
   }
 
 .card-prj {
@@ -389,3 +397,58 @@ html {
 }*/
 
 
+<<<<<<< HEAD
+@media screen and (max-width: 2080px) {
+
+    #li-bottom {
+        font-size: 1.5em;
+        margin: -1em 24em;
+    }
+
+    #text-mainnome {
+        margin: 35px 11px;
+    }
+    header h2 {
+        font-size: 20px;
+    }
+    
+    .text-center h1 {
+        font-size: 6em;
+        border: none;
+        color: white;
+        padding: 235px 2em;
+        font-weight: 700;
+        margin: 10px 77px;
+    }
+
+    .img-card {
+        width: 344px;
+    }
+
+    #text-card1 {
+        font-size: 4.3em;
+    }
+    
+    #text-card {
+        font-size: 3.3em;
+        margin: -7.1em;
+    }
+
+    .img-card-2 {
+        width: 29em;
+        height: 32.5em;
+    }
+
+    .img-card3 {
+        width: 344px;
+        height: 32.7em;
+    }
+
+    .cards {
+        position: absolute;
+        margin: 12em -3em;
+    }
+    
+ }
+=======
+>>>>>>> ef928286fbe57a2b82acd3ee4625b3cfa5c71b4d
