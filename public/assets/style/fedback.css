@@ -93,10 +93,10 @@
 
 .feedbacks-coments {
     width: 100%;
-    height: 41.5em;
+    height: 38.5em;
     overflow-y: scroll;
     display: none;
-    margin: -15em 0em;
+    margin: -17em 0em;
 }
 
 .feeds-wrapper {
@@ -106,7 +106,7 @@
 
 .row-coments {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 
 .card-coments {

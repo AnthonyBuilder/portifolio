@@ -26,22 +26,40 @@ function textCenterFade() {
     }, 1000)
 }
 
-var linkAndWhiteWall = function () {
-    if (window.pageYOffset > 2500) {
-        textsHead[1].style.color = "#52B271";
-        elementsSwitchToWhite();
-    }
-    if (window.pageYOffset < 2500) {
-        elementsSwitchToBlack();
-
-    }
-}
 
 window.onscroll = function () {
     if (window.pageYOffset > 2500) {
+
+        textsHead[0].style.animation = null;
+        textsHead[1].style.color = "#52B271";
+        textsHead[1].style.animation = "flash 3.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
+        textsHead[2].style.animation = null;
+
         elementsSwitchToWhite();
     }
+
     if (window.pageYOffset < 2500) {
+
+        textsHead[0].style.color = "#52B271";
+        textsHead[0].style.animation = "flash 3.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
+        textsHead[1].style.animation = null;
+        textsHead[2].style.animation = null;
+        textsHead[2].style.color = "white";
+        elementsSwitchToBlack();
+    }
+
+    if (window.pageYOffset < 1500) {
+        textsHead[0].style.color = "white";
+        textsHead[0].style.animation = null;
+    }
+    if (window.pageYOffset > 4300) {
+
+        textsHead[0].style.animation = null;
+        textsHead[0].style.color = "white";
+        textsHead[1].style.animation = null;
+        textsHead[2].style.color = "#52B271";
+        textsHead[2].style.animation = "flash 3.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
+
         elementsSwitchToBlack();
     }
 }
@@ -49,9 +67,7 @@ window.onscroll = function () {
 function elementsSwitchToWhite() {
     body.style.background = "white";
     textsHead[0].style.color = "black";
-    textsHead[1].style.color = "black";
     textsHead[2].style.color = "black";
-
     textMainNome.style.color = "black";
 
     cardsMainServ.style.transform = "translateX(-50em)";
@@ -60,9 +76,9 @@ function elementsSwitchToWhite() {
 
 function elementsSwitchToBlack() {
     body.style.background = "rgb(19, 19, 19)";
-    textsHead[0].style.color = "white";
+
     textsHead[1].style.color = "white";
-    textsHead[2].style.color = "white";
+
     textMainNome.style.color = "white";
 
     cardsMainServ.style.transform = "translateX(0)";

@@ -1,0 +1,31 @@
+.scene {
+	background: #1868c3;
+}
+
+.scene path:first-child {
+	fill: #155daf;
+}
+
+.scene path:nth-child(2) {
+	fill: #13539c;
+}
+
+.scene path:nth-child(3) {
+	fill: #104888;
+}
+
+.scene path:nth-child(4) {
+	fill: #0c3461;
+}
+
+.scene path:nth-child(5) {
+	fill: #09294e;
+}
+
+.scene path:nth-child(6) {
+	fill: #071f3a;
+}
+
+.scene path:nth-child(7) {
+	fill:#041a33;
+}

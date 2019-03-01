@@ -1,0 +1,15 @@
+{
+    "name": "anthony/portifolio",
+    "description": "Portifolio Anthony José",
+    "authors": [
+        {
+            "name": "AnthonyDev",
+            "email": "35379640+AnthonyBuilder@users.noreply.github.com"
+        }
+    ],
+    "autoload": {
+    	"psr-4": {
+    		"app\\":"app"
+    	}
+    }
+}
