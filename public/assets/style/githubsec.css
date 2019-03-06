@@ -1,0 +1,27 @@
+.githubsec {
+    margin: 500px -6em;
+    position: absolute;
+    background-image: url('../img/star-bg.svg');
+    background-color: #19212a;
+    background-position: center;
+    
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+}
+
+
+.wrapper-git-sec {
+	margin: 10em 0;
+    text-align: center;
+}
+
+.content-git-sec {
+	margin: 14em 0;
+    text-align: center;   
+}
+
+.fonts {
+    color: #8ec2c4;
+	font-size: 400%;
+}

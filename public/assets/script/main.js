@@ -102,6 +102,31 @@ card.addEventListener("mouseout", function () {
     divCardsProjetos.classList.remove("crd-projetos-f");
 }, false);
 
+let elm = document.querySelector('#githubsec');
+
+var onScroll = (function () {
+    var startPos = 1720;
+
+    function run() {
+        var fromTop = window.pageYOffset,
+            scrollDelta;
+
+        scrollDelta = (fromTop - startPos) * 1; // "velocidade" em funcao do scroll
+        elm.style.backgroundSize = `${scrollDelta}px ${scrollDelta}px`;
+        elm.style.transition = `${scrollDelta - 800}ms`;
+        console.clear();
+        console.log(scrollDelta);
+    }
+
+    run();
+
+    return run;
+})()
+
+if (window.pageYOffset > 2300) {
+    window.addEventListener('scroll', onScroll);
+}
+
 let tr = false;
 var doc = document.getElementsByClassName('in-feed');
 var txtFed = document.getElementsByClassName('feed-txt')[0];
@@ -117,10 +142,10 @@ function inputConstructor(el) {
 //Ajax fazendo conexao com o banco para capturar e registrar os Feedbacks
 var xhttp = new XMLHttpRequest();
 
-window.onload = function (){
+window.onload = function () {
 
-    function getFeeds(){
-        xhttp.onreadystatechange = function() {
+    function getFeeds() {
+        xhttp.onreadystatechange = function () {
             if (this.readyState === 4 && this.status === 200) {
                 var feeds = JSON.parse(this.responseText);
                 console.log(feeds);
@@ -129,7 +154,7 @@ window.onload = function (){
 
         xhttp.open('GET', 'ajax/feed.php', true);
         xhttp.send();
-    } 
+    }
 
     function checkSubmit(e) {
 
@@ -164,7 +189,7 @@ window.onload = function (){
             doc[1].style.animation = animConfigZoomOut;
 
             callFlashTxt();
-            setTimeout(() => { 
+            setTimeout(() => {
                 txtFed.innerHTML = "Feedbacks";
                 getFeeds();
             }, 200);
