@@ -35,7 +35,6 @@
     </header>
 
     <div>
-<<<<<<< HEAD
 
     <div class="text-center text-center-animation " id="text-center">
         <h1>Anthony José</h1>
@@ -46,9 +45,6 @@
     </div>
 
         <svg class="scene" style="position: relative;" width="100%" height="100vh" preserveAspectRatio="none"
-=======
-        <svg class="scene" style="position: absolute" width="100%" height="100vh" preserveAspectRatio="none"
->>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
             viewBox="0 0 1440 800">
             <path
                 d="M -84.52,-81.13 C -94.62,-73.4 -88.88,-59.55 -90.33,-48.91 -89.29,27.31 -89.61,103.5 -88.33,179.8 -85.99,416.1 -81.32,888.9 -81.32,888.9 -81.32,888.9 974.5,888.7 1587,891.9 1518,719.9 1487,644 1429,533 1388,437.7 1447,259.7 1400,187 1362,132 1270,90.53 1207,39.93 1161,2.932 1071,-74.45 1071,-74.45 1071,-74.45 914.5,-77.77 848.2,-80.17 537.6,-80.84 227,-81.38 -83.6,-81.6 -83.91,-81.44 -84.21,-81.29 -84.52,-81.13 Z"
@@ -84,18 +80,7 @@
 
     <div class="wrapper-all-elements" id="allElements">
 
-<<<<<<< HEAD
        
-=======
-        <div class="text-center text-center-animation " id="text-center">
-            <h1>Anthony José</h1>
-        </div>
-
-        <a href="#cards" onclick="textCenterFade()">
-            <h2 id="li-bottom">Descer</h2>
-        </a>
-
->>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
         <!-- <div class="main-container" id="main-container">
                 <div class="bottom-montain" id="bottom-montain">
                     <div class="montain-bt" id="montain-bt">
@@ -243,11 +228,7 @@
                 <div id="contents" class="contents">
                     <div class="row-serv" style="transition: 600ms" id="cardRowMain">
                         <div class="card-serv crd">
-<<<<<<< HEAD
                             <img class="card-shadow-scale card-serv-img" style="transition: 400ms" src="assets/img/card2.jpg">
-=======
-                            <img class="card-shadow-scale card-serv-img" style="transition: 400ms" src="img/card2.jpg">
->>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
                             <div class="text-bottom-serv">
                                 <h2 style="font-weight: 500;">Desenvolvimento Web</h2>
                             </div>
@@ -255,11 +236,7 @@
 
                         <div class="card-serv2 crd">
                             <img class="card-shadow-scale card-serv-img2" style="transition: 500ms"
-<<<<<<< HEAD
                                 src="assets/img/phpCode.jpg">
-=======
-                                src="img/phpCode.jpg">
->>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
                             <div class="text-bottom-serv2" style="margin: -6em 3em; position: absolute">
                                 <h2 style="font-weight: 800; color: white; text-shadow: 0 1px 50px black;">PHP/MySql
                                 </h2>
@@ -268,11 +245,7 @@
 
                         <div class="card-serv3 crd">
                             <img class="card-shadow-scale card-serv-img3" style="transition: 500ms"
-<<<<<<< HEAD
                                 src="assets/img/androidCard.jpg">
-=======
-                                src="img/androidCard.jpg">
->>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
                             <div class="text-bottom-serv2" style="margin: -10em 3em; position:absolute;">
                                 <h2 style="font-weight: 800; color: white; text-shadow: 0 1px 50px black;">Dev
                                     Android
@@ -283,11 +256,7 @@
                         <div class="card-serv4 crd" style="margin: 1.2em -8em;">
                             <img class="card-shadow-scale card-serv-img4"
                                 style="width: 17em;transition: 500ms;height: 23em;border-radius: 15px;"
-<<<<<<< HEAD
                                 src="assets/img/androidCard.jpg">
-=======
-                                src="img/androidCard.jpg">
->>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
                             <div class="text-bottom-serv4" style="margin: -12em 5em;position:absolute;">
                                 <h2 style="font-weight: 800; color: white; text-shadow: 0 1px 50px black;">
                                     C#/Asp.Net
@@ -298,11 +267,7 @@
                         <div class="card-serv5 crd" style="margin: 25.2em -28em;">
                             <img class="card-shadow-scale card-serv-img5"
                                 style="width: 17em;transition: 500ms;height: 6em;border-radius: 15px;"
-<<<<<<< HEAD
                                 src="assets/img/androidCard.jpg">
-=======
-                                src="img/androidCard.jpg">
->>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
                             <div class="text-bottom-serv5" style="margin: -4em 5em;position:absolute;">
                                 <h2 style="font-weight: 800; color: white; text-shadow: 0 1px 50px black;">
                                     C#/Asp.Net
@@ -344,13 +309,10 @@
                     <div class="feedbacks-coments">
                         <div class="feeds-wrapper">
                             <div class="row-coments">
-<<<<<<< HEAD
                                 <div class="card-coments">
                                     <h1>Nome</h1></br>
                                     <h2>Feedback</h2>
                                 </div>
-=======
->>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
                
                             </div>
                         </div>

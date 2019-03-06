@@ -32,11 +32,7 @@ window.onscroll = function () {
 
         textsHead[0].style.animation = null;
         textsHead[1].style.color = "#52B271";
-<<<<<<< HEAD
         textsHead[1].style.animation = "flash 2.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
-=======
-        textsHead[1].style.animation = "flash 3.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
->>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
         textsHead[2].style.animation = null;
 
         elementsSwitchToWhite();
@@ -45,11 +41,7 @@ window.onscroll = function () {
     if (window.pageYOffset < 2500) {
 
         textsHead[0].style.color = "#52B271";
-<<<<<<< HEAD
         textsHead[0].style.animation = "flash 2.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
-=======
-        textsHead[0].style.animation = "flash 3.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
->>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
         textsHead[1].style.animation = null;
         textsHead[2].style.animation = null;
         textsHead[2].style.color = "white";
@@ -66,11 +58,7 @@ window.onscroll = function () {
         textsHead[0].style.color = "white";
         textsHead[1].style.animation = null;
         textsHead[2].style.color = "#52B271";
-<<<<<<< HEAD
         textsHead[2].style.animation = "flash 2.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
-=======
-        textsHead[2].style.animation = "flash 3.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
->>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
 
         elementsSwitchToBlack();
     }
@@ -130,12 +118,8 @@ function inputConstructor(el) {
 var xhttp = new XMLHttpRequest();
 
 window.onload = function (){
-<<<<<<< HEAD
 
     function getFeeds(){
-=======
-   
->>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
         xhttp.onreadystatechange = function() {
             if (this.readyState === 4 && this.status === 200) {
                 var feeds = JSON.parse(this.responseText);
@@ -145,7 +129,6 @@ window.onload = function (){
 
         xhttp.open('GET', 'ajax/feed.php', true);
         xhttp.send();
-<<<<<<< HEAD
     } 
 
     function checkSubmit(e) {
@@ -196,53 +179,6 @@ window.onload = function (){
 
             }, 1295);
         }
-=======
-     
-} 
-
-function checkSubmit(e) {
-
-    var animConfigZoomOut = "zoomOutRight 1.4s cubic-bezier(0.77, 0, 0.175, 1)";
-
-    function callFlashTxt() {
-        txtFed.style.animation = "flash 1.1s cubic-bezier(0.77, 0, 0.175, 1)";
-    }
-
-    if (!tr && e.keyCode == 13) {
-        doc[0].style.animation = animConfigZoomOut;
-        callFlashTxt();
-        setTimeout(() => { txtFed.innerHTML = "Escreva seu nome"; }, 200);
-        setTimeout(function () {
-            doc[0].style.display = "none";
-            txtFed.style.animation = null;
-
-            //txtFed.style.display = "none";
-            if (!tr) {
-                inputConstructor(doc[1]);
-                tr = true;
-
-                setTimeout(() => {
-                    doc[1].style.animation = null;
-                }, 1350);
-            }
-        }, 1350);
-
-
-    } else if (tr && e.keyCode == 13) {
-        form.submit();
-        doc[1].style.animation = animConfigZoomOut;
-
-        callFlashTxt();
-        setTimeout(() => { txtFed.innerHTML = "Feedbacks"; }, 200);
-        window.history.pushState('Object', 'Anthony', '?q=true');
-        setTimeout(function () {
-            doc[1].style.display = "none";
-            txtFed.style.transform = "translateY(-6.5em)";
-            feedComentsDiv.style.animation = "slideInUp 1.3s cubic-bezier(0.77, 0, 0.175, 1)";
-            setInterval(() => { feedComentsDiv.style.display = "block"; }, 300);
-
-        }, 1295);
->>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
     }
 }
 
@@ -250,10 +186,6 @@ function checkSubmit(e) {
 
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
 // class cardScaleHover {
 //     constructor(el) {
 //         this.DOM = {}
