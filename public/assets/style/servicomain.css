@@ -26,8 +26,13 @@
 
 #servicos-container {
     width: 105em;
+<<<<<<< HEAD
+    position: relative;
+   
+=======
     position: absolute;
     margin: 112em 0em;
+>>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
     height: 31em;
     padding: 14em 0em;
 }

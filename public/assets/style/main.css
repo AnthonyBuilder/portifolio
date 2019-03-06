@@ -3,6 +3,12 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+<<<<<<< HEAD
+
+    margin:0;
+    padding: 0;
+=======
+>>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
  }
 
 
@@ -22,9 +28,15 @@ a {
 img {
     object-fit: cover;
 }
+<<<<<<< HEAD
+
+h2, h1 {
+    font-family: "Roboto", sans-serif;
+=======
 h2, h1 {
     transform-origin: top center;
     font-family: sans-serif;
+>>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
 }
 
 body {
@@ -39,6 +51,15 @@ body {
     opacity: 1;
 }
 
+<<<<<<< HEAD
+
+html {
+    /**scroll-behavior: smooth;
+    overflow-y: -webkit-paged-x;*/
+    overflow-x: hidden;
+}
+
+=======
 * { 
     margin:0;
     padding: 0;
@@ -54,6 +75,7 @@ html {
     transform: rotate(180);
 }
 
+>>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
 #li-bottom {
     position: absolute;
     margin: -1em 25em;
@@ -91,7 +113,11 @@ html {
 }
 .cards {
     position: absolute;
+<<<<<<< HEAD
+    margin: 8em -3.095em;
+=======
     margin: 9em -1.095em;
+>>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
     padding-top: 2em;
     border-bottom: 1px solid white;
 }
@@ -100,16 +126,28 @@ html {
     font-size: 10em;
     border: none;
     color: white;
+<<<<<<< HEAD
+    margin: 3em 358px;
+    font-weight: 900;
+=======
     padding: 336px 2em;
     font-weight: 700;
+>>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
 }
 
 .text-center {
     transition: all 700ms;
+<<<<<<< HEAD
+    position: absolute;
+    z-index: 1;
+}
+
+=======
 }
 
 
 
+>>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
 #text-mainnome {
     margin: 40px 10px;
     font-family: sans-serif;
@@ -147,6 +185,13 @@ html {
     transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
+<<<<<<< HEAD
+.cards {
+    position: relative;
+
+}
+=======
+>>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
 
 .text-rigth-button:hover {
     color: #8585856e;
@@ -182,7 +227,11 @@ html {
     position: relative;
     z-index: 1;
     top: 0;
+<<<<<<< HEAD
+    margin: -7.0em 75px;
+=======
     margin: -6.96em 85px;
+>>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
     font-family: sans-serif;
     color: white;
     font-size: 4.3em;
@@ -253,7 +302,10 @@ html {
 }
 
 .wrapper-all-elements {
+<<<<<<< HEAD
+=======
     position: absolute;
+>>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
     margin: 20px 6em;
 }
 
@@ -267,6 +319,12 @@ html {
     text-shadow: 0 1px 2em black;
     color: white;
 }
+<<<<<<< HEAD
+.content  {
+    width: 60%;
+}
+=======
+>>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
 .content2 {
     margin: 101px 22px;
 }
@@ -400,7 +458,11 @@ html {
 
     #li-bottom {
         font-size: 1.5em;
+<<<<<<< HEAD
+        margin: -5em 27em;
+=======
         margin: -1em 24em;
+>>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
     }
 
     #text-mainnome {
@@ -412,11 +474,15 @@ html {
     
     .text-center h1 {
         font-size: 6em;
+<<<<<<< HEAD
+        margin: 3em 358px;
+=======
         border: none;
         color: white;
         padding: 235px 2em;
         font-weight: 700;
         margin: 10px 77px;
+>>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
     }
 
     .img-card {
@@ -429,7 +495,15 @@ html {
     
     #text-card {
         font-size: 3.3em;
+<<<<<<< HEAD
+    }
+
+    #text-card-2 {
+        margin: 241px 38px;
+        font-size: 53px;
+=======
         margin: -7.1em;
+>>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
     }
 
     .img-card-2 {
@@ -442,9 +516,24 @@ html {
         height: 32.7em;
     }
 
+<<<<<<< HEAD
+    .beffore-sobre {
+        position: relative;
+    }
+    
+
+    .text-head h1 {
+        font-size: 4em;
+    }
+
+    .content {
+        font-size: 14px;
+    }
+=======
     .cards {
         position: absolute;
         margin: 12em -3em;
     }
     
+>>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
  }

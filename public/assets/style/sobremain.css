@@ -1,16 +1,28 @@
 #Sobre {
+<<<<<<< HEAD
+    position: relative;
+    padding-top: 100px;
+
+    font-size: 12px;
+    max-width: 100%;
+=======
     margin: 60em 5px;
     padding-top: 13em;
     
     position: absolute;
 
     width: 100%;
+>>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
 }
 
 .texts-head {
     padding: 15px;
     margin: 5px;
+<<<<<<< HEAD
+    max-width: 700px;
+=======
     width: 55.5em;
+>>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
     border-radius: 25px;
     color: #000000b0;
     background: linear-gradient(270deg, #b14b8f, #0586c2, #4098ca, #602a92);
@@ -42,7 +54,11 @@
 .beffore-sobre {
     padding: 3px;
     margin: 5px;
+<<<<<<< HEAD
+    max-width: 700px;
+=======
     width: 56.5em;
+>>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
 
     border-radius: 25px;
     color: #000000b0;
@@ -56,10 +72,18 @@
     -moz-animation: AnimationName 23s ease infinite;
     animation: AnimationName 23s ease infinite;
 }
+<<<<<<< HEAD
+
+.img-profile {
+    margin: 5px 80px;
+    width: 350px;
+    border-radius: 20px;
+=======
 .img-profile {
     margin: 3px 80px;
     width: 28em;
     border-radius: 50px;
+>>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
     position: absolute;
     right: 0;
 }
@@ -69,7 +93,11 @@
     margin: 17.3em 2.8em;
     position: absolute;
     right: 0;
+<<<<<<< HEAD
+    font-size: 21px;
+=======
     font-size: 27px;
+>>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
     color: white;
     transition: 800ms;
     padding: 12px 5em;
@@ -97,6 +125,9 @@
 
 .hcard2 { 
     transition: 480ms;
+<<<<<<< HEAD
+=======
     
+>>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
 }
 

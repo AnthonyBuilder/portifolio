@@ -53,9 +53,14 @@ class ClassLoader
 
     private $useIncludePath = false;
     private $classMap = array();
+<<<<<<< HEAD
+
+    private $classMapAuthoritative = false;
+=======
     private $classMapAuthoritative = false;
     private $missingClasses = array();
     private $apcuPrefix;
+>>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
 
     public function getPrefixes()
     {
@@ -273,6 +278,8 @@ class ClassLoader
     }
 
     /**
+<<<<<<< HEAD
+=======
      * APCu prefix to use to cache found/not-found classes, if the extension is enabled.
      *
      * @param string|null $apcuPrefix
@@ -293,6 +300,7 @@ class ClassLoader
     }
 
     /**
+>>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
      * Registers this instance as an autoloader.
      *
      * @param bool $prepend Whether to prepend the autoloader or not
@@ -334,10 +342,23 @@ class ClassLoader
      */
     public function findFile($class)
     {
+<<<<<<< HEAD
+        // work around for PHP 5.3.0 - 5.3.2 https://bugs.php.net/50731
+        if ('\\' == $class[0]) {
+            $class = substr($class, 1);
+        }
+
+=======
+>>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
         // class map lookup
         if (isset($this->classMap[$class])) {
             return $this->classMap[$class];
         }
+<<<<<<< HEAD
+        if ($this->classMapAuthoritative) {
+            return false;
+        }
+=======
         if ($this->classMapAuthoritative || isset($this->missingClasses[$class])) {
             return false;
         }
@@ -347,10 +368,20 @@ class ClassLoader
                 return $file;
             }
         }
+>>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
 
         $file = $this->findFileWithExtension($class, '.php');
 
         // Search for Hack files if we are running on HHVM
+<<<<<<< HEAD
+        if ($file === null && defined('HHVM_VERSION')) {
+            $file = $this->findFileWithExtension($class, '.hh');
+        }
+
+        if ($file === null) {
+            // Remember that this class does not exist.
+            return $this->classMap[$class] = false;
+=======
         if (false === $file && defined('HHVM_VERSION')) {
             $file = $this->findFileWithExtension($class, '.hh');
         }
@@ -362,6 +393,7 @@ class ClassLoader
         if (false === $file) {
             // Remember that this class does not exist.
             $this->missingClasses[$class] = true;
+>>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
         }
 
         return $file;
@@ -374,6 +406,12 @@ class ClassLoader
 
         $first = $class[0];
         if (isset($this->prefixLengthsPsr4[$first])) {
+<<<<<<< HEAD
+            foreach ($this->prefixLengthsPsr4[$first] as $prefix => $length) {
+                if (0 === strpos($class, $prefix)) {
+                    foreach ($this->prefixDirsPsr4[$prefix] as $dir) {
+                        if (file_exists($file = $dir . DIRECTORY_SEPARATOR . substr($logicalPathPsr4, $length))) {
+=======
             $subPath = $class;
             while (false !== $lastPos = strrpos($subPath, '\\')) {
                 $subPath = substr($subPath, 0, $lastPos);
@@ -382,6 +420,7 @@ class ClassLoader
                     $pathEnd = DIRECTORY_SEPARATOR . substr($logicalPathPsr4, $lastPos + 1);
                     foreach ($this->prefixDirsPsr4[$search] as $dir) {
                         if (file_exists($file = $dir . $pathEnd)) {
+>>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
                             return $file;
                         }
                     }
@@ -429,8 +468,11 @@ class ClassLoader
         if ($this->useIncludePath && $file = stream_resolve_include_path($logicalPathPsr0)) {
             return $file;
         }
+<<<<<<< HEAD
+=======
 
         return false;
+>>>>>>> 3ee331f021c84c80d11e701992141944516c5fd0
     }
 }
 
