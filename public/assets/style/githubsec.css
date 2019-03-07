@@ -1,10 +1,12 @@
 .githubsec {
     margin: 500px -6em;
     position: absolute;
-    background-image: url('../img/star-bg.svg');
-    background-color: #19212a;
+    background-image: url('star-bg.svg');
+    background-color: #11181f;
+  
+    object-fit: cover;
+
     background-position: center;
-    
     width: 100%;
     padding: 20px;
     height: 100%;
