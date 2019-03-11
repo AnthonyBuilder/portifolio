@@ -1,4 +1,5 @@
 .rodape {
+  /* padding-top: 8em; */
   position: absolute;
   width: 100%;
   background: black;
@@ -16,7 +17,7 @@
 }
 
 .wrapper-feed {
-    margin-top: 15em;
+    margin-top: 25em;
 }
 
 .feed-txt {
@@ -38,7 +39,7 @@
 
     font-weight: 100;
 
-    width: 50%;
+    width: 40%;
     outline-style: none;
 
 
@@ -80,6 +81,7 @@
     display: flex;
     flex-direction: row;
 }
+
 .bottom-content h2 {
     font-size: 20px;
     font-weight: 100;
@@ -116,9 +118,11 @@
 
     margin-bottom: 15px;
 }
+
 .card-coments h1 {
     font-size: 29px;
 }
+
 .card-coments h2 {
     text-align: left;
     font-weight: 100;

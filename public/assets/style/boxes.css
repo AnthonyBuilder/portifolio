@@ -1,0 +1,15 @@
+.box {
+  width: 50px;
+  height: 150px;
+}
+.boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.boxes__inner {
+  display: flex;
+  overflow: hidden;
+  height: 165px;
+}

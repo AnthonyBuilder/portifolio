@@ -1,6 +1,8 @@
 #Sobre {
     position: relative;
-
+    border-bottom: 2px solid white;
+    margin: 5em 3em;
+    padding: 90px 31px;
     max-width: 100%;
 }
 
@@ -46,6 +48,7 @@
     margin: 0;
     max-width: 1000px;
 
+    
     border-radius: 30px;
     color: #000000b0;
     

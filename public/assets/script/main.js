@@ -81,16 +81,18 @@ window.onload = function () {
 
         }
 
-        if (posY > 2300) {
+        if (posY > 2800) {
             textsHead[0].style.animation = null;
             textsHead[1].style.color = "#52B271";
             textsHead[1].style.animation = "flash 2.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
             textsHead[2].style.animation = null;
 
+            boxAnimation();
+
             elementsSwitchToWhite();
         }
 
-        if (posY < 2300) {
+        if (posY < 2790) {
 
             textsHead[0].style.color = "#52B271";
             textsHead[0].style.animation = "flash 2.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
@@ -98,16 +100,16 @@ window.onload = function () {
             textsHead[2].style.animation = null;
             textsHead[2].style.color = "white";
 
+
             elementsSwitchToBlack();
         }
 
         if (posY < 1500) {
             textsHead[0].style.color = "white";
             textsHead[0].style.animation = null;
-
         }
 
-        if (posY > 3050) {
+        if (posY > 3737) {
 
             textsHead[0].style.animation = null;
             textsHead[0].style.color = "white";
@@ -127,8 +129,9 @@ window.onload = function () {
         textsHead[2].style.color = "black";
         textMainNome.style.color = "black";
 
-        cardsMainServ.style.transform = "translateX(-50em)";
-        cardsMainServ.style.opacity = 1;
+        // cardsMainServ.style.transform = "translateX(-50em)";
+
+        setTimeout(() => { cardsMainServ.style.opacity = 1; }, 200);
     }
 
     function elementsSwitchToBlack() {
@@ -138,9 +141,14 @@ window.onload = function () {
 
         textMainNome.style.color = "white";
 
-        cardsMainServ.style.transform = "translateX(0)";
-        cardsMainServ.style.opacity = 0;
     }
+
+
+
+
+
+
+
 
 
     card.addEventListener("click", function () {
