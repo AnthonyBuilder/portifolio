@@ -9,7 +9,7 @@
 
 	class Connection {
 		function connect() {
-			$pdo = new PDO("mysql:host=localhost;dbname=id8862754_feedbackdb", "id8862754_root	", "");
+			$pdo = new PDO("mysql:host=localhost:3307;dbname=feedbackdb", "root", "root");
 			$pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 
 			return $pdo;

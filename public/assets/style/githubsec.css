@@ -1,15 +1,19 @@
 .githubsec {
-    margin: 500px -6em;
-    position: absolute;
-    background-image: url('star-bg.svg');
-    background-color: #11181f;
-  
-    object-fit: cover;
 
+    position: relative;
+    background-image: url(star-bg.svg);
+    background-color: #11181f;
+    object-fit: cover;
     background-position: center;
     width: 100%;
-    padding: 20px;
-    height: 100%;
+
+    
+    padding: 1px;
+    margin-top: 518px;
+}
+
+svg {
+    width: 100%;
 }
 
 
@@ -27,3 +31,17 @@
     color: #8ec2c4;
 	font-size: 400%;
 }
+
+@keyframes shine {
+    from,
+    50%,
+    to {
+        
+        opacity: 1;
+    }
+  
+    25%,
+    75% {
+      opacity: 0.7;
+    }
+  }

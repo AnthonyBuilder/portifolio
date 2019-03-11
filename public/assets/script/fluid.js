@@ -17,11 +17,12 @@ class FluidAnimate {
             setTimeout(() => {
                 anime({
                     targets: path,
-                    duration: anime.random(5000, 7000),
+                    duration: anime.random(3000, 5000),
                     easing: [0.5, 0, 0.5, 1],
                     d: path.getAttribute('pathdata:id'),
                     loop: true,
-                    direction: 'alternate'
+                    direction: 'alternate',
+                    translateX: 70
                 });
             }, anime.random(0, 2000));
         });

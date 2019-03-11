@@ -29,17 +29,14 @@
     position: relative;
    
     height: 31em;
-    padding: 14em 0em;
+    padding: 10em 0em;
 }
 
 .texts-head-servicos {
-    padding: 22px;
+    padding: 15px;
     margin: 5px;
     width: 47em;
-    border-radius: 25px;
     color: #000000b0;
-    
-    border: 2.3px solid black;
 }
 
 

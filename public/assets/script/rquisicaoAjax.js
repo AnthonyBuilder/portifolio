@@ -1,7 +1,7 @@
 
 var request = null;
 
-function createRequest(){
+function createRequest() {
 	try {
 		request = new XMLHttpRequest();
 	} catch (othermicrosoft) {
@@ -16,12 +16,12 @@ function createRequest(){
 		}
 	}
 
-	if ( request === null ){
+	if (request === null) {
 		alert("Erro ao criar uma requisicao ao objeto");
 	}
 }
 
-fucntion getInfo () {
+function getInfo() {
 	createRequest();
 	var url = "getFeed.php";
 

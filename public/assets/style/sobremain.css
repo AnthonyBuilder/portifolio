@@ -14,8 +14,9 @@
     max-width: 1000px;
     border-radius: 25px;
     color: #000000b0;
-    background: linear-gradient(270deg, #b14b8f, #0586c2, #4098ca, #602a92);
-    background-size: 800% 800%;
+
+    background: linear-gradient(50deg, #b14b8f, #0586c2, #4098ca, #602a92);
+    background-size: 580% 580%;
     -webkit-animation: AnimationName 30s ease infinite;
     -moz-animation: AnimationName 30s ease infinite;
     animation: AnimationName 30s ease infinite;
@@ -41,22 +42,24 @@
 
 
 .beffore-sobre {
-    padding: 3px;
-    margin: 5px;
+    padding: 1px;   
+    margin: 0;
     max-width: 1000px;
 
-    border-radius: 25px;
+    border-radius: 30px;
     color: #000000b0;
     
     box-shadow: 0 1px 50px;
 
-    background: linear-gradient(270deg, #4b90b1, #00c698, #4098ca, #d72482);
-    background-size: 800% 800%;
+    background: linear-gradient(270deg, #530037, #00415f, #002b44, #602a92);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
 
-    -webkit-animation: AnimationName 23s ease infinite;
-    -moz-animation: AnimationName 23s ease infinite;
-    animation: AnimationName 23s ease infinite;
+    transition: 5000ms;
 }
+
 .img-profile {
     margin: 3px 80px;
     width: 28em;
@@ -133,7 +136,7 @@
     }
    
     .img-profile {
-        margin: 5px 80px;
+        margin: 5px 60px;
         width: 350px;
         border-radius: 20px;
         position: absolute;
@@ -141,9 +144,23 @@
     }
 
     .content  {
-        width: 40%;
+        width: 60%;
     }
 
+    .div-texts-resp {
+        max-width: 700px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .img-profile {
+       display: none;
+    }
+
+    #text-img-sobre {
+        display: none;
+    }
 }
 
 
