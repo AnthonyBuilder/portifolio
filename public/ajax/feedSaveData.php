@@ -2,14 +2,17 @@
 	require "../../config.php";
 
 	use app\models\Feed;
-	
+
 	$feed = new Feed;
 
-	$nome = $_POST["nomeInput"];
-	$feed_content = $_POST["feedInput"];
+	$nomeIn = filter_input(INPUT_POST, 'nomeInput', FILTER_SANITIZE_STRING);
+	$feedIn = filter_input(INPUT_POST, 'feedInput', FILTER_SANITIZE_STRING);
+	
+	$created = $feed->create($nomeIn, $feedIn);
 
-	if (isset($nome) && isset($feed_content)) {
-		$feed->setFeed($nome, $feed_content);	
-	}	
-
+	if ($created) {
+		echo "Feed postado";
+	} else {
+		echo "não foi possivel postar o feed";
+	}
 ?>

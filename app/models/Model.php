@@ -8,7 +8,7 @@
 
 	abstract class Model {
 		
-		private $connection;
+		protected $connection;
 
 		public function __construct() {
 			$this->connection = Connection::connect();
@@ -21,15 +21,6 @@
 			$allFeeds->execute();
 
 			return $allFeeds->fetchAll();
-		}
-
-		public function setFeed($this->name, $this->feed_content) {
-			$sql_insert = "INSERT INTO feeds (id, nome, feed) VALUES (DEFAULT, '$name', '$feed_content')";
-
-			$set = $this->connection->prepare($sql_insert);
-			$set->execute();
-
-		}
-		
+		}		
 	}
 ?>

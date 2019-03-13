@@ -18,6 +18,7 @@ var cardsMainServ = document.getElementById('contents');
 var cards2Serv = document.getElementById('cardRow');
 
 var bottomCtn = document.querySelector(".bottom-content");
+var divRowFeeds = document.querySelector('.content-row-shot');
 
 window.onload = function () {
 
@@ -138,18 +139,9 @@ window.onload = function () {
         body.style.background = "rgb(19, 19, 19)";
 
         textsHead[1].style.color = "white";
-
         textMainNome.style.color = "white";
 
     }
-
-
-
-
-
-
-
-
 
     card.addEventListener("click", function () {
         console.log('click');
@@ -169,7 +161,6 @@ window.onload = function () {
 
 }
 
-
 let tr = false;
 var doc = document.getElementsByClassName('in-feed');
 var txtFed = document.getElementsByClassName('feed-txt')[0];
@@ -182,7 +173,7 @@ function inputConstructor(el) {
 
 }
 
-
+//quando o usuario aperta ENTER nos imputs do feeedback
 function checkSubmit(e) {
 
     var animConfigZoomOut = "zoomOutRight 1.4s cubic-bezier(0.77, 0, 0.175, 1)";
@@ -190,6 +181,10 @@ function checkSubmit(e) {
     function callFlashTxt() {
         txtFed.style.animation = "flash 1.1s cubic-bezier(0.77, 0, 0.175, 1)";
     }
+
+    //se a variavel 'tr' for falsa ele executa as tarefas do primeiro input
+    //se a variavel 'tr' for TRUE ele executa as tarefas do segundo input
+    //e finaliza mostrando os feedbacks
 
     if (!tr && e.keyCode == 13) {
         doc[0].style.animation = animConfigZoomOut;
@@ -218,7 +213,7 @@ function checkSubmit(e) {
         callFlashTxt();
         setTimeout(() => {
             txtFed.innerHTML = "Feedbacks";
-            getFeeds();
+            setFeeds();
         }, 200);
 
 
@@ -233,20 +228,48 @@ function checkSubmit(e) {
     }
 }
 
-//Ajax fazendo conexao com o banco para capturar e registrar os Feedbacks
-var xhttp = new XMLHttpRequest();
-
 function getFeeds() {
-    xhttp.onreadystatechange = function () {
-        if (this.readyState === 4 && this.status === 200) {
-            var feeds = JSON.parse(this.responseText);
-            console.log(feeds);
-        }
-    }
+    xhttpGet('ajax/feed', function () {
 
-    xhttp.open('GET', 'ajax/feed.php', true);
-    xhttp.send();
+        var el = JSON.parse(this.responseText)
+        success(function () {
+            el.array.forEach(function (element) {
+                var inner = `<div class='card-coments'>< h1 > ${element.nome} </h1 ></br >< h2 > ${element.feed} </h2 > </div >`;
+                divRowFeeds.innerHTML += inner;
+            });
+
+            console.log(this.responseText);
+        });
+    });
 }
+
+
+// function setFeeds() {
+//     var formD = new FormData(form)
+//     xhttpPost('ajax/feedSaveData', function () {
+//         success(function () {
+//             console.log(xhttp.responseText);
+//         });
+//     }, formD);
+// }
+
+
+
+
+//Ajax fazendo conexao com o banco para capturar e registrar os Feedbacks
+// var xhttp = new XMLHttpRequest();
+
+// function getFeeds() {
+//     xhttp.onreadystatechange = function () {
+//         if (this.readyState === 4 && this.status === 200) {
+//             var feeds = JSON.parse(this.responseText);
+//             console.log(feeds);
+//         }
+//     }
+
+//     xhttp.open('GET', 'ajax/feed.php', true);
+//     xhttp.send();
+// }
 
 
 

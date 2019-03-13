@@ -13,13 +13,13 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style/fluid.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style/fedback.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style/githubsec.css" />
-
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/style/boxes.css" />
 </head>
 
 <body>
 
     <header>
-        <div class=" wrapper-header">
+        <div class="wrapper-header">
             <h2 id="text-mainnome">Anthony José</h2>
             <a style=" margin: 0px -13.4em;" href="#Sobre">
                 <h2 class="text-rigth-button">Sobre</h2>
@@ -169,119 +169,114 @@
             </div>
         </div>
 
-        <div id="Sobre" style="border-bottom: 2px solid white; padding-bottom: 61px;">
-            <div>
-                <img class="img-profile" id="img-profile" src="assets/img/profile.jpg">
-                <h2 id="text-img-sobre">Anthony José</h2>
-            </div>
-            <div class="container-sobre">
-                <div class="beffore-sobre hcard hcard2 div-texts-resp">
-                    <div class="texts-head hcard  div-texts-resp">
-                        <div class="text-head">
-                            <h1 style="font-size: 80px; font-family: sans-serif; font-weight: 100;">Sobre</h1>
-                        </div>
-
-                        <div class="text-sub-head">
-                            <h2 style="margin-left:3px;font-size: 2em; font-family: sans-serif; font-weight: 400; ">
-                                Desenvolvedor
-                                apaixonado por criar</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="content">
-                    <p>
-                        Começando aos 10 anos, descobri minha paixão, desde então eu tomava conhecimento</br>
-                        de tornar-me melhor de eu mesmo para descobrir a</br>melhor forma de vencer, experiencias
-                        ampliaram minha visão,</br>
-                        uma delas foi descobrir como criar algo visionario com a harmonia e trabalho em equipe.
-                    </p>
-
-                    <p>
-                        Programação para mim é algo extraordinario e visionario, justamente por ser uma coisa
-                        que</br>
-                        eu sou apaixonado,
-                        defini que devo sempre me cobrar a ser pontual, com</br> Front-end inovador, e
-                        escalabilidade em seu Back-End
-                    </p>
-
-                    <p>
-                        Buscando ser um Full-stack comprometido com a experiencia do usuario
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div id="servicos-container">
-            <div id="servicos-beffore">
-                <div class="texts-head-servicos">
-                    <div class="text-head">
-                        <h1 style="font-size: 80px; font-family: sans-serif; font-weight: 400 ">Serviços</h1>
-                    </div>
-                    <div class="text-sub-head">
-                        <h2 style="font-size: 2em;">Códigos no github</h2>
-                    </div>
-                </div>
-
-            </div>
-            <div class="container-content">
-                <div id="contents" class="contents">
-                    <div class="row-serv" style="transition: 600ms" id="cardRowMain">
-                        <div class="card-serv crd">
-                            <img class="card-shadow-scale card-serv-img" style="transition: 400ms"
-                                src="assets/img/card2.jpg">
-                            <div class="text-bottom-serv">
-                                <h2 style="font-weight: 500;">Desenvolvimento Web</h2>
-                            </div>
-                        </div>
-
-                        <div class="card-serv2 crd">
-                            <img class="card-shadow-scale card-serv-img2" style="transition: 500ms"
-                                src="assets/img/phpCode.jpg">
-                            <div class="text-bottom-serv2" style="margin: -6em 3em; position: absolute">
-                                <h2 style="font-weight: 800; color: white; text-shadow: 0 1px 50px black;">PHP/MySql
-                                </h2>
-                            </div>
-                        </div>
-
-                        <div class="card-serv3 crd">
-                            <img class="card-shadow-scale card-serv-img3" style="transition: 500ms"
-                                src="assets/img/androidCard.jpg">
-                            <div class="text-bottom-serv2" style="margin: -10em 3em; position:absolute;">
-                                <h2 style="font-weight: 800; color: white; text-shadow: 0 1px 50px black;">Dev
-                                    Android
-                                </h2>
-                            </div>
-                        </div>
-
-                        <div class="card-serv4 crd" style="margin: 1.2em -8em;">
-                            <img class="card-shadow-scale card-serv-img4"
-                                style="width: 17em;transition: 500ms;height: 23em;border-radius: 15px;"
-                                src="assets/img/androidCard.jpg">
-                            <div class="text-bottom-serv4" style="margin: -12em 5em;position:absolute;">
-                                <h2 style="font-weight: 800; color: white; text-shadow: 0 1px 50px black;">
-                                    C#/Asp.Net
-                                </h2>
-                            </div>
-                        </div>
-
-                        <div class="card-serv5 crd" style="margin: 25.2em -28em;">
-                            <img class="card-shadow-scale card-serv-img5"
-                                style="width: 17em;transition: 500ms;height: 6em;border-radius: 15px;"
-                                src="assets/img/androidCard.jpg">
-                            <div class="text-bottom-serv5" style="margin: -4em 5em;position:absolute;">
-                                <h2 style="font-weight: 800; color: white; text-shadow: 0 1px 50px black;">
-                                    C#/Asp.Net
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
 
     </div> <!-- fim div #wrapper-all-elements -->
+
+    <div id="Sobre" style="border-bottom: 2px solid white; padding-bottom: 61px;">
+        <div>
+            <img class="img-profile" id="img-profile" src="assets/img/profile.jpg">
+            <h2 id="text-img-sobre">Anthony José</h2>
+        </div>
+        <div class="container-sobre">
+            <div class="beffore-sobre hcard hcard2 div-texts-resp">
+                <div class="texts-head hcard  div-texts-resp">
+                    <div class="text-head">
+                        <h1 style="font-size: 5em; font-family: sans-serif; font-weight: 400;">Sobre</h1>
+                    </div>
+
+                    <div class="text-sub-head">
+                        <h2 style="margin-left:3px;font-size: 2em; font-family: sans-serif; font-weight: 400; ">
+                            Desenvolvedor
+                            apaixonado por criar</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <p>
+                    Começando aos 10 anos, descobri minha paixão, desde então eu tomava conhecimento
+                    de tornar-me melhor de eu mesmo para descobrir amelhor forma de vencer, experiencias
+                    ampliaram minha visão,
+                    uma delas foi descobrir como criar algo visionario com a harmonia e trabalho em equipe.
+                </p>
+
+                <p>
+                    Programação para mim é algo extraordinario e visionario, justamente por ser uma coisa
+                    que
+                    eu sou apaixonado,
+                    defini que devo sempre me cobrar a ser pontual, com Front-end inovador, e
+                    escalabilidade em seu Back-End
+                </p>
+
+                <p>
+                    Buscando ser um Full-stack comprometido com a experiencia do usuario
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="servicos-container">
+        <div id="servicos-beffore">
+            <div class="texts-head-servicos">
+                <div class="text-head">
+                    <h1 style="font-size: 5em; font-family: sans-serif; font-weight: 400; color:black;">Serviços</h1>
+                </div>
+                <div class="text-sub-head">
+                    <h2>Códigos no github</h2>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-content">
+            <div id="contents" class="contents">
+                <div class="row-serv" id="cardRowMain">
+
+                    <div class="card-serv crd">
+                        <img class="crd-img" src="assets/img/card2.jpg">
+                        <div class="text-bottom-serv">
+                            <h2 style="font-weight: 400; color:white;">Desenvolvimento Web</h2>
+                        </div>
+                    </div>
+
+                    <div class="card-serv2 crd">
+                        <img class="crd-img" src="assets/img/phpCode.jpg">
+                        <div class="text-bottom-serv" style="position: relative">
+                            <h2 style="font-weight: 400; color: white; text-shadow: 0 1px 50px black;">PHP/MySql
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class="card-serv3 crd">
+                        <img class="crd-img" src="assets/img/androidCard.jpg">
+                        <div class="text-bottom-serv" style="position:relative;">
+                            <h2 style="font-weight: 400; color: white;">Dev
+                                Android
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class="card-serv4 crd">
+                        <img class="crd-img" src="assets/img/androidCard.jpg">
+                        <div class="text-bottom-serv" style="position:relative;">
+                            <h2 style="font-weight: 400; color: white; text-shadow: 0 1px 50px black;">
+                                C#/Asp.Net
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class="card-serv5 crd">
+                        <img class="crd-img" src="assets/img/androidCard.jpg">
+                        <div class="text-bottom-serv" style="position:relative;">
+                            <h2 style="font-weight: 400; color: white;">
+                                C#/Asp.Net
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="githubsec" id="githubsec">
         <svg style="position: absolute;" width="2000" height="750" xmlns="http://www.w3.org/2000/svg"
@@ -304,20 +299,35 @@
                     <path stroke="null"
                         d="m1140.541359,682.323643l2.77999,-2.78m-10.77999,10.78l2.77999,-2.78m2.827,-7.314c0,-0.997 -5.48299,4.486 -4.486,4.486c-0.996,0 4.487,5.484 4.487,4.487c0,0.996 5.483,-4.488 4.48601,-4.488c0.997,0 -4.48601,-5.483 -4.48601,-4.486l-0.001,0.001z"
                         class="svg_53" />
-                        <path d="m1401.520309,552.119683l2.755,1.507a0.394,0.394 0 0 1 0,0.69l-2.755,1.507a0.393,0.393 0 0 0 -0.157,0.156l-1.505,2.755a0.393,0.393 0 0 1 -0.692,0l-1.506,-2.755a0.387,0.387 0 0 0 -0.158,-0.156l-2.755,-1.507a0.393,0.393 0 0 1 0,-0.69l2.755,-1.507a0.39,0.39 0 0 0 0.157,-0.157l1.506,-2.755a0.393,0.393 0 0 1 0.69,0l1.508,2.756c0.038,0.067 0.092,0.122 0.16,0.158" fill="#FCD05C" class="svg_53"/>
-                        <path d="m1290.419309,407.647683l1.3,0.71c0.26,0.144 0.26,0.52 0,0.66l-1.3,0.712a0.38,0.38 0 0 0 -0.15,0.15l-0.71,1.298a0.377,0.377 0 0 1 -0.66,0l-0.71,-1.3a0.386,0.386 0 0 0 -0.152,-0.148l-1.3,-0.712a0.377,0.377 0 0 1 0,-0.66l1.3,-0.71a0.39,0.39 0 0 0 0.15,-0.15l0.71,-1.3a0.376,0.376 0 0 1 0.662,0l0.71,1.3a0.384,0.384 0 0 0 0.15,0.15" fill="#D15D64" class="svg_53"/>
-                        <path d="m1510.599309,475.721683l1.36,0.745a0.395,0.395 0 0 1 0,0.692l-1.36,0.743a0.4,0.4 0 0 0 -0.156,0.157l-0.743,1.36a0.394,0.394 0 0 1 -0.692,0l-0.743,-1.36a0.395,0.395 0 0 0 -0.157,-0.157l-1.36,-0.743a0.395,0.395 0 0 1 0,-0.692l1.36,-0.744a0.393,0.393 0 0 0 0.157,-0.155l0.743,-1.36a0.395,0.395 0 0 1 0.692,0l0.744,1.36c0.037,0.066 0.092,0.12 0.157,0.156" fill="#FCD05C" class="svg_53"/>
-                        <path d="m1183.354349,648.561143a2.907,2.907 0 1 0 -5.815,0.003a2.907,2.907 0 0 0 5.815,-0.004m-1091.835,-97.083l2.756,-1.506a0.394,0.394 0 0 0 0,-0.692l-2.756,-1.507a0.4,0.4 0 0 1 -0.156,-0.157l-1.507,-2.755a0.393,0.393 0 0 0 -0.69,0l-1.508,2.755a0.395,0.395 0 0 1 -0.157,0.157l-2.755,1.507a0.394,0.394 0 0 0 0,0.69l2.755,1.508c0.066,0.036 0.12,0.09 0.157,0.157l1.507,2.753c0.15,0.274 0.542,0.274 0.69,0l1.508,-2.755a0.397,0.397 0 0 1 0.156,-0.156" fill="#D15D64" class="svg_53"/>
-                        <path d="m1432.519359,650.812223l2.755,-1.506a0.395,0.395 0 0 0 0,-0.693l-2.755,-1.507a0.39,0.39 0 0 1 -0.156,-0.156l-1.506,-2.755a0.393,0.393 0 0 0 -0.692,0l-1.50601,2.755a0.39,0.39 0 0 1 -0.16,0.156l-2.753,1.507a0.394,0.394 0 0 0 0,0.692l2.75501,1.507a0.39,0.39 0 0 1 0.15799,0.157l1.50601,2.753c0.15,0.274 0.54299,0.274 0.69,0l1.508,-2.755a0.39,0.39 0 0 1 0.157,-0.156" fill="#D15D64" class="svg_53"/>
-                        <path d="m1378.598359,674.890223l1.35999,-0.743a0.395,0.395 0 0 0 0,-0.692l-1.35999,-0.744a0.397,0.397 0 0 1 -0.156,-0.155l-0.743,-1.36a0.395,0.395 0 0 0 -0.692,0l-0.743,1.36a0.393,0.393 0 0 1 -0.157,0.156l-1.36,0.745a0.395,0.395 0 0 0 0,0.692l1.36,0.743c0.066,0.036 0.12,0.09 0.157,0.157l0.743,1.36c0.15,0.273 0.542,0.273 0.692,0l0.744,-1.36a0.4,0.4 0 0 1 0.15699,-0.157" fill="#7B63AB" class="svg_53"/>
+
+                    <path
+                        d="m1401.520309,552.119683l2.755,1.507a0.394,0.394 0 0 1 0,0.69l-2.755,1.507a0.393,0.393 0 0 0 -0.157,0.156l-1.505,2.755a0.393,0.393 0 0 1 -0.692,0l-1.506,-2.755a0.387,0.387 0 0 0 -0.158,-0.156l-2.755,-1.507a0.393,0.393 0 0 1 0,-0.69l2.755,-1.507a0.39,0.39 0 0 0 0.157,-0.157l1.506,-2.755a0.393,0.393 0 0 1 0.69,0l1.508,2.756c0.038,0.067 0.092,0.122 0.16,0.158"
+                        fill="#FCD05C" class="svg_53" />
+                    <path
+                        d="m1290.419309,407.647683l1.3,0.71c0.26,0.144 0.26,0.52 0,0.66l-1.3,0.712a0.38,0.38 0 0 0 -0.15,0.15l-0.71,1.298a0.377,0.377 0 0 1 -0.66,0l-0.71,-1.3a0.386,0.386 0 0 0 -0.152,-0.148l-1.3,-0.712a0.377,0.377 0 0 1 0,-0.66l1.3,-0.71a0.39,0.39 0 0 0 0.15,-0.15l0.71,-1.3a0.376,0.376 0 0 1 0.662,0l0.71,1.3a0.384,0.384 0 0 0 0.15,0.15"
+                        fill="#D15D64" class="svg_53" />
+                    <path
+                        d="m1510.599309,475.721683l1.36,0.745a0.395,0.395 0 0 1 0,0.692l-1.36,0.743a0.4,0.4 0 0 0 -0.156,0.157l-0.743,1.36a0.394,0.394 0 0 1 -0.692,0l-0.743,-1.36a0.395,0.395 0 0 0 -0.157,-0.157l-1.36,-0.743a0.395,0.395 0 0 1 0,-0.692l1.36,-0.744a0.393,0.393 0 0 0 0.157,-0.155l0.743,-1.36a0.395,0.395 0 0 1 0.692,0l0.744,1.36c0.037,0.066 0.092,0.12 0.157,0.156"
+                        fill="#FCD05C" class="svg_53" />
+                    <path
+                        d="m1183.354349,648.561143a2.907,2.907 0 1 0 -5.815,0.003a2.907,2.907 0 0 0 5.815,-0.004m-1091.835,-97.083l2.756,-1.506a0.394,0.394 0 0 0 0,-0.692l-2.756,-1.507a0.4,0.4 0 0 1 -0.156,-0.157l-1.507,-2.755a0.393,0.393 0 0 0 -0.69,0l-1.508,2.755a0.395,0.395 0 0 1 -0.157,0.157l-2.755,1.507a0.394,0.394 0 0 0 0,0.69l2.755,1.508c0.066,0.036 0.12,0.09 0.157,0.157l1.507,2.753c0.15,0.274 0.542,0.274 0.69,0l1.508,-2.755a0.397,0.397 0 0 1 0.156,-0.156"
+                        fill="#D15D64" class="svg_53" />
+                    <path
+                        d="m1432.519359,650.812223l2.755,-1.506a0.395,0.395 0 0 0 0,-0.693l-2.755,-1.507a0.39,0.39 0 0 1 -0.156,-0.156l-1.506,-2.755a0.393,0.393 0 0 0 -0.692,0l-1.50601,2.755a0.39,0.39 0 0 1 -0.16,0.156l-2.753,1.507a0.394,0.394 0 0 0 0,0.692l2.75501,1.507a0.39,0.39 0 0 1 0.15799,0.157l1.50601,2.753c0.15,0.274 0.54299,0.274 0.69,0l1.508,-2.755a0.39,0.39 0 0 1 0.157,-0.156"
+                        fill="#D15D64" class="svg_53" />
+                    <path
+                        d="m1378.598359,674.890223l1.35999,-0.743a0.395,0.395 0 0 0 0,-0.692l-1.35999,-0.744a0.397,0.397 0 0 1 -0.156,-0.155l-0.743,-1.36a0.395,0.395 0 0 0 -0.692,0l-0.743,1.36a0.393,0.393 0 0 1 -0.157,0.156l-1.36,0.745a0.395,0.395 0 0 0 0,0.692l1.36,0.743c0.066,0.036 0.12,0.09 0.157,0.157l0.743,1.36c0.15,0.273 0.542,0.273 0.692,0l0.744,-1.36a0.4,0.4 0 0 1 0.15699,-0.157"
+                        fill="#7B63AB" class="svg_53" />
+
+                </g>
             </g>
         </svg>
 
         <div class="wrapper-git-sec">
             <div class="content-git-sec">
                 <div class="fonts">
-                    <h1>Github</h1>
-                    <h2>AnthonyBuilder</h2>
+                    <h1 style="font-weight: 900">Github</h1>
+                    <h2 style="font-weight: 100">AnthonyBuilder</h2>
                 </div>
             </div>
         </div>
@@ -341,11 +351,7 @@
                     <div class="feedbacks-coments">
                         <div class="feeds-wrapper">
                             <div class="row-coments">
-                                <div class="card-coments">
-                                    <h1>Nome</h1></br>
-                                    <h2>Feedback</h2>
-                                </div>
-
+                                <div class="content-row-shot">
                             </div>
                         </div>
                     </div>
@@ -372,11 +378,11 @@
             </div>
         </div>
     </div>
-
-    <script src="assets/script/anime.min.js"></script>
 </body>
+<script src="assets/script/anime.min.js"></script>
 <script src="assets/script/main.js"> </script>
 <script src="assets/script/fluid.js"></script>
-
+<script src="assets/script/fluidScaleCards.js"></script>
+<script src="assets/script/xhttp.js"></script>
 
 </html>
