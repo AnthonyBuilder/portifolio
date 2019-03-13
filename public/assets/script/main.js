@@ -18,7 +18,7 @@ var cardsMainServ = document.getElementById('contents');
 var cards2Serv = document.getElementById('cardRow');
 
 var bottomCtn = document.querySelector(".bottom-content");
-var divRowFeeds = document.querySelector('.content-row-shot');
+var divRowFeeds = document.querySelector('.row-coments');
 
 window.onload = function () {
 
@@ -207,51 +207,59 @@ function checkSubmit(e) {
 
 
     } else if (tr && e.keyCode == 13) {
-        form.submit();
+        //form.submit();
         doc[1].style.animation = animConfigZoomOut;
+
 
         callFlashTxt();
         setTimeout(() => {
             txtFed.innerHTML = "Feedbacks";
-            setFeeds();
-        }, 200);
 
+        }, 200);
+        setFeeds();
 
         setTimeout(function () {
-
+            getFeeds();
             doc[1].style.display = "none";
             txtFed.style.transform = "translateY(-6.5em)";
-            feedComentsDiv.style.animation = "slideInUp 1.3s cubic-bezier(0.77, 0, 0.175, 1)";
-            setInterval(() => { feedComentsDiv.style.display = "block"; }, 300);
 
-        }, 1295);
+            setInterval(() => { feedComentsDiv.style.display = "block"; }, 300);
+            setInterval(() => { boxFeedsAnimation(); }, 250);
+        }, 1000);
     }
 }
 
 function getFeeds() {
+    var inner;
     xhttpGet('ajax/feed', function () {
 
-        var el = JSON.parse(this.responseText)
+        error(() => {
+            console.log(xhttp.error);
+        });
+
         success(function () {
-            el.array.forEach(function (element) {
-                var inner = `<div class='card-coments'>< h1 > ${element.nome} </h1 ></br >< h2 > ${element.feed} </h2 > </div >`;
+            var el = JSON.parse(xhttp.responseText);
+
+            el.forEach(function (element) {
+                inner = `<div class='card-coments'><h1> ${element.nome} </h1></br><h2> ${element.feed} </h2></div>`;
                 divRowFeeds.innerHTML += inner;
             });
 
-            console.log(this.responseText);
+            console.log(xhttp.responseText);
         });
     });
 }
 
 
-// function setFeeds() {
-//     var formD = new FormData(form)
-//     xhttpPost('ajax/feedSaveData', function () {
-//         success(function () {
-//             console.log(xhttp.responseText);
-//         });
-//     }, formD);
-// }
+function setFeeds() {
+    var formD = new FormData(form)
+    xhttpPost('ajax/feedSaveData', function () {
+        success(function () {
+            console.log(xhttp.responseText);
+        });
+    }, formD);
+}
+
 
 
 

@@ -351,31 +351,33 @@
                     <div class="feedbacks-coments">
                         <div class="feeds-wrapper">
                             <div class="row-coments">
-                                <div class="content-row-shot">
+                          
                             </div>
                         </div>
                     </div>
 
-                    <div class="bottom-content">
-                        <div>
-                            <ul>
-                                <li>
-                                    <h2 style="color: rgb(173, 173, 173)">Anthony José</h2>
-                                </li>
-                                <li>
-                                    <h2>Telefone: +55 (11) 942807999</h2>
-                                </li>
-                                <li>
-                                    <h2>Email: anthonyj2017@icloud.com</h2>
-                                </li>
-                                <li>
-                                    <h2>Github: AnthonyBuilder</h2>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    
+    <div class="bottom-content">
+        <div>
+            <ul>
+                <li>
+                    <h2 style="color: rgb(173, 173, 173)">Anthony José</h2>
+                </li>
+                <li>
+                    <h2>Telefone: +55 (11) 942807999</h2>
+                </li>
+                <li>
+                    <h2>Email: anthonyj2017@icloud.com</h2>
+                </li>
+                <li>
+                    <h2>Github: AnthonyBuilder</h2>
+                </li>
+            </ul>
         </div>
     </div>
 </body>

@@ -95,7 +95,8 @@
 
 .feedbacks-coments {
     width: 102%;
-    height: 38.5em;
+    height: 78%;
+    position: absolute;
     overflow-y: scroll;
     display: none;
     margin: -17em 0em;
@@ -113,9 +114,8 @@
 
 .card-coments {
     padding: 22px 23px;
-    border-radius: 10px;
-    background: #111111;
-
+    border-radius: 15px;
+    background: #bd166f;
     margin-bottom: 15px;
 }
 
