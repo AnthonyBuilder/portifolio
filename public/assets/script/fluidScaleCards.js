@@ -26,6 +26,7 @@ function boxFeedsAnimation() {
                 easing: 'linear',
                 duration: 1200,
             },
+
             translateY: [900, 0],
             duration: 800,
             delay: (elm, index, t) => index * t,

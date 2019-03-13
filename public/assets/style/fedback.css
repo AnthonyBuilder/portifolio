@@ -67,11 +67,11 @@
 
 .bottom-content {
     width: 100%;
-    position: absolute; 
+    position: relative; 
     bottom: 0;
     height: 60px;
     background-color: #0f0f0f;
-    margin: 0 -10px;
+    margin: 0 0em;
     transition: 500ms;
     box-shadow: 0 -3px 25px -5px black;
 }
@@ -117,6 +117,7 @@
     border-radius: 15px;
     background: #bd166f;
     margin-bottom: 15px;
+
 }
 
 .card-coments h1 {

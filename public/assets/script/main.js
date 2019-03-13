@@ -20,11 +20,32 @@ var cards2Serv = document.getElementById('cardRow');
 var bottomCtn = document.querySelector(".bottom-content");
 var divRowFeeds = document.querySelector('.row-coments');
 
+var cardRowFeeds = document.querySelector('.card-coments');
+
+
 window.onload = function () {
+
+    var crdServicos = document.querySelectorAll('.crd-img');
+
+    var numberOfItems = 9;
+    var rainbow = new Rainbow();
+    rainbow.setNumberRange(0, numberOfItems);
+    rainbow.setSpectrum('#E57698', '#D81A79', '#296dac', '#3489d8');
+    var s = '';
+
+    for (var i = 0; i <= numberOfItems; i++) {
+        var hexColour = rainbow.colourAt(i / 2);
+        var hexCol2 = rainbow.colourAt(i * 4);
+
+        s += '#' + hexColour + ', ';
+
+        console.log(s);
+        crdServicos[i].style.backgroundImage = `linear-gradient(60deg, #${hexColour}, #${hexCol2})`;
+    }
+
 
     let elm = document.querySelector('#githubsec');
     let satelite = document.getElementsByClassName('svg_53');
-
     var onScroll = (function () {
         var startPos = 1450;
 
@@ -36,7 +57,7 @@ window.onload = function () {
             elm.style.backgroundSize = `${scrollDelta}px ${scrollDelta - 200}px`;
 
             //elm.style.transition = `${scrollDelta - 1500}ms`;
-            console.clear();
+            //console.clear();
             console.log(scrollDelta);
         }
 
@@ -78,8 +99,7 @@ window.onload = function () {
 
         if (posY < 600) {
             bottomCtn.style.animation = "fadeOutDown .6s  cubic-bezier(0.77, 0, 0.175, 1)";
-            setTimeout(() => { bottomCtn.style.position = "absolute"; }, 500);
-
+            setTimeout(() => { bottomCtn.style.position = "relative"; }, 500);
         }
 
         if (posY > 2800) {
@@ -110,7 +130,7 @@ window.onload = function () {
             textsHead[0].style.animation = null;
         }
 
-        if (posY > 3737) {
+        if (posY > 3237) {
 
             textsHead[0].style.animation = null;
             textsHead[0].style.color = "white";

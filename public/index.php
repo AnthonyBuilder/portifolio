@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style/fedback.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style/githubsec.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style/boxes.css" />
+    <script src="assets/rainbow/rainbowvis.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -230,16 +231,35 @@
         <div class="container-content">
             <div id="contents" class="contents">
                 <div class="row-serv" id="cardRowMain">
-
+                
                     <div class="card-serv crd">
-                        <img class="crd-img" src="assets/img/card2.jpg">
-                        <div class="text-bottom-serv">
-                            <h2 style="font-weight: 400; color:white;">Desenvolvimento Web</h2>
+                        <div class="crd-img blur-crd"></div>
+                        <div class="crd-img">
+                            <div class="text-list-crd">
+                                <h1>Html</h1>
+                                <h1>CSS</h1>
+                                <h1>javascript</h1>
+                            </div>
+                        
                         </div>
+                    
+                        <div class="text-bottom-serv">
+                            <h2  style="margin:0 50px;font-weight: 400; color:white; position:absolute;">Desenvolvimento Web</h2>
+                        </div>
+
                     </div>
 
                     <div class="card-serv2 crd">
-                        <img class="crd-img" src="assets/img/phpCode.jpg">
+                        <div class="crd-img blur-crd"></div>
+                        <div class="crd-img">
+
+                         <div class="text-list-crd">
+                                <h1>Html</h1>
+                                <h1>CSS</h1>
+                                <h1>javascript</h1>
+                            </div>
+                        </div>
+
                         <div class="text-bottom-serv" style="position: relative">
                             <h2 style="font-weight: 400; color: white; text-shadow: 0 1px 50px black;">PHP/MySql
                             </h2>
@@ -247,7 +267,16 @@
                     </div>
 
                     <div class="card-serv3 crd">
-                        <img class="crd-img" src="assets/img/androidCard.jpg">
+                        <div class="crd-img blur-crd"></div>
+                        <div class="crd-img">
+
+                         <div class="text-list-crd">
+                                <h1>Html</h1>
+                                <h1>CSS</h1>
+                                <h1>javascript</h1>
+                            </div>
+                        </div>
+
                         <div class="text-bottom-serv" style="position:relative;">
                             <h2 style="font-weight: 400; color: white;">Dev
                                 Android
@@ -256,7 +285,15 @@
                     </div>
 
                     <div class="card-serv4 crd">
-                        <img class="crd-img" src="assets/img/androidCard.jpg">
+                        <div class="crd-img blur-crd"></div>
+                        <div class="crd-img">
+
+                         <div class="text-list-crd">
+                                <h1>Html</h1>
+                                <h1>CSS</h1>
+                                <h1>javascript</h1>
+                            </div>
+                        </div>
                         <div class="text-bottom-serv" style="position:relative;">
                             <h2 style="font-weight: 400; color: white; text-shadow: 0 1px 50px black;">
                                 C#/Asp.Net
@@ -265,7 +302,15 @@
                     </div>
 
                     <div class="card-serv5 crd">
-                        <img class="crd-img" src="assets/img/androidCard.jpg">
+                        <div class="crd-img blur-crd"></div>
+                        <div class="crd-img">
+
+                         <div class="text-list-crd">
+                                <h1>Html</h1>
+                                <h1>CSS</h1>
+                                <h1>javascript</h1>
+                            </div>
+                        </div>
                         <div class="text-bottom-serv" style="position:relative;">
                             <h2 style="font-weight: 400; color: white;">
                                 C#/Asp.Net
@@ -381,6 +426,8 @@
         </div>
     </div>
 </body>
+
+
 <script src="assets/script/anime.min.js"></script>
 <script src="assets/script/main.js"> </script>
 <script src="assets/script/fluid.js"></script>
