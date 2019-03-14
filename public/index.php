@@ -17,19 +17,20 @@
     <script src="assets/rainbow/rainbowvis.js" type="text/javascript"></script>
 </head>
 
-<body>
+<body onmousemove="showCoords(event)">
 
     <header>
         <div class="wrapper-header">
             <h2 id="text-mainnome">Anthony José</h2>
-            <a style=" margin: 0px -13.4em;" href="#Sobre">
+            <a style="margin: 0px -13.4em;" href="#Sobre">
                 <h2 class="text-rigth-button">Sobre</h2>
             </a>
             <a style="margin: 0px 13.4em;" href="#servicos-container">
                 <h2 class="text-rigth-button-servicos">Serviços</h2>
             </a>
+           
             <a style="margin: 0px -6.6em;" href="#rodape">
-                <h2 class="text-rigth-button-servicos">Contato</h2>
+                <h2 class="text-rigth-button-servicos">Github</h2>
             </a>
             <h2 id="text-rigth-cpl">Curriculo</h2>
         </div>
@@ -236,9 +237,11 @@
                         <div class="crd-img blur-crd"></div>
                         <div class="crd-img">
                             <div class="text-list-crd">
-                                <h1>Html</h1>
+                                <h1>Html <span class="arrow-span">&#8250;</span> </h1>
                                 <h1>CSS</h1>
                                 <h1>javascript</h1>
+
+                                
                             </div>
                         
                         </div>

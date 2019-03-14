@@ -21,27 +21,38 @@ var bottomCtn = document.querySelector(".bottom-content");
 var divRowFeeds = document.querySelector('.row-coments');
 
 var cardRowFeeds = document.querySelector('.card-coments');
+var coor = 1;
+var crdServicos = document.querySelectorAll('.crd-img');
 
+function showCoords(event) {
+    var x = event.clientX;     // Obtem a coordenada Horizontal
+    var y = event.clientY;     // Obtem a coordenada Vertical
 
-window.onload = function () {
-
-    var crdServicos = document.querySelectorAll('.crd-img');
 
     var numberOfItems = 9;
     var rainbow = new Rainbow();
-    rainbow.setNumberRange(0, numberOfItems);
-    rainbow.setSpectrum('#E57698', '#D81A79', '#296dac', '#3489d8');
-    var s = '';
+    rainbow.setNumberRange(0, 15);
+    rainbow.setSpectrum('#E57698', '#3489d8', '#d42853');
+
 
     for (var i = 0; i <= numberOfItems; i++) {
         var hexColour = rainbow.colourAt(i / 2);
-        var hexCol2 = rainbow.colourAt(i * 4);
+        var hexCol2 = rainbow.colourAt(i / 2 * 2);
 
-        s += '#' + hexColour + ', ';
 
-        console.log(s);
-        crdServicos[i].style.backgroundImage = `linear-gradient(60deg, #${hexColour}, #${hexCol2})`;
+        crdServicos[i].style.backgroundImage = `linear-gradient(${x / 6}deg, #${hexColour}, #${hexCol2})`;
+
+
     }
+    console.log(x + y);
+}
+
+window.onload = function () {
+
+
+
+
+
 
 
     let elm = document.querySelector('#githubsec');

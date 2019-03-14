@@ -27,4 +27,18 @@
 
 .title h2 {
 	font-weight: 10;
+	color: rgb(49, 49, 49);
+}
+
+.dec-txt {
+    border: 0;
+    position: absolute;
+	width: 196px;
+	margin: 20px 0;
+    padding: 0px 9px;
+    height: 84px;
+    background-image: linear-gradient(10deg, #c01a68d1, #60ccff);
+    color: white;
+	border-radius: 10px;
+	text-shadow: 0 20px -10px black;
 }

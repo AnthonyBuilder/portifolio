@@ -10,28 +10,7 @@
     width: 50%;
 }
 
-.text-list-crd {
-    position: absolute;
-    width: 397px;
-    height: 361px;
-    margin: 117px 1.5px;
-}
 
-.text-list-crd h1 {
-       margin: 12px;
-    background: #0000008a;
-    padding: 35px 39px;
-    border: 0;
-    border-radius: 13px;
-    color: white;
-    transition: 600ms;
-    box-shadow: 0 1px 30px -10px black;
-    transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
-}
-
-.text-list-crd h1:hover {
-    transform: scale(1.07, 1.07);
-}
 .texts-head {
     padding: 15px;
     margin: 5px;

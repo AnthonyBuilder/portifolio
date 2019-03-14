@@ -82,8 +82,7 @@
     margin: 25px;
     border-radius: 25px;
     box-shadow: 0 1px 40px -10px;
-    transition: 300ms;
-    
+    transition: 400ms;
 }
 .crd-img:hover {
     transform: translateY(-20px);
@@ -103,4 +102,45 @@
     opacity: 0;
     padding: 12px;
     padding-top: 30px;
+}
+
+.text-list-crd {
+    position: absolute;
+    width: 397px;
+    height: 361px;
+    margin: 117px 1.5px;
+}
+
+.text-list-crd h1 {
+    margin: 12px;
+    background: #0000008a;
+    padding: 35px 39px;
+    border: 0;
+    border-radius: 13px;
+    color: white;
+    transition: 500ms;
+    box-shadow: 0 1px 30px -5px black;
+    transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.text-list-crd h1:hover {
+    padding: 45px 30px;
+    background-color: #000000a6;
+}
+
+.arrow-span {
+  content: "\203A";
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transition: 500ms;
+
+  opacity: 0;
+}
+
+.text-list-crd h1:hover .arrow-span{
+    font-size: 67px;
+    margin: -26px 70px;
+    animation: flash 3s infinite;
+    opacity: 1;
 }

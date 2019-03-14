@@ -24,7 +24,7 @@ function boxFeedsAnimation() {
                     return color;
                 },
                 easing: 'linear',
-                duration: 1200,
+                duration: 600,
             },
 
             translateY: [900, 0],
