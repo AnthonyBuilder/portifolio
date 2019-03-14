@@ -55,7 +55,30 @@ window.onload = function () {
 
 
 
+    let elm = document.querySelector('#githubsec');
     let satelite = document.getElementsByClassName('svg_53');
+    var onScroll = (function () {
+        var startPos = 1450;
+
+        function run() {
+            var fromTop = window.pageYOffset,
+                scrollDelta;
+
+            scrollDelta = (fromTop - startPos) * 1; // "velocidade" em funcao do scroll
+            elm.style.backgroundSize = `${scrollDelta}px ${scrollDelta - 200}px`;
+
+            //elm.style.transition = `${scrollDelta - 1500}ms`;
+            //console.clear();
+            console.log(scrollDelta);
+        }
+
+        run();
+
+        return run;
+    })()
+
+
+    window.addEventListener('scroll', onScroll);
 
     function satAnimationRun() {
 
@@ -118,7 +141,6 @@ window.onload = function () {
             textsHead[0].style.animation = null;
         }
 
-
         if (posY > 3237) {
 
             textsHead[0].style.animation = null;
@@ -126,32 +148,6 @@ window.onload = function () {
             textsHead[1].style.animation = null;
             textsHead[2].style.color = "#52B271";
             textsHead[2].style.animation = "flash 2.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
-
-
-
-            let elm = document.querySelector('#githubsec');
-
-            var onScroll = (function () {
-                var startPos = 1450;
-
-                function run() {
-                    var fromTop = window.pageYOffset,
-                        scrollDelta;
-
-                    scrollDelta = (fromTop - startPos) * 1; // "velocidade" em funcao do scroll
-                    elm.style.backgroundSize = `${scrollDelta}px ${scrollDelta - 200}px`;
-
-                    //elm.style.transition = `${scrollDelta - 1500}ms`;
-                    //console.clear();
-                    console.log(scrollDelta);
-                }
-
-                run();
-
-                return run;
-            })()
-
-            window.addEventListener('scroll', onScroll);
 
             satAnimationRun();
             elementsSwitchToBlack();

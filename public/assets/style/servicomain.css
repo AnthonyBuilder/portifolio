@@ -1,7 +1,3 @@
-div {
-    will-change: transform, opacity, filter, scroll-position;
-}
-
 .text-bottom-serv{
     margin: -30em 0;   
 }
@@ -11,6 +7,7 @@ div {
 .container-content {
     overflow-x: scroll;
     overflow-y: hidden;
+    will-change: transform, opacity, filter, scroll-position;
 }
 
 #servicos-beffore {
@@ -28,7 +25,6 @@ div {
    
     height: 31em;
     padding: 10em 0em;
-    
 }
 /* 
 .crd-img-item {
@@ -123,7 +119,7 @@ div {
     border: 0;
     border-radius: 13px;
     color: white;
-    transition: 600ms;
+    transition: 500ms;
     box-shadow: 0 1px 30px -5px black;
     transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
 }
