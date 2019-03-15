@@ -28,32 +28,26 @@ function showCoords(event) {
     var x = event.clientX;     // Obtem a coordenada Horizontal
     var y = event.clientY;     // Obtem a coordenada Vertical
 
-
     var numberOfItems = 9;
     var rainbow = new Rainbow();
-    rainbow.setNumberRange(0, 15);
-    rainbow.setSpectrum('#E57698', '#3489d8', '#d42853');
+    rainbow.setNumberRange(0, 9);
+    rainbow.setSpectrum('#3489d8', '#d42853', '#447dbd', '#c0454f', '#2a5ac0', '#2ac087', '#447dbd');
 
 
     for (var i = 0; i <= numberOfItems; i++) {
-        var hexColour = rainbow.colourAt(i / 2);
-        var hexCol2 = rainbow.colourAt(i / 2 * 2);
+        var hexColour = rainbow.colourAt(i / 2 * 2 / 2);
+        var hexCol2 = rainbow.colourAt(i / 2 ^ 2 / 2);
 
 
-        crdServicos[i].style.backgroundImage = `linear-gradient(${x / 6}deg, #${hexColour}, #${hexCol2})`;
+        crdServicos[i].style.background = `linear-gradient(${x * y / 5900}deg, #${hexColour}, #${hexCol2})`;
 
 
     }
-    console.log(x + y);
+    //console.log(x + y);
 }
 
+
 window.onload = function () {
-
-
-
-
-
-
 
     let elm = document.querySelector('#githubsec');
     let satelite = document.getElementsByClassName('svg_53');
@@ -69,7 +63,7 @@ window.onload = function () {
 
             //elm.style.transition = `${scrollDelta - 1500}ms`;
             //console.clear();
-            console.log(scrollDelta);
+            //console.log(scrollDelta);
         }
 
         run();
@@ -85,15 +79,15 @@ window.onload = function () {
         for (var i = 0; i <= 9; i++) {
             var calcRandom1 = Math.floor(Math.random() * 100);
             var calcRandom2 = Math.floor(Math.random() * 1000);
-            var transMultiple = i + 1 * 100;
+            //var transMultiple = i + 1 * 100;
 
             satelite[i].style.transform = `translate(${calcRandom1}px, -${calcRandom2 + window.pageYOffset / 100}px)`;
             satelite[i].style.transition = `${calcRandom2 * 10}ms`;
-
             satelite[i].style.animation = "shine 1.2s infinite cubic-bezier(0.77, 0, 0.175, 1)";
-            console.log(i);
-            console.log("random1 " + calcRandom1 + "random2 " + calcRandom2);
-            console.log("calc" + calcRandom2 + window.pageYOffset / 90);
+
+            // console.log(i);
+            // console.log("random1 " + calcRandom1 + "random2 " + calcRandom2);
+            // console.log("calc" + calcRandom2 + window.pageYOffset / 90);
         }
     }
 
@@ -113,7 +107,7 @@ window.onload = function () {
             setTimeout(() => { bottomCtn.style.position = "relative"; }, 500);
         }
 
-        if (posY > 2800) {
+        if (posY > 2500) {
             textsHead[0].style.animation = null;
             textsHead[1].style.color = "#52B271";
             textsHead[1].style.animation = "flash 2.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
@@ -124,7 +118,7 @@ window.onload = function () {
             elementsSwitchToWhite();
         }
 
-        if (posY < 2790) {
+        if (posY < 2690) {
 
             textsHead[0].style.color = "#52B271";
             textsHead[0].style.animation = "flash 2.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
@@ -141,7 +135,7 @@ window.onload = function () {
             textsHead[0].style.animation = null;
         }
 
-        if (posY > 3237) {
+        if (posY > 3037) {
 
             textsHead[0].style.animation = null;
             textsHead[0].style.color = "white";

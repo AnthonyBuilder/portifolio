@@ -14,6 +14,11 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style/fedback.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style/githubsec.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style/boxes.css" />
+
+
+    <script src="jquery-3.3.1.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One" rel="stylesheet">
     <script src="assets/rainbow/rainbowvis.js" type="text/javascript"></script>
 </head>
 
@@ -22,31 +27,23 @@
     <header>
         <div class="wrapper-header">
             <h2 id="text-mainnome">Anthony José</h2>
-            <a style="margin: 0px -13.4em;" href="#Sobre">
-                <h2 class="text-rigth-button">Sobre</h2>
+            <a style="margin: 0px -13.4em;" href="#int-sobre">
+                <h2 class="text-rigth-button txt-header-button">Sobre</h2>
             </a>
             <a style="margin: 0px 13.4em;" href="#servicos-container">
-                <h2 class="text-rigth-button-servicos">Serviços</h2>
+                <h2 class="text-rigth-button-servicos  txt-header-button">Serviços</h2>
             </a>
            
-            <a style="margin: 0px -6.6em;" href="#rodape">
-                <h2 class="text-rigth-button-servicos">Github</h2>
+            <a style="margin: 0px -6.6em;" href="pg_serv/index.html">
+                <h2 class="text-rigth-button-servicos  txt-header-button">Github</h2>
             </a>
             <h2 id="text-rigth-cpl">Curriculo</h2>
         </div>
     </header>
 
-    <div>
+    <div style="text-align: center;">
 
-        <div class="text-center text-center-animation " id="text-center">
-            <h1>Anthony José</h1>
-
-            <a href="#cards" onclick="textCenterFade()">
-                <h2 id="li-bottom">Descer</h2>
-            </a>
-        </div>
-
-        <svg class="scene" style="position: relative; width:101%;" width="100%" height="100vh"
+        <svg class="scene" style="width:101%;" width="100%" height="100vh"
             preserveAspectRatio="none" viewBox="0 0 1440 800">
             <path
                 d="M -84.52,-81.13 C -94.62,-73.4 -88.88,-59.55 -90.33,-48.91 -89.29,27.31 -89.61,103.5 -88.33,179.8 -85.99,416.1 -81.32,888.9 -81.32,888.9 -81.32,888.9 974.5,888.7 1587,891.9 1518,719.9 1487,644 1429,533 1388,437.7 1447,259.7 1400,187 1362,132 1270,90.53 1207,39.93 1161,2.932 1071,-74.45 1071,-74.45 1071,-74.45 914.5,-77.77 848.2,-80.17 537.6,-80.84 227,-81.38 -83.6,-81.6 -83.91,-81.44 -84.21,-81.29 -84.52,-81.13 Z"
@@ -77,6 +74,10 @@
                 pathdata:id="M -85.59,444.4 -85.59,890.6 546.9,895.6 C 546.9,895.6 517.4,695.4 339.9,593.4 187.7,505.9 57.98,629.2 -85.59,444.4 Z">
             </path>
         </svg>
+
+        <h1 id="text-main" class="text-main">Anthony José</h1>
+
+        
     </div>
 
 
@@ -96,85 +97,31 @@
                 </div>
         </div> -->
 
-        <div class="cards" id="cards">
-            <div class="wrapper">
-
-                <div class="content opc">
-                    <img class="img-card" src="assets/img/nasa.jpg">
-                    <div>
-                        <h1 id="text-card1" class="text-card">Projetos</h1>
-                    </div>
-
-                    <div class="crd-projetos" id="crd-projetos">
-                        <div class="row-cards">
-                            <div class="card-prj">
-                                <div class="content-crd">
-                                    <h2 style="margin: 32px 0; text-align: center; font-weight: 1000;">Drop</h2>
-                                </div>
-                            </div>
-
-                            <div class="card-prj">
-                                <div class="content-crd">
-                                    <h2 style="margin: 32px 0; text-align: center; font-weight: 1000;">Book</h2>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="card-prj">
-                                <div class="content-crd">
-
-                                </div>
-                            </div>
-                            </br>
-                            <div class="card-prj">
-                                <div class="content-crd">
-
-                                </div>
-                            </div>
-                            <div class="card-prj">
-                                <div class="content-crd">
-
-                                </div>
-                            </div>
-                            <div class="card-prj">
-                                <div class="content-crd">
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="content2 opc">
-                    <h1 id="text-card-2" class="text-card">Conhecimentos</h1>
-                    <img class="img-card-2" src="assets/img/card4.jpg">
-                    <!--<div class="container-cnh">
-                        <div class="cards-cnh">
-                            <div class="wrapper-cnh">
-                                <div class="card-cnh">
-                                    <img src="img/js.png" id="img-card-cnh">
-                                </div>
-                                <div class="card-cnh">
-                                    <div class="content">
-                                        <img src="img/php.png" id="img-card-cnh">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>-->
-                </div>
-
-                <div class="content3 opc">
-                    <img class="img-card3" src="assets/img/card3.jpg">
-                    <h1 id="text-card" class="text-card">Front-end</h1>
-                </div>
-            </div>
-        </div>
-
 
     </div> <!-- fim div #wrapper-all-elements -->
 
-    <div id="Sobre" style="border-bottom: 2px solid white; padding-bottom: 61px;">
+
+    <div class="int-sobre" id="int-sobre">
+        <div class="int-top">
+
+        </div>
+        
+        <div class="wrapper-txt-int-sobre">
+            <h1 style=" font-size: 40px;
+                        font-weight: 100;
+                        max-width: 70%; ">Olá, eu sou Desenvolvedor de Software em São paulo, Brasil.</h1>
+            <h1 class="txt-si">Eu posso ajuda-lo a desenvolver seu proximo produto.</h1>
+            <h2 class="txt-s">Eu construo aplicações full-stack, web aplications</h2>
+            <h2 class="txt-s">Existe algo que possamos descutir ?</h2>
+            <h2 class="txt-s-link">Vamos conversar <a href="#Sobre">anthonyj2017@icloud.com</a></h2>  
+        </div>
+
+        <div class="int-bottom">
+
+        </div>
+    </div>
+    
+    <div id="Sobre" style="padding-bottom: 61px;">
         <div>
             <img class="img-profile" id="img-profile" src="assets/img/profile.jpg">
             <h2 id="text-img-sobre">Anthony José</h2>
@@ -189,7 +136,8 @@
                     <div class="text-sub-head">
                         <h2 style="margin-left:3px;font-size: 2em; font-family: sans-serif; font-weight: 400; ">
                             Desenvolvedor
-                            apaixonado por criar</h2>
+                            apaixonado por criar
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -221,27 +169,25 @@
         <div id="servicos-beffore">
             <div class="texts-head-servicos">
                 <div class="text-head">
-                    <h1 style="font-size: 5em; font-family: sans-serif; font-weight: 400; color:black;">Serviços</h1>
+                    <h1 style="font-size: 5em; font-family: sans-serif; font-weight: 700; color: #737373;">Serviços</h1>
                 </div>
-                <div class="text-sub-head">
+                <div class="text-sub-head" style="color: #9e9b9b;">
                     <h2>Códigos no github</h2>
                 </div>
             </div>
-
         </div>
+        
         <div class="container-content">
             <div id="contents" class="contents">
                 <div class="row-serv" id="cardRowMain">
                 
                     <div class="card-serv crd">
-                        <div class="crd-img blur-crd"></div>
-                        <div class="crd-img">
+                         
+                        <div class="crd-img crd-img-sc crd-img-h">
                             <div class="text-list-crd">
                                 <h1>Html <span class="arrow-span">&#8250;</span> </h1>
-                                <h1>CSS</h1>
-                                <h1>javascript</h1>
-
-                                
+                                <h1>CSS <span class="arrow-span">&#8250;</span> </h1>
+                                <h1>javascript <span class="arrow-span">&#8250;</span> </h1>
                             </div>
                         
                         </div>
@@ -253,7 +199,7 @@
                     </div>
 
                     <div class="card-serv2 crd">
-                        <div class="crd-img blur-crd"></div>
+                         
                         <div class="crd-img">
 
                          <div class="text-list-crd">
@@ -270,7 +216,7 @@
                     </div>
 
                     <div class="card-serv3 crd">
-                        <div class="crd-img blur-crd"></div>
+                         
                         <div class="crd-img">
 
                          <div class="text-list-crd">
@@ -288,7 +234,7 @@
                     </div>
 
                     <div class="card-serv4 crd">
-                        <div class="crd-img blur-crd"></div>
+                         
                         <div class="crd-img">
 
                          <div class="text-list-crd">
@@ -305,7 +251,7 @@
                     </div>
 
                     <div class="card-serv5 crd">
-                        <div class="crd-img blur-crd"></div>
+                         
                         <div class="crd-img">
 
                          <div class="text-list-crd">
