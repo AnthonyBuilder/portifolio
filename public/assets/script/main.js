@@ -4,53 +4,57 @@ var text = document.getElementsByClassName('text-card')[0];
 var divCardsProjetos = document.getElementById('crd-projetos');
 var liBottom = document.getElementById('li-bottom');
 var textCenter = document.getElementById('text-center');
-
 var cards = document.getElementsByClassName('opc');
 var header = document.getElementsByTagName('header')[0];
 var textsHead = document.getElementsByTagName('a');
 var textDesBottom = document.getElementsByTagName('a');
 var textMainNome = document.getElementById("text-mainnome");
 var body = document.getElementsByTagName('body')[0];
-
 var btnCurriculo = document.getElementById('text-rigth-cpl');
-
 var cardsMainServ = document.getElementById('contents');
 var cards2Serv = document.getElementById('cardRow');
-
 var bottomCtn = document.querySelector(".bottom-content");
 var divRowFeeds = document.querySelector('.row-coments');
-
 var cardRowFeeds = document.querySelector('.card-coments');
-var coor = 1;
 var crdServicos = document.querySelectorAll('.crd-img');
+let dIntSobre = document.querySelector('.int-sobre');
+let elmGtSec = document.querySelector('#githubsec');
+
+var coor = 1;
+
+// Define a rotação dos backgrounds nos cards Serviços
+// E define a posição do background na introducao da section Sobre
 
 function showCoords(event) {
     var x = event.clientX;     // Obtem a coordenada Horizontal
     var y = event.clientY;     // Obtem a coordenada Vertical
 
-    var numberOfItems = 9;
+    dIntSobre.style.backgroundPosition = `${x / 10 * 1 - 250}px ${y / 5 * 1 - 250}px`;
+
+    var numberOfItems = 5;
     var rainbow = new Rainbow();
-    rainbow.setNumberRange(0, 9);
+    rainbow.setNumberRange(0, numberOfItems + 1);
     rainbow.setSpectrum('#3489d8', '#d42853', '#447dbd', '#c0454f', '#2a5ac0', '#2ac087', '#447dbd');
 
-
+    // a cada elemento ele define um novo gradiente com as cores do Rainbow.setSpectrum()
     for (var i = 0; i <= numberOfItems; i++) {
         var hexColour = rainbow.colourAt(i / 2 * 2 / 2);
         var hexCol2 = rainbow.colourAt(i / 2 ^ 2 / 2);
 
-
         crdServicos[i].style.background = `linear-gradient(${x * y / 5900}deg, #${hexColour}, #${hexCol2})`;
 
-
+        //console.clear();
+        console.log("x = " + x + " y = " + y);
     }
-    //console.log(x + y);
 }
 
 
 window.onload = function () {
 
-    let elm = document.querySelector('#githubsec');
+    //Promove um zoom em função da scrollagem
+
     let satelite = document.getElementsByClassName('svg_53');
+
     var onScroll = (function () {
         var startPos = 1450;
 
@@ -59,11 +63,11 @@ window.onload = function () {
                 scrollDelta;
 
             scrollDelta = (fromTop - startPos) * 1; // "velocidade" em funcao do scroll
-            elm.style.backgroundSize = `${scrollDelta}px ${scrollDelta - 200}px`;
+            elmGtSec.style.backgroundSize = `${scrollDelta}px ${scrollDelta - 200}px`;
 
             //elm.style.transition = `${scrollDelta - 1500}ms`;
             //console.clear();
-            //console.log(scrollDelta);
+            console.log(scrollDelta);
         }
 
         run();
@@ -71,18 +75,18 @@ window.onload = function () {
         return run;
     })()
 
-
     window.addEventListener('scroll', onScroll);
 
+    //Move aleatoriamente alguns elementos em svg na section #githubsec
     function satAnimationRun() {
 
         for (var i = 0; i <= 9; i++) {
             var calcRandom1 = Math.floor(Math.random() * 100);
-            var calcRandom2 = Math.floor(Math.random() * 1000);
-            //var transMultiple = i + 1 * 100;
+            var calcRandom2 = Math.floor(Math.random() * 500);
+            var transMultiple = i + 1 * 100;
 
             satelite[i].style.transform = `translate(${calcRandom1}px, -${calcRandom2 + window.pageYOffset / 100}px)`;
-            satelite[i].style.transition = `${calcRandom2 * 10}ms`;
+            satelite[i].style.transition = `${calcRandom2 * 20}ms`;
             satelite[i].style.animation = "shine 1.2s infinite cubic-bezier(0.77, 0, 0.175, 1)";
 
             // console.log(i);
@@ -99,7 +103,6 @@ window.onload = function () {
         if (posY > 689) {
             bottomCtn.style.animation = "slideInUp 1.2s cubic-bezier(0.77, 0, 0.175, 1)";
             bottomCtn.style.position = "fixed";
-
         }
 
         if (posY < 600) {
@@ -114,7 +117,6 @@ window.onload = function () {
             textsHead[2].style.animation = null;
 
             boxAnimation();
-
             elementsSwitchToWhite();
         }
 
@@ -125,7 +127,6 @@ window.onload = function () {
             textsHead[1].style.animation = null;
             textsHead[2].style.animation = null;
             textsHead[2].style.color = "white";
-
 
             elementsSwitchToBlack();
         }
@@ -145,7 +146,6 @@ window.onload = function () {
 
             satAnimationRun();
             elementsSwitchToBlack();
-
         }
     }
 
@@ -168,21 +168,21 @@ window.onload = function () {
 
     }
 
-    card.addEventListener("click", function () {
-        console.log('click');
-        text.style.transform = 'translateY(-3em)';
-        text.style.transform += 'scale(0.85, 0.85)';
-        text.classList.toggle("text-shadow");
+    // card.addEventListener("click", function () {
+    //     console.log('click');
+    //     text.style.transform = 'translateY(-3em)';
+    //     text.style.transform += 'scale(0.85, 0.85)';
+    //     text.classList.toggle("text-shadow");
 
-        setTimeout(function () {
-            divCardsProjetos.classList.toggle("crd-projetos-f");
-        }, 250);
-    }, false);
+    //     setTimeout(function () {
+    //         divCardsProjetos.classList.toggle("crd-projetos-f");
+    //     }, 250);
+    // }, false);
 
-    card.addEventListener("mouseout", function () {
-        text.style.transform = 'translateY(0)';
-        divCardsProjetos.classList.remove("crd-projetos-f");
-    }, false);
+    // card.addEventListener("mouseout", function () {
+    //     text.style.transform = 'translateY(0)';
+    //     divCardsProjetos.classList.remove("crd-projetos-f");
+    // }, false);
 
 }
 
@@ -192,13 +192,10 @@ var txtFed = document.getElementsByClassName('feed-txt')[0];
 var feedComentsDiv = document.getElementsByClassName('feedbacks-coments')[0];
 var form = document.getElementsByTagName('form')[0];
 
-function inputConstructor(el) {
-    el.style.animation = "fadeInLeft 1.4s cubic-bezier(0.77, 0, 0.175, 1)";
-    el.style.display = null;
+// quando o usuario aperta ENTER nos imputs do feeedback
+// verifica o botao que o usuario apertou,
+// se for '13' ele executa as funcoes de acordo com seu padrão de repetição
 
-}
-
-//quando o usuario aperta ENTER nos imputs do feeedback
 function checkSubmit(e) {
 
     var animConfigZoomOut = "zoomOutRight 1.4s cubic-bezier(0.77, 0, 0.175, 1)";
@@ -212,9 +209,13 @@ function checkSubmit(e) {
     //e finaliza mostrando os feedbacks
 
     if (!tr && e.keyCode == 13) {
+
         doc[0].style.animation = animConfigZoomOut;
+
         callFlashTxt();
+
         setTimeout(() => { txtFed.innerHTML = "Escreva seu nome"; }, 200);
+
         setTimeout(function () {
             doc[0].style.display = "none";
             txtFed.style.animation = null;
@@ -235,12 +236,12 @@ function checkSubmit(e) {
         //form.submit();
         doc[1].style.animation = animConfigZoomOut;
 
-
         callFlashTxt();
+
         setTimeout(() => {
             txtFed.innerHTML = "Feedbacks";
-
         }, 200);
+
         setFeeds();
 
         setTimeout(function () {
@@ -253,6 +254,18 @@ function checkSubmit(e) {
         }, 1000);
     }
 }
+
+function inputConstructor(el) {
+    el.style.animation = "fadeInLeft 1.4s cubic-bezier(0.77, 0, 0.175, 1)";
+    el.style.display = null;
+}
+
+
+// Ajax fazendo conexao com o banco para capturar e registrar os Feedbacks
+
+// Executa funçao do ajax no arquivo 'xhttp.js'
+// existe uma funcao error() que obtem o erro e retorna caso o callback nao seja definido
+// a funçao success() é um callback que cria elementos enquanto houver os feeds do servidor
 
 function getFeeds() {
     var inner;
@@ -269,12 +282,12 @@ function getFeeds() {
                 inner = `<div class='card-coments'><h1> ${element.nome} </h1></br><h2> ${element.feed} </h2></div>`;
                 divRowFeeds.innerHTML += inner;
             });
-
-            console.log(xhttp.responseText);
+            //console.log(xhttp.responseText);
         });
     });
 }
 
+// define no servidor um novo feed com o nome
 
 function setFeeds() {
     var formD = new FormData(form)
@@ -289,7 +302,7 @@ function setFeeds() {
 
 
 
-//Ajax fazendo conexao com o banco para capturar e registrar os Feedbacks
+
 // var xhttp = new XMLHttpRequest();
 
 // function getFeeds() {

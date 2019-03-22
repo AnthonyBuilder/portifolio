@@ -15,9 +15,6 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style/githubsec.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style/boxes.css" />
 
-
-    <script src="jquery-3.3.1.min.js"></script>
-
     <link href="https://fonts.googleapis.com/css?family=Lilita+One" rel="stylesheet">
     <script src="assets/rainbow/rainbowvis.js" type="text/javascript"></script>
 </head>
@@ -185,7 +182,7 @@
                          
                         <div class="crd-img crd-img-sc crd-img-h">
                             <div class="text-list-crd">
-                                <h1>Html <span class="arrow-span">&#8250;</span> </h1>
+                                <a href="pg_serv/index.html"><h1>Html <span class="arrow-span">&#8250;</span> </h1></a>
                                 <h1>CSS <span class="arrow-span">&#8250;</span> </h1>
                                 <h1>javascript <span class="arrow-span">&#8250;</span> </h1>
                             </div>

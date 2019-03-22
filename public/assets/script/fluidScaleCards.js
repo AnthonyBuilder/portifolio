@@ -26,13 +26,11 @@ function boxFeedsAnimation() {
                 easing: 'linear',
                 duration: 800,
             },
-
             translateY: [900, 0],
             duration: 800,
             delay: (elm, index, t) => index * t,
             easing: 'easeInOutExpo',
         });
-
         beginFeeds = false;
     }
 }

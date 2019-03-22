@@ -74,9 +74,9 @@
     height: 500px;
     margin: 25px;
     border-radius: 25px;
-    transition: 400ms;
-
     box-shadow: 0 2px 45px -5px;
+
+    transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .crd-img::after {
     content: "";
@@ -94,20 +94,15 @@
 }
 
 .crd-img:hover::after {
-  -webkit-filter: blur(50px);
-  -moz-filter: blur(50px);
-  -o-filter: blur(50px);
-  -ms-filter: blur(50px);
-  filter: blur(50px);
-
+    -webkit-filter: blur(50px);
+    -moz-filter: blur(50px);
+    -o-filter: blur(50px);
+    -ms-filter: blur(50px);
+    filter: blur(50px);
 
     transform: translateY(10px);
     transition: 600ms all;
-
-    
 }
-
-
 
 .text-sub-head h2 {
     font-size: 2.5em;
@@ -168,4 +163,8 @@
     animation: flash 2s infinite;
     opacity: 1;
     color: #ffffffb0;
+}
+
+.text-list-crd a {
+    text-decoration: none;
 }
