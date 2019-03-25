@@ -16,6 +16,22 @@ svg {
     width: 100%;
 }
 
+.prof-git {
+    width: 200px;
+    height: 100px;
+    top: 50px;
+    position: absolute;
+
+}
+
+.prof-git img {
+    width: 50px;
+    border-radius: 5px;
+}
+
+.anim-gitsec {
+    opacity: 0;
+}
 
 .wrapper-git-sec {
 	margin: 10em 0;

@@ -9,6 +9,7 @@ var header = document.getElementsByTagName('header')[0];
 var textsHead = document.getElementsByTagName('a');
 var textDesBottom = document.getElementsByTagName('a');
 var textMainNome = document.getElementById("text-mainnome");
+var textMain = document.getElementById("text-main");
 var body = document.getElementsByTagName('body')[0];
 var btnCurriculo = document.getElementById('text-rigth-cpl');
 var cardsMainServ = document.getElementById('contents');
@@ -20,7 +21,10 @@ var crdServicos = document.querySelectorAll('.crd-img');
 let dIntSobre = document.querySelector('.int-sobre');
 let elmGtSec = document.querySelector('#githubsec');
 
-var coor = 1;
+let animElsIn = document.querySelectorAll('.anim-els-in');
+
+
+
 
 // Define a rotação dos backgrounds nos cards Serviços
 // E define a posição do background na introducao da section Sobre
@@ -31,10 +35,11 @@ function showCoords(event) {
 
     dIntSobre.style.backgroundPosition = `${x / 10 * 1 - 250}px ${y / 5 * 1 - 250}px`;
 
-    var numberOfItems = 5;
+
+    var numberOfItems = 4;
     var rainbow = new Rainbow();
     rainbow.setNumberRange(0, numberOfItems + 1);
-    rainbow.setSpectrum('#3489d8', '#d42853', '#447dbd', '#c0454f', '#2a5ac0', '#2ac087', '#447dbd');
+    rainbow.setSpectrum('#3489d8', '#d42853', '#447dbd', '#2a5ac0');
 
     // a cada elemento ele define um novo gradiente com as cores do Rainbow.setSpectrum()
     for (var i = 0; i <= numberOfItems; i++) {
@@ -44,14 +49,15 @@ function showCoords(event) {
         crdServicos[i].style.background = `linear-gradient(${x * y / 5900}deg, #${hexColour}, #${hexCol2})`;
 
         //console.clear();
-        console.log("x = " + x + " y = " + y);
+        //console.log("x = " + x + " y = " + y);
     }
 }
 
+let txtsShowSecSobre = document.querySelectorAll('#dtxts_sec_in_sobre');
 
 window.onload = function () {
-
     //Promove um zoom em função da scrollagem
+
 
     let satelite = document.getElementsByClassName('svg_53');
 
@@ -67,7 +73,7 @@ window.onload = function () {
 
             //elm.style.transition = `${scrollDelta - 1500}ms`;
             //console.clear();
-            console.log(scrollDelta);
+            //console.log(scrollDelta);
         }
 
         run();
@@ -77,24 +83,8 @@ window.onload = function () {
 
     window.addEventListener('scroll', onScroll);
 
-    //Move aleatoriamente alguns elementos em svg na section #githubsec
-    function satAnimationRun() {
 
-        for (var i = 0; i <= 9; i++) {
-            var calcRandom1 = Math.floor(Math.random() * 100);
-            var calcRandom2 = Math.floor(Math.random() * 500);
-            var transMultiple = i + 1 * 100;
-
-            satelite[i].style.transform = `translate(${calcRandom1}px, -${calcRandom2 + window.pageYOffset / 100}px)`;
-            satelite[i].style.transition = `${calcRandom2 * 20}ms`;
-            satelite[i].style.animation = "shine 1.2s infinite cubic-bezier(0.77, 0, 0.175, 1)";
-
-            // console.log(i);
-            // console.log("random1 " + calcRandom1 + "random2 " + calcRandom2);
-            // console.log("calc" + calcRandom2 + window.pageYOffset / 90);
-        }
-    }
-
+    body.style.background = "rgb(19, 19, 19)";
     window.onscroll = function () {
 
         var posY = window.pageYOffset;
@@ -103,32 +93,45 @@ window.onload = function () {
         if (posY > 689) {
             bottomCtn.style.animation = "slideInUp 1.2s cubic-bezier(0.77, 0, 0.175, 1)";
             bottomCtn.style.position = "fixed";
+            txtsSobreAnim();
+
         }
 
         if (posY < 600) {
-            bottomCtn.style.animation = "fadeOutDown .6s  cubic-bezier(0.77, 0, 0.175, 1)";
+            bottomCtn.style.animation = "fadeOutDown .6s cubic-bezier(0.77, 0, 0.175, 1)";
             setTimeout(() => { bottomCtn.style.position = "relative"; }, 500);
         }
 
-        if (posY > 2500) {
-            textsHead[0].style.animation = null;
+        if (posY > 800) {
+            elsSobreAnimImg();
+        }
+        if (posY > 2700) {
+
+            elsServicosAnim();
+
             textsHead[1].style.color = "#52B271";
             textsHead[1].style.animation = "flash 2.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
+            textsHead[0].style.animation = null;
             textsHead[2].style.animation = null;
+            textsHead[0].style.color = "white";
+            textsHead[2].style.color = "white";
 
             boxAnimation();
-            elementsSwitchToWhite();
+            cardsMainServ.style.opacity = 1;
+            cardsMainServ.style.animation = "fadeIn 1.5s  cubic-bezier(0.77, 0, 0.175, 1)";
         }
 
-        if (posY < 2690) {
+        if (posY > 1700) {
+            elsSobreAnim();
+        }
+        if (posY < 2500) {
 
             textsHead[0].style.color = "#52B271";
             textsHead[0].style.animation = "flash 2.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
             textsHead[1].style.animation = null;
+            textsHead[1].style.color = "white";
             textsHead[2].style.animation = null;
             textsHead[2].style.color = "white";
-
-            elementsSwitchToBlack();
         }
 
         if (posY < 1500) {
@@ -136,16 +139,37 @@ window.onload = function () {
             textsHead[0].style.animation = null;
         }
 
-        if (posY > 3037) {
+        if (posY > 3150) {
 
-            textsHead[0].style.animation = null;
-            textsHead[0].style.color = "white";
-            textsHead[1].style.animation = null;
+            elsAnimGitSec();
+
+            //Move aleatoriamente alguns elementos em svg na section #githubsec
+
             textsHead[2].style.color = "#52B271";
             textsHead[2].style.animation = "flash 2.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
-
+            textsHead[1].style.animation = null;
+            textsHead[1].style.color = "white";
+            textsHead[0].style.animation = null;
             satAnimationRun();
-            elementsSwitchToBlack();
+
+            function satAnimationRun() {
+
+                for (var i = 0; i <= 9; i++) {
+                    var calcRandom1 = Math.floor(Math.random() * 100);
+                    var calcRandom2 = Math.floor(Math.random() * 500);
+                    var transMultiple = i + 1 * 100;
+
+                    satelite[i].style.transform = `translate(${calcRandom1}px, -${calcRandom2 + window.pageYOffset / 100}px)`;
+                    satelite[i].style.transition = `${calcRandom2 * 10}ms`;
+                    satelite[i].style.animation = "shine 1.2s infinite cubic-bezier(0.77, 0, 0.175, 1)";
+
+                    // console.log(i);
+                    // console.log("random1 " + calcRandom1 + "random2 " + calcRandom2);
+                    // console.log("calc" + calcRandom2 + window.pageYOffset / 90);
+                }
+            }
+
+
         }
     }
 
@@ -157,11 +181,11 @@ window.onload = function () {
 
         // cardsMainServ.style.transform = "translateX(-50em)";
 
-        setTimeout(() => { cardsMainServ.style.opacity = 1; }, 200);
+
     }
 
     function elementsSwitchToBlack() {
-        body.style.background = "rgb(19, 19, 19)";
+
 
         textsHead[1].style.color = "white";
         textMainNome.style.color = "white";

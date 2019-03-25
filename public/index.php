@@ -15,7 +15,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style/githubsec.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style/boxes.css" />
 
-    <link href="https://fonts.googleapis.com/css?family=Lilita+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One&" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
     <script src="assets/rainbow/rainbowvis.js" type="text/javascript"></script>
 </head>
 
@@ -38,7 +39,7 @@
         </div>
     </header>
 
-    <div style="text-align: center;">
+    <div class="txt-svg-float">
 
         <svg class="scene" style="width:101%;" width="100%" height="100vh"
             preserveAspectRatio="none" viewBox="0 0 1440 800">
@@ -104,30 +105,43 @@
         </div>
         
         <div class="wrapper-txt-int-sobre">
-            <h1 style=" font-size: 40px;
-                        font-weight: 100;
-                        max-width: 70%; ">Olá, eu sou Desenvolvedor de Software em São paulo, Brasil.</h1>
-            <h1 class="txt-si">Eu posso ajuda-lo a desenvolver seu proximo produto.</h1>
-            <h2 class="txt-s">Eu construo aplicações full-stack, web aplications</h2>
-            <h2 class="txt-s">Existe algo que possamos descutir ?</h2>
-            <h2 class="txt-s-link">Vamos conversar <a href="#Sobre">anthonyj2017@icloud.com</a></h2>  
+
+            <div id="dtxts_sec_in_sobre" class="dtxts-sec-sobre">
+                <h1 style="font-size: 68px;
+                        font-weight: 700;
+                       ;">Olá, eu sou Desenvolvedor de Software em São paulo, Brasil.</h1>
+            </div>
+
+            <div id="dtxts_sec_in_sobre" class="dtxts-sec-sobre">
+                <h1 class="txt-si">Eu posso ajuda-lo a desenvolver seu proximo produto.</h1>
+            </div>
+            <div id="dtxts_sec_in_sobre" class="dtxts-sec-sobre">
+                <h2 class="txt-s">Eu construo aplicações full-stack, web aplications</h2>
+            </div>
+
+            <div id="dtxts_sec_in_sobre" class="dtxts-sec-sobre">
+                <h2 class="txt-s" style="font-size: 56.7px;">Existe algo que possamos descutir ?</h2>
+            </div>
+
+            <div id="dtxts_sec_in_sobre" class="dtxts-sec-sobre">
+                <h2 class="txt-s-link">Vamos conversar <a href="#Sobre">anthonyj2017@icloud.com</a></h2>  
+            </div>
         </div>
 
         <div class="int-bottom">
-
         </div>
     </div>
     
-    <div id="Sobre" style="padding-bottom: 61px;">
-        <div>
+    <div id="Sobre" style="padding-bottom: 61px;" class="anim-els-in">
+        <div >
             <img class="img-profile" id="img-profile" src="assets/img/profile.jpg">
             <h2 id="text-img-sobre">Anthony José</h2>
         </div>
-        <div class="container-sobre">
+        <div class="container-sobre anim-els-in">
             <div class="beffore-sobre hcard hcard2 div-texts-resp">
                 <div class="texts-head hcard  div-texts-resp">
                     <div class="text-head">
-                        <h1 style="font-size: 5em; font-family: sans-serif; font-weight: 400;">Sobre</h1>
+                        <h1 style="font-size: 5em; font-family: sans-serif; font-weight: 600;">Sobre</h1>
                     </div>
 
                     <div class="text-sub-head">
@@ -139,10 +153,10 @@
                 </div>
             </div>
 
-            <div class="content">
+            <div class="content anim-els-in">
                 <p>
                     Começando aos 10 anos, descobri minha paixão, desde então eu tomava conhecimento
-                    de tornar-me melhor de eu mesmo para descobrir amelhor forma de vencer, experiencias
+                    de tornar-me melhor de eu mesmo para descobrir a melhor forma de vencer, experiencias
                     ampliaram minha visão,
                     uma delas foi descobrir como criar algo visionario com a harmonia e trabalho em equipe.
                 </p>
@@ -162,14 +176,20 @@
         </div>
     </div>
 
-    <div id="servicos-container">
-        <div id="servicos-beffore">
+    <div id="servicos-container" class="anim-els-in-serv">
+        <h1 class="txt-beff-serv anim-els-in-serv">Serviços</h2>
+        <div id="servicos-beffore" class="anim-els-in-serv">
             <div class="texts-head-servicos">
-                <div class="text-head">
-                    <h1 style="font-size: 5em; font-family: sans-serif; font-weight: 700; color: #737373;">Serviços</h1>
+                <div class="text-head text-head-h1">
+                    <h1 class="text-head text-head-h1-af" style="font-size: 5em; font-family: sans-serif; font-weight: 700; color: #737373;">Serviços</h1>
                 </div>
-                <div class="text-sub-head" style="color: #9e9b9b;">
-                    <h2>Códigos no github</h2>
+                <div class="text-sub-head" style="color: #131313;
+    background: linear-gradient(170.82deg, rgb(148, 79, 136), rgb(183, 57, 104));
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    width: 58%;">
+                    <h2 style="text-shadow: 0 1px 60px 6px black;">Códigos no github</h2>
                 </div>
             </div>
         </div>
@@ -184,7 +204,7 @@
                             <div class="text-list-crd">
                                 <a href="pg_serv/index.html"><h1>Html <span class="arrow-span">&#8250;</span> </h1></a>
                                 <h1>CSS <span class="arrow-span">&#8250;</span> </h1>
-                                <h1>javascript <span class="arrow-span">&#8250;</span> </h1>
+                                <h1>javascript<span class="arrow-span-js">&#8250;</span> </h1>
                             </div>
                         
                         </div>
@@ -315,10 +335,18 @@
         </svg>
 
         <div class="wrapper-git-sec">
+            <div class="prof-git anim-gitsec">
+                <img src="assets/img/profile.jpg"> 
+                <h2 style=" position: relative;
+                            left: 139px;
+                            top: -41px;">
+                            <a href="https://github.com/AnthonyBuilder" 
+                            style="color: #7bcc94;text-decoration: none;">AnthonyBuilder</a><h2>
+            </div>
             <div class="content-git-sec">
                 <div class="fonts">
-                    <h1 style="font-weight: 900">Github</h1>
-                    <h2 style="font-weight: 100">AnthonyBuilder</h2>
+                    <h1 style="font-weight: 900" class="anim-gitsec">Github</h1>
+                    <h2 style="font-weight: 100" class="anim-gitsec">AnthonyBuilder</h2>
                 </div>
             </div>
         </div>
