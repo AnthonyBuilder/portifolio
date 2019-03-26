@@ -44,7 +44,7 @@ function txtsSobreAnim() {
             targets: '.dtxts-sec-sobre',
             scale: [.4, 1],
 
-            duration: 1300,
+            duration: 900,
             opacity: 1,
             color: {
                 value: (el, i, t) => {

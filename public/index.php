@@ -18,9 +18,10 @@
     <link href="https://fonts.googleapis.com/css?family=Lilita+One&" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
     <script src="assets/rainbow/rainbowvis.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="print.css" type="text/css" media="print">
 </head>
 
-<body onmousemove="showCoords(event)">
+<body >
 
     <header>
         <div class="wrapper-header">
@@ -99,7 +100,7 @@
     </div> <!-- fim div #wrapper-all-elements -->
 
 
-    <div class="int-sobre" id="int-sobre">
+    <div class="int-sobre" id="int-sobre" onmousemove="showCoords(event)">
         <div class="int-top">
 
         </div>
@@ -176,19 +177,19 @@
         </div>
     </div>
 
-    <div id="servicos-container" class="anim-els-in-serv">
-        <h1 class="txt-beff-serv anim-els-in-serv">Serviços</h2>
+    <div id="servicos-container" class="anim-els-in-serv" onmousemove="showCoords(event)">
+        <h1 class="txt-beff-serv anim-els-in-serv">Serviços</h1>
         <div id="servicos-beffore" class="anim-els-in-serv">
             <div class="texts-head-servicos">
                 <div class="text-head text-head-h1">
                     <h1 class="text-head text-head-h1-af" style="font-size: 5em; font-family: sans-serif; font-weight: 700; color: #737373;">Serviços</h1>
                 </div>
                 <div class="text-sub-head" style="color: #131313;
-    background: linear-gradient(170.82deg, rgb(148, 79, 136), rgb(183, 57, 104));
-    font-size: 20px;
-    padding: 5px;
-    border-radius: 10px;
-    width: 58%;">
+                                                background: linear-gradient(170.82deg, rgb(148, 79, 136), rgb(183, 57, 104));
+                                                font-size: 20px;
+                                                padding: 5px;
+                                                border-radius: 10px;
+                                                width: 58%;">
                     <h2 style="text-shadow: 0 1px 60px 6px black;">Códigos no github</h2>
                 </div>
             </div>

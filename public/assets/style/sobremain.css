@@ -78,7 +78,7 @@
 }
 
 #text-img-sobre {
-       text-align: center;
+    text-align: center;
     /* margin: 17.3em 2.8em; */
     position: absolute;
     font-size: 38px;
@@ -110,65 +110,6 @@
 .hcard2 { 
     transition: 480ms;
     
-}
-
-
-@media screen and (max-width: 1260px) {
-    .img-profile {
-        margin: 20em 80px;
-    }
-}
-
-
-@media screen and (max-width: 1890px) {
-
-    #Sobre {
-        position: relative;
-        padding-top: 100px;
-    
-        font-size: 12px;
-        max-width: 100%;
-    }
-
-    #text-img-sobre {
-        text-align: center;
-        margin: 17.3em 2.8em;
-        position: absolute;
-        right: 0;
-        font-size: 21px;
-        color: white;
-        transition: 800ms;
-        padding: 12px 5em;
-        border: 2px solid;
-        border-radius: 14px;
-    }
-   
-    .img-profile {
-        margin: 5px 60px;
-        width: 350px;
-        border-radius: 20px;
-        position: absolute;
-        right: 0;
-    }
-
-    .content  {
-        width: 60%;
-    }
-
-    .div-texts-resp {
-        max-width: 700px;
-    }
-
-}
-
-@media screen and (max-width: 1200px) {
-    .img-profile {
-       display: none;
-    }
-
-    #text-img-sobre {
-        display: none;
-    }
 }
 
 

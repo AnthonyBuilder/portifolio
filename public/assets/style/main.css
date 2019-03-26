@@ -6,8 +6,7 @@
 
     margin:0;
     padding: 0;
-
-     will-change: auto;
+    will-change: auto;
  }
 
 
@@ -29,7 +28,7 @@ img {
     object-fit: cover;
 }
 
-h2, h1 {
+h2, h1, h3, h4 {
     font-family: "Roboto", sans-serif;
 }
 

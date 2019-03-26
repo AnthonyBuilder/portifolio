@@ -1,4 +1,3 @@
-
 var card = document.getElementsByClassName('opc')[0];
 var text = document.getElementsByClassName('text-card')[0];
 var divCardsProjetos = document.getElementById('crd-projetos');
@@ -30,8 +29,8 @@ let animElsIn = document.querySelectorAll('.anim-els-in');
 // E define a posição do background na introducao da section Sobre
 
 function showCoords(event) {
-    var x = event.clientX;     // Obtem a coordenada Horizontal
-    var y = event.clientY;     // Obtem a coordenada Vertical
+    var x = event.clientX; // Obtem a coordenada Horizontal
+    var y = event.clientY; // Obtem a coordenada Vertical
 
     dIntSobre.style.backgroundPosition = `${x / 10 * 1 - 250}px ${y / 5 * 1 - 250}px`;
 
@@ -99,7 +98,9 @@ window.onload = function () {
 
         if (posY < 600) {
             bottomCtn.style.animation = "fadeOutDown .6s cubic-bezier(0.77, 0, 0.175, 1)";
-            setTimeout(() => { bottomCtn.style.position = "relative"; }, 500);
+            setTimeout(() => {
+                bottomCtn.style.position = "relative";
+            }, 500);
         }
 
         if (posY > 800) {
@@ -238,7 +239,9 @@ function checkSubmit(e) {
 
         callFlashTxt();
 
-        setTimeout(() => { txtFed.innerHTML = "Escreva seu nome"; }, 200);
+        setTimeout(() => {
+            txtFed.innerHTML = "Escreva seu nome";
+        }, 200);
 
         setTimeout(function () {
             doc[0].style.display = "none";
@@ -273,8 +276,12 @@ function checkSubmit(e) {
             doc[1].style.display = "none";
             txtFed.style.transform = "translateY(-6.5em)";
 
-            setInterval(() => { feedComentsDiv.style.display = "block"; }, 300);
-            setInterval(() => { boxFeedsAnimation(); }, 250);
+            setInterval(() => {
+                feedComentsDiv.style.display = "block";
+            }, 300);
+            setInterval(() => {
+                boxFeedsAnimation();
+            }, 250);
         }, 1000);
     }
 }
@@ -321,8 +328,6 @@ function setFeeds() {
         });
     }, formD);
 }
-
-
 
 
 
