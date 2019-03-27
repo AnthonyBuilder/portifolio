@@ -78,6 +78,7 @@
     border-radius: 25px;
     box-shadow: 0 2px 45px -5px;
 
+    background: #d63372;
     transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .crd-img::after {
@@ -101,8 +102,6 @@
     -o-filter: blur(30px);
     -ms-filter: blur(30px);
     filter: blur(30px);
-
-    
     transition: 600ms all;
 }
 
@@ -111,6 +110,17 @@
     font-family: sans-serif;
     font-weight: 400;
 }
+
+.tx-sv {
+  color: #131313;
+  background: linear-gradient(170.82deg, rgb(243, 126, 161), rgb(226, 92, 121));
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 10px;
+  width: 58%;
+  box-shadow: 0 1px 15px -5px black;
+}
+
 
 #contents {
     margin: 4em 0em;
@@ -200,9 +210,8 @@
     background: linear-gradient(50deg, #ffa977, #ff468e, #000000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
-    text-shadow: 0 1px 60px 6px black;
 }
+
 
 .txt-beff-serv {
     content: "";
@@ -212,9 +221,8 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 28em;
-        margin: -141px 25px;
+    margin: -173px 25px;
     opacity: .5;
-    
 }
 
 @-webkit-keyframes GradTransition {

@@ -100,13 +100,13 @@
     </div> <!-- fim div #wrapper-all-elements -->
 
 
-    <div class="int-sobre" id="int-sobre" onmousemove="showCoords(event)">
-        <div class="int-top">
+    <div class="int-sobre" id="int-sobre" onmousemove="mojMoveImg(event)">
+       <div class="int-top">
 
         </div>
-        
         <div class="wrapper-txt-int-sobre">
 
+      
             <div id="dtxts_sec_in_sobre" class="dtxts-sec-sobre">
                 <h1 style="font-size: 68px;
                         font-weight: 700;
@@ -130,15 +130,18 @@
         </div>
 
         <div class="int-bottom">
+
         </div>
     </div>
     
     <div id="Sobre" style="padding-bottom: 61px;" class="anim-els-in">
-        <div >
-            <img class="img-profile" id="img-profile" src="assets/img/profile.jpg">
-            <h2 id="text-img-sobre">Anthony José</h2>
-        </div>
+        
         <div class="container-sobre anim-els-in">
+            <div>
+                <img class="img-profile" id="img-profile" src="assets/img/profile.jpg">
+                <h2 id="text-img-sobre">Anthony José</h2>
+            </div>
+
             <div class="beffore-sobre hcard hcard2 div-texts-resp">
                 <div class="texts-head hcard  div-texts-resp">
                     <div class="text-head">
@@ -178,18 +181,13 @@
     </div>
 
     <div id="servicos-container" class="anim-els-in-serv" onmousemove="showCoords(event)">
-        <h1 class="txt-beff-serv anim-els-in-serv">Serviços</h1>
+        <h1 class="txt-beff-serv anim-els-in-serv-beff">Serviços</h1>
         <div id="servicos-beffore" class="anim-els-in-serv">
             <div class="texts-head-servicos">
                 <div class="text-head text-head-h1">
                     <h1 class="text-head text-head-h1-af" style="font-size: 5em; font-family: sans-serif; font-weight: 700; color: #737373;">Serviços</h1>
                 </div>
-                <div class="text-sub-head" style="color: #131313;
-                                                background: linear-gradient(170.82deg, rgb(148, 79, 136), rgb(183, 57, 104));
-                                                font-size: 20px;
-                                                padding: 5px;
-                                                border-radius: 10px;
-                                                width: 58%;">
+                <div class="text-sub-head tx-sv">
                     <h2 style="text-shadow: 0 1px 60px 6px black;">Códigos no github</h2>
                 </div>
             </div>

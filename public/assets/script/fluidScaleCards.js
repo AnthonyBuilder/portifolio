@@ -86,15 +86,27 @@ function elsServicosAnim() {
             targets: '.anim-els-in-serv',
             translateY: [150, 0],
             scale: [0.78, 1],
-            duration: 610,
+            duration: 580,
             opacity: 1,
-            delay: (elm, index, t) => index * 70,
             easing: 'easeInOutExpo'
         });
-        beginElsServicos = false;
     }
+    beginElsServicos = false;
 }
 
+
+function elsServiBeffAnim() {
+    if (beginElsServicos === true) {
+        window.anime({
+            targets: '.anim-els-in-serv-beff',
+            translateY: [150, 0],
+            scale: [0.78, 1],
+            duration: 605,
+            opacity: .75,
+            easing: 'easeInOutExpo'
+        });
+    }
+}
 
 beginElsimgSobr = true;
 function elsSobreAnimImg() {

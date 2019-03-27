@@ -28,6 +28,7 @@
     box-shadow: 0 1px 50px;
 }
 
+
 @-webkit-keyframes GradTransition {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
@@ -65,6 +66,22 @@
 
     transition: 5000ms;
 }
+
+.beffore-sobre::after {
+      content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 36%;
+    opacity: 0.8;
+    border-radius: 50px;
+    margin: -176px -1px;
+    background: inherit;
+    filter: blur(10px);
+    -webkit-transition: all 0.2s;
+    transition: 300ms all;
+}
+
 
 .img-profile {
     /* margin: 3px 80px; */
@@ -227,6 +244,7 @@
     background-size: 115%;
     transition: all 1150ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
     perspective: center;
+    
 }
 
 .int-top {
@@ -236,7 +254,7 @@
 }
 
 .int-bottom {
-     width: 100%;
+    width: 100%;
     height: 109px;
     background: linear-gradient(180deg, #13131300, #131313);
 }

@@ -32,13 +32,10 @@ function showCoords(event) {
     var x = event.clientX; // Obtem a coordenada Horizontal
     var y = event.clientY; // Obtem a coordenada Vertical
 
-    dIntSobre.style.backgroundPosition = `${x / 10 * 1 - 250}px ${y / 5 * 1 - 250}px`;
-
-
     var numberOfItems = 4;
     var rainbow = new Rainbow();
     rainbow.setNumberRange(0, numberOfItems + 1);
-    rainbow.setSpectrum('#3489d8', '#d42853', '#447dbd', '#2a5ac0');
+    rainbow.setSpectrum('#F25162', '#F75A8E', '#B23B85', '#5DC8A3', '#3489d8', '#d42853', '#447dbd', '#2a5ac0');
 
     // a cada elemento ele define um novo gradiente com as cores do Rainbow.setSpectrum()
     for (var i = 0; i <= numberOfItems; i++) {
@@ -50,6 +47,13 @@ function showCoords(event) {
         //console.clear();
         //console.log("x = " + x + " y = " + y);
     }
+}
+
+function mojMoveImg(event) {
+    var x = event.clientX; // Obtem a coordenada Horizontal
+    var y = event.clientY; // Obtem a coordenada Vertical
+
+    dIntSobre.style.backgroundPosition = `${x / 10 * 1 - 250}px ${y / 5 * 1 - 250}px`;
 }
 
 let txtsShowSecSobre = document.querySelectorAll('#dtxts_sec_in_sobre');
@@ -106,10 +110,10 @@ window.onload = function () {
         if (posY > 800) {
             elsSobreAnimImg();
         }
-        if (posY > 2700) {
+        if (posY > 2500) {
 
             elsServicosAnim();
-
+            elsServiBeffAnim();
             textsHead[1].style.color = "#52B271";
             textsHead[1].style.animation = "flash 2.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
             textsHead[0].style.animation = null;
