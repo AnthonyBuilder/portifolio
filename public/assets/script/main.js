@@ -5,7 +5,7 @@ var liBottom = document.getElementById('li-bottom');
 var textCenter = document.getElementById('text-center');
 var cards = document.getElementsByClassName('opc');
 var header = document.getElementsByTagName('header')[0];
-var textsHead = document.getElementsByTagName('a');
+var textsHead = document.querySelectorAll('a');
 var textDesBottom = document.getElementsByTagName('a');
 var textMainNome = document.getElementById("text-mainnome");
 var textMain = document.getElementById("text-main");
@@ -20,6 +20,7 @@ var crdServicos = document.querySelectorAll('.crd-img');
 let dIntSobre = document.querySelector('.int-sobre');
 let elmGtSec = document.querySelector('#githubsec');
 
+let imgProfileSobre = document.querySelector('.img-profile');
 let animElsIn = document.querySelectorAll('.anim-els-in');
 
 
@@ -109,7 +110,16 @@ window.onload = function () {
 
         if (posY > 800) {
             elsSobreAnimImg();
+
+            // setTimeout(function () {
+            //     imgsSwitchSobreOut();
+            //     setTimeout(function () {
+            //         imgsSwitchSobreIn();
+            //     }, 1000);
+            //     //imgProfileSobre.style.background = "url('')";
+            // }, 500);
         }
+
         if (posY > 2500) {
 
             elsServicosAnim();
@@ -154,27 +164,43 @@ window.onload = function () {
             textsHead[2].style.animation = "flash 2.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
             textsHead[1].style.animation = null;
             textsHead[1].style.color = "white";
-            textsHead[0].style.animation = null;
+            textsHead[0].style.animation = null
+            textsHead[3].style.color = "white";
+            textsHead[3].style.animation = "flash 2.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
             satAnimationRun();
 
-            function satAnimationRun() {
+        }
 
-                for (var i = 0; i <= 9; i++) {
-                    var calcRandom1 = Math.floor(Math.random() * 100);
-                    var calcRandom2 = Math.floor(Math.random() * 500);
-                    var transMultiple = i + 1 * 100;
+        if (posY > 4400) {
+            textsHead[3].style.color = "#52B271";
+            textsHead[3].style.animation = "flash 2.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
+            textsHead[1].style.animation = null;
+            textsHead[1].style.color = "white";
+            textsHead[0].style.animation = null;
+            textsHead[2].style.animation = null;
+            textsHead[2].style.color = "white";
 
-                    satelite[i].style.transform = `translate(${calcRandom1}px, -${calcRandom2 + window.pageYOffset / 100}px)`;
-                    satelite[i].style.transition = `${calcRandom2 * 10}ms`;
-                    satelite[i].style.animation = "shine 1.2s infinite cubic-bezier(0.77, 0, 0.175, 1)";
-
-                    // console.log(i);
-                    // console.log("random1 " + calcRandom1 + "random2 " + calcRandom2);
-                    // console.log("calc" + calcRandom2 + window.pageYOffset / 90);
-                }
-            }
+        }
+    }
 
 
+
+
+
+    function satAnimationRun() {
+
+        for (var i = 0; i <= 9; i++) {
+            var calcRandom1 = Math.floor(Math.random() * 100);
+            var calcRandom2 = Math.floor(Math.random() * 500);
+            var transMultiple = i + 1 * 100;
+
+            satelite[i].style.transform = `translate(${calcRandom1}px, -${calcRandom2 + window.pageYOffset / 100}px)`;
+            satelite[i].style.transition = `${calcRandom2 * 10}ms`;
+            satelite[i].style.animation = "shine 1.2s infinite cubic-bezier(0.77, 0, 0.175, 1)";
+
+            // console.log(i);
+            // console.log("random1 " + calcRandom1 + "random2 " + calcRandom2);
+            // console.log("calc" + calcRandom2 + window.pageYOffset / 90);
         }
     }
 

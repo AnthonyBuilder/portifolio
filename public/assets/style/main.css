@@ -15,11 +15,25 @@ header {
     position: fixed;
     width: 100%;
     z-index: 1;
-    padding: 0 44px;
+    padding: 0 50px;
     box-shadow: inset 0px 45px 67px -78px black;
 }
 
-a {
+header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+header li {
+    text-decoration: none;
+    margin: 45px 14px;
+}
+
+
+
+header a {
+    text-decoration: none;
     color: white;
 }
 
@@ -99,37 +113,19 @@ html {
 #text-mainnome {
     margin: 40px 10px;
     font-family: sans-serif;
-    color: white;
+    color: rgb(214, 214, 214);
 
-    font-weight: 500;
+    font-weight: 600;
     font-size: 2em;
     transition: 900ms;
     margin-right:  2%;
 }
 
-#text-mainnome:hover {
-    -webkit-animation-name: bounce;
-    animation-name: bounce;
-    -webkit-transform-origin: center bottom;
-    transform-origin: center bottom;
-}
 
-.text-rigth-button {
-    position: absolute;
-    margin: 45px 225px;
+.text-nav-button {
     font-family: sans-serif;
     font-weight: 500;
     transition: 600ms;
-    transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
-    
-}
-
-.text-rigth-button-servicos {
-    position: absolute;
-    margin: 45px 307px;
-    font-family: sans-serif;
-    font-weight: 500;
-    transition: 700ms;
     transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
@@ -138,13 +134,9 @@ html {
 
 }
 
-.text-rigth-button:hover {
+.text-nav-button:hover {
+    
     color: #8585856e;
-    transform: translateY(-10px);
-}
-
-.text-rigth-button-servicos:hover {
-    color: #8080806e;
     transform: translateY(-10px);
 }
 
@@ -152,7 +144,6 @@ html {
     text-align: center;
     height: 210px;
 }
-
 
 #text-main {
     font-size: 14em;

@@ -22,20 +22,34 @@
 </head>
 
 <body >
-
     <header>
         <div class="wrapper-header">
             <h2 id="text-mainnome">Anthony José</h2>
-            <a style="margin: 0px -13.4em;" href="#int-sobre">
-                <h2 class="text-rigth-button txt-header-button">Sobre</h2>
-            </a>
-            <a style="margin: 0px 13.4em;" href="#servicos-container">
-                <h2 class="text-rigth-button-servicos  txt-header-button">Serviços</h2>
-            </a>
-           
-            <a style="margin: 0px -6.6em;" href="pg_serv/index.html">
-                <h2 class="text-rigth-button-servicos  txt-header-button">Github</h2>
-            </a>
+            <ul>
+                <li>
+                    <a href="#int-sobre">
+                        <h2 class="text-nav-button txt-header-button">Sobre</h2>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#servicos-container">
+                        <h2 class="text-nav-button txt-header-button">Serviços</h2>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="pg_serv/index.html">
+                        <h2 class="text-nav-button txt-header-button">Github</h2>
+                    </a>
+                </li>
+
+                 <li>
+                    <a href="#rodape">
+                        <h2 class="text-nav-button txt-header-button">Feedback</h2>
+                    </a>
+                </li>
+            </ul>
             <h2 id="text-rigth-cpl">Curriculo</h2>
         </div>
     </header>

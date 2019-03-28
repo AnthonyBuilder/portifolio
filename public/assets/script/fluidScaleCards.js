@@ -138,3 +138,26 @@ function elsAnimGitSec() {
     }
 }
 
+
+function imgsSwitchSobreOut() {
+    window.anime({
+        targets: '.img-profile',
+        translateX: [0, -300],
+        duration: 800,
+        opacity: [1, 0],
+        delay: (elm, index, t) => index * 70,
+        easing: 'easeInOutExpo',
+
+    });
+}
+
+function imgsSwitchSobreIn() {
+    window.anime({
+        targets: '.img-profile',
+        translateX: [300, 0],
+        duration: 800,
+        opacity: [0, 1],
+        delay: (elm, index, t) => index * 70,
+        easing: 'easeInOutExpo'
+    });
+}
