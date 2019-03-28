@@ -111,14 +111,14 @@ html {
     
 
 #text-mainnome {
-    margin: 40px 10px;
-    font-family: sans-serif;
-    color: rgb(214, 214, 214);
+    margin: 38px 10px;
+    color: rgb(251, 251, 251);
 
     font-weight: 600;
     font-size: 2em;
     transition: 900ms;
     margin-right:  2%;
+    font-family: "Gotham Light";
 }
 
 
@@ -154,19 +154,18 @@ html {
     bottom: 2.7em;
     position: relative;
 
-    background:linear-gradient(10deg, #2f65d8ca,#29b9adb2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
     font-weight: 500;
-    font-family: 'Julius Sans One', sans-serif;
-
+   
+    font-family:'Gotham Thin Regular';
     -webkit-animation: flash 1.4s cubic-bezier(0.77, 0, 0.175, 1);
     animation: flash 1.4s cubic-bezier(0.77, 0, 0.175, 1);
-    -webkit-transform-origin: center;
-    transform-origin: center;
 
+      background:linear-gradient(4deg, #563bf3,#3a9efb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
+
 
 @keyframes type{ 
   from { width: 0; } 

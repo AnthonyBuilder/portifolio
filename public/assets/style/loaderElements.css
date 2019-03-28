@@ -1,0 +1,36 @@
+.elms-after-loading {
+    display: none;
+
+}
+
+.loading-elms {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+}
+
+.loading-elms h1 {
+    color: white;
+    margin-top: 20%;
+    font-size: 100px;
+    font-family: "Gotham Book";
+    animation: flash 3s infinite;
+}
+
+.prog-anim {
+    left: 37%;
+    width: 25%;
+    top: 50px;
+    height: 15px;
+    position: relative;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 14px -7px white;
+    
+}
+
+
+
+
+

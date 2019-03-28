@@ -61,16 +61,13 @@ let txtsShowSecSobre = document.querySelectorAll('#dtxts_sec_in_sobre');
 
 window.onload = function () {
     //Promove um zoom em função da scrollagem
-
-
     let satelite = document.getElementsByClassName('svg_53');
 
     var onScroll = (function () {
         var startPos = 1450;
 
         function run() {
-            var fromTop = window.pageYOffset,
-                scrollDelta;
+            var fromTop = window.pageYOffset, scrollDelta;
 
             scrollDelta = (fromTop - startPos) * 1; // "velocidade" em funcao do scroll
             elmGtSec.style.backgroundSize = `${scrollDelta}px ${scrollDelta - 200}px`;
@@ -89,16 +86,26 @@ window.onload = function () {
 
 
     body.style.background = "rgb(19, 19, 19)";
+
+    setInterval(() => {
+        imgsSwitchSobreInOut(800);
+    }, 8000);
+
+
     window.onscroll = function () {
 
         var posY = window.pageYOffset;
         console.log(window.pageYOffset);
+        if (posY === 0) {
+            startState();
+        }
 
         if (posY > 689) {
             bottomCtn.style.animation = "slideInUp 1.2s cubic-bezier(0.77, 0, 0.175, 1)";
             bottomCtn.style.position = "fixed";
             txtsSobreAnim();
 
+            stopState();
         }
 
         if (posY < 600) {
@@ -106,6 +113,7 @@ window.onload = function () {
             setTimeout(() => {
                 bottomCtn.style.position = "relative";
             }, 500);
+
         }
 
         if (posY > 800) {
@@ -137,7 +145,7 @@ window.onload = function () {
         }
 
         if (posY > 1700) {
-            elsSobreAnim();
+            elsSobreAnim(1);
         }
         if (posY < 2500) {
 
