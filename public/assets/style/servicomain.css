@@ -5,6 +5,7 @@
     font-size: 34px;
 }
 .container-content {
+      width: 101%;
     margin-top: 30px; 
     overflow-x: scroll;
     overflow-y: hidden;
@@ -68,7 +69,8 @@
     display: flex;
     flex-direction: row;
     height: 33em;
-    text-align: center;   
+    text-align: center; 
+    width: 100%;  
 }
 
 .crd-img {
@@ -125,7 +127,7 @@
 #contents {
     margin: 4em 0em;
     width: 100%;
-    height: 48em;
+    height: 36em;
     padding: 12px;
     opacity: 0;
     padding-top: 30px;
@@ -201,8 +203,7 @@
 .text-list-crd h1:hover {
     transform: scale3d(1.05, 1.05, 2);
     background-color: #000000be;
-
-      border-radius: 9px;
+    border-radius: 9px;
 }
 
 .text-head-h1 {

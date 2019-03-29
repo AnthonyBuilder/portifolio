@@ -117,8 +117,8 @@ function elsSobreAnimImg() {
     if (beginElsimgSobr === true) {
         window.anime({
             targets: '.int-sobre',
-            translateY: [-350, 0],
-            duration: 200,
+
+            duration: 500,
             opacity: 1,
             delay: (elm, index, t) => index * 70,
             easing: 'easeInOutExpo'
