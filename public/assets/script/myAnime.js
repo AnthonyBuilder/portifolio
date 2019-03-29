@@ -1,5 +1,5 @@
-
 begin = true;
+
 function boxAnimation() {
     if (begin === true) {
         const boxesAnimation = window.anime({
@@ -14,6 +14,7 @@ function boxAnimation() {
 }
 
 beginFeeds = true;
+
 function boxFeedsAnimation() {
     if (beginFeeds === true) {
         const boxesAnimation = window.anime({
@@ -38,6 +39,7 @@ function boxFeedsAnimation() {
 
 
 beginTxts = true;
+
 function txtsSobreAnim() {
     if (beginTxts === true) {
         window.anime({
@@ -63,6 +65,7 @@ function txtsSobreAnim() {
 
 
 beginElsSobre = true;
+
 function elsSobreAnim(opc) {
     if (beginElsSobre === true) {
         window.anime({
@@ -79,6 +82,7 @@ function elsSobreAnim(opc) {
 }
 
 beginElsServicos = true;
+
 function elsServicosAnim() {
     if (beginElsServicos === true) {
         window.anime({
@@ -108,6 +112,7 @@ function elsServiBeffAnim() {
 }
 
 beginElsimgSobr = true;
+
 function elsSobreAnimImg() {
     if (beginElsimgSobr === true) {
         window.anime({
@@ -123,6 +128,7 @@ function elsSobreAnimImg() {
 }
 
 beginElsGitSec = true;
+
 function elsAnimGitSec() {
     if (beginElsGitSec === true) {
         window.anime({
@@ -180,6 +186,7 @@ function progAnim() {
         duration: 550,
         opacity: [0, 1],
         easing: [0.77, 0, 0.175, 1],
+        filter: ['blur(20px)', 'blur(0px)'],
 
         complete: function () {
             anime({
@@ -190,10 +197,9 @@ function progAnim() {
                 duration: 550,
                 opacity: [1, 0],
                 easing: [0.77, 0, 0.175, 1],
+                filter: ['blur(0px)', 'blur(20px)'],
             });
         }
 
     });
 }
-
-setInterval(() => { progAnim(); }, 1300);

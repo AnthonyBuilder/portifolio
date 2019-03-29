@@ -67,7 +67,8 @@ window.onload = function () {
         var startPos = 1450;
 
         function run() {
-            var fromTop = window.pageYOffset, scrollDelta;
+            var fromTop = window.pageYOffset,
+                scrollDelta;
 
             scrollDelta = (fromTop - startPos) * 1; // "velocidade" em funcao do scroll
             elmGtSec.style.backgroundSize = `${scrollDelta}px ${scrollDelta - 200}px`;
@@ -162,7 +163,7 @@ window.onload = function () {
             textsHead[0].style.animation = null;
         }
 
-        if (posY > 3150) {
+        if (posY > 3250) {
 
             elsAnimGitSec();
 

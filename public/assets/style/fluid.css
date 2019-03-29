@@ -1,5 +1,6 @@
 .scene {
 	background: #1868c3;
+
 }
 
 .scene path:first-child {
@@ -27,5 +28,5 @@
 }
 
 .scene path:nth-child(7) {
-	fill:#041a33;
+	fill: #041a33;
 }

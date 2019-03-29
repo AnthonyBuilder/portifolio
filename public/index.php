@@ -432,6 +432,7 @@
 <script src="assets/script/anime.min.js"></script>
 <script src="assets/script/main.js"> </script>
 <script src="assets/script/fluid.js"></script>
+<script src="assets/script/loaderPage.js"></script>
 <script src="assets/script/myAnime.js"></script>
 <script src="assets/script/xhttp.js"></script>
 

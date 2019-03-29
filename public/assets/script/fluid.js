@@ -1,7 +1,3 @@
-
-//deixa o Body visivel executando a animacao de fade quando o timer termina
-setTimeout(() => document.body.classList.add('render'), 60);
-
 //executa a animação chamando as funcoes da classe anime.min.js
 class FluidAnimate {
     //construtor
@@ -24,6 +20,7 @@ class FluidAnimate {
                     loop: true,
                     direction: 'alternate',
                     translateX: 70,
+                    filter: blur(40)
                 });
             }, anime.random(0, 2000));
         });
@@ -39,10 +36,12 @@ function stopState() {
 
 function startState() {
     new FluidAnimate(document.querySelector('svg.scene'));
-} startState();
+}
+startState();
 
 //cria e verifica se o navegador suporta as variaveis do CSS
 document.documentElement.className = "js";
+
 function supportsCssVars() {
     var e, t = document.createElement("style");
     return t.innerHTML = "root: { --tmp-var: bold; }",

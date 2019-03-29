@@ -15,7 +15,7 @@
     margin-top: 20%;
     font-size: 100px;
     font-family: "Gotham Book";
-    animation: flash 3s infinite;
+    animation: flash 3.1s infinite;
 }
 
 .prog-anim {
@@ -27,10 +27,54 @@
     background: white;
     border-radius: 20px;
     box-shadow: 0 2px 14px -7px white;
-    
 }
 
+@-webkit-keyframes bounceOut {
+    20% {
+        -webkit-transform: scale3d(0.9, 0.9, 0.9);
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
 
+    50%,
+    55% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
 
+    to {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+}
 
+@keyframes bounceOut {
+    20% {
+        -webkit-transform: scale3d(0.9, 0.9, 0.9);
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
 
+    50%,
+    55% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}

@@ -2,7 +2,7 @@
 
     position: relative;
     background-image: url(star-bg.svg);
-    background-color: #e72f57;
+    background-color: #11181f;
     object-fit: cover;
     background-position: center;
     width: 100%;
@@ -35,30 +35,31 @@ svg {
 }
 
 .wrapper-git-sec {
-	margin: 10em 0;
+    margin: 10em 0;
     text-align: center;
 }
 
 .content-git-sec {
-	margin: 14em 0;
-    text-align: center;   
+    margin: 14em 0;
+    text-align: center;
 }
 
 .fonts {
     color: #8ec2c4;
-	font-size: 400%;
+    font-size: 400%;
 }
 
 @keyframes shine {
+
     from,
     50%,
     to {
-        
+
         opacity: 1;
     }
-  
+
     25%,
     75% {
-      opacity: 0.7;
+        opacity: 0.7;
     }
-  }
+}
