@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Portifolio Anthony</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style/main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style/sobremain.css" />
     <link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
@@ -30,7 +31,7 @@
 <body>
 
     <div class="loading-elms">
-        <h1 style="color: white">Carregando</h1>
+        <h1 style="color: white;">Carregando</h1>
         <div class="prog-anim"></div>
     </div>
 
@@ -68,8 +69,8 @@
         </header>
 
         <div class="txt-svg-float">
-
-            <svg class="scene" style="width:101%;" width="100%" height="100vh"
+            <h1 id="text-main" class="text-main back-color-textm">Anthony José</h1>
+            <svg class="scene" style="width:101%; z-index:-1;" width="100%" height="100vh"
                 preserveAspectRatio="none" viewBox="0 0 1440 800">
                 <path
                     d="M -84.52,-81.13 C -94.62,-73.4 -88.88,-59.55 -90.33,-48.91 -89.29,27.31 -89.61,103.5 -88.33,179.8 -85.99,416.1 -81.32,888.9 -81.32,888.9 -81.32,888.9 974.5,888.7 1587,891.9 1518,719.9 1487,644 1429,533 1388,437.7 1447,259.7 1400,187 1362,132 1270,90.53 1207,39.93 1161,2.932 1071,-74.45 1071,-74.45 1071,-74.45 914.5,-77.77 848.2,-80.17 537.6,-80.84 227,-81.38 -83.6,-81.6 -83.91,-81.44 -84.21,-81.29 -84.52,-81.13 Z"
@@ -100,31 +101,8 @@
                     pathdata:id="M -85.59,444.4 -85.59,890.6 546.9,895.6 C 546.9,895.6 517.4,695.4 339.9,593.4 187.7,505.9 57.98,629.2 -85.59,444.4 Z">
                 </path>
             </svg>
-
-            <h1 id="text-main" class="text-main back-color-textm">Anthony José</h1>
-
-            
         </div>
 
-
-        <div class="wrapper-all-elements" id="allElements">
-
-
-            <!-- <div class="main-container" id="main-container">
-                    <div class="bottom-montain" id="bottom-montain">
-                        <div class="montain-bt" id="montain-bt">
-                        </div>
-                    </div>
-
-                    <div class="top-montain" id="top-montain">
-                        <div class="montain-tp" id="montain-tp">
-                            <img id="img-mountain-tp" src="img/montain.png">
-                        </div>
-                    </div>
-            </div> -->
-
-
-        </div> <!-- fim div #wrapper-all-elements -->
 
 
         <div class="int-sobre" id="int-sobre" onmousemove="mojMoveImg(event)">
@@ -135,7 +113,7 @@
 
         
                 <div id="dtxts_sec_in_sobre" class="dtxts-sec-sobre">
-                    <h1 style="font-size: 68px;
+                    <h1 style="font-size: 2.5em;
                             font-weight: 700;
                         ;">Olá, eu sou Desenvolvedor de Software em São paulo, Brasil.</h1>
                 </div>
@@ -148,7 +126,7 @@
                 </div>
 
                 <div id="dtxts_sec_in_sobre" class="dtxts-sec-sobre">
-                    <h2 class="txt-s" style="font-size: 56.7px;">Existe algo que possamos descutir ?</h2>
+                    <h2 class="txt-s">Existe algo que possamos descutir ?</h2>
                 </div>
 
                 <div id="dtxts_sec_in_sobre" class="dtxts-sec-sobre">

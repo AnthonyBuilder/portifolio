@@ -24,8 +24,6 @@ let imgProfileSobre = document.querySelector('.img-profile');
 let animElsIn = document.querySelectorAll('.anim-els-in');
 
 
-
-
 // Define a rotação dos backgrounds nos cards Serviços
 // E define a posição do background na introducao da section Sobre
 
@@ -49,6 +47,7 @@ function showCoords(event) {
         //console.log("x = " + x + " y = " + y);
     }
 }
+
 
 function mojMoveImg(event) {
     var x = event.clientX; // Obtem a coordenada Horizontal
@@ -133,6 +132,7 @@ window.onload = function () {
 
             elsServicosAnim();
             elsServiBeffAnim();
+
             textsHead[1].style.color = "#52B271";
             textsHead[1].style.animation = "flash 2.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
             textsHead[0].style.animation = null;
