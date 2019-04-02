@@ -23,6 +23,20 @@ let elmGtSec = document.querySelector('#githubsec');
 let imgProfileSobre = document.querySelector('.img-profile');
 let animElsIn = document.querySelectorAll('.anim-els-in');
 
+let txtBottomMain = document.querySelector('.txt-bottom-main');
+var elmSwitch = 2;
+var valsTxtMain = ['Desenvolvedor Web', 'Desenvolvedor Android', 'Desenvolvedor Asp.Net'];
+var interval, i = 0;
+
+function switchTxtsMain() {
+    txtBottomMain.innerHTML = valsTxtMain[i];
+    animTxtsSwitch();
+    if (i < elmSwitch) i++;
+    else clearInterval(interval);
+}
+
+interval = setInterval(switchTxtsMain, 1000);
+
 
 // Define a rotação dos backgrounds nos cards Serviços
 // E define a posição do background na introducao da section Sobre

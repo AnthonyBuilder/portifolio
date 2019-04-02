@@ -203,3 +203,45 @@ function progAnim() {
 
     });
 }
+
+
+function txtMainAnime() {
+    window.anime({
+        targets: '.line-txts-main',
+
+        scale: [0, 1],
+        duration: 570,
+        opacity: [0, 1],
+        easing: [0.77, 0, 0.175, 1],
+
+
+        complete: function () {
+            animTxtsSwitch();
+        }
+
+    });
+}
+
+function animTxtsSwitch() {
+    anime({
+        targets: '.txt-bottom-main',
+        translateY: [-30, 0],
+        duration: 730,
+        opacity: [0, 1],
+        easing: [0.77, 0, 0.175, 1],
+
+        complete: function () {
+            anime({
+                targets: '.txt-bottom-main',
+                translateY: [0, 30],
+                duration: 730,
+                opacity: [1, 0],
+                easing: [0.77, 0, 0.175, 1],
+            });
+        }
+    });
+}
+
+setTimeout(() => {
+    txtMainAnime();
+}, 900);

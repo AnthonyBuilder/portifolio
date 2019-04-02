@@ -23,41 +23,12 @@
     background: linear-gradient(30deg, #b14b8f, #0586c2, #ff3d87, #e77a8c);
     background-size: 580% 580%;
     -webkit-animation: GradTransition 30s ease infinite;
-    -moz-animation: GradTransition 30s ease infinite;
-    animation: GradTransition 30s ease infinite;
+
     box-shadow: 0 1px 50px;
 }
 
 
 @-webkit-keyframes GradTransition {
-    0% {
-        background-position: 0% 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0% 50%
-    }
-}
-
-@-moz-keyframes GradTransition {
-    0% {
-        background-position: 0% 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0% 50%
-    }
-}
-
-@keyframes GradTransition {
     0% {
         background-position: 0% 50%
     }

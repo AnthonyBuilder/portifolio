@@ -69,7 +69,11 @@
         </header>
 
         <div class="txt-svg-float">
-            <h1 id="text-main" class="text-main back-color-textm">Anthony José</h1>
+            <div class="txts-main">
+                <h1 id="text-main" class="text-main back-color-textm">Anthony José</h1>
+                <hr class="line-txts-main" style="opacity: 0;">
+                <h2 class="txt-bottom-main"></h2>
+            </div> 
             <svg class="scene" style="width:101%; z-index:-1;" width="100%" height="100vh"
                 preserveAspectRatio="none" viewBox="0 0 1440 800">
                 <path

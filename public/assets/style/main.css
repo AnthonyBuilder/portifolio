@@ -167,24 +167,36 @@ html {
 .txt-svg-float {
     text-align: center;
     vertical-align: middle;
-    line-height: 650px;
+    line-height: 1.3;
 }
 
 #text-main {
     font-size: 12vw;
-    border: none;
     color: white;
-
-    z-index: 10;
-
-    left: 10%;
-    position: absolute;
-
+    z-index: 1;
     font-weight: 500;
-
     font-family: 'Gotham Thin Regular';
     -webkit-animation: fadeIn 2s cubic-bezier(0.77, 0, 0.175, 1);
     animation: fadeIn 2s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.txts-main {
+    z-index: 1;
+    left: 10%;
+    top: 215px;
+    position: absolute;
+
+}
+
+.txts-main h2 {
+    position: relative;
+    padding: 15px;
+    font-family: 'Gotham Book';
+    font-size: 4vw;
+    background: linear-gradient(50deg, #f89258, #e74963);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
 }
 
 @-webkit-keyframes fadeIn {
