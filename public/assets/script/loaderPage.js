@@ -36,7 +36,7 @@ function setStart() {
         }, 1300);
 
 
-    }, 15000);
+    }, 10000);
 }
 
 setStart();

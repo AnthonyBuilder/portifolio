@@ -43,10 +43,9 @@ beginTxts = true;
 function txtsSobreAnim() {
     if (beginTxts === true) {
         window.anime({
-            targets: '.dtxts-sec-sobre',
-            scale: [.4, 1],
-
-            duration: 900,
+            targets: '.els-anim-moj',
+            translateY: [300, 0],
+            duration: 800,
             opacity: 1,
             color: {
                 value: (el, i, t) => {
@@ -54,10 +53,10 @@ function txtsSobreAnim() {
                     return color;
                 },
                 easing: 'linear',
-                duration: 900,
+                duration: 600,
             },
-            delay: (elm, index, t) => index * 2100,
-            easing: 'easeInOutQuad'
+            delay: (elm, index, t) => index * 300,
+            easing: 'easeInOutExpo'
         });
         beginTxts = false;
     }
@@ -117,10 +116,8 @@ function elsSobreAnimImg() {
     if (beginElsimgSobr === true) {
         window.anime({
             targets: '.int-sobre',
-
-            duration: 500,
+            duration: 1200,
             opacity: 1,
-            delay: (elm, index, t) => index * 70,
             easing: 'easeInOutExpo'
         });
         beginElsimgSobr = false;
@@ -203,45 +200,3 @@ function progAnim() {
 
     });
 }
-
-
-function txtMainAnime() {
-    window.anime({
-        targets: '.line-txts-main',
-
-        scale: [0, 1],
-        duration: 570,
-        opacity: [0, 1],
-        easing: [0.77, 0, 0.175, 1],
-
-
-        complete: function () {
-            animTxtsSwitch();
-        }
-
-    });
-}
-
-function animTxtsSwitch() {
-    anime({
-        targets: '.txt-bottom-main',
-        translateY: [-30, 0],
-        duration: 730,
-        opacity: [0, 1],
-        easing: [0.77, 0, 0.175, 1],
-
-        complete: function () {
-            anime({
-                targets: '.txt-bottom-main',
-                translateY: [0, 30],
-                duration: 730,
-                opacity: [1, 0],
-                easing: [0.77, 0, 0.175, 1],
-            });
-        }
-    });
-}
-
-setTimeout(() => {
-    txtMainAnime();
-}, 900);

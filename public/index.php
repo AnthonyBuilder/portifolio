@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Portifolio Anthony</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style/main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style/sobremain.css" />
     <link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
@@ -31,7 +30,7 @@
 <body>
 
     <div class="loading-elms">
-        <h1 style="color: white;">Carregando</h1>
+        <h1 style="color: white">Carregando</h1>
         <div class="prog-anim"></div>
     </div>
 
@@ -40,6 +39,7 @@
             <div class="wrapper-header">
                 <h2 id="text-mainnome" class="back-color-textm">Anthony José</h2>
                 <ul>
+                <div class="wrapper-header-items"></div>
                     <li>
                         <a href="#int-sobre">
                             <h2 class="text-nav-button txt-header-button">Sobre</h2>
@@ -69,12 +69,8 @@
         </header>
 
         <div class="txt-svg-float">
-            <div class="txts-main">
-                <h1 id="text-main" class="text-main back-color-textm">Anthony José</h1>
-                <hr class="line-txts-main" style="opacity: 0;">
-                <h2 class="txt-bottom-main"></h2>
-            </div> 
-            <svg class="scene" style="width:101%; z-index:-1;" width="100%" height="100vh"
+            <h1 id="text-main" class="text-main back-color-textm">Anthony José</h1>
+            <svg class="scene" style="width:101%;" width="100%" height="100vh"
                 preserveAspectRatio="none" viewBox="0 0 1440 800">
                 <path
                     d="M -84.52,-81.13 C -94.62,-73.4 -88.88,-59.55 -90.33,-48.91 -89.29,27.31 -89.61,103.5 -88.33,179.8 -85.99,416.1 -81.32,888.9 -81.32,888.9 -81.32,888.9 974.5,888.7 1587,891.9 1518,719.9 1487,644 1429,533 1388,437.7 1447,259.7 1400,187 1362,132 1270,90.53 1207,39.93 1161,2.932 1071,-74.45 1071,-74.45 1071,-74.45 914.5,-77.77 848.2,-80.17 537.6,-80.84 227,-81.38 -83.6,-81.6 -83.91,-81.44 -84.21,-81.29 -84.52,-81.13 Z"
@@ -105,42 +101,28 @@
                     pathdata:id="M -85.59,444.4 -85.59,890.6 546.9,895.6 C 546.9,895.6 517.4,695.4 339.9,593.4 187.7,505.9 57.98,629.2 -85.59,444.4 Z">
                 </path>
             </svg>
+            <div class="grad-bottom-fluid"></div>            
         </div>
 
 
 
         <div class="int-sobre" id="int-sobre" onmousemove="mojMoveImg(event)">
-        <div class="int-top">
-
-            </div>
+        <div class="int-top"></div>
             <div class="wrapper-txt-int-sobre">
-
-        
-                <div id="dtxts_sec_in_sobre" class="dtxts-sec-sobre">
-                    <h1 style="font-size: 2.5em;
-                            font-weight: 700;
-                        ;">Olá, eu sou Desenvolvedor de Software em São paulo, Brasil.</h1>
+                <div id="dtxts_sec_in_sobre" class="dtxts-sec-sobre els-anim-moj">
+                    <h1 class="els-anim-moj">Olá, eu sou Desenvolvedor de Software em São paulo, Brasil.</h1>
+                    <p class="els-anim-moj">
+                    Eu posso ajuda-lo a desenvolver seu proximo produto.<br>
+                    Eu construo aplicações full-stack, web aplications.<br>
+                    existe algo que possamos descutir ?</p>          
                 </div>
 
-                <div id="dtxts_sec_in_sobre" class="dtxts-sec-sobre">
-                    <h1 class="txt-si">Eu posso ajuda-lo a desenvolver seu proximo produto.</h1>
-                </div>
-                <div id="dtxts_sec_in_sobre" class="dtxts-sec-sobre">
-                    <h2 class="txt-s">Eu construo aplicações full-stack, web aplications</h2>
-                </div>
-
-                <div id="dtxts_sec_in_sobre" class="dtxts-sec-sobre">
-                    <h2 class="txt-s">Existe algo que possamos descutir ?</h2>
-                </div>
-
-                <div id="dtxts_sec_in_sobre" class="dtxts-sec-sobre">
+                <div id="dtxts_sec_in_sobre"  class="els-anim-moj">
                     <h2 class="txt-s-link">Vamos conversar <a href="#Sobre">anthonyj2017@icloud.com</a></h2>  
                 </div>
             </div>
 
-            <div class="int-bottom">
-
-            </div>
+            <div class="int-bottom"></div>
         </div>
         
         <div id="Sobre" style="padding-bottom: 61px;" class="anim-els-in">
