@@ -399,5 +399,5 @@
 <script src="assets/script/loaderPage.js"></script>
 <script src="assets/script/myAnime.js"></script>
 <script src="assets/script/xhttp.js"></script>
-
+<script src="assets/script/models/actionsBottomNav.js"></script>
 </html>

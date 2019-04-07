@@ -8,17 +8,17 @@
     height: 100%;
     position: absolute;
     text-align: center;
-        background: linear-gradient(30deg, #b14b8f, #0586c2, #e9538c, #e77a8c, #f16565);
+    background: linear-gradient(45deg, #41824e, #51789e, #db4b6f, #ff6637);
     background-size: 580% 580%;
-    -webkit-animation: GradTransition 40s ease ;
-    -moz-animation: GradTransition 40s ease ;
-    animation: GradTransition 40s ease ;
+    -webkit-animation: GradTransition 20s ease;
+    -moz-animation: GradTransition 20s ease;
+    animation: GradTransition 20s ease;
 }
 
 .loading-elms h1 {
     color: white;
     margin-top: 20%;
-    font-size: 100px;
+    font-size: 90px;
     font-family: "Gotham Book";
     animation: flash 3.1s infinite;
 }

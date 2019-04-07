@@ -20,13 +20,13 @@ class FluidAnimate {
                     loop: true,
                     direction: 'alternate',
                     translateX: 70,
-                    filter: blur(40)
                 });
             }, anime.random(0, 2000));
         });
     }
 };
 
+//para a animaçao se o usuario sair da section
 function stopState() {
     let paths = document.querySelectorAll('path');
     for (i = 0; i < paths.length; i++) {
@@ -34,9 +34,11 @@ function stopState() {
     }
 }
 
+//inicia a animação
 function startState() {
     new FluidAnimate(document.querySelector('svg.scene'));
 }
+
 startState();
 
 //cria e verifica se o navegador suporta as variaveis do CSS

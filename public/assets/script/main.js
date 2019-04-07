@@ -19,6 +19,7 @@ var cardRowFeeds = document.querySelector('.card-coments');
 var crdServicos = document.querySelectorAll('.crd-img');
 let dIntSobre = document.querySelector('.int-sobre');
 let elmGtSec = document.querySelector('#githubsec');
+let gradFluidBack = document.querySelector('.grad-bottom-fluid');
 
 let imgProfileSobre = document.querySelector('.img-profile');
 let animElsIn = document.querySelectorAll('.anim-els-in');
@@ -58,7 +59,6 @@ function mojMoveImg(event) {
 }
 
 let txtsShowSecSobre = document.querySelectorAll('#dtxts_sec_in_sobre');
-let gradFluidBack = document.querySelector('.grad-bottom-fluid');
 
 window.onload = function () {
     //Promove um zoom em função da scrollagem
@@ -74,8 +74,7 @@ window.onload = function () {
             scrollDelta = (fromTop - startPos) * 1; // "velocidade" em funcao do scroll
             elmGtSec.style.backgroundSize = `${scrollDelta}px ${scrollDelta - 200}px`;
 
-
-            //elm.style.transition = `${ scrollDelta - 1500 } ms`;
+            //elm.style.transition = `${scrollDelta - 1500}ms`;
             //console.clear();
             //console.log(scrollDelta);
         }
@@ -86,43 +85,57 @@ window.onload = function () {
     })()
 
     window.addEventListener('scroll', onScroll);
+
+
     body.style.background = "rgb(19, 19, 19)";
 
     setInterval(() => {
         imgsSwitchSobreInOut(800);
     }, 8000);
 
+    function setHeaderElmsAnim(elms) {
+        textsHead[elms].style.color = "white";
+        textsHead[elms].style.animation = "jello 2s";
+    }
 
     window.onscroll = function () {
 
         var posY = window.pageYOffset;
+        //console.log(window.pageYOffset);
         gradFluidBack.style.transform = `translateY(-${posY - 100}px)`;
-        console.log(window.pageYOffset);
 
         if (posY === 0) {
             startState();
         }
 
-        if (posY > 1285 || posY > 1418) {
-            bottomCtn.style.animation = "slideInUp 1.2s cubic-bezier(0.77, 0, 0.175, 1)";
-            bottomCtn.style.position = "fixed";
+        if (posY > 689) {
+            bottomCtn.style.animation = ctnBott.animIn;
+            bottomCtn.style.position = ctnBott.posF;
             txtsSobreAnim();
-            elsSobreAnimImg();
+
             stopState();
         }
 
         if (posY < 600) {
-            bottomCtn.style.animation = "fadeOutDown .6s cubic-bezier(0.77, 0, 0.175, 1)";
+            bottomCtn.style.animation = ctnBott.animOut;
             setTimeout(() => {
-                bottomCtn.style.position = "relative";
+                bottomCtn.style.position = ctnBott.posR;
             }, 500);
-
-        }
-        if (posY > 2167 || posY > 2380) {
-            elsSobreAnim(1);
         }
 
-        if (posY > 3198 || posY > 2885) {
+        if (posY > 800) {
+            elsSobreAnimImg();
+
+            // setTimeout(function () {
+            //     imgsSwitchSobreOut();
+            //     setTimeout(function () {
+            //         imgsSwitchSobreIn();
+            //     }, 1000);
+            //     //imgProfileSobre.style.background = "url('')";
+            // }, 500);
+        }
+
+        if (posY > 2500) {
 
             elsServicosAnim();
             elsServiBeffAnim();
@@ -138,7 +151,9 @@ window.onload = function () {
             cardsMainServ.style.animation = "fadeIn 1.5s  cubic-bezier(0.77, 0, 0.175, 1)";
         }
 
-
+        if (posY > 1700) {
+            elsSobreAnim(1);
+        }
         if (posY < 2500) {
 
             textsHead[0].style.color = "white";
@@ -154,9 +169,9 @@ window.onload = function () {
             textsHead[0].style.animation = null;
         }
 
-        if (posY > 3900) {
+        if (posY > 3250) {
+
             elsAnimGitSec();
-            //Move aleatoriamente alguns elementos em svg na section #githubsec
             textsHead[2].style.color = "white";
             textsHead[2].style.animation = "flash 2.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
             textsHead[1].style.animation = null;
@@ -164,7 +179,10 @@ window.onload = function () {
             textsHead[0].style.animation = null
             textsHead[3].style.color = "rgb(47, 47, 47)";
             textsHead[3].style.animation = "flash 2.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
+
+            //Move aleatoriamente alguns elementos em svg na section #githubsec
             satAnimationRun();
+
         }
 
         if (posY > 4400) {
@@ -186,14 +204,33 @@ window.onload = function () {
             var calcRandom2 = Math.floor(Math.random() * 500);
             var transMultiple = i + 1 * 100;
 
-            satelite[i].style.transform = `translate(${calcRandom1}px, -${calcRandom2 + window.pageYOffset / 100} px)`;
-            satelite[i].style.transition = `${calcRandom2 * 10} ms`;
+            satelite[i].style.transform = `translate(${calcRandom1}px, -${calcRandom2 + window.pageYOffset / 100}px)`;
+            satelite[i].style.transition = `${calcRandom2 * 10}ms`;
             satelite[i].style.animation = "shine 1.2s infinite cubic-bezier(0.77, 0, 0.175, 1)";
 
             // console.log(i);
             // console.log("random1 " + calcRandom1 + "random2 " + calcRandom2);
             // console.log("calc" + calcRandom2 + window.pageYOffset / 90);
         }
+    }
+
+    function elementsSwitchToWhite() {
+        body.style.background = "white";
+        textsHead[0].style.color = "black";
+        textsHead[2].style.color = "black";
+        textMainNome.style.color = "black";
+
+        // cardsMainServ.style.transform = "translateX(-50em)";
+
+
+    }
+
+    function elementsSwitchToBlack() {
+
+
+        textsHead[1].style.color = "white";
+        textMainNome.style.color = "white";
+
     }
 
     // card.addEventListener("click", function () {
@@ -313,7 +350,7 @@ function getFeeds() {
             var el = JSON.parse(xhttp.responseText);
 
             el.forEach(function (element) {
-                inner = `< div class='card-coments' > <h1> ${element.nome} </h1></br > <h2> ${element.feed} </h2></div > `;
+                inner = `<div class='card-coments'><h1> ${element.nome} </h1></br><h2> ${element.feed} </h2></div>`;
                 divRowFeeds.innerHTML += inner;
             });
             //console.log(xhttp.responseText);

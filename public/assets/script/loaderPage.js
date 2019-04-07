@@ -1,11 +1,3 @@
-function callAnim() {
-    elsSobreAnim(0);
-    beginElsSobre = true;
-
-    boxAnimation(0, 0);
-    begin = true;
-}
-
 var loaderElms = document.querySelector('.loading-elms');
 var showElms = document.querySelector('.elms-after-loading');
 
@@ -40,4 +32,3 @@ function setStart() {
 }
 
 setStart();
-callAnim();

@@ -11,18 +11,18 @@
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+    width: 8px;
+    height: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(63, 63, 63, 0.753); 
-  border-radius: 10px;
-  
+    background: rgba(63, 63, 63, 0.753);
+    border-radius: 10px;
+
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+    background: #555;
 }
 
 header {
@@ -53,10 +53,108 @@ header li {
 header a {
     text-decoration: none;
     color: rgb(47, 47, 47);
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+@-webkit-keyframes jello {
+
+    from,
+    11.1%,
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    22.2% {
+        -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
+        transform: skewX(-12.5deg) skewY(-12.5deg);
+    }
+
+    33.3% {
+        -webkit-transform: skewX(6.25deg) skewY(6.25deg);
+        transform: skewX(6.25deg) skewY(6.25deg);
+    }
+
+    44.4% {
+        -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
+        transform: skewX(-3.125deg) skewY(-3.125deg);
+    }
+
+    55.5% {
+        -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
+        transform: skewX(1.5625deg) skewY(1.5625deg);
+    }
+
+    66.6% {
+        -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
+        transform: skewX(-0.78125deg) skewY(-0.78125deg);
+    }
+
+    77.7% {
+        -webkit-transform: skewX(0.390625deg) skewY(0.390625deg);
+        transform: skewX(0.390625deg) skewY(0.390625deg);
+    }
+
+    88.8% {
+        -webkit-transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+        transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+    }
+}
+
+@keyframes jello {
+
+    from,
+    11.1%,
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    22.2% {
+        -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
+        transform: skewX(-12.5deg) skewY(-12.5deg);
+    }
+
+    33.3% {
+        -webkit-transform: skewX(6.25deg) skewY(6.25deg);
+        transform: skewX(6.25deg) skewY(6.25deg);
+    }
+
+    44.4% {
+        -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
+        transform: skewX(-3.125deg) skewY(-3.125deg);
+    }
+
+    55.5% {
+        -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
+        transform: skewX(1.5625deg) skewY(1.5625deg);
+    }
+
+    66.6% {
+        -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
+        transform: skewX(-0.78125deg) skewY(-0.78125deg);
+    }
+
+    77.7% {
+        -webkit-transform: skewX(0.390625deg) skewY(0.390625deg);
+        transform: skewX(0.390625deg) skewY(0.390625deg);
+    }
+
+    88.8% {
+        -webkit-transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+        transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+    }
+}
+
+.jello {
+
+    -webkit-transform-origin: center;
+    transform-origin: center;
 }
 
 .wrapper-header-items {
-    width: 23.1%;
+    width: 24.1vw;
     height: 49px;
     border-radius: 38px;
     top: 34px;
@@ -67,6 +165,8 @@ header a {
     -webkit-animation: GradTransition 10s ease infinite;
     -moz-animation: GradTransition 10s ease infinite;
     animation: GradTransition 10s ease infinite;
+
+    box-shadow: 0 1px 40px -10px;
 }
 
 img {
@@ -111,7 +211,6 @@ html {
 
 #text-rigth-cpl {
     right: 0;
-    font-weight: 1000;
     position: absolute;
     margin: 36px 59px;
     border-radius: 38px;
@@ -123,8 +222,7 @@ html {
     -moz-animation: GradTransition 10s ease infinite;
     animation: GradTransition 10s ease infinite;
     padding: 10px 15px;
-    font-weight: 500;
-    background-color: #00000087;
+    color: rgb(47, 47, 47);
     transition: 415ms;
     font-size: 1.2em;
     /* text-shadow: 0px 1px 13px #395278; */
@@ -197,6 +295,7 @@ html {
     -webkit-animation: fadeIn 2s cubic-bezier(0.77, 0, 0.175, 1);
     animation: fadeIn 2s cubic-bezier(0.77, 0, 0.175, 1);
 }
+
 @-webkit-keyframes fadeIn {
     from {
         opacity: 0;
