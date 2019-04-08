@@ -25,6 +25,8 @@
     <script src="assets/rainbow/rainbowvis.js" type="text/javascript"></script>
     <script src="assets/script/loaderPage.js"></script>
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
 <body>
@@ -104,8 +106,6 @@
             <div class="grad-bottom-fluid"></div>            
         </div>
 
-
-
         <div class="int-sobre" id="int-sobre" onmousemove="mojMoveImg(event)">
         <div class="int-top"></div>
             <div class="wrapper-txt-int-sobre">
@@ -128,11 +128,10 @@
         <div id="Sobre" style="padding-bottom: 61px;" class="anim-els-in">
             
             <div class="container-sobre anim-els-in">
-                <div>
+                <div class="anim-els-in">
                     <img class="img-profile" id="img-profile" src="assets/img/profile.jpg">
-                    <h2 id="text-img-sobre">Anthony José</h2>
                 </div>
-
+               
                 <div class="beffore-sobre hcard hcard2 div-texts-resp">
                     <div class="texts-head hcard  div-texts-resp">
                         <div class="text-head">
@@ -145,10 +144,13 @@
                                 apaixonado por criar
                             </h2>
                         </div>
+
+                        <h2 id="text-img-sobre">Anthony José</h2>
+                        <i class="mt-ic-arrow ic-pos">arrow_forward</i>
                     </div>
                 </div>
 
-                <div class="content anim-els-in">
+                <div class="content anim-els-in anim-els-in">
                     <p>
                         Começando aos 10 anos, descobri minha paixão, desde então eu tomava conhecimento
                         de tornar-me melhor de eu mesmo para descobrir a melhor forma de vencer, experiencias
@@ -169,6 +171,52 @@
                     </p>
                 </div>
             </div>
+
+
+        <div class="sec-ant-fts">
+            <div class="content-txt-st-inf">
+                <div class="wrapper">
+                    <div class="texts">
+                        <div class="wrapper-txts">
+                            <div class="txt-title">
+                                <i class="mt-ic-arrow ic-forw">arrow_back</i>
+                                <h1>Anthony José De Almeida Silva</h1>
+                                <img class="img-prof-rig" src="assets/img/profile2.jpg">
+                            </div>
+                            <div class="els-sub-info">
+                                <div class="txt-sub">
+                                    <i class="material-icons">cake</i>
+                                    <h2>17 Anos</h2>
+                                </div>
+                                <div class="txt-sub">
+                                    <i class="material-icons">location_city</i>
+                                    <h2>Francisco Morato</h2>
+                                </div>
+                                <div class="txt-sub">
+                                    <i class="material-icons">room</i>
+                                    <h2>São Paulo</h2>
+                                </div>
+                                <div class="txt-sub">
+                                    <i class="material-icons">work</i>
+                                    <h2>Desenvolvedor de Software</h2>
+                                </div>
+                                <hr>
+                                <div class="txt-sub">
+                                    <i class="material-icons">email</i>
+                                    <h2>anthonyj2017@icloud.com</h2>
+                                </div>
+                                <div class="txt-sub">
+                                    <i class="material-icons">phone</i>
+                                    <h2>(11) 94280-7999</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+         
+                </div>
+            </div>
+        </div>
+
         </div>
 
         <div id="servicos-container" class="anim-els-in-serv" onmousemove="showCoords(event)">
@@ -335,8 +383,8 @@
                 </div>
                 <div class="content-git-sec">
                     <div class="fonts">
-                        <h1 style="font-weight: 900" class="anim-gitsec">Github</h1>
-                        <h2 style="font-weight: 100" class="anim-gitsec">AnthonyBuilder</h2>
+                        <h1 style="font-weight: 900; font-family: 'Gotham Light';" class="anim-gitsec">Github</h1>
+                        <h2 style="font-weight: 100; font-family: 'Gotham Light'" class="anim-gitsec">AnthonyBuilder</h2>
                     </div>
                 </div>
             </div>

@@ -140,20 +140,80 @@ function elsAnimGitSec() {
     }
 }
 
+function arrowHov() {
+    anime({
+        targets: '.mt-ic-arrow',
+        translateX: [-100, 15, 0],
+        duration: 600,
+        easing: 'easeInOutExpo'
+    });
+}
 
-function imgsSwitchSobreOut() {
-    window.anime({
-        targets: '.img-profile',
-        translateX: [0, -300],
-        duration: 800,
+function outContSobre() {
+    anime({
+        targets: '.container-sobre',
         opacity: [1, 0],
-        delay: (elm, index, t) => index * 70,
+        translateX: [0, -300],
+        duration: 1100,
         easing: 'easeInOutExpo',
+        delay: (elm, index, t) => index * 50,
+        complete: function () {
+            contSobreInfo.style.display = 'block';
+            inContSobInfo()
+            contSobre.style.display = 'none';
+        }
+    });
+}
+
+function inContSobre() {
+    anime({
+        targets: '.container-sobre',
+        opacity: [0, 1],
+        translateX: [-1500, 0],
+        duration: 1100,
+        easing: 'easeInOutExpo',
+        delay: (elm, index, t) => index * 50,
 
     });
 }
 
-function imgsSwitchSobreInOut(dur) {
+function inContSobInfo() {
+    anime({
+        targets: '.sec-ant-fts',
+        opacity: [0, 1],
+        translateX: [1000, 0],
+        scale: [.8, 1],
+        easing: 'easeInOutExpo',
+        duration: 1000
+    });
+
+    anime({
+        targets: '.txt-sub',
+        opacity: [0, 1],
+        translateY: [200, 0],
+        easing: 'easeInOutExpo',
+        duration: 1200,
+        delay: (elm, index, t) => index * 50,
+    });
+}
+
+function outContSobInfo() {
+    anime({
+        targets: '.sec-ant-fts',
+        opacity: [1, 0],
+        translateX: [0, 1500],
+        easing: 'easeInOutExpo',
+        duration: 1000,
+        complete: function () {
+            contSobre.style.display = 'block';
+            contSobreInfo.style.display = 'none';
+            inContSobre()
+        }
+    });
+}
+
+/**
+ * function imgsSwitchSobreInOut(dur) {
     window.anime({
         targets: '.img-profile',
         translateX: [0, -300],
@@ -170,7 +230,8 @@ function imgsSwitchSobreInOut(dur) {
             });
         }
     });
-}
+}*
+*/
 
 
 

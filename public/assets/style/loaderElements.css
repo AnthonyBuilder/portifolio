@@ -1,9 +1,9 @@
 .elms-after-loading {
     display: none;
-
 }
 
 .loading-elms {
+    display: block;
     width: 100%;
     height: 100%;
     position: absolute;

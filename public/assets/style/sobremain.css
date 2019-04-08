@@ -3,10 +3,14 @@
     margin: 5em 3em;
     padding: 1 0em 31px;
     max-width: 100%;
-
+    display: flex;
+    flex-direction: row;
     will-change: auto;
 }
 
+.container-sobre {
+    display: block;
+}
 
 .content {
     width: 50%;
@@ -87,7 +91,20 @@
     transition: 5000ms;
 }
 
+@keyframes myBounce {
 
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.03, 1.03);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
 
 .img-profile {
     /* margin: 3px 80px; */
@@ -98,6 +115,58 @@
     position: absolute;
     /* right: 0; */
     box-shadow: 0 2px 30px -10px;
+
+    animation: myBounce infinite ease-in-out 2.5s;
+    transition: 400ms;
+}
+
+.img-profile:hover {
+    animation: none;
+    filter: brightness(30%);
+}
+
+.mt-ic-arrow {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+.ic-pos {
+    color: white;
+    font-size: 4vw;
+    position: absolute;
+    top: 59%;
+    right: 135px;
+    z-index: 1;
+    opacity: 0;
+}
+
+.ic-forw {
+    font-size: 2vw;
+    background: white;
+    /* border: 2px solid; */
+    border-radius: 100%;
+    padding: 9px;
+    box-shadow: 0 1px 30px -10px;
+    transition: 500ms;
+}
+
+.ic-forw:hover {
+    cursor: pointer;
+    background: #1a1a1ad0;
+}
+
+.ic-arrow-opc {
+    opacity: 1;
 }
 
 #text-img-sobre {
@@ -415,4 +484,97 @@
         -webkit-transform: translate3d(0, -4px, 0);
         transform: translate3d(0, -4px, 0);
     }
+}
+
+
+
+/************************/
+
+
+.sec-ant-fts {
+    display: none;
+    background: linear-gradient(30deg, #398849, #51789e, #ff643d, #e77a8c);
+    background-size: 880% 880%;
+    -webkit-animation: GradTransition 30s ease infinite;
+    -moz-animation: GradTransition 30s ease infinite;
+    animation: GradTransition 30s ease infinite;
+    box-shadow: 0 1px 50px;
+    width: 101%;
+    height: 75vh;
+    border-radius: 40px;
+    position: relative;
+    opacity: 0;
+}
+
+.content-txt-st-inf {
+    width: 100%;
+    padding: 10px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.texts {
+    margin: 35px;
+}
+
+.wrapper-txts {
+    padding: 15px;
+}
+
+.txt-title {
+    margin: 10px 0;
+    display: -webkit-box;
+}
+
+.txt-title h1 {
+    font-family: "Gotham Light", sans-serif;
+    font-size: 4vw;
+    color: white;
+    padding: 0 30px;
+}
+
+.els-sub-info {
+    margin-top: 65px;
+}
+
+.txt-sub {
+    margin: 15px 2px;
+    display: flex;
+}
+
+.txt-sub h2 {
+    font-family: sans-serif;
+    font-size: 1.5vw;
+    font-weight: 100;
+    color: #000000bf;
+    padding: 0 15px;
+}
+
+.fotos {}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    padding: 27px 25px;
+    position: absolute;
+}
+
+.elms {
+    padding: 10px;
+}
+
+.img-prof-rig {
+    width: 16vw;
+    position: absolute;
+    right: 60px;
+    border-radius: 100%;
+    top: 30%;
+}
+
+hr {
+    border: 2px solid rgba(0, 0, 0, 0.411);
+    margin: 50px 0;
 }

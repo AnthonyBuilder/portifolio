@@ -24,9 +24,28 @@ let gradFluidBack = document.querySelector('.grad-bottom-fluid');
 let imgProfileSobre = document.querySelector('.img-profile');
 let animElsIn = document.querySelectorAll('.anim-els-in');
 
+var icArrowImgProfile = document.querySelector('.mt-ic-arrow');
+var icArrowBackDefault = document.querySelector('.ic-forw');
 
+var contSobre = document.querySelector('.container-sobre');
+var contSobreInfo = document.querySelector('.sec-ant-fts');
 
+imgProfileSobre.addEventListener('mouseover', () => {
+    arrowHov();
+    icArrowImgProfile.classList.add('ic-arrow-opc');
+});
 
+imgProfileSobre.addEventListener('mouseout', () => {
+    icArrowImgProfile.classList.remove('ic-arrow-opc');
+});
+
+imgProfileSobre.addEventListener('click', () => {
+    outContSobre();
+});
+
+icArrowBackDefault.addEventListener('click', () => {
+    outContSobInfo();
+});
 // Define a rotação dos backgrounds nos cards Serviços
 // E define a posição do background na introducao da section Sobre
 
@@ -55,7 +74,7 @@ function mojMoveImg(event) {
     var x = event.clientX; // Obtem a coordenada Horizontal
     var y = event.clientY; // Obtem a coordenada Vertical
 
-    dIntSobre.style.backgroundPosition = `${x / 10 * 1 - 250}px ${y / 5 * 1 - 250}px`;
+    dIntSobre.style.backgroundPosition = `${x / 35 * 1 - 250}px ${y / 20 * 1 - 250}px`;
 }
 
 let txtsShowSecSobre = document.querySelectorAll('#dtxts_sec_in_sobre');
@@ -89,9 +108,7 @@ window.onload = function () {
 
     body.style.background = "rgb(19, 19, 19)";
 
-    setInterval(() => {
-        imgsSwitchSobreInOut(800);
-    }, 8000);
+
 
     function setHeaderElmsAnim(elms) {
         textsHead[elms].style.color = "white";
