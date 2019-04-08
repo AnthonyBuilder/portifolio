@@ -1,6 +1,6 @@
 var loaderElms = document.querySelector('.loading-elms');
 var showElms = document.querySelector('.elms-after-loading');
-
+var loaderElmsCont = document.querySelector('.contElms')
 document.body.classList.add('render');
 
 
@@ -9,15 +9,15 @@ setInterval(() => {
     if (keyAn === true) {
         progAnim();
     }
-}, 1300);
+}, 1000);
 
 function setStart() {
     setTimeout(() => {
         keyAn = false;
-        loaderElms.style.animation = "fadeOut 1s";
+        loaderElmsCont.style.animation = "fadeOut 1s";
         setTimeout(() => {
             loaderElms.style.display = "none";
-        }, 1000);
+        }, 2000);
 
         document.body.classList.remove('render');
 
@@ -25,7 +25,7 @@ function setStart() {
         setTimeout(() => {
             document.body.classList.add('render');
             showElms.style.display = "block";
-        }, 1300);
+        }, 5500);
 
 
     }, 10000);

@@ -6,6 +6,7 @@ var textCenter = document.getElementById('text-center');
 var cards = document.getElementsByClassName('opc');
 var header = document.getElementsByTagName('header')[0];
 var textsHead = document.querySelectorAll('a');
+var textsHeadh2 = document.querySelectorAll('h2');
 var textDesBottom = document.getElementsByTagName('a');
 var textMainNome = document.getElementById("text-mainnome");
 var textMain = document.getElementById("text-main");
@@ -157,9 +158,9 @@ window.onload = function () {
             elsServicosAnim();
             elsServiBeffAnim();
             textsHead[1].style.color = "white";
-            textsHead[1].style.animation = "flash 2.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
-            textsHead[0].style.animation = null;
-            textsHead[2].style.animation = null;
+            textsHeadh2[2].style.animation = "flash 2.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
+            textsHeadh2[1].style.animation = null;
+            textsHeadh2[3].style.animation = null;
             textsHead[0].style.color = "rgb(47, 47, 47)";
             textsHead[2].style.color = "rgb(47, 47, 47)";
 
@@ -174,8 +175,8 @@ window.onload = function () {
         if (posY < 2500) {
 
             textsHead[0].style.color = "white";
-            textsHead[0].style.animation = "flash 2.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
-            textsHead[1].style.animation = null;
+            textsHeadh2[1].style.animation = "flash 2.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
+            textsHeadh2[2].style.animation = null;
             textsHead[1].style.color = "rgb(47, 47, 47)";
             textsHead[2].style.animation = null;
             textsHead[2].style.color = "rgb(47, 47, 47)";
@@ -183,32 +184,31 @@ window.onload = function () {
 
         if (posY < 1500) {
             textsHead[0].style.color = "rgb(47, 47, 47)";
-            textsHead[0].style.animation = null;
+            textsHeadh2[1].style.animation = null;
         }
 
         if (posY > 3250) {
 
             elsAnimGitSec();
             textsHead[2].style.color = "white";
-            textsHead[2].style.animation = "flash 2.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
-            textsHead[1].style.animation = null;
+            textsHeadh2[3].style.animation = "flash 2.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
+            textsHeadh2[1].style.animation = null;
             textsHead[1].style.color = "rgb(47, 47, 47)";
-            textsHead[0].style.animation = null
+            textsHeadh2[2].style.animation = null;
             textsHead[3].style.color = "rgb(47, 47, 47)";
-            textsHead[3].style.animation = "flash 2.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
-
+            textsHeadh2[4].style.animation = null;
             //Move aleatoriamente alguns elementos em svg na section #githubsec
             satAnimationRun();
 
         }
 
-        if (posY > 4400) {
+        if (posY > 3500) {
             textsHead[3].style.color = "white";
-            textsHead[3].style.animation = "flash 2.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
-            textsHead[1].style.animation = null;
+            textsHeadh2[4].style.animation = "flash 2.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
+            textsHeadh2[1].style.animation = null;
             textsHead[1].style.color = "rgb(47, 47, 47)";
             textsHead[0].style.animation = null;
-            textsHead[2].style.animation = null;
+            textsHeadh2[3].style.animation = null;
             textsHead[2].style.color = "rgb(47, 47, 47)";
 
         }

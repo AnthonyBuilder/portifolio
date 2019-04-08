@@ -24,7 +24,7 @@
     border-radius: 25px;
     color: #000000b0;
 
-    background: linear-gradient(30deg, #41824e, #51789e, #0586c2, #ff3d87, #e77a8c);
+    background: linear-gradient(30deg, #41824e, #51789e, #1565c0, #ff3d87, #e77a8c);
     background-size: 580% 580%;
     -webkit-animation: GradTransition 30s ease infinite;
     -moz-animation: GradTransition 30s ease infinite;
@@ -83,7 +83,7 @@
     border-radius: 28px;
     color: #000000b0;
     box-shadow: 0 1px 50px;
-    background: linear-gradient(30deg, #41824e7a, #51789e78, #0586c286, #ff3d87c7, #e77a8ce3);
+    background: linear-gradient(30deg, #41824e7a, #51789e78, #1565c0, #ff3d87c7, #e77a8ce3);
     background-size: 600% 600%;
     -webkit-animation: GradTransition 30s ease infinite;
     -moz-animation: GradTransition 30s ease infinite;
@@ -144,25 +144,11 @@
     color: white;
     font-size: 4vw;
     position: absolute;
-    top: 59%;
-    right: 135px;
     z-index: 1;
     opacity: 0;
-}
 
-.ic-forw {
-    font-size: 2vw;
-    background: white;
-    /* border: 2px solid; */
-    border-radius: 100%;
-    padding: 9px;
-    box-shadow: 0 1px 30px -10px;
-    transition: 500ms;
-}
-
-.ic-forw:hover {
-    cursor: pointer;
-    background: #1a1a1ad0;
+    top: 65%;
+    right: 109px;
 }
 
 .ic-arrow-opc {
@@ -173,7 +159,7 @@
     text-align: center;
     /* margin: 17.3em 2.8em; */
     position: absolute;
-    font-size: 38px;
+    font-size: 1.7vw;
     color: #131313;
     transition: 800ms;
     font-weight: 100;
@@ -493,14 +479,14 @@
 
 .sec-ant-fts {
     display: none;
-    background: linear-gradient(30deg, #398849, #51789e, #ff643d, #e77a8c);
-    background-size: 880% 880%;
+    background: linear-gradient(30deg, #398849, #51789e, #e67395, #1565c0,#e67395, #1565c0, #373b44,#4286f4);
+    background-size: 1880% 1880%;
     -webkit-animation: GradTransition 30s ease infinite;
     -moz-animation: GradTransition 30s ease infinite;
     animation: GradTransition 30s ease infinite;
     box-shadow: 0 1px 50px;
     width: 101%;
-    height: 75vh;
+    height: 61vh;
     border-radius: 40px;
     position: relative;
     opacity: 0;
@@ -531,7 +517,7 @@
 
 .txt-title h1 {
     font-family: "Gotham Light", sans-serif;
-    font-size: 4vw;
+    font-size: 3vw;
     color: white;
     padding: 0 30px;
 }
@@ -547,9 +533,9 @@
 
 .txt-sub h2 {
     font-family: sans-serif;
-    font-size: 1.5vw;
+    font-size: 1.1vw;
     font-weight: 100;
-    color: #000000bf;
+    color: #00000087;
     padding: 0 15px;
 }
 
@@ -567,14 +553,29 @@
 }
 
 .img-prof-rig {
-    width: 16vw;
+    width: 13vw;
     position: absolute;
     right: 60px;
     border-radius: 100%;
     top: 30%;
 }
 
+.ic-forw {
+    font-size: 2vw;
+    background: white;
+    /* border: 2px solid; */
+    border-radius: 100%;
+    padding: 9px;
+    box-shadow: 0 1px 30px -10px;
+    transition: 500ms;
+}
+
+.ic-forw:hover {
+    cursor: pointer;
+    background: #1a1a1ad0;
+}
+
 hr {
-    border: 2px solid rgba(0, 0, 0, 0.411);
+    border: 1px solid rgba(0, 0, 0, 0.411);
     margin: 50px 0;
 }

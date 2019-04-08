@@ -32,8 +32,10 @@
 <body>
 
     <div class="loading-elms">
+        <div class="contElms">
         <h1 style="color: white">Carregando</h1>
         <div class="prog-anim"></div>
+    </div>
     </div>
 
     <div class="elms-after-loading">
@@ -150,7 +152,7 @@
                     </div>
                 </div>
 
-                <div class="content anim-els-in anim-els-in">
+                <div class="content anim-els-in">
                     <p>
                         Começando aos 10 anos, descobri minha paixão, desde então eu tomava conhecimento
                         de tornar-me melhor de eu mesmo para descobrir a melhor forma de vencer, experiencias
@@ -212,19 +214,17 @@
                             </div>
                         </div>
                     </div>
-         
                 </div>
             </div>
         </div>
-
-        </div>
+    </div>
 
         <div id="servicos-container" class="anim-els-in-serv" onmousemove="showCoords(event)">
             <h1 class="txt-beff-serv anim-els-in-serv-beff">Serviços</h1>
             <div id="servicos-beffore" class="anim-els-in-serv">
                 <div class="texts-head-servicos">
                     <div class="text-head text-head-h1">
-                        <h1 class="text-head text-head-h1-af" style="font-size: 5em; font-family: sans-serif; font-weight: 700; color: #737373;">Serviços</h1>
+                        <h1 class="text-head text-head-h1-af" style="font-size: 5vw; font-family: sans-serif; font-weight: 700; color: #737373;">Serviços</h1>
                     </div>
                     <div class="text-sub-head tx-sv">
                         <h2 style="text-shadow: 0 1px 60px 6px black;">Códigos no github</h2>
@@ -237,8 +237,11 @@
                     <div class="row-serv" id="cardRowMain">
                     
                         <div class="card-serv crd">
-                            
+                                  
+  
                             <div class="crd-img crd-img-sc crd-img-h">
+                                                
+                                <h2 style="font-weight: 400; color:white; position:relative; padding: 4.3vh 0;font-size: 1.9vw;">Desenvolvimento Web</h2>
                                 <div class="text-list-crd">
                                     <a href="pg_serv/index.html"><h1>Html <span class="arrow-span">&#8250;</span> </h1></a>
                                     <h1>CSS <span class="arrow-span">&#8250;</span> </h1>
@@ -246,79 +249,65 @@
                                 </div>
                             
                             </div>
-                        
-                            <div class="text-bottom-serv">
-                                <h2  style="margin:0 50px;font-weight: 400; color:white; position:absolute;">Desenvolvimento Web</h2>
-                            </div>
-
+                  
                         </div>
 
                         <div class="card-serv2 crd">
                             
-                            <div class="crd-img">
-
-                            <div class="text-list-crd">
-                                    <h1>Html</h1>
-                                    <h1>CSS</h1>
-                                    <h1>javascript</h1>
+                       
+                            
+                             <div class="crd-img crd-img-sc crd-img-h">
+                                                
+                                <h2 style="font-weight: 400; color:white; position:relative; padding: 4.3vh 0;font-size: 1.9vw;">Desenvolvimento Web</h2>
+                                <div class="text-list-crd">
+                                    <a href="pg_serv/index.html"><h1>Html <span class="arrow-span">&#8250;</span> </h1></a>
+                                    <h1>CSS <span class="arrow-span">&#8250;</span> </h1>
+                                    <h1>javascript<span class="arrow-span-js">&#8250;</span> </h1>
                                 </div>
-                            </div>
-
-                            <div class="text-bottom-serv" style="position: relative">
-                                <h2 style="font-weight: 400; color: white; text-shadow: 0 1px 50px black;">PHP/MySql
-                                </h2>
-                            </div>
+                            
+                            </div>           
                         </div>
 
                         <div class="card-serv3 crd">
+                         
                             
-                            <div class="crd-img">
-
-                            <div class="text-list-crd">
-                                    <h1>Html</h1>
-                                    <h1>CSS</h1>
-                                    <h1>javascript</h1>
+                            <div class="crd-img crd-img-sc crd-img-h">
+                                                
+                                <h2 style="font-weight: 400; color:white; position:relative; padding: 4.3vh 0;font-size: 1.9vw;">Desenvolvimento Web</h2>
+                                <div class="text-list-crd">
+                                    <a href="pg_serv/index.html"><h1>Html <span class="arrow-span">&#8250;</span> </h1></a>
+                                    <h1>CSS <span class="arrow-span">&#8250;</span> </h1>
+                                    <h1>javascript<span class="arrow-span-js">&#8250;</span> </h1>
                                 </div>
-                            </div>
-
-                            <div class="text-bottom-serv" style="position:relative;">
-                                <h2 style="font-weight: 400; color: white;">Dev
-                                    Android
-                                </h2>
-                            </div>
+                            
+                            </div>                      
                         </div>
 
                         <div class="card-serv4 crd">
-                            
-                            <div class="crd-img">
-
-                            <div class="text-list-crd">
-                                    <h1>Html</h1>
-                                    <h1>CSS</h1>
-                                    <h1>javascript</h1>
+                     
+                            <div class="crd-img crd-img-sc crd-img-h">
+                                                
+                                <h2 style="font-weight: 400; color:white; position:relative; padding: 4.3vh 0;font-size: 1.9vw;">Desenvolvimento Web</h2>
+                                <div class="text-list-crd">
+                                    <a href="pg_serv/index.html"><h1>Html <span class="arrow-span">&#8250;</span> </h1></a>
+                                    <h1>CSS <span class="arrow-span">&#8250;</span> </h1>
+                                    <h1>javascript<span class="arrow-span-js">&#8250;</span> </h1>
                                 </div>
-                            </div>
-                            <div class="text-bottom-serv" style="position:relative;">
-                                <h2 style="font-weight: 400; color: white; text-shadow: 0 1px 50px black;">
-                                    C#/Asp.Net
-                                </h2>
+                            
                             </div>
                         </div>
 
                         <div class="card-serv5 crd">
-                            
-                            <div class="crd-img">
-
-                            <div class="text-list-crd">
-                                    <h1>Html</h1>
-                                    <h1>CSS</h1>
-                                    <h1>javascript</h1>
+                   
+                            <div class="crd-img crd-img-sc crd-img-h">
+                                                
+                                <h2 style="font-weight: 400; color:white; position:relative; padding: 4.3vh 0;font-size: 1.9vw;">Desenvolvimento Web</h2>
+                                <div class="text-list-crd">
+                                    <a href="pg_serv/index.html"><h1>Html <span class="arrow-span">&#8250;</span> </h1></a>
+                                    <h1>CSS <span class="arrow-span">&#8250;</span> </h1>
+                                    <h1>javascript<span class="arrow-span-js">&#8250;</span> </h1>
                                 </div>
-                            </div>
-                            <div class="text-bottom-serv" style="position:relative;">
-                                <h2 style="font-weight: 400; color: white;">
-                                    C#/Asp.Net
-                                </h2>
+                            
                             </div>
                         </div>
                     </div>

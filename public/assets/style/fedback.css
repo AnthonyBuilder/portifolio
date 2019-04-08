@@ -69,7 +69,7 @@
     width: 101%;
     position: relative; 
     bottom: 0;
-    height: 60px;
+    height: 54px;
     background-color: #0f0f0f;
     margin: 0 0em;
     transition: 500ms;
@@ -83,7 +83,7 @@
 }
 
 .bottom-content h2 {
-    font-size: 112%;
+    font-size: 140%;
     font-weight: 100;
     margin-left: 20px;
     color: rgb(94, 94, 94);
