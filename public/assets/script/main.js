@@ -109,7 +109,7 @@ window.onload = function () {
 
     body.style.background = "rgb(19, 19, 19)";
 
-
+    var animShake = "shake 6.8s infinite cubic-bezier(0.77, 0, 0.175, 1)";
 
     function setHeaderElmsAnim(elms) {
         textsHead[elms].style.color = "white";
@@ -158,7 +158,8 @@ window.onload = function () {
             elsServicosAnim();
             elsServiBeffAnim();
             textsHead[1].style.color = "white";
-            textsHeadh2[2].style.animation = "flash 2.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
+            textsHeadh2[2].style.animation = animShake;
+
             textsHeadh2[1].style.animation = null;
             textsHeadh2[3].style.animation = null;
             textsHead[0].style.color = "rgb(47, 47, 47)";
@@ -175,7 +176,7 @@ window.onload = function () {
         if (posY < 2500) {
 
             textsHead[0].style.color = "white";
-            textsHeadh2[1].style.animation = "flash 2.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
+            textsHeadh2[1].style.animation = animShake;
             textsHeadh2[2].style.animation = null;
             textsHead[1].style.color = "rgb(47, 47, 47)";
             textsHead[2].style.animation = null;
@@ -191,7 +192,7 @@ window.onload = function () {
 
             elsAnimGitSec();
             textsHead[2].style.color = "white";
-            textsHeadh2[3].style.animation = "flash 2.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
+            textsHeadh2[3].style.animation = animShake;
             textsHeadh2[1].style.animation = null;
             textsHead[1].style.color = "rgb(47, 47, 47)";
             textsHeadh2[2].style.animation = null;
@@ -204,8 +205,8 @@ window.onload = function () {
 
         if (posY > 3500) {
             textsHead[3].style.color = "white";
-            textsHeadh2[4].style.animation = "flash 2.6s infinite cubic-bezier(0.77, 0, 0.175, 1)";
-            textsHeadh2[1].style.animation = null;
+            textsHeadh2[4].style.animation = animShake;
+            textsHeadh2[2].style.animation = null;
             textsHead[1].style.color = "rgb(47, 47, 47)";
             textsHead[0].style.animation = null;
             textsHeadh2[3].style.animation = null;

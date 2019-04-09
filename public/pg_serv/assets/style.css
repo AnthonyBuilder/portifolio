@@ -21,6 +21,71 @@ body {
     transition: 900ms;
     opacity: 0;
 }
+
+.main-header {
+    height: 6em;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    padding: 0 50px;
+    box-shadow: inset 0px 45px 67px -78px black;
+
+    display: -webkit-box;
+    -webkit-animation: fadeIn .8s cubic-bezier(0.77, 0, 0.175, 1);
+    animation: fadeIn .8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.main-header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.main-header li {
+    text-decoration: none;
+    margin: 45px 14px;
+}
+
+
+
+.main-header a {
+    text-decoration: none;
+    color: rgb(47, 47, 47);
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+#text-mainnome {
+    
+}
+
+
+.text-nav-button {
+    font-family: sans-serif;
+    font-weight: 500;
+    transition: 600ms;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+
+
+.wrapper-header-items {
+    width: 24.1vw;
+    height: 36.6px;
+    border-radius: 38px;
+
+    background: linear-gradient(15deg, #2fb17b, #4391da, #e75c7f);
+    position: absolute;
+    z-index: -1;
+    background-size: 580% 580%;
+    -webkit-animation: GradTransition 10s ease infinite;
+    -moz-animation: GradTransition 10s ease infinite;
+    animation: GradTransition 10s ease infinite;
+
+    box-shadow: 0 1px 40px -10px;
+}
+
+
 .js body.render {
     opacity: 1;
 }

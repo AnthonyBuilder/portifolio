@@ -8,19 +8,20 @@
     height: 100%;
     position: absolute;
     text-align: center;
-    background: linear-gradient(45deg, #41824e, #51789e, #db4b6f, #5c91f3, #333333,#dd1818);
-    background-size: 580% 580%;
-    -webkit-animation: GradTransition 20s ease;
-    -moz-animation: GradTransition 20s ease;
-    animation: GradTransition 20s ease;
+    background: linear-gradient(45deg, #41824ec5, #e97391be, #93b9ffb9);
+    background-size: 2280% 1280%;
+    -webkit-animation: GradTransition 50s ease;
+    -moz-animation: GradTransition 50s ease;
+    animation: GradTransition 50s ease;
 }
 
 .loading-elms h1 {
     color: white;
     margin-top: 20%;
-    font-size: 90px;
-    font-family: "Gotham Book";
-    animation: flash 3.1s infinite;
+    font-size: 3.7vw;
+    font-weight: 100;
+    font-family: "Apex Ligth";
+    animation: flash 5.1s infinite;
 }
 
 .prog-anim {

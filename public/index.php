@@ -33,7 +33,7 @@
 
     <div class="loading-elms">
         <div class="contElms">
-        <h1 style="color: white">Carregando</h1>
+        <h1 style="color: white" class="loader-h1">Carregando</h1>
         <div class="prog-anim"></div>
     </div>
     </div>
@@ -69,11 +69,22 @@
                     </li>
                 </ul>
                 <h2 id="text-rigth-cpl">Curriculo</h2>
+                <img class="img-nav" src="assets/img/profile.jpg">
             </div>
         </header>
 
         <div class="txt-svg-float">
             <h1 id="text-main" class="text-main back-color-textm">Anthony José</h1>
+            <div class="row-bottom-txts">
+                <h2 class="txt-main-bottom">Desenvolvedor Web</h2>
+                <h2 class="txt-main-bottom">Free-lancer</h2>
+                <h2 class="txt-main-bottom">Desenvolvedor Mobile</h2>
+                <h2 class="txt-main-bottom">Front-End</h2>
+                <h2 class="txt-main-bottom">Back-End</h2>
+                <h2 class="txt-main-bottom">Porgramador PHP</h2>
+                <h2 class="txt-main-bottom">MySql</h2>
+            </div>
+       
             <svg class="scene" style="width:101%;" width="100%" height="100vh"
                 preserveAspectRatio="none" viewBox="0 0 1440 800">
                 <path
@@ -237,13 +248,11 @@
                     <div class="row-serv" id="cardRowMain">
                     
                         <div class="card-serv crd">
-                                  
-  
                             <div class="crd-img crd-img-sc crd-img-h">
                                                 
-                                <h2 style="font-weight: 400; color:white; position:relative; padding: 4.3vh 0;font-size: 1.9vw;">Desenvolvimento Web</h2>
+                                <h2 style="font-weight: 400; color:white; position:relative; padding: 4.3vh 0;font-size: 1.9vw;">Responsabilidades</h2>
                                 <div class="text-list-crd">
-                                    <a href="pg_serv/index.html"><h1>Html <span class="arrow-span">&#8250;</span> </h1></a>
+                                    <a href="pg_serv/index.html"><h1>Legibilidade <span class="arrow-span">&#8250;</span> </h1></a>
                                     <h1>CSS <span class="arrow-span">&#8250;</span> </h1>
                                     <h1>javascript<span class="arrow-span-js">&#8250;</span> </h1>
                                 </div>

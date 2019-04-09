@@ -149,3 +149,30 @@
     font-weight: normal;
     src: local('Helvetica Light'), url('helvetica-light.ttf') format('ttf');
 }
+
+@font-face {
+    font-family: 'ONEDAY';
+    font-style: normal;
+    font-weight: normal;
+    src: url('ONEDAY.otf');
+}
+
+@font-face {
+    font-family: 'One Day';
+    font-style: normal;
+    font-weight: normal;
+    src: url('ONEDAY.ttf');
+}
+
+@font-face {
+    font-family: 'Apex Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: url('apexme.otf');
+}
+@font-face {
+    font-family: 'Apex Ligth';
+    font-style: normal;
+    font-weight: normal;
+    src: url('apexli.otf');
+}

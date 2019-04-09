@@ -241,7 +241,7 @@ function progAnim() {
         translateX: [-700, 0],
         scaleX: [.3, 1.2],
         scaleY: [.8, 1],
-        duration: 400,
+        duration: 500,
         opacity: [0, 1],
         easing: [0.77, 0, 0.175, 1],
 
@@ -251,7 +251,7 @@ function progAnim() {
                 translateX: [0, 700],
                 scaleX: [1.2, .3],
                 scaleY: [1, .8],
-                duration: 300,
+                duration: 400,
                 opacity: [1, 0],
                 easing: [0.77, 0, 0.175, 1],
             });
