@@ -184,19 +184,31 @@ function inContSobInfo() {
         translateX: [1000, 0],
         scale: [.8, 1],
         easing: 'easeInOutExpo',
-        duration: 1000
+        duration: 1000,
+
     });
 
     anime({
-        targets: '.txt-sub',
-        opacity: [0, 1],
-        translateY: [200, 0],
-        easing: 'easeInOutExpo',
-        duration: 1200,
-        delay: (elm, index, t) => index * 50
-    });
-}
+        targets: '.img-prof-rig',
+        opacity: 1,
+        width: ['466vh', '50vh'],
+        duration: 1700,
+        easing: [0.075, 0.82, 0.165, 1],
+        complete: () => {
+            anime({
+                targets: '.txt-sub',
+                opacity: [0, 1],
+                translateY: [200, 0],
+                easing: 'easeInOutExpo',
+                duration: 1200,
+                delay: (elm, index, t) => index * 50
 
+            });
+        }
+    });
+
+
+}
 function outContSobInfo() {
     anime({
         targets: '.sec-ant-fts',

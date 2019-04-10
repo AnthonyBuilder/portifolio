@@ -7,7 +7,7 @@ keyAn = true;
 
 setTimeout(() => {
     txtLoader.style.animation = "fadeOut 1s";
-}, 6000);
+}, 4000);
 
 setTimeout(() => {
 
@@ -16,7 +16,7 @@ setTimeout(() => {
     txtLoader.innerHTML = "Bem-Vindo";
 
     keyAn = false;
-}, 7000);
+}, 5000);
 
 setInterval(() => {
     if (keyAn === true) {
@@ -39,7 +39,7 @@ function setStart() {
         setTimeout(() => {
             document.body.classList.add('render');
             showElms.style.display = "block";
-        }, 5500);
+        }, 2500);
 
 
     }, 10000);

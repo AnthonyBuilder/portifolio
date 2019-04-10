@@ -69,7 +69,7 @@
                     </li>
                 </ul>
                 <h2 id="text-rigth-cpl">Curriculo</h2>
-                <img class="img-nav" src="assets/img/profile.jpg">
+                <img class="img-nav" src="assets/img/Myimg.jpg">
             </div>
         </header>
 
@@ -194,7 +194,10 @@
                             <div class="txt-title">
                                 <i class="mt-ic-arrow ic-forw">arrow_back</i>
                                 <h1>Anthony José De Almeida Silva</h1>
-                                <img class="img-prof-rig" src="assets/img/profile2.jpg">
+                                <div class="row-imgs-info">
+                                    <img class="img-prof-rig" src="assets/img/imgant2.jpg">
+                                </div>
+                              
                             </div>
                             <div class="els-sub-info">
                                 <div class="txt-sub">

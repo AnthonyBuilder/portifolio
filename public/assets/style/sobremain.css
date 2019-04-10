@@ -117,8 +117,7 @@
     position: absolute;
     /* right: 0; */
     box-shadow: 0 2px 30px -10px;
-
-    animation: myBounce infinite ease-in-out 2.5s;
+    animation: shake 13.5s infinite  cubic-bezier(0.77, 0, 0.175, 1);
     transition: 400ms;
 }
 
@@ -144,13 +143,13 @@
 
 .ic-pos {
     color: white;
-    font-size: 4vw;
+    font-size: 3vw;
     position: absolute;
     z-index: 1;
-    opacity: 0;
-
-    top: 65%;
-    right: 109px;
+    opacity: 1;
+    animation: shake infinite 13s  cubic-bezier(0.77, 0, 0.175, 1);
+    top: 67%;
+    right: -38px;
 }
 
 .ic-arrow-opc {
@@ -170,6 +169,7 @@
     top: 1.5em;
     right: 0.8em;
     z-index: 1;
+    animation: shake 13.5s infinite  cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 .hcard {
@@ -481,14 +481,14 @@
 
 .sec-ant-fts {
     display: none;
-    background: linear-gradient(30deg, #398849, #51789e, #e67395, #1565c0,#e67395, #1565c0, #373b44,#4286f4);
+    background: linear-gradient(30deg, #e96e3f, #d57e8c, #bc6a6d);
     background-size: 1880% 1880%;
-    -webkit-animation: GradTransition 30s ease infinite;
-    -moz-animation: GradTransition 30s ease infinite;
-    animation: GradTransition 30s ease infinite;
+    -webkit-animation: GradTransition 20s ease infinite;
+    -moz-animation: GradTransition 20s ease infinite;
+    animation: GradTransition 20s ease infinite;
     box-shadow: 0 1px 50px;
     width: 101%;
-    height: 61vh;
+    height: 29.7vw;
     border-radius: 40px;
     position: relative;
     opacity: 0;
@@ -518,10 +518,11 @@
 }
 
 .txt-title h1 {
-    font-family: "Gotham Light", sans-serif;
-    font-size: 3vw;
-    color: white;
+    font-family: sans-serif;
     padding: 0 30px;
+    color: #2e2e2e;
+    font-size: 3vw;
+    font-weight: 500;
 }
 
 .els-sub-info {
@@ -531,13 +532,14 @@
 .txt-sub {
     margin: 15px 2px;
     display: flex;
+    opacity: 0;
 }
 
 .txt-sub h2 {
     font-family: sans-serif;
     font-size: 1.1vw;
     font-weight: 100;
-    color: #00000087;
+    color: #222222d2;
     padding: 0 15px;
 }
 
@@ -554,22 +556,34 @@
     padding: 10px;
 }
 
-.img-prof-rig {
-    width: 13vw;
+.row-imgs-info {
+    display: flex;
+    height: 525px;
     position: absolute;
-    right: 60px;
-    border-radius: 100%;
-    top: 30%;
+    right: 0;
+    margin: 23px;
+    
+}
+
+.img-prof-rig {
+    width: 51vh;
+    top: -69px;
+    border-radius: 38px;    
+    opacity: 0;
+    position: relative;
+    box-shadow: 0 1.7px 20px -9px;
 }
 
 .ic-forw {
     font-size: 2vw;
-    background: white;
+    background: rgb(71, 71, 71);
     /* border: 2px solid; */
     border-radius: 100%;
     padding: 9px;
-    box-shadow: 0 1px 30px -10px;
+    color: rgb(190, 190, 190);
+    box-shadow: 0 1px 30px -10px rgb(43, 43, 43);
     transition: 500ms;
+    animation: shake 13s infinite cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 .ic-forw:hover {
