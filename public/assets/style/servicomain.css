@@ -113,8 +113,8 @@
 
 .text-sub-head h2 {
     font-size: 1.5em;
-    font-family: sans-serif;
-    font-weight: 400;
+    font-family: "SF Compact Display Thin";
+    
 }
 
 .tx-sv {
@@ -212,6 +212,7 @@
 
 .text-head-h1 {
     font-size: 20px;
+    
     background: linear-gradient(50deg, #ffa977, #ff466e);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -225,9 +226,11 @@
     background: linear-gradient(50deg, #3283c5, #d63372, #d65b8a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 23vw;
+    font-size: 25vw;
     margin: -173px 25px;
-    opacity: .5;
+    opacity: .6;
+    animation: shake 25s infinite;
+    font-family: "SF Compact Display Medium";
 }
 
 @-webkit-keyframes GradTransition {

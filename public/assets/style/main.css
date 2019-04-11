@@ -87,6 +87,7 @@ header {
     padding: 0 50px;
     box-shadow: inset 0px 45px 67px -78px black;
 
+    font-family: "SF Compact Display Thin";
     -webkit-animation: fadeIn .8s cubic-bezier(0.77, 0, 0.175, 1);
     animation: fadeIn .8s cubic-bezier(0.77, 0, 0.175, 1);
 }
@@ -189,7 +190,7 @@ html {
 
     margin: 39px 59px;
     border-radius: 38px;
-      background: linear-gradient(15deg, #2fb17b, #4391da, #e75c7f);
+    background: linear-gradient(15deg, #2fb17b, #4391da, #e75c7f);
     position: absolute;
     z-index: 1;
     background-size: 580% 580%;
@@ -223,13 +224,14 @@ html {
 
 #text-mainnome {
     margin: 38px 10px;
-    color: rgb(251, 251, 251);
+    color: rgb(214, 214, 214);
 
-    font-weight: 600;
+    font-weight: 100;
     font-size: 2em;
     transition: 900ms;
     margin-right: 2%;
-    font-family: "Gotham Light";
+    font-family: "SF Compact Display Thin";
+
 }
 
 
@@ -260,26 +262,24 @@ html {
     margin-top: 35vh;
     font-size: 14vw;
     border: none;
-    color: white;
+    color: rgb(199, 199, 199);
     z-index: 1;
     left: 6%;
     position: absolute;
     font-family: 'Apex Medium';
-    -webkit-animation: fadeIn 2s cubic-bezier(0.77, 0, 0.175, 1);
-    animation: fadeIn 2s cubic-bezier(0.77, 0, 0.175, 1);
-    background: linear-gradient(30deg, #dc859c, #c85458);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-animation: slideInUp 1s cubic-bezier(0.77, 0, 0.175, 1);
+    animation: slideInUp .4s cubic-bezier(0.77, 0, 0.175, 1);
     filter: brightness(121%);
 
 }
 
 .txt-main-bottom {
     position: relative;
-    color: white;
-    font-size: 2vw;
+    color: rgb(209, 209, 209);
+    font-size: 1.8vw;
     padding-right: 25px;
-    font-family: "Apex Ligth";
+    font-family: "Apex Medium";
+    animation: slideInUp .7s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 .row-bottom-txts {

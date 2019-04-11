@@ -81,7 +81,7 @@
                 <h2 class="txt-main-bottom">Desenvolvedor Mobile</h2>
                 <h2 class="txt-main-bottom">Front-End</h2>
                 <h2 class="txt-main-bottom">Back-End</h2>
-                <h2 class="txt-main-bottom">Porgramador PHP</h2>
+                <h2 class="txt-main-bottom">Programador PHP</h2>
                 <h2 class="txt-main-bottom">MySql</h2>
             </div>
        
@@ -123,8 +123,8 @@
         <div class="int-top"></div>
             <div class="wrapper-txt-int-sobre">
                 <div id="dtxts_sec_in_sobre" class="dtxts-sec-sobre els-anim-moj">
-                    <h1 class="els-anim-moj">Olá, eu sou Desenvolvedor de Software em São paulo, Brasil.</h1>
-                    <p class="els-anim-moj">
+                    <h1 class="els-anim-moj" style="font-family: 'SF Compact Display Medium'">Olá, eu sou Desenvolvedor de Software em São paulo, Brasil.</h1>
+                    <p class="els-anim-moj" style="font-family: 'SF Compact Display Thin'">
                     Eu posso ajuda-lo a desenvolver seu proximo produto.<br>
                     Eu construo aplicações full-stack, web aplications.<br>
                     existe algo que possamos descutir ?</p>          
@@ -148,11 +148,11 @@
                 <div class="beffore-sobre hcard hcard2 div-texts-resp">
                     <div class="texts-head hcard  div-texts-resp">
                         <div class="text-head">
-                            <h1 style="font-size: 5em; font-family: sans-serif; font-weight: 600;">Sobre</h1>
+                            <h1 style="font-size: 5em; font-family: 'SF Compact Display Medium'; font-weight: 600;">Sobre</h1>
                         </div>
 
                         <div class="text-sub-head">
-                            <h2 style="margin-left:3px;font-size: 2em; font-family: sans-serif; font-weight: 400; ">
+                            <h2 style="margin-left:3px;font-size: 2em; font-family: font-family: 'SF Compact Display Thin';">
                                 Desenvolvedor
                                 apaixonado por criar
                             </h2>
@@ -253,7 +253,7 @@
     </div>
 
         <div id="servicos-container" class="anim-els-in-serv" onmousemove="showCoords(event)">
-            <h1 class="txt-beff-serv anim-els-in-serv-beff">Serviços</h1>
+            <h1 class="txt-beff-serv anim-els-in-serv-beff" style="font-family: 'SF Compact Display Medium';">Serviços</h1>
             <div id="servicos-beffore" class="anim-els-in-serv">
                 <div class="texts-head-servicos">
                     <div class="text-head text-head-h1">

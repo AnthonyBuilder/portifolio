@@ -16,11 +16,10 @@
 }
 
 .loading-elms h1 {
-    color: white;
     margin-top: 20%;
     font-size: 3.7vw;
-    font-weight: 100;
-    font-family: "Apex Ligth";
+
+    font-family: "SF Compact Display Thin";
     animation: flash 5.1s infinite;
 }
 

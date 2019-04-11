@@ -191,27 +191,27 @@ function inContSobInfo() {
     anime({
         targets: '.img-prof-rig',
         opacity: 1,
-        width: ['366vh', '50vh'],
+        width: ['166vh', '50vh'],
         duration: 1500,
-        easing: [0.075, 0.82, 0.165, 1],
-        complete: () => {
-            anime({
-                targets: '.txt-sub',
-                opacity: [0, 1],
-                translateY: [200, 0],
-                easing: 'easeInOutExpo',
-                duration: 1200,
-                delay: (elm, index, t) => index * 50
-            });
+        elasticity: 50,
+        easing: "easeOutElastic",
+    });
 
-            anime({
-                targets: '.txts-top',
-                opacity: [0, 1],
-                translateY: [100, 0],
-                easing: 'easeInOutExpo',
-                duration: 900,
-            })
-        }
+    anime({
+        targets: '.txt-sub',
+        opacity: [0, 1],
+        translateY: [200, 0],
+        easing: 'easeInOutExpo',
+        duration: 1200,
+        delay: (elm, index, t) => index * 50
+    });
+
+    anime({
+        targets: '.txts-top',
+        opacity: [0, 1],
+        translateY: [100, 0],
+        easing: 'easeInOutExpo',
+        duration: 900,
     });
 
 

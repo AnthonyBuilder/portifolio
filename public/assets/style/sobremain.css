@@ -169,6 +169,7 @@
     top: 1.5em;
     right: 0.8em;
     z-index: 1;
+    font-family: "SF Compact Display Medium";
     animation: shake 13.5s infinite cubic-bezier(0.77, 0, 0.175, 1);
 }
 
@@ -548,7 +549,7 @@
 }
 
 .txt-sub h2 {
-    font-family: sans-serif;
+    font-family: "SF Compact Display Thin";
     font-size: 1.3vw;
     font-weight: 100;
     color: #000000d2;
@@ -605,6 +606,7 @@
 .ic-forw:hover {
     cursor: pointer;
     background: #1a1a1ad0;
+    transform: scale(1.05, 1.05);
 }
 
 hr {
