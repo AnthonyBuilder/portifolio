@@ -192,45 +192,64 @@
                     <div class="texts">
                         <div class="wrapper-txts">
                             <div class="txt-title">
-                                <i class="mt-ic-arrow ic-forw">arrow_back</i>
-                                <h1>Anthony José De Almeida Silva</h1>
+                                <div class="txts-top">
+                                    <i class="mt-ic-arrow ic-forw">arrow_back</i>
+                                    <h1>Anthony José De Almeida Silva</h1>
+                                </div>
+
                                 <div class="row-imgs-info">
-                                    <img class="img-prof-rig" src="assets/img/imgant2.jpg">
-                                </div>
-                              
-                            </div>
-                            <div class="els-sub-info">
-                                <div class="txt-sub">
-                                    <i class="material-icons">cake</i>
-                                    <h2>17 Anos</h2>
-                                </div>
-                                <div class="txt-sub">
-                                    <i class="material-icons">location_city</i>
-                                    <h2>Francisco Morato</h2>
-                                </div>
-                                <div class="txt-sub">
-                                    <i class="material-icons">room</i>
-                                    <h2>São Paulo</h2>
-                                </div>
-                                <div class="txt-sub">
-                                    <i class="material-icons">work</i>
-                                    <h2>Desenvolvedor de Software</h2>
-                                </div>
-                                <hr>
-                                <div class="txt-sub">
-                                    <i class="material-icons">email</i>
-                                    <h2>anthonyj2017@icloud.com</h2>
-                                </div>
-                                <div class="txt-sub">
-                                    <i class="material-icons">phone</i>
-                                    <h2>(11) 94280-7999</h2>
+                                    <img class="img-prof-rig" src="assets/img/Imgant.jpg">
                                 </div>
                             </div>
+                            <hr>
+                            <div class="infos-prof">
+                                <div class="els-sub-info">
+                                    <div class="txt-sub">
+                                        <i class="material-icons">cake</i>
+                                        <h2>17 Anos</h2>
+                                    </div>
+                                    <div class="txt-sub">
+                                        <i class="material-icons">location_city</i>
+                                        <h2>Francisco Morato</h2>
+                                    </div>
+                                    <div class="txt-sub">
+                                        <i class="material-icons">room</i>
+                                        <h2>São Paulo</h2>
+                                    </div>
+                                    <div class="txt-sub">
+                                        <i class="material-icons">work</i>
+                                        <h2>Desenvolvedor de Software</h2>
+                                    </div>
+                                
+                                    <div class="txt-sub">
+                                        <i class="material-icons">email</i>
+                                        <h2>anthonyj2017@icloud.com</h2>
+                                    </div>
+                                    <div class="txt-sub">
+                                        <i class="material-icons">phone</i>
+                                        <h2>(11) 94280-7999</h2>
+                                    </div>
+                                </div>
+
+                                <div class="els-sub-info">
+                                    <div class="txt-sub">
+                                        <img src="https://img.icons8.com/material/24/000000/instagram-new.png">
+                                        <h2>anthony.jar</h2>
+                                    </div>
+                                    <div class="txt-sub">
+                                        <img src="https://img.icons8.com/material/24/000000/facebook.png">
+                                        <h2>Anthony José</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        
                         </div>
                     </div>
                 </div>
             </div>
+            <h2 style="font-size: 1.3vw; font-weight: 100; color: #afafaf;">Anthony José - 2019<h2>
         </div>
+        
     </div>
 
         <div id="servicos-container" class="anim-els-in-serv" onmousemove="showCoords(event)">
@@ -272,7 +291,7 @@
                                                 
                                 <h2 style="font-weight: 400; color:white; position:relative; padding: 4.3vh 0;font-size: 1.9vw;">Desenvolvimento Web</h2>
                                 <div class="text-list-crd">
-                                    <a href="pg_serv/index.html"><h1>Html <span class="arrow-span">&#8250;</span> </h1></a>
+                                    <a href="pg_serv/index.html"><h1>Sites otimizados<span class="arrow-span">&#8250;</span> </h1></a>
                                     <h1>CSS <span class="arrow-span">&#8250;</span> </h1>
                                     <h1>javascript<span class="arrow-span-js">&#8250;</span> </h1>
                                 </div>

@@ -181,18 +181,18 @@ function inContSobInfo() {
     anime({
         targets: '.sec-ant-fts',
         opacity: [0, 1],
-        translateX: [1000, 0],
-        scale: [.8, 1],
-        easing: 'easeInOutExpo',
-        duration: 1000,
+        translateX: [700, 0],
+
+        easing: [0.075, 0.82, 0.165, 1],
+        duration: 900,
 
     });
 
     anime({
         targets: '.img-prof-rig',
         opacity: 1,
-        width: ['466vh', '50vh'],
-        duration: 1700,
+        width: ['366vh', '50vh'],
+        duration: 1500,
         easing: [0.075, 0.82, 0.165, 1],
         complete: () => {
             anime({
@@ -202,13 +202,21 @@ function inContSobInfo() {
                 easing: 'easeInOutExpo',
                 duration: 1200,
                 delay: (elm, index, t) => index * 50
-
             });
+
+            anime({
+                targets: '.txts-top',
+                opacity: [0, 1],
+                translateY: [100, 0],
+                easing: 'easeInOutExpo',
+                duration: 900,
+            })
         }
     });
 
 
 }
+
 function outContSobInfo() {
     anime({
         targets: '.sec-ant-fts',
