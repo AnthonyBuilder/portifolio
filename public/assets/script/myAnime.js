@@ -292,27 +292,67 @@ $('.text-main').each(function () {
 
 function animMainText() {
     anime.timeline({
-            loop: false
-        })
+        loop: false
+    })
         .add({
             targets: '.text-main .letter ',
             translateX: [40, 0],
             translateZ: 0,
             opacity: [0, 1],
             easing: "easeOutExpo",
+            color: {
+                value: (el, i, t) => {
+                    const color = `rgb(209, 209, 209)`;
+                    return color;
+                },
+                easing: 'linear',
+                duration: 1100,
+            },
             duration: 1200,
             delay: function (el, i) {
                 return 500 + 30 * i;
-            }
-        }).add({
-            targets: '.row-bottom-txts .txt-main-bottom ',
-            translateX: [40, 0],
-            translateZ: [10, 0],
-            opacity: [0, 1],
-            easing: "easeOutExpo",
-            duration: 1200,
-            delay: function (el, i) {
-                return 500 + 30 * i;
+            },
+            complete: () => {
+                anime({
+                    targets: '.scene',
+                    opacity: [0, 1],
+                    easing: 'linear',
+                    duration: 500,
+                    complete: () => {
+                        anime({
+                            targets: '.row-bottom-txts .txt-main-bottom ',
+                            translateX: [40, 0],
+                            translateZ: [10, 0],
+                            opacity: [0, 1],
+                            easing: "easeOutExpo",
+                            color: {
+                                value: (el, i, t) => {
+                                    const color = `rgb(209, 209, 209)`;
+                                    return color;
+                                },
+                                easing: 'linear',
+                                duration: 800,
+                            },
+                            duration: 1200,
+                            delay: function (el, i) {
+                                return 500 + 30 * i;
+                            },
+
+                            complete: () => {
+                                anime({
+                                    targets: '.anim-header-itm',
+                                    opacity: [0, 1],
+                                    duration: 900,
+                                    translateY: [-70, 0],
+                                    easing: 'easeInOutExpo',
+                                    delay: function (el, i) {
+                                        return 200 + 30 * i;
+                                    },
+                                })
+                            }
+                        });
+                    }
+                });
             }
         });
 

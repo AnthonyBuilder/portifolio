@@ -230,8 +230,8 @@
   background: linear-gradient(50deg, #3283c5, #d63372, #d65b8a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 25vw;
-  margin: -173px 25px;
+    font-size: 28vw;
+    margin: -220px 25px;
   opacity: .6;
   transition: 2000ms;
   font-family: "SF Compact Display Medium";

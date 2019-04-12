@@ -41,35 +41,35 @@
     <div class="elms-after-loading">
         <header>
             <div class="wrapper-header">
-                <h2 id="text-mainnome" class="back-color-textm">Anthony José</h2>
+                <h2 id="text-mainnome" class="back-color-textm anim-header-itm">Anthony José</h2>
                 <ul>
-                <div class="wrapper-header-items"></div>
+                <div class="wrapper-header-items anim-header-itm"></div>
                     <li>
                         <a href="#int-sobre">
-                            <h2 class="text-nav-button txt-header-button">Sobre</h2>
+                        <h2 class="text-nav-button txt-header-button  anim-header-itm">Sobre</h2>
                         </a>
                     </li>
 
                     <li>
                         <a href="#servicos-container">
-                            <h2 class="text-nav-button txt-header-button">Serviços</h2>
+                            <h2 class="text-nav-button txt-header-button anim-header-itm">Serviços</h2>
                         </a>
                     </li>
                     
                     <li>
-                        <a href="pg_serv/index.html">
-                            <h2 class="text-nav-button txt-header-button">Github</h2>
+                        <a href="pg_serv/index.html" >
+                            <h2 class="text-nav-button txt-header-button anim-header-itm">Github</h2>
                         </a>
                     </li>
 
                     <li>
                         <a href="#rodape">
-                            <h2 class="text-nav-button txt-header-button">Feedback</h2>
+                            <h2 class="text-nav-button txt-header-button anim-header-itm">Feedback</h2>
                         </a>
                     </li>
                 </ul>
-                <h2 id="text-rigth-cpl">Curriculo</h2>
-                <img class="img-nav" src="assets/img/Myimg.jpg">
+                <h2 id="text-rigth-cpl"  class="anim-header-itm">Curriculo</h2>
+                <img class="img-nav anim-header-itm" src="assets/img/Myimg.jpg">
             </div>
         </header>
 
@@ -85,7 +85,7 @@
                 <h2 class="txt-main-bottom">MySql</h2>
             </div>
        
-            <svg class="scene" style="width:101%;" width="100%" height="100vh"
+            <svg class="scene" style="width:101%; opacity: 0;" width="100%" height="113vh"
                 preserveAspectRatio="none" viewBox="0 0 1440 800">
                 <path
                     d="M -84.52,-81.13 C -94.62,-73.4 -88.88,-59.55 -90.33,-48.91 -89.29,27.31 -89.61,103.5 -88.33,179.8 -85.99,416.1 -81.32,888.9 -81.32,888.9 -81.32,888.9 974.5,888.7 1587,891.9 1518,719.9 1487,644 1429,533 1388,437.7 1447,259.7 1400,187 1362,132 1270,90.53 1207,39.93 1161,2.932 1071,-74.45 1071,-74.45 1071,-74.45 914.5,-77.77 848.2,-80.17 537.6,-80.84 227,-81.38 -83.6,-81.6 -83.91,-81.44 -84.21,-81.29 -84.52,-81.13 Z"

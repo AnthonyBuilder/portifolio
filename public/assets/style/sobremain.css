@@ -176,21 +176,15 @@
 .hcard {
     transition: 880ms;
     opacity: .98;
-
 }
 
 .anim-els-in {
     opacity: 0;
 }
 
-.hcard:hover {
-    box-shadow: 0 -1px 100px;
-    transform: scale(.98, .98);
-}
 
 .hcard2 {
     transition: 480ms;
-
 }
 
 
@@ -301,6 +295,7 @@
 .int-sobre {
     background-image: url(../img/mojave.jpg);
     width: 101%;
+    background-position: -207.743px -221.2px;
     position: relative;
     background-repeat: no-repeat;
     opacity: 0;
@@ -486,9 +481,9 @@
     display: none;
     background: linear-gradient(-30deg, #e45675, #db8d9e, #3383ce, #37aa70);
     background-size: 1880% 1880%;
-    -webkit-animation: GradTransition 20s ease infinite;
-    -moz-animation: GradTransition 20s ease infinite;
-    animation: GradTransition 20s ease infinite;
+    -webkit-animation: GradTransition 60s ease infinite;
+    -moz-animation: GradTransition 60s ease infinite;
+    animation: GradTransition 60s ease infinite;
     box-shadow: 0 1px 50px;
     width: 101%;
     height: 30.3vw;

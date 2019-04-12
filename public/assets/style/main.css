@@ -94,6 +94,16 @@ header {
     animation: fadeIn .8s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
+#text-mainnome {
+    margin: 38px 10px;
+    color: rgb(214, 214, 214);
+    font-size: 2em;
+    transition: 900ms;
+    margin-right: 2%;
+    font-family: "Gotham Light Regular";
+
+}
+
 header ul {
     list-style: none;
     display: flex;
@@ -105,15 +115,17 @@ header li {
     margin: 45px 14px;
 }
 
-
-
 header a {
     text-decoration: none;
-    color: rgb(47, 47, 47);
+    color: rgba(51, 51, 51, 0.747);
     -webkit-transform-origin: center;
     transform-origin: center;
 }
 
+
+.anim-header-itm {
+    opacity: 0;
+}
 
 
 
@@ -223,25 +235,12 @@ html {
 
 }
 
-
-#text-mainnome {
-    margin: 38px 10px;
-    color: rgb(214, 214, 214);
-
-    font-weight: 100;
-    font-size: 2em;
-    transition: 900ms;
-    margin-right: 2%;
-    font-family: "SF Compact Display Thin";
-
-}
-
-
 .text-nav-button {
     font-family: sans-serif;
     font-weight: 500;
     transition: 600ms;
     transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    background: #7474741e;
 }
 
 .cards {
@@ -250,13 +249,11 @@ html {
 }
 
 .text-nav-button:hover {
-    color: #8585856e;
-    transform: translateY(-4px);
+   color: white;
 }
 
 .txt-svg-float {
     text-align: center;
-
     height: 100vh;
 }
 
@@ -264,9 +261,9 @@ html {
     margin-top: 35vh;
     font-size: 14vw;
     border: none;
-    color: rgb(199, 199, 199);
+    color: rgb(197, 7, 7);
     z-index: 1;
-    left: 6%;
+    left: 10%;
     position: absolute;
     font-family: 'Apex Medium';
 
@@ -281,7 +278,7 @@ html {
 
 .txt-main-bottom {
     position: relative;
-    color: rgb(209, 209, 209);
+    color: rgb(82, 207, 109);
     font-size: 1.8vw;
     padding-right: 25px;
     opacity: 0;
@@ -291,8 +288,8 @@ html {
 
 .row-bottom-txts {
     position: absolute;
-    bottom: 30%;
-    left: 6%;
+    bottom: 36%;
+    left: 10.3%;
     display: -webkit-box;
 }
 
@@ -329,7 +326,7 @@ html {
     width: 101%;
     height: 101vh;
     background: linear-gradient(180deg, transparent, rgb(19, 19, 19));
-    top: 100vh;
+    top: 110vh;
 }
 
 .text-down {
@@ -394,9 +391,9 @@ html {
 }
 
 .txt-header-button:hover {
-    border: 1.9px solid #3b665f77;
-    border-bottom: 7px solid rgba(92, 192, 177, 0.486);
-    padding-bottom: .7px;
+    filter: brightness(70%);
+    transform: scaleZ(10px) translateY(5px);
+    background: rgba(51, 51, 51, 0.89);
     color: rgba(255, 255, 255, 0.877);
     text-shadow: 0 1px 15px;
 }
