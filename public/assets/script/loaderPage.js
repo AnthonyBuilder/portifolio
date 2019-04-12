@@ -39,6 +39,9 @@ function setStart() {
         setTimeout(() => {
             document.body.classList.add('render');
             showElms.style.display = "block";
+            setTimeout(() => {
+                animMainText();
+            }, 500);
         }, 2500);
 
 

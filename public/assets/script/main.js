@@ -22,6 +22,8 @@ let dIntSobre = document.querySelector('.int-sobre');
 let elmGtSec = document.querySelector('#githubsec');
 let gradFluidBack = document.querySelector('.grad-bottom-fluid');
 
+let txtBefforeServ = document.querySelector('.txt-beff-serv');
+
 let imgProfileSobre = document.querySelector('.img-profile');
 let animElsIn = document.querySelectorAll('.anim-els-in');
 
@@ -58,6 +60,8 @@ function showCoords(event) {
     var rainbow = new Rainbow();
     rainbow.setNumberRange(0, numberOfItems + 1);
     rainbow.setSpectrum('#F25162', '#F75A8E', '#B23B85', '#5DC8A3', '#3489d8', '#d42853', '#447dbd', '#2a5ac0');
+
+    txtBefforeServ.style.transform = `translateX(${x * 1 / 100}px)`;
 
     // a cada elemento ele define um novo gradiente com as cores do Rainbow.setSpectrum()
     for (var i = 0; i <= numberOfItems; i++) {

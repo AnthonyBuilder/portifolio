@@ -195,6 +195,13 @@ function inContSobInfo() {
         duration: 1500,
         elasticity: 50,
         easing: "easeOutElastic",
+        complete: () => {
+            anime({
+                targets: '.img-beffore-ri',
+                opacity: [0, 1],
+                duration: 4200
+            });
+        }
     });
 
     anime({
@@ -277,4 +284,36 @@ function progAnim() {
             });
         }
     });
+}
+
+$('.text-main').each(function () {
+    $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+});
+
+function animMainText() {
+    anime.timeline({
+            loop: false
+        })
+        .add({
+            targets: '.text-main .letter ',
+            translateX: [40, 0],
+            translateZ: 0,
+            opacity: [0, 1],
+            easing: "easeOutExpo",
+            duration: 1200,
+            delay: function (el, i) {
+                return 500 + 30 * i;
+            }
+        }).add({
+            targets: '.row-bottom-txts .txt-main-bottom ',
+            translateX: [40, 0],
+            translateZ: [10, 0],
+            opacity: [0, 1],
+            easing: "easeOutExpo",
+            duration: 1200,
+            delay: function (el, i) {
+                return 500 + 30 * i;
+            }
+        });
+
 }

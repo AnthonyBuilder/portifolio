@@ -24,7 +24,7 @@
 
     <script src="assets/rainbow/rainbowvis.js" type="text/javascript"></script>
     <script src="assets/script/loaderPage.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
@@ -198,7 +198,8 @@
                                 </div>
 
                                 <div class="row-imgs-info">
-                                    <img class="img-prof-rig" src="assets/img/Imgant.jpg">
+                                    <img src="assets/img/beffore-div.jpg" alt="" class="img-beffore-rig">
+                                    <img class="img-prof-rig" src="assets/img/Imgant.png">
                                 </div>
                             </div>
                             <hr>
