@@ -1,0 +1,62 @@
+.githubsec {
+    position: relative;
+    background-image: url(star-bg.svg);
+    background-color: #11181f;
+    object-fit: cover;
+    background-position: center;
+    width: 101%;
+    transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    padding: 1px;
+    margin-top: 680px;
+}
+
+svg {
+    width: 100%;
+}
+
+.prof-git {
+    width: 200px;
+    height: 100px;
+    top: 50px;
+    position: absolute;
+
+}
+
+.prof-git img {
+    width: 50px;
+    border-radius: 5px;
+}
+
+.anim-gitsec {
+    opacity: 0;
+}
+
+.wrapper-git-sec {
+    margin: 10em 0;
+    text-align: center;
+}
+
+.content-git-sec {
+    margin: 14em 0;
+    text-align: center;
+}
+
+.fonts {
+    color: #8ec2c4;
+    font-size: 400%;
+}
+
+@keyframes shine {
+
+    from,
+    50%,
+    to {
+
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0.7;
+    }
+}
