@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.sec-proj {
+    width: 101%;
+    background: #292929;
+    display: -webkit-box;
+    position: relative;
+    top: 60vh;
+}
+
+.title-section-proj {
+    position: absolute;
+    left: -80px;
+    top: 65%;
+    transition: 1000ms;
+}
+
+.txt-title-proj {
+    font-family: "SF Compact Display Thin";
+    transform: rotate(-90deg);
+    font-size: 5.8vw;
+    color: #b6b6b6;
+}
+
+.cards-proj {
+    position: relative;
+    left: 9%;
+    margin: 5px;
+}
+
+
+.cards-proj h1 {
+    font-family: "SF Compact Display Thin";
+    color: #252525;
+}
+
+.cards-proj h2 {
+    font-family: "SF Compact Display Medium";
+    color: #1f1f1f;
+}
+
+.row-proj-crd {
+    display: -webkit-inline-box;
+    width: 100%;
+}
+
+
+.wrapper-crd-item {
+    position: relative;
+    padding: 5px;
+    margin: 5px 0.8vw;
+  
+}
+
+.wr-crd-right {
+    right: 0;
+}
+
+.tgg-off {
+    width: 3vw;
+}
+
+.tgg-on {
+    text-align: center;
+    width: 80vw;
+}
+
+.title-crd-proj {
+    position: relative;
+    top: 30px;
+}
+
+.txt-crd-prj {
+    font-weight: 100;
+    font-size: 4vw;
+}
+
+.txt-crd-prj-sub {
+    font-size: 2vw;
+}
+
+.txt-off-crd {
+    position: relative;
+    transform: rotate(90deg);
+    top: 42px;
+}
+
+.itm-crd-proj {
+    box-shadow: 0 1px 20px -5px;
+    height: 80vh;
+    border-radius: 10px;
+    transition: all 600ms;
+}
