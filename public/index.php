@@ -411,6 +411,12 @@
                                         <h1 id="txt-title-crd-proj" class="txt-crd-prj">Book.Io</h1>
                                         <h2 id="txt-sbtitle-crd-prj" class="txt-crd-prj-sub">Aluguel de livros</h2>
                                     </div>
+
+                                    <div class="row-imgs-proj">
+                                        <img src="assets/img/tumb_wood.jpg" class="img-proj-itm">
+                                        <img src="assets/img/tumb_phot.jpg" class="img-proj-itm">
+                                        <img src="assets/img/avpaul.jpg" class="img-proj-itm">
+                                    </div>
                                 </div>
                             </div>
 
