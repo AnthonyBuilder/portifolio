@@ -1,3 +1,9 @@
+/**
+ * Arquivo principal de script
+ * 
+ * @author Anthony José De Almeida Silva
+ */
+
 var card = document.getElementsByClassName('opc')[0];
 var text = document.getElementsByClassName('text-card')[0];
 var divCardsProjetos = document.getElementById('crd-projetos');
@@ -49,6 +55,7 @@ imgProfileSobre.addEventListener('click', () => {
 icArrowBackDefault.addEventListener('click', () => {
     outContSobInfo();
 });
+
 // Define a rotação dos backgrounds nos cards Serviços
 // E define a posição do background na introducao da section Sobre
 
@@ -120,7 +127,7 @@ window.onload = function () {
         textsHead[elms].style.animation = "jello 2s";
     }
 
-    document.body.style.zoom = "90%";
+
 
     window.onscroll = function () {
 
@@ -240,42 +247,6 @@ window.onload = function () {
             // console.log("calc" + calcRandom2 + window.pageYOffset / 90);
         }
     }
-
-    function elementsSwitchToWhite() {
-        body.style.background = "white";
-        textsHead[0].style.color = "black";
-        textsHead[2].style.color = "black";
-        textMainNome.style.color = "black";
-
-        // cardsMainServ.style.transform = "translateX(-50em)";
-
-
-    }
-
-    function elementsSwitchToBlack() {
-
-
-        textsHead[1].style.color = "white";
-        textMainNome.style.color = "white";
-
-    }
-
-    // card.addEventListener("click", function () {
-    //     console.log('click');
-    //     text.style.transform = 'translateY(-3em)';
-    //     text.style.transform += 'scale(0.85, 0.85)';
-    //     text.classList.toggle("text-shadow");
-
-    //     setTimeout(function () {
-    //         divCardsProjetos.classList.toggle("crd-projetos-f");
-    //     }, 250);
-    // }, false);
-
-    // card.addEventListener("mouseout", function () {
-    //     text.style.transform = 'translateY(0)';
-    //     divCardsProjetos.classList.remove("crd-projetos-f");
-    // }, false);
-
 }
 
 let tr = false;
@@ -358,7 +329,6 @@ function inputConstructor(el) {
     el.style.display = null;
 }
 
-
 // Ajax fazendo conexao com o banco para capturar e registrar os Feedbacks
 
 // Executa funçao do ajax no arquivo 'xhttp.js'
@@ -395,36 +365,3 @@ function setFeeds() {
         });
     }, formD);
 }
-
-
-
-
-// var xhttp = new XMLHttpRequest();
-
-// function getFeeds() {
-//     xhttp.onreadystatechange = function () {
-//         if (this.readyState === 4 && this.status === 200) {
-//             var feeds = JSON.parse(this.responseText);
-//             console.log(feeds);
-//         }
-//     }
-
-//     xhttp.open('GET', 'ajax/feed.php', true);
-//     xhttp.send();
-// }
-
-
-
-// class cardScaleHover {
-//     constructor(el) {
-//         this.DOM = {}
-//         this.DOM.el = el;
-//         this.hover();
-//     }
-
-//     hover() {
-//         this.el.addEventListener('mouseover', function () { this.el.style.transform = "scale(1.05, 1.05)"; })
-//     }
-// }
-
-// new cardScaleHover(document.querySelector('div.crd'));

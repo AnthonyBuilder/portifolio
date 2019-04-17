@@ -1,31 +1,32 @@
 .scene {
-	background: #1868c3;
+	background: #8D969A;
+
 }
 
 .scene path:first-child {
-	fill: #155daf;
+	fill: #7C878C;
 }
 
 .scene path:nth-child(2) {
-	fill: #13539c;
+	fill: #6C787D;
 }
 
 .scene path:nth-child(3) {
-	fill: #104888;
+	fill: #5C696F;
 }
 
 .scene path:nth-child(4) {
-	fill: #0c3461;
+	fill: #4C5B61;
 }
 
 .scene path:nth-child(5) {
-	fill: #09294e;
+	fill: #465359;
 }
 
 .scene path:nth-child(6) {
-	fill: #071f3a;
+	fill: #3F4B50;
 }
 
 .scene path:nth-child(7) {
-	fill: #041a33;
+	fill: #384347;
 }

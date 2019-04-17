@@ -1,0 +1,85 @@
+.elms-after-loading {
+    display: none;
+}
+
+.loading-elms {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    background: linear-gradient(45deg, #41824ec5, #e97391be, #93b9ffb9);
+    background-size: 2280% 1280%;
+    -webkit-animation: GradTransition 50s ease;
+    -moz-animation: GradTransition 50s ease;
+    animation: GradTransition 50s ease;
+}
+
+.loading-elms h1 {
+    margin-top: 20%;
+    font-size: 3.7vw;
+
+    font-family: "SF Compact Display Thin";
+    animation: flash 5.1s infinite;
+}
+
+.prog-anim {
+    left: 37%;
+    width: 25%;
+    top: 50px;
+    height: 15px;
+    position: relative;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 14px -7px white;
+}
+
+@-webkit-keyframes bounceOut {
+    20% {
+        -webkit-transform: scale3d(0.9, 0.9, 0.9);
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
+
+    50%,
+    55% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+}
+
+@keyframes bounceOut {
+    20% {
+        -webkit-transform: scale3d(0.9, 0.9, 0.9);
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
+
+    50%,
+    55% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}

@@ -1,3 +1,10 @@
+/**
+ * Modulo de animaçoes e transições
+ * 
+ * @author Anthony José De Almeida Silva
+ * @extends Anime.min.js
+ */
+
 begin = true;
 
 function boxAnimation() {
@@ -239,29 +246,6 @@ function outContSobInfo() {
     });
 }
 
-/**
- * function imgsSwitchSobreInOut(dur) {
-    window.anime({
-        targets: '.img-profile',
-        translateX: [0, -300],
-        duration: dur,
-        opacity: [1, 0],
-        easing: [0.77, 0, 0.175, 1],
-        complete: function () {
-            anime({
-                targets: '.img-profile',
-                translateX: [300, 0],
-                duration: dur,
-                opacity: [0, 1],
-                easing: [0.77, 0, 0.175, 1],
-            });
-        }
-    });
-}*
-*/
-
-
-
 function progAnim() {
     window.anime({
         targets: '.prog-anim',
@@ -286,27 +270,30 @@ function progAnim() {
     });
 }
 
+//Cria um <span> com os chars do 'h1' e atribuindo a animação a cada <span>
+
 $('.text-main').each(function () {
     $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
 });
 
+
 function animMainText() {
     anime.timeline({
-        loop: false
-    })
+            loop: false
+        })
         .add({
-            targets: '.text-main .letter ',
-            translateX: [40, 0],
+            targets: '.text-main .letter',
+            translateX: [50, 0],
             translateZ: 0,
             opacity: [0, 1],
             easing: "easeOutExpo",
             color: {
                 value: (el, i, t) => {
-                    const color = `rgb(209, 209, 209)`;
+                    const color = `#BDC3C5`;
                     return color;
                 },
                 easing: 'linear',
-                duration: 1100,
+                duration: 1000,
             },
             duration: 1200,
             delay: function (el, i) {
@@ -316,22 +303,22 @@ function animMainText() {
                 anime({
                     targets: '.scene',
                     opacity: [0, 1],
-                    easing: 'linear',
-                    duration: 500,
+                    easing: 'easeInExpo',
+                    duration: 800,
                     complete: () => {
                         anime({
                             targets: '.row-bottom-txts .txt-main-bottom ',
-                            translateX: [40, 0],
+                            translateX: [50, 0],
                             translateZ: [10, 0],
                             opacity: [0, 1],
                             easing: "easeOutExpo",
                             color: {
                                 value: (el, i, t) => {
-                                    const color = `rgb(209, 209, 209)`;
+                                    const color = `#15191B`;
                                     return color;
                                 },
                                 easing: 'linear',
-                                duration: 800,
+                                duration: 1000,
                             },
                             duration: 1200,
                             delay: function (el, i) {

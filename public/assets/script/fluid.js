@@ -6,6 +6,7 @@ class FluidAnimate {
         this.DOM.el = el;
         this.DOM.paths = Array.from(this.DOM.el.querySelectorAll('path'));
         this.animate();
+
     }
 
     animate() {
