@@ -127,7 +127,7 @@ header a {
 }
 
 
-.anim-header-itm {
+.anim-header-itm, .nav-back {
     opacity: 0;
 }
 
@@ -267,13 +267,23 @@ html {
     margin-top: 35vh;
     font-size: 14vw;
     border: none;
-    color: rgb(216, 8, 8);
     z-index: 1;
     left: 10%;
     position: absolute;
     font-family: 'Apex Medium';
-
+    animation: color_change 4.5s infinite alternate;
     filter: brightness(121%);
+}
+
+@keyframes color_change {
+    from {
+        color: rgb(255, 24, 63);
+    }
+
+    to {
+        color: rgb(39, 122, 255);
+        
+    }
 }
 
 .text-main .letter {
@@ -399,10 +409,10 @@ html {
 
 .txt-header-button:hover {
     filter: brightness(70%);
-    transform: scaleZ(10px) translateY(5px);
+    transform: scale(1.1, 1.1);
     background: rgba(51, 51, 51, 0.89);
     color: rgba(255, 255, 255, 0.877);
-    text-shadow: 0 1px 15px;
+    text-shadow: 0 1px 10px;
 }
 
 .transform {
@@ -531,6 +541,9 @@ html {
         background-attachment: scroll;
     }
 
+    .wrapper-header-items {
+        width: 34.1vw;
+    }
 }
 
 .opc {

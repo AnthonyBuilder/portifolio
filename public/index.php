@@ -45,7 +45,7 @@
                 <div class="wrapper-header-items anim-header-itm"></div>
                     <li>
                         <a href="#int-sobre">
-                        <h2 class="text-nav-button txt-header-button  anim-header-itm">Sobre</h2>
+                            <h2 class="text-nav-button txt-header-button  anim-header-itm">Sobre</h2>
                         </a>
                     </li>
 
@@ -74,6 +74,7 @@
                     </li>
                 </ul>
                 <h2 id="text-rigth-cpl"  class="anim-header-itm">Curriculo</h2>
+        
                 <img class="img-nav anim-header-itm" src="assets/img/Myimg.jpg">
             </div>
         </header>

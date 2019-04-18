@@ -1,6 +1,7 @@
 .scene {
-	filter: brightness(70%);
+	filter: brightness(75%);
 }
+
 .scene path:first-child {
 	fill: url(#gradient-1);
 }
@@ -28,6 +29,3 @@
 .scene path:nth-child(7) {
 	fill: url(#gradient-7);
 }
-
-
-
