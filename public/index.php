@@ -6,12 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Portifolio Anthony</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+            
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/style/fluid.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style/main.css" />
+
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style/sec_sobre.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style/sec_servico.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/style/sec_feedback.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/style/sec_proj.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style/sec_github.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/style/fluid.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/style/sec_feedback.css" />
+
     <link rel="stylesheet" href="assets/style/page_loader.css">
     <link rel="stylesheet" href="assets/fonts/font.css"/>
 
@@ -50,6 +54,12 @@
                             <h2 class="text-nav-button txt-header-button anim-header-itm">Serviços</h2>
                         </a>
                     </li>
+
+                    <li>
+                        <a href="#servicos-container">
+                            <h2 class="text-nav-button txt-header-button anim-header-itm">Projetos</h2>
+                        </a>
+                    </li>
                     
                     <li>
                         <a href="pg_serv/index.html" >
@@ -82,6 +92,7 @@
        
             <svg class="scene" style="width:101%; opacity: 0" width="100%" height="113vh"
                 preserveAspectRatio="none" viewBox="0 0 1440 800">
+                   
                 <path class="path-svg"
                     d="M -84.52,-81.13 C -94.62,-73.4 -88.88,-59.55 -90.33,-48.91 -89.29,27.31 -89.61,103.5 -88.33,179.8 -85.99,416.1 -81.32,888.9 -81.32,888.9 -81.32,888.9 974.5,888.7 1587,891.9 1518,719.9 1487,644 1429,533 1388,437.7 1447,259.7 1400,187 1362,132 1270,90.53 1207,39.93 1161,2.932 1071,-74.45 1071,-74.45 1071,-74.45 914.5,-77.77 848.2,-80.17 537.6,-80.84 227,-81.38 -83.6,-81.6 -83.91,-81.44 -84.21,-81.29 -84.52,-81.13 Z"
                     pathdata:id="M -84.52,-81.13 C -94.62,-73.4 -88.88,-59.55 -90.33,-48.91 -89.29,27.31 -89.61,103.5 -88.33,179.8 -85.99,416.1 -81.32,888.9 -81.32,888.9 -81.32,888.9 974.5,888.7 1587,891.9 1576,704.7 1517,625.7 1459,514.7 1418,419.4 1430,288.5 1382,187 1349,116.3 1296,54.47 1240,0.3429 1205,-33.51 1120,-83.59 1120,-83.59 1120,-83.59 914.5,-77.77 848.2,-80.17 537.6,-80.84 227,-81.38 -83.6,-81.6 -83.91,-81.44 -84.21,-81.29 -84.52,-81.13 Z">
@@ -110,6 +121,38 @@
                     d="M -85.59,444.4 -85.59,890.6 489,895.6 C 489,895.6 436.8,745.3 382.5,690.8 258.1,565.8 57.98,629.2 -85.59,444.4 Z"
                     pathdata:id="M -85.59,444.4 -85.59,890.6 546.9,895.6 C 546.9,895.6 517.4,695.4 339.9,593.4 187.7,505.9 57.98,629.2 -85.59,444.4 Z">
                 </path>
+
+                 <defs>
+						<linearGradient id="gradient-1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop stop-color="#66333e" />
+                            <stop offset="1" stop-color="#4AA8FF" />
+                        </linearGradient>
+                        <linearGradient id="gradient-2" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop stop-color="#7f404d" />
+                            <stop offset="1" stop-color="#4297e5" />
+                        </linearGradient>
+                        <linearGradient id="gradient-3" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop stop-color="#994d5d" />
+                            <stop offset="1" stop-color="#4aa8ff" />
+                        </linearGradient>
+                        <linearGradient id="gradient-4" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop stop-color="#b25a6c" />
+                            <stop offset="1" stop-color="#5cb0ff" />
+                        </linearGradient>
+                        <linearGradient id="gradient-5" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop stop-color="#cc677c" />
+                            <stop offset="1" stop-color="#6eb9ff" />
+                        </linearGradient>
+                        <linearGradient id="gradient-6" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop stop-color="#e5748b" />
+                            <stop offset="1" stop-color="#80c2ff" />
+                        </linearGradient>
+                            <linearGradient id="gradient-7" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop stop-color="#FF819B" />
+                            <stop offset="1" stop-color="#92caff" />
+                        </linearGradient>
+				    <defs>
+                        
             </svg>
             <div class="grad-bottom-fluid"></div>            
         </div>
@@ -133,8 +176,12 @@
             <div class="int-bottom"></div>
         </div>
         
+
+          
+
         <div id="Sobre" style="padding-bottom: 61px;" class="anim-els-in">
             
+        
             <div class="container-sobre anim-els-in">
                 <div class="anim-els-in">
                     <img class="img-profile" id="img-profile" src="assets/img/profile.jpg">
@@ -342,6 +389,48 @@
             </div>
         </div>
 
+        <div class="sec-proj">
+            <div class="content-proj">
+                <div class="wrapper-proj">
+                    <div class="title-section-proj">
+                        <h1 class="txt-title-proj">Projetos</h1>
+                    </div>
+                    <div class="cards-proj">
+                        <div class="row-proj-crd">
+                            <div class="wrapper-crd-item">
+                                <div class="itm-crd-proj" onclick="this.parentNode.classList.toggle('tgg-on');"
+                                    id="crd-left"
+                                    style="background: linear-gradient(10deg, rgb(32, 128, 192), rgb(37, 71, 184));">
+                                    <h2 class="txt-off-crd">Drop</h2>
+                                </div>
+                            </div>
+
+                            <div class="wrapper-crd-item">
+                                <div class="itm-crd-proj tgg-on" id="crd-center" style="background: #fff2c5;">
+                                    <div class="title-crd-proj">
+                                        <h1 id="txt-title-crd-proj" class="txt-crd-prj">Book.Io</h1>
+                                        <h2 id="txt-sbtitle-crd-prj" class="txt-crd-prj-sub">Aluguel de livros</h2>
+                                    </div>
+
+                                    <div class="row-imgs-proj">
+                                        <img src="assets/img/tumb_wood.jpg" class="img-proj-itm">
+                                        <img src="assets/img/tumb_phot.jpg" class="img-proj-itm">
+                                        <img src="assets/img/avpaul.jpg" class="img-proj-itm">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="wrapper-crd-item wr-crd-right">
+                                <div class="itm-crd-proj tgg-off" id="crd-right"
+                                    style="background: linear-gradient(10deg, rgb(233, 85, 110), rgb(184, 37, 81));">
+                                    <h2 class="txt-off-crd">MarketShoes</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="githubsec" id="githubsec">
             <svg style="position: absolute;" width="2000" height="750" xmlns="http://www.w3.org/2000/svg"
