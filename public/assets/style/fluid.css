@@ -1,32 +1,31 @@
 .scene {
-	background: #8D969A;
-
+	filter: brightness(75%);
 }
 
 .scene path:first-child {
-	fill: #7C878C;
+	fill: url(#gradient-1);
 }
 
 .scene path:nth-child(2) {
-	fill: #6C787D;
+	fill: url(#gradient-2);
 }
 
 .scene path:nth-child(3) {
-	fill: #5C696F;
+	fill: url(#gradient-3);
 }
 
 .scene path:nth-child(4) {
-	fill: #4C5B61;
+	fill: url(#gradient-4);
 }
 
 .scene path:nth-child(5) {
-	fill: #465359;
+	fill: url(#gradient-5);
 }
 
 .scene path:nth-child(6) {
-	fill: #3F4B50;
+	fill: url(#gradient-6);
 }
 
 .scene path:nth-child(7) {
-	fill: #384347;
+	fill: url(#gradient-7);
 }

@@ -287,59 +287,75 @@ function animMainText() {
             translateZ: 0,
             opacity: [0, 1],
             easing: "easeOutExpo",
-            color: {
-                value: (el, i, t) => {
-                    const color = `#BDC3C5`;
-                    return color;
-                },
-                easing: 'linear',
-                duration: 1000,
-            },
-            duration: 1200,
+            duration: 1500,
             delay: function (el, i) {
                 return 500 + 30 * i;
             },
             complete: () => {
-                anime({
-                    targets: '.scene',
-                    opacity: [0, 1],
-                    easing: 'easeInExpo',
-                    duration: 800,
-                    complete: () => {
-                        anime({
-                            targets: '.row-bottom-txts .txt-main-bottom ',
-                            translateX: [50, 0],
-                            translateZ: [10, 0],
-                            opacity: [0, 1],
-                            easing: "easeOutExpo",
-                            color: {
-                                value: (el, i, t) => {
-                                    const color = `#15191B`;
-                                    return color;
-                                },
-                                easing: 'linear',
-                                duration: 1000,
+                setTimeout(() => {
+                    anime({
+                        targets: '.text-main .letter',
+                        easing: "easeOutExpo",
+                        color: {
+                            value: (el, i, t) => {
+                                const color = `rgb(19, 19, 19)`;
+                                return color;
                             },
-                            duration: 1200,
-                            delay: function (el, i) {
-                                return 500 + 30 * i;
-                            },
+                            easing: 'linear',
+                            duration: 900,
+                        },
+                        duration: 700,
+                        delay: function (el, i) {
+                            return 500 + 30 * i;
+                        },
+                    });
 
-                            complete: () => {
-                                anime({
-                                    targets: '.anim-header-itm',
-                                    opacity: [0, 1],
-                                    duration: 900,
-                                    translateY: [-70, 0],
-                                    easing: 'easeInOutExpo',
-                                    delay: function (el, i) {
-                                        return 200 + 30 * i;
+                    anime({
+                        targets: '.scene',
+                        opacity: [0, 1],
+                        easing: 'linear',
+                        duration: 700,
+                        delay: function (el, i) {
+                            return 500 + 30 * i;
+                        },
+                        complete: () => {
+
+                            anime({
+                                targets: '.row-bottom-txts .txt-main-bottom ',
+                                translateX: [50, 0],
+                                translateZ: [10, 0],
+                                opacity: [0, 1],
+                                easing: "easeOutExpo",
+                                color: {
+                                    value: (el, i, t) => {
+                                        const color = `rgb(27, 27, 27)`;
+                                        return color;
                                     },
-                                })
-                            }
-                        });
-                    }
-                });
+                                    easing: 'linear',
+                                    duration: 1000,
+                                },
+                                duration: 1200,
+                                delay: function (el, i) {
+                                    return 500 + 30 * i;
+                                },
+
+                                complete: () => {
+                                    anime({
+                                        targets: '.anim-header-itm',
+                                        opacity: [0, 1],
+                                        duration: 900,
+                                        translateY: [-70, 0],
+                                        easing: 'easeInOutExpo',
+                                        delay: function (el, i) {
+                                            return 200 + 30 * i;
+                                        },
+                                    })
+                                }
+                            });
+                        }
+                    });
+                }, 1000);
+
             }
         });
 

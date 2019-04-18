@@ -134,7 +134,7 @@ header a {
 
 
 .wrapper-header-items {
-    width: 27.1vw;
+    width: 30.1vw;
     height: 36.6px;
     border-radius: 38px;
     top: 34px;
@@ -267,13 +267,22 @@ html {
     margin-top: 35vh;
     font-size: 14vw;
     border: none;
-    color: rgb(216, 8, 8);
     z-index: 1;
     left: 10%;
     position: absolute;
     font-family: 'Apex Medium';
-
+    animation: color_change 4.5s infinite alternate;
     filter: brightness(121%);
+}
+
+@keyframes color_change {
+    from {
+        color: rgb(39, 122, 255);
+    }
+
+    to {
+        color: rgb(255, 0, 34);
+    }
 }
 
 .text-main .letter {
@@ -283,6 +292,7 @@ html {
 
 
 .txt-main-bottom {
+    z-index: 1;
     position: relative;
     color: rgb(83, 83, 83);
     font-size: 2vw;
@@ -530,6 +540,9 @@ html {
         background-attachment: scroll;
     }
 
+    .wrapper-header-items {
+        width: 34.1vw;
+    }
 }
 
 .opc {

@@ -135,6 +135,14 @@ window.onload = function () {
         //console.log(window.pageYOffset);
         gradFluidBack.style.transform = `translateY(-${posY - 100}px)`;
 
+        var txtTitleMainProjSec = document.querySelector('.title-section-proj');
+        var imgProjItm = document.querySelectorAll('.img-proj-itm');
+
+        imgProjItm[0].style.height = `${posY * 2 / 129}vh`;
+        imgProjItm[1].style.height = `${posY * 2 / 129}vh`;
+        imgProjItm[2].style.height = `${posY * 2 / 129}vh`;
+        txtBefforeServ.style.top = `${posY * 3 / 200}%`;
+        txtTitleMainProjSec.style.top = `${posY * 2 / 200}%`;
         if (posY === 0) {
             startState();
         }
