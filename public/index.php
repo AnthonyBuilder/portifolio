@@ -318,8 +318,8 @@
                                 <h2 style="font-weight: 400; color:white; position:relative; padding: 4.3vh 0;font-size: 1.9vw;">Responsabilidades</h2>
                                 <div class="text-list-crd">
                                     <a href="pg_serv/index.html"><h1>Legibilidade <span class="arrow-span">&#8250;</span> </h1></a>
-                                    <h1>CSS <span class="arrow-span">&#8250;</span> </h1>
-                                    <h1>javascript<span class="arrow-span-js">&#8250;</span> </h1>
+                                    <h1>Responsividade<span class="arrow-span">&#8250;</span> </h1>
+                                    <h1>Flexibilidade<span class="arrow-span-js">&#8250;</span> </h1>
                                 </div>
                             
                             </div>
@@ -347,11 +347,11 @@
                             
                             <div class="crd-img crd-img-sc crd-img-h">
                                                 
-                                <h2 style="font-weight: 400; color:white; position:relative; padding: 4.3vh 0;font-size: 1.9vw;">Desenvolvimento Web</h2>
+                                <h2 style="font-weight: 400; color:white; position:relative; padding: 4.3vh 0;font-size: 1.9vw;">Frameworks</h2>
                                 <div class="text-list-crd">
-                                    <a href="pg_serv/index.html"><h1>Html <span class="arrow-span">&#8250;</span> </h1></a>
-                                    <h1>CSS <span class="arrow-span">&#8250;</span> </h1>
-                                    <h1>javascript<span class="arrow-span-js">&#8250;</span> </h1>
+                                    <a href="pg_serv/index.html"><h1>AngularJS <span class="arrow-span">&#8250;</span> </h1></a>
+                                    <h1>Ionic<span class="arrow-span">&#8250;</span> </h1>
+                                    <h1>AnimeJS<span class="arrow-span-js">&#8250;</span> </h1>
                                 </div>
                             
                             </div>                      
