@@ -66,10 +66,11 @@
 }
 
 .bottom-content {
-    width: 101%;
-    position: relative; 
+    font-family: sans-serif;
+    width: 100%;
+    position: fixed;
     bottom: 0;
-    height: 54px;
+    height: 60px;
     background-color: #0f0f0f;
     margin: 0 0em;
     transition: 500ms;

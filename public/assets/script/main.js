@@ -1,7 +1,9 @@
 /**
- * Arquivo principal de script
  * 
- * @author Anthony José De Almeida Silva
+ *  Arquivo principal de script
+ * 
+ *  @author Anthony José De Almeida Silva
+ * 
  */
 
 var card = document.getElementsByClassName('opc')[0];
@@ -54,6 +56,7 @@ imgProfileSobre.addEventListener('click', () => {
 
 icArrowBackDefault.addEventListener('click', () => {
     outContSobInfo();
+
 });
 
 // Define a rotação dos backgrounds nos cards Serviços
@@ -127,12 +130,10 @@ window.onload = function () {
         textsHead[elms].style.animation = "jello 2s";
     }
 
-
-
     window.onscroll = function () {
 
         var posY = window.pageYOffset;
-        //console.log(window.pageYOffset);
+        console.log(window.pageYOffset);
         gradFluidBack.style.transform = `translateY(-${posY - 100}px)`;
 
         var txtTitleMainProjSec = document.querySelector('.title-section-proj');
@@ -175,7 +176,7 @@ window.onload = function () {
             // }, 500);
         }
 
-        if (posY > 2500) {
+        if (posY > 2298) {
 
             elsServicosAnim();
             elsServiBeffAnim();
@@ -212,8 +213,6 @@ window.onload = function () {
         }
 
         if (posY > 3250) {
-
-            elsAnimGitSec();
             textsHead[2].style.color = "white";
             textsHeadh2[3].style.animation = animShake;
             textsHeadh2[3].style.background = "#00000042";
@@ -222,12 +221,10 @@ window.onload = function () {
             textsHeadh2[2].style.animation = null;
             textsHead[3].style.color = "rgb(47, 47, 47)";
             textsHeadh2[4].style.animation = null;
-            //Move aleatoriamente alguns elementos em svg na section #githubsec
-            satAnimationRun();
-
         }
 
-        if (posY > 3500) {
+        if (posY > 4998) {
+            elsAnimGitSec();
             textsHead[3].style.color = "white";
             textsHeadh2[4].style.animation = animShake;
             textsHeadh2[4].style.background = "#00000042";
@@ -236,6 +233,23 @@ window.onload = function () {
             textsHead[0].style.animation = null;
             textsHeadh2[3].style.animation = null;
             textsHead[2].style.color = "rgb(47, 47, 47)";
+            //Move aleatoriamente alguns elementos em svg na section #githubsec
+            satAnimationRun();
+        }
+        if (posY < 4998) {
+            textsHeadh2[5].style.animation = null;
+            textsHead[4].style.color = "rgb(47, 47, 47)";
+        }
+        if (posY > 5630) {
+
+            textsHead[4].style.color = "white";
+            textsHeadh2[5].style.animation = animShake;
+            textsHeadh2[5].style.background = "#00000042";
+            textsHeadh2[3].style.animation = null;
+            textsHead[2].style.color = "rgb(47, 47, 47)";
+            textsHead[1].style.animation = null;
+            textsHeadh2[4].style.animation = null;
+            textsHead[3].style.color = "rgb(47, 47, 47)";
 
         }
     }

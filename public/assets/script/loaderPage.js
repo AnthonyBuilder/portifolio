@@ -5,31 +5,49 @@ var txtLoader = document.querySelector('.loader-h1');
 document.body.classList.add('render');
 keyAn = true;
 
-setTimeout(() => {
-    txtLoader.style.animation = "fadeOut 1s";
-}, 4000);
 
-setTimeout(() => {
+var currentURL = window.location.href;
 
-    txtLoader.style.animation = "fadeIn 8s";
-    txtLoader.style.fontSize = "9vw";
-    txtLoader.innerHTML = "Bem-Vindo";
+if (currentURL === 'http://localhost/portifolio/public/index.php?loader=false') {
 
-    keyAn = false;
-}, 5000);
+    loaderElms.style.display = "none";
 
-setInterval(() => {
-    if (keyAn === true) {
-        progAnim();
-    }
-}, 700);
+    showElms.style.display = "block";
+    setTimeout(() => {
+        animMainText();
+    }, 1000);
+}
+
+if (currentURL === 'http://localhost/portifolio/public/index.php') {
+
+    setTimeout(() => {
+        txtLoader.style.animation = "fadeOut 1s";
+    }, 4000);
+
+    setTimeout(() => {
+
+        txtLoader.style.animation = "fadeIn 8s";
+        txtLoader.style.fontSize = "9vw";
+        txtLoader.innerHTML = "Bem-Vindo";
+
+        keyAn = false;
+    }, 5000);
+
+    setInterval(() => {
+        if (keyAn === true) {
+            progAnim();
+        }
+    }, 700);
+
+    setStart();
+}
+
 
 function setStart() {
     setTimeout(() => { keyAn = false; }, 4000);
     setTimeout(() => {
         loaderElmsCont.style.animation = "fadeOut 1s";
         setTimeout(() => {
-
             loaderElms.style.display = "none";
         }, 1200);
 
@@ -46,10 +64,6 @@ function setStart() {
         }, 1500);
     }, 10000);
 }
-
-setStart();
-
-
 
 /**
  *

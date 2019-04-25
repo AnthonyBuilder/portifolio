@@ -318,9 +318,9 @@
                                                 
                                 <h2 style="font-weight: 400; color:white; position:relative; padding: 4.3vh 0;font-size: 1.9vw;">Responsabilidades</h2>
                                 <div class="text-list-crd">
-                                    <a href="pg_serv/index.html"><h1>Legibilidade <span class="arrow-span">&#8250;</span> </h1></a>
-                                    <h1>CSS <span class="arrow-span">&#8250;</span> </h1>
-                                    <h1>javascript<span class="arrow-span-js">&#8250;</span> </h1>
+                                    <a href="pg_serv/index.html"><h1>Legibilidade</h1></a>
+                                    <h1>CSS</h1>
+                                    <h1>javascript</h1>
                                 </div>
                             
                             </div>
@@ -334,10 +334,13 @@
                              <div class="crd-img crd-img-sc crd-img-h">
                                                 
                                 <h2 style="font-weight: 400; color:white; position:relative; padding: 4.3vh 0;font-size: 1.9vw;">Desenvolvimento Web</h2>
-                                <div class="text-list-crd">
-                                    <a href="pg_serv/index.html"><h1>Sites otimizados<span class="arrow-span">&#8250;</span> </h1></a>
-                                    <h1>CSS <span class="arrow-span">&#8250;</span> </h1>
-                                    <h1>javascript<span class="arrow-span-js">&#8250;</span> </h1>
+                                <div class="crd-progress-level">
+                                    <div class="prog">
+
+                                    </div>
+                                    <div class="level">
+                                        <h2>100%</h2>
+                                    </div>
                                 </div>
                             
                             </div>           
@@ -390,6 +393,7 @@
             </div>
         </div>
 
+   
         <div class="sec-proj">
             <div class="content-proj">
                 <div class="wrapper-proj">
