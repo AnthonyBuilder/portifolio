@@ -103,7 +103,7 @@ window.onload = function () {
                 scrollDelta;
 
             scrollDelta = (fromTop - startPos) * 1; // "velocidade" em funcao do scroll
-            elmGtSec.style.backgroundSize = `${scrollDelta}px ${scrollDelta - 200}px`;
+            elmGtSec.style.backgroundSize = `${scrollDelta - 1000}px ${scrollDelta - 1400}px`;
 
             //elm.style.transition = `${scrollDelta - 1500}ms`;
             //console.clear();
@@ -143,6 +143,7 @@ window.onload = function () {
         imgProjItm[2].style.height = `${posY * 2 / 129}vh`;
         txtBefforeServ.style.top = `${posY * 3 / 200}%`;
         txtTitleMainProjSec.style.top = `${posY * 2 / 200}%`;
+
         if (posY === 0) {
             startState();
         }
@@ -373,3 +374,81 @@ function setFeeds() {
         });
     }, formD);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+  *
+  * sentir é uma forma de linguagem, e programar traz um pensamento que me faz sentir o que pode ser sempre perfeito,
+  * é onde eu sempre tento chegar, no perfeito.
+  *
+  **/

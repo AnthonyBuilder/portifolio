@@ -32,8 +32,8 @@
 
     <div class="loading-elms">
         <div class="contElms">
-        <h1 style="color: white" class="loader-h1">Carregando</h1>
-        <div class="prog-anim"></div>
+        <h1  class="loader-h1">Carregando</h1>
+        <div class="prog-anim" style="background: rgb(39, 39, 39);"></div>
     </div>
     </div>
 
@@ -164,9 +164,9 @@
                 <div id="dtxts_sec_in_sobre" class="dtxts-sec-sobre els-anim-moj">
                     <h1 class="els-anim-moj" style="font-family: 'SF Compact Display Medium'">Olá, eu sou Desenvolvedor de Software em São paulo, Brasil.</h1>
                     <p class="els-anim-moj" style="font-family: 'SF Compact Display Thin'">
-                    Eu posso ajuda-lo a desenvolver seu proximo produto.<br>
-                    Eu construo aplicações full-stack, web aplications.<br>
-                    existe algo que possamos descutir ?</p>          
+                    Posso ajuda-lo a desenvolver seu proximo produto.<br>
+                    Construo aplicações full-stack, web aplications.<br>
+                    Existe algo que possamos descutir ?</p>          
                 </div>
 
                 <div id="dtxts_sec_in_sobre"  class="els-anim-moj">
@@ -433,6 +433,7 @@
             </div>
         </div>
 
+        <img src="assets/img/vision.png" alt="" class="img-txt-vision">
         <div class="githubsec" id="githubsec">
             <svg style="position: absolute;" width="2000" height="750" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">

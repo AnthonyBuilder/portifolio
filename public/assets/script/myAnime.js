@@ -252,7 +252,7 @@ function progAnim() {
         translateX: [-700, 0],
         scaleX: [.3, 1.2],
         scaleY: [.8, 1],
-        duration: 500,
+        duration: 450,
         opacity: [0, 1],
         easing: [0.77, 0, 0.175, 1],
 
@@ -291,7 +291,8 @@ function animMainText() {
             delay: function (el, i) {
                 return 500 + 30 * i;
             },
-            complete: () => {
+            complete: function () {
+
                 setTimeout(() => {
                     anime({
                         targets: '.text-main .letter',
@@ -304,7 +305,7 @@ function animMainText() {
                             easing: 'linear',
                             duration: 900,
                         },
-                        duration: 700,
+                        duration: 850,
                         delay: function (el, i) {
                             return 500 + 30 * i;
                         },
@@ -355,7 +356,7 @@ function animMainText() {
                             });
                         }
                     });
-                }, 1000);
+                }, 5000);
 
             }
         });

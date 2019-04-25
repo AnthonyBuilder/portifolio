@@ -5,7 +5,7 @@
     max-width: 100%;
     display: flex;
     flex-direction: row;
-
+    top: 27vh;
 }
 
 .container-sobre {
@@ -163,7 +163,7 @@
     font-size: 1.7vw;
     color: #131313;
     transition: 800ms;
-    font-weight: 100;
+    font-weight: 600;
     padding: 9px 1em;
     /* border: 1px solid; */
     top: 1.5em;
@@ -547,9 +547,10 @@
 .txt-sub h2 {
     font-family: "SF Compact Display Thin";
     font-size: 1.3vw;
-    font-weight: 100;
+    font-weight: 600;
     color: #000000d2;
     padding: 0 15px;
+  
 }
 
 .material-icons {

@@ -22,30 +22,38 @@ setInterval(() => {
     if (keyAn === true) {
         progAnim();
     }
-}, 1000);
+}, 700);
 
 function setStart() {
+    setTimeout(() => { keyAn = false; }, 4000);
     setTimeout(() => {
-
-        keyAn = false;
         loaderElmsCont.style.animation = "fadeOut 1s";
         setTimeout(() => {
+
             loaderElms.style.display = "none";
-        }, 2000);
+        }, 1200);
 
         document.body.classList.remove('render');
 
         //deixa o Body visivel executando a animacao de fade quando o timer termina
+
         setTimeout(() => {
             document.body.classList.add('render');
             showElms.style.display = "block";
             setTimeout(() => {
                 animMainText();
-            }, 500);
-        }, 2500);
-
-
+            }, 1000);
+        }, 1500);
     }, 10000);
 }
 
 setStart();
+
+
+
+/**
+ *
+ * trago uma tentativa de mostrar um olho no olho,
+ * que diz sempre que esse é o cara.
+ *
+ */

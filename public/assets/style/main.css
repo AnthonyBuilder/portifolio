@@ -271,18 +271,26 @@ html {
     left: 10%;
     position: absolute;
     font-family: 'Apex Medium';
-    animation: color_change 4.5s infinite alternate;
-    filter: brightness(121%);
+    animation: color_change 8.5s alternate;
+    filter: brightness(111%);
 }
 
 @keyframes color_change {
-    from {
-        color: rgb(255, 24, 63);
+    0% {
+      color: rgb(3, 3, 3);
     }
 
-    to {
-        color: rgb(39, 122, 255);
-        
+    20% {
+        color: rgb(102, 60, 255);
+    }
+
+    86% {
+        color: rgb(252, 16, 55);
+
+    }
+
+    100% {
+        color: rgb(31, 207, 125);
     }
 }
 
@@ -483,10 +491,10 @@ html {
 
 
 .content p {
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-family: sans-serif;
     color: #bebebe;
-    margin: 37px 0;
+    margin: 21px 22px;
 }
 
 .img-card-2 {
@@ -669,9 +677,21 @@ html {
     }
 }
 
+
+
 .dtxts-sec-sobre {
     opacity: 0;
     color: #000000;
     transition: 2100ms;
     margin: 30px;
+}
+
+
+.img-txt-vision {
+    width: 101%;
+    position: relative;
+    top: 64vh;
+    height: 120vh;
+    object-fit: contain;
+    background: #2d3037;
 }

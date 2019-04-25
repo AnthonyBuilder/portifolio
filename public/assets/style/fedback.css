@@ -27,7 +27,7 @@
 
 .in-feed {
     margin: 23px 0;
-    border: 1.5px solid #505050;
+    border: 2px solid #505050;
 
     padding: 10px;
     font-size: 1em;
@@ -48,7 +48,7 @@
 
 
 .in-feed:focus {
-    border: 1.5px solid white;
+    border: 2px solid white;
     animation: inShadowAnimation  4s infinite;
     transform: scale(1.1, 1.1);
 }
