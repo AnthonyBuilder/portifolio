@@ -93,7 +93,6 @@
        
             <svg class="scene" style="width:101%; opacity: 0" width="100%" height="113vh"
                 preserveAspectRatio="none" viewBox="0 0 1440 800">
-                   
                 <path class="path-svg"
                     d="M -84.52,-81.13 C -94.62,-73.4 -88.88,-59.55 -90.33,-48.91 -89.29,27.31 -89.61,103.5 -88.33,179.8 -85.99,416.1 -81.32,888.9 -81.32,888.9 -81.32,888.9 974.5,888.7 1587,891.9 1518,719.9 1487,644 1429,533 1388,437.7 1447,259.7 1400,187 1362,132 1270,90.53 1207,39.93 1161,2.932 1071,-74.45 1071,-74.45 1071,-74.45 914.5,-77.77 848.2,-80.17 537.6,-80.84 227,-81.38 -83.6,-81.6 -83.91,-81.44 -84.21,-81.29 -84.52,-81.13 Z"
                     pathdata:id="M -84.52,-81.13 C -94.62,-73.4 -88.88,-59.55 -90.33,-48.91 -89.29,27.31 -89.61,103.5 -88.33,179.8 -85.99,416.1 -81.32,888.9 -81.32,888.9 -81.32,888.9 974.5,888.7 1587,891.9 1576,704.7 1517,625.7 1459,514.7 1418,419.4 1430,288.5 1382,187 1349,116.3 1296,54.47 1240,0.3429 1205,-33.51 1120,-83.59 1120,-83.59 1120,-83.59 914.5,-77.77 848.2,-80.17 537.6,-80.84 227,-81.38 -83.6,-81.6 -83.91,-81.44 -84.21,-81.29 -84.52,-81.13 Z">
@@ -163,10 +162,10 @@
             <div class="wrapper-txt-int-sobre">
                 <div id="dtxts_sec_in_sobre" class="dtxts-sec-sobre els-anim-moj">
                     <h1 class="els-anim-moj" style="font-family: 'SF Compact Display Medium'">Olá, eu sou Desenvolvedor de Software em São paulo, Brasil.</h1>
-                    <p class="els-anim-moj" style="font-family: 'SF Compact Display Thin'">
+                    <p class="els-anim-moj" style="font-family: 'SF Compact Display Thin'; font-weight: 600;">
                     Posso ajuda-lo a desenvolver seu proximo produto.<br>
                     Construo aplicações full-stack, web aplications.<br>
-                    Existe algo que possamos descutir ?</p>          
+                    Existe algo que possamos discutir ?</p>          
                 </div>
 
                 <div id="dtxts_sec_in_sobre"  class="els-anim-moj">
@@ -237,11 +236,11 @@
                             <div class="txt-title">
                                 <div class="txts-top">
                                     <i class="mt-ic-arrow ic-forw">arrow_back</i>
-                                    <h1>Anthony José De Almeida Silva</h1>
+                                    <h1 style="font-family: 'SF Compact Display Medium'; font-weight: 600;">Anthony José De Almeida Silva</h1>
                                 </div>
 
                                 <div class="row-imgs-info">
-                                    <img src="assets/img/beffore-div.jpg" alt="" class="img-beffore-rig">
+                                    
                                     <img class="img-prof-rig" src="assets/img/Imgant.png">
                                 </div>
                             </div>
@@ -328,22 +327,27 @@
                         </div>
 
                         <div class="card-serv2 crd">
-                            
-                       
-                            
-                             <div class="crd-img crd-img-sc crd-img-h">
-                                                
+                                 
+                             <div class="crd-img crd-img-sc crd-img-h">    
                                 <h2 style="font-weight: 400; color:white; position:relative; padding: 4.3vh 0;font-size: 1.9vw;">Desenvolvimento Web</h2>
-                                <div class="crd-progress-level">
-                                    <div class="prog">
-
-                                    </div>
-                                    <div class="level">
-                                        <h2>100%</h2>
-                                    </div>
+                                <div class="content-crd-serv">
+                                        <h1 class="pr-crd-serv">100%</h1>
+                                        <h2 class="sub-crd-serv">HTML5 JS CSS</h2>
                                 </div>
+                            </div>
                             
-                            </div>           
+                            <div class="crd-collapsable">
+                                <div class="crd-collapse-wrapper">
+                                    <h1 class="anim-txts-coll">Frameworks</h1>
+                                    <h2 class="anim-txts-coll">AnimeJS, AngularJS, Ionic, ASP.NET</h2>
+                                    <br>
+                                    <h1 class="anim-txts-coll">Back-End</h1>
+                                    <h2 class='anim-txts-coll'>PHP, MySql, ASP.NET-MVC, Gulp</h2>
+                                    <br>
+                                    <h1 class="anim-txts-coll">Fron-End</h1>
+                                    <h2 class="anim-txts-coll">Ajax, Jquery, JavaScript, CSS, HTML 5</h2>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="card-serv3 crd">

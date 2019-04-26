@@ -107,6 +107,19 @@
   transition: 300ms all;
 }
 
+.crd-img:nth-last-child(2)::after {
+  content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0%;
+    top: 9px;
+    width: 21vw;
+    height: 54.1vh;
+    opacity: 0.8;
+    border-radius: 50px;
+    background: inherit;
+}
+
 .crd-img:hover::after {
   -webkit-filter: blur(30px);
   -moz-filter: blur(30px);
@@ -320,4 +333,72 @@
 
 .text-list-crd a {
   text-decoration: none;
+}
+
+
+.pr-crd-serv {
+    box-shadow: 0 3px 30px -13px black;
+    border: 5px solid;
+    border-radius: 100%;
+    color: #2b2b2bbd;
+    background: #39de74ba;
+    font-size: 3vw;
+    margin: 0px 3vw;
+    padding: 5.2vw 0;
+    transition: 500ms;
+}
+
+
+.pr-crd-serv:hover{
+    background: #5e5e5e;
+   cursor: pointer;
+}
+
+.sub-crd-serv {    
+    font-size: 1.9vw;
+    transition: 500ms;
+    color: #272727ad;
+    /* border: 5px solid; */
+    border-radius: 44px;
+    margin: 2vw 50px;
+    color: #abababbd;
+    background: #00000098;
+    padding: 5px 0;
+}
+
+.crd {
+      display: -webkit-box;
+}
+
+.crd-collapsable{
+    position: relative;
+    width: 33vw;
+    text-align: left;
+    height: 54vh;
+    filter: brightness(87%);
+    background: linear-gradient(88.602deg, rgb(246, 87, 129), rgb(219, 78, 160));
+    -webkit-animation: GradTransition 20s ease;
+    -moz-animation: GradTransition 20s ease;
+    animation: GradTransition 20s ease;
+    background-size: 200% 200%;
+    top: 24px;
+    padding: 66px;
+    border-radius: 21px;
+    display: none;
+    opacity: 0;
+}
+
+
+.crd-collapsable h1 {
+    font-size: 3vw;
+    color: #292929;
+}
+
+.crd-collapsable h2 {
+    font-size: 1.4vw;
+    color: #00000087;
+}
+
+.crd-collapse-wrapper {
+    line-height: 5.2vh;
 }

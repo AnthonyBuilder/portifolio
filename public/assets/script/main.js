@@ -25,7 +25,7 @@ var cards2Serv = document.getElementById('cardRow');
 var bottomCtn = document.querySelector(".bottom-content");
 var divRowFeeds = document.querySelector('.row-coments');
 var cardRowFeeds = document.querySelector('.card-coments');
-var crdServicos = document.querySelectorAll('.crd-img');
+let crdServicos = document.querySelectorAll('.crd-img');
 let dIntSobre = document.querySelector('.int-sobre');
 let elmGtSec = document.querySelector('#githubsec');
 let gradFluidBack = document.querySelector('.grad-bottom-fluid');
@@ -56,6 +56,23 @@ imgProfileSobre.addEventListener('click', () => {
 
 icArrowBackDefault.addEventListener('click', () => {
     outContSobInfo();
+
+});
+
+var pr_crd_serv = document.querySelector('.pr-crd-serv');
+var coll_dev_web = document.querySelector('.crd-collapsable');
+
+var k = true;
+pr_crd_serv.addEventListener('click', () => {
+    if (k === true) {
+        crdServicos[1].style.filter = 'brightness(80%)';
+        coll_dev_web.style.display = "block";
+        collInDevWeb();
+        k = false;
+    } else if (k === false) {
+        crdServicos[1].style.filter = 'brightness(100%)';
+        collOutDevWeb();
+    }
 
 });
 

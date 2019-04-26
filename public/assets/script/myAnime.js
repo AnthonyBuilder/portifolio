@@ -201,7 +201,7 @@ function inContSobInfo() {
         width: ['166vh', '50vh'],
         duration: 1500,
         elasticity: 50,
-        easing: "easeOutElastic",
+        easing: "easeOutExpo",
         complete: () => {
             anime({
                 targets: '.img-beffore-ri',
@@ -280,85 +280,140 @@ $('.text-main').each(function () {
 function animMainText() {
     anime.timeline({
         loop: false
-    })
-        .add({
-            targets: '.text-main .letter',
-            translateX: [50, 0],
-            translateZ: 0,
-            opacity: [0, 1],
-            easing: "easeOutExpo",
-            duration: 1500,
-            delay: function (el, i) {
-                return 500 + 30 * i;
-            },
-            complete: function () {
+    }).add({
+        targets: '.text-main .letter',
+        translateX: [50, 0],
+        translateZ: 0,
+        opacity: [0, 1],
+        easing: "easeOutExpo",
+        duration: 1500,
+        delay: function (el, i) {
+            return 500 + 30 * i;
+        },
+        complete: function () {
 
-                setTimeout(() => {
-                    anime({
-                        targets: '.text-main .letter',
-                        easing: "easeOutExpo",
-                        color: {
-                            value: (el, i, t) => {
-                                const color = `rgb(19, 19, 19)`;
-                                return color;
-                            },
-                            easing: 'linear',
-                            duration: 900,
+            setTimeout(() => {
+                anime({
+                    targets: '.text-main .letter',
+                    easing: "easeOutExpo",
+                    color: {
+                        value: (el, i, t) => {
+                            const color = `rgb(19, 19, 19)`;
+                            return color;
                         },
-                        duration: 850,
-                        delay: function (el, i) {
-                            return 500 + 30 * i;
-                        },
-                    });
-
-                    anime({
-                        targets: '.scene',
-                        opacity: [0, 1],
                         easing: 'linear',
-                        duration: 700,
-                        delay: function (el, i) {
-                            return 500 + 30 * i;
-                        },
-                        complete: () => {
+                        duration: 900,
+                    },
+                    duration: 850,
+                    delay: function (el, i) {
+                        return 500 + 30 * i;
+                    },
+                });
 
-                            anime({
-                                targets: '.row-bottom-txts .txt-main-bottom',
-                                translateX: [50, 0],
-                                translateZ: [10, 0],
-                                opacity: [0, 1],
-                                easing: "easeOutExpo",
-                                color: {
-                                    value: (el, i, t) => {
-                                        const color = `rgb(27, 27, 27)`;
-                                        return color;
-                                    },
-                                    easing: 'linear',
-                                    duration: 1000,
+                anime({
+                    targets: '.scene',
+                    opacity: [0, 1],
+                    easing: 'linear',
+                    duration: 700,
+                    delay: function (el, i) {
+                        return 500 + 30 * i;
+                    },
+                    complete: () => {
+
+                        anime({
+                            targets: '.row-bottom-txts .txt-main-bottom',
+                            translateX: [50, 0],
+                            translateZ: [10, 0],
+                            opacity: [0, 1],
+                            easing: "easeOutExpo",
+                            color: {
+                                value: (el, i, t) => {
+                                    const color = `rgb(27, 27, 27)`;
+                                    return color;
                                 },
-                                duration: 1200,
-                                delay: function (el, i) {
-                                    return 500 + 30 * i;
-                                },
+                                easing: 'linear',
+                                duration: 1000,
+                            },
+                            duration: 1200,
+                            delay: function (el, i) {
+                                return 500 + 30 * i;
+                            },
 
-                                complete: () => {
-                                    anime({
-                                        targets: '.anim-header-itm',
-                                        opacity: [0, 1],
-                                        duration: 950,
+                            complete: () => {
+                                anime({
+                                    targets: '.anim-header-itm',
+                                    opacity: [0, 1],
+                                    duration: 950,
 
-                                        translateY: [-70, 0],
-                                        easing: 'easeInOutExpo',
-                                        delay: function (el, i) {
-                                            return 200 + 50 * i;
-                                        }
-                                    })
-                                }
-                            });
-                        }
-                    });
-                }, 5000);
+                                    translateY: [-70, 0],
+                                    easing: 'easeInOutExpo',
+                                    delay: function (el, i) {
+                                        return 200 + 50 * i;
+                                    }
+                                })
+                            }
+                        });
+                    }
+                });
+            }, 5000);
 
+        }
+    });
+
+}
+
+var txt_srv = document.querySelectorAll('.txt-beff-serv');
+function collInDevWeb() {
+    anime({
+        targets: '.anim-txts-coll',
+        translateX: [-100, 0],
+        duration: 800,
+        opacity: [0, 1],
+        easing: 'easeInOutExpo',
+        delay: function (el, i) {
+            return 200 + 50 * i;
+        },
+
+
+        complete: () => {
+
+            anime({
+                duration: 500,
+                targets: '.letter-serv',
+                translateX: [200, 0],
+                opacity: [0, 1],
+                easing: 'easeInOutExpo',
+                delay: function (el, i) {
+                    return 200 + 50 * i;
+                }
+            });
+        }
+    });
+
+
+    anime({
+        targets: '.crd-collapsable',
+        width: [10, '33vw'],
+        translateX: [-100, 0],
+        duration: 400,
+        opacity: [0, 1],
+        easing: 'easeInOutExpo',
+    });
+}
+
+function collOutDevWeb() {
+    anime({
+        targets: '.crd-collapsable',
+        easing: 'easeInOutExpo',
+        translateX: [0, -100],
+        duration: 300,
+        width: ['33vw', 10],
+        opacity: [1, 0],
+        complete: () => {
+            if (coll_dev_web.style.display === "block") {
+                coll_dev_web.style.display = "none";
+                k = true;
             }
-        });
-
+        }
+    })
 }
