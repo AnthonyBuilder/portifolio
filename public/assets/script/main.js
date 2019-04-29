@@ -123,12 +123,14 @@ window.onload = function () {
                 scrollDelta;
 
             scrollDelta = (fromTop - startPos) * 1; // "velocidade" em funcao do scroll
-            elmGtSec.style.backgroundSize = `${scrollDelta - 1000}px ${scrollDelta - 1400}px`;
+            elmGtSec.style.backgroundSize = `${scrollDelta - 1000}px ${scrollDelta - 1100}px`;
+            elmGtSec.style.filter = `contrast(${scrollDelta / 70 * 2.7}%)`;
 
-            //elm.style.transition = `${scrollDelta - 1500}ms`;
-            //console.clear();
-            //console.log(scrollDelta);
         }
+        //elm.style.transition = `${scrollDelta - 1500}ms`;
+        //console.clear();
+        //console.log(scrollDelta);
+
 
         run();
 
@@ -159,7 +161,8 @@ window.onload = function () {
         imgProjItm[0].style.height = `${posY * 2 / 129}vh`;
         imgProjItm[1].style.height = `${posY * 2 / 129}vh`;
         imgProjItm[2].style.height = `${posY * 2 / 129}vh`;
-        txtBefforeServ.style.top = `${posY * 3 / 200}%`;
+        txtBefforeServ.style.top = `${posY * 4 / 200}%`;
+        txtBefforeServ.style.transition = `${posY / 3 * 2}ms`;
         txtTitleMainProjSec.style.top = `${posY * 2 / 200}%`;
 
         if (posY === 0) {
@@ -193,7 +196,7 @@ window.onload = function () {
             // }, 500);
         }
 
-        if (posY > 2298) {
+        if (posY > 2400) {
 
             elsServicosAnim();
             elsServiBeffAnim();
@@ -240,7 +243,7 @@ window.onload = function () {
             textsHeadh2[4].style.animation = null;
         }
 
-        if (posY > 4998) {
+        if (posY > 4011) {
             elsAnimGitSec();
             textsHead[3].style.color = "white";
             textsHeadh2[4].style.animation = animShake;
@@ -257,7 +260,7 @@ window.onload = function () {
             textsHeadh2[5].style.animation = null;
             textsHead[4].style.color = "rgb(47, 47, 47)";
         }
-        if (posY > 5630) {
+        if (posY > 4630) {
 
             textsHead[4].style.color = "white";
             textsHeadh2[5].style.animation = animShake;

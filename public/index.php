@@ -16,6 +16,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style/sec_github.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style/sec_feedback.css" />
 
+    <link rel="stylesheet" href="assets/style/responsive/media_1366.css">
+
     <link rel="stylesheet" href="assets/style/page_loader.css">
     <link rel="stylesheet" href="assets/fonts/font.css"/>
 
@@ -41,8 +43,8 @@
         <header>
             <div class="wrapper-header">
                 <h2 id="text-mainnome" class="back-color-textm anim-header-itm">Anthony José</h2>
+                <div class="wrapper-header-items anim-header-itm">
                 <ul>
-                <div class="wrapper-header-items anim-header-itm"></div>
                     <li>
                         <a href="#int-sobre">
                             <h2 class="text-nav-button txt-header-button  anim-header-itm">Sobre</h2>
@@ -73,6 +75,7 @@
                         </a>
                     </li>
                 </ul>
+                </div>
                 <h2 id="text-rigth-cpl"  class="anim-header-itm">Curriculo</h2>
         
                 <img class="img-nav anim-header-itm" src="assets/img/Myimg.jpg">
@@ -179,7 +182,7 @@
 
           
 
-        <div id="Sobre" style="padding-bottom: 61px;" class="anim-els-in">
+        <div id="Sobre"  class="anim-els-in">
             
         
             <div class="container-sobre anim-els-in">
@@ -190,11 +193,11 @@
                 <div class="beffore-sobre hcard hcard2 div-texts-resp">
                     <div class="texts-head hcard  div-texts-resp">
                         <div class="text-head">
-                            <h1 style="font-size: 5em; font-family: 'SF Compact Display Medium'; font-weight: 600;">Sobre</h1>
+                            <h1>Sobre</h1>
                         </div>
 
                         <div class="text-sub-head">
-                            <h2 style="margin-left:3px;font-size: 2em; font-family: font-family: 'SF Compact Display Thin';">
+                            <h2>
                                 Desenvolvedor
                                 apaixonado por criar
                             </h2>
@@ -205,7 +208,7 @@
                     </div>
                 </div>
 
-                <div class="content anim-els-in">
+                <div class="content anim-els-in" style="position: relative; top: 25px;">
                     <p>
                         Começando aos 10 anos, descobri minha paixão, desde então eu tomava conhecimento
                         de tornar-me melhor de eu mesmo para descobrir a melhor forma de vencer, experiencias
@@ -296,11 +299,11 @@
     </div>
 
         <div id="servicos-container" class="anim-els-in-serv" onmousemove="showCoords(event)">
-            <h1 class="txt-beff-serv anim-els-in-serv-beff" style="font-family: 'SF Compact Display Medium';">Serviços</h1>
+            <h1 class="txt-beff-serv anim-els-in-serv-beff">Serviços</h1>
             <div id="servicos-beffore" class="anim-els-in-serv">
                 <div class="texts-head-servicos">
                     <div class="text-head text-head-h1">
-                        <h1 class="text-head text-head-h1-af" style="font-size: 5vw; font-family: sans-serif; font-weight: 700; color: #737373;">Serviços</h1>
+                        <h1 class="text-head text-head-h1-af" style="font-size: 5vw;">Serviços</h1>
                     </div>
                     <div class="text-sub-head tx-sv">
                         <h2 style="text-shadow: 0 1px 60px 6px black;">Códigos no github</h2>
@@ -313,13 +316,12 @@
                     <div class="row-serv" id="cardRowMain">
                     
                         <div class="card-serv crd">
-                            <div class="crd-img crd-img-sc crd-img-h">
-                                                
-                                <h2 style="font-weight: 400; color:white; position:relative; padding: 4.3vh 0;font-size: 1.9vw;">Responsabilidades</h2>
+                            <div class="crd-img crd-img-sc crd-img-h">             
+                                <h2 class="title-card-serv">Responsabilidades</h2>
                                 <div class="text-list-crd">
                                     <a href="pg_serv/index.html"><h1>Legibilidade</h1></a>
-                                    <h1>CSS</h1>
-                                    <h1>javascript</h1>
+                                    <a href="pg_serv/index.html#responsividade"><h1>Responsividade</h1></a>
+                                    <a href="pg_serv/index.html#flex"><h1>Flexibilidade</h1></a>
                                 </div>
                             
                             </div>
@@ -329,7 +331,7 @@
                         <div class="card-serv2 crd">
                                  
                              <div class="crd-img crd-img-sc crd-img-h">    
-                                <h2 style="font-weight: 400; color:white; position:relative; padding: 4.3vh 0;font-size: 1.9vw;">Desenvolvimento Web</h2>
+                             <h2 class="title-card-serv">Desenvolvimento Web</h2>
                                 <div class="content-crd-serv">
                                         <h1 class="pr-crd-serv">100%</h1>
                                         <h2 class="sub-crd-serv">HTML5 JS CSS</h2>
@@ -354,42 +356,73 @@
                          
                             
                             <div class="crd-img crd-img-sc crd-img-h">
-                                                
-                                <h2 style="font-weight: 400; color:white; position:relative; padding: 4.3vh 0;font-size: 1.9vw;">Desenvolvimento Web</h2>
-                                <div class="text-list-crd">
-                                    <a href="pg_serv/index.html"><h1>Html <span class="arrow-span">&#8250;</span> </h1></a>
-                                    <h1>CSS <span class="arrow-span">&#8250;</span> </h1>
-                                    <h1>javascript<span class="arrow-span-js">&#8250;</span> </h1>
+                            <h2 class="title-card-serv">Mobile</h2>
+                                <div class="content-crd-serv">
+                                        <h1 class="pr-crd-serv">100%</h1>
+                                        <h2 class="sub-crd-serv">Android Studio</h2>
                                 </div>
+                            </div>
                             
-                            </div>                      
+                            <div class="crd-collapsable">
+                                <div class="crd-collapse-wrapper">
+                                    <h1 class="anim-txts-coll">Frameworks</h1>
+                                    <h2 class="anim-txts-coll">AnimeJS, AngularJS, Ionic, ASP.NET</h2>
+                                    <br>
+                                    <h1 class="anim-txts-coll">Back-End</h1>
+                                    <h2 class='anim-txts-coll'>PHP, MySql, ASP.NET-MVC, Gulp</h2>
+                                    <br>
+                                    <h1 class="anim-txts-coll">Fron-End</h1>
+                                    <h2 class="anim-txts-coll">Ajax, Jquery, JavaScript, CSS, HTML 5</h2>
+                                </div>
+                            </div>              
                         </div>
 
                         <div class="card-serv4 crd">
                      
                             <div class="crd-img crd-img-sc crd-img-h">
                                                 
-                                <h2 style="font-weight: 400; color:white; position:relative; padding: 4.3vh 0;font-size: 1.9vw;">Desenvolvimento Web</h2>
-                                <div class="text-list-crd">
-                                    <a href="pg_serv/index.html"><h1>Html <span class="arrow-span">&#8250;</span> </h1></a>
-                                    <h1>CSS <span class="arrow-span">&#8250;</span> </h1>
-                                    <h1>javascript<span class="arrow-span-js">&#8250;</span> </h1>
+                            <h2 class="title-card-serv">Desktop</h2>
+                                <div class="content-crd-serv">
+                                        <h1 class="pr-crd-serv">100%</h1>
+                                        <h2 class="sub-crd-serv">C#</h2>
                                 </div>
+                            </div>
                             
+                            <div class="crd-collapsable">
+                                <div class="crd-collapse-wrapper">
+                                    <h1 class="anim-txts-coll">Frameworks</h1>
+                                    <h2 class="anim-txts-coll">AnimeJS, AngularJS, Ionic, ASP.NET</h2>
+                                    <br>
+                                    <h1 class="anim-txts-coll">Back-End</h1>
+                                    <h2 class='anim-txts-coll'>PHP, MySql, ASP.NET-MVC, Gulp</h2>
+                                    <br>
+                                    <h1 class="anim-txts-coll">Fron-End</h1>
+                                    <h2 class="anim-txts-coll">Ajax, Jquery, JavaScript, CSS, HTML 5</h2>
+                                </div>
                             </div>
                         </div>
 
                         <div class="card-serv5 crd">
                    
                             <div class="crd-img crd-img-sc crd-img-h">
-                                                
-                                <h2 style="font-weight: 400; color:white; position:relative; padding: 4.3vh 0;font-size: 1.9vw;">Desenvolvimento Web</h2>
-                                <div class="text-list-crd">
-                                    <a href="pg_serv/index.html"><h1>Html <span class="arrow-span">&#8250;</span> </h1></a>
-                                    <h1>CSS <span class="arrow-span">&#8250;</span> </h1>
-                                    <h1>javascript<span class="arrow-span-js">&#8250;</span> </h1>
+                            <h2 class="title-card-serv">MySQL</h2>
+                                <div class="content-crd-serv">
+                                        <h1 class="pr-crd-serv">100%</h1>
+                                        <h2 class="sub-crd-serv">PHP PDO BLOB</h2>
                                 </div>
+                            </div>
                             
+                            <div class="crd-collapsable">
+                                <div class="crd-collapse-wrapper">
+                                    <h1 class="anim-txts-coll">Frameworks</h1>
+                                    <h2 class="anim-txts-coll">AnimeJS, AngularJS, Ionic, ASP.NET</h2>
+                                    <br>
+                                    <h1 class="anim-txts-coll">Back-End</h1>
+                                    <h2 class='anim-txts-coll'>PHP, MySql, ASP.NET-MVC, Gulp</h2>
+                                    <br>
+                                    <h1 class="anim-txts-coll">Fron-End</h1>
+                                    <h2 class="anim-txts-coll">Ajax, Jquery, JavaScript, CSS, HTML 5</h2>
+                                </div>
                             </div>
                         </div>
                     </div>

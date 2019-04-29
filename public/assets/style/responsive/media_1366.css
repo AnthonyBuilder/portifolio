@@ -1,0 +1,45 @@
+
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+
+    .int-top {
+        height: 110vh;
+    }
+
+    .int-sobre {
+        background-size: 125%;
+    }
+
+    #text-mainnome {
+        font-size: 1.7vw;
+    }
+
+    header ul {
+        font-size:  .8vw;
+    }
+
+
+
+    .content p {
+        font-size: 1.4vw;
+    }
+
+    #text-rigth-cpl {
+        font-size: 1.2vw;
+    }
+    
+}
+
+
+@media only screen and (max-device-width: 1440px) {
+    .crd-img:nth-last-child(2)::after {
+        height: 73%;
+    }
+    
+    .wrapper-header-items {
+        height: 1.8vw;
+    }
+}
+

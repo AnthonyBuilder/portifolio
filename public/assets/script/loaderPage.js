@@ -7,8 +7,9 @@ keyAn = true;
 
 
 var currentURL = window.location.href;
+var s_url_current = currentURL.split('?');
 
-if (currentURL === 'http://localhost/portifolio/public/index.php?loader=false') {
+if (s_url_current[1] === 'loader=false') {
 
     loaderElms.style.display = "none";
 
@@ -16,9 +17,7 @@ if (currentURL === 'http://localhost/portifolio/public/index.php?loader=false') 
     setTimeout(() => {
         animMainText();
     }, 1000);
-}
-
-if (currentURL === 'http://localhost/portifolio/public/index.php') {
+} else {
 
     setTimeout(() => {
         txtLoader.style.animation = "fadeOut 1s";
@@ -44,7 +43,9 @@ if (currentURL === 'http://localhost/portifolio/public/index.php') {
 
 
 function setStart() {
-    setTimeout(() => { keyAn = false; }, 4000);
+    setTimeout(() => {
+        keyAn = false;
+    }, 4000);
     setTimeout(() => {
         loaderElmsCont.style.animation = "fadeOut 1s";
         setTimeout(() => {

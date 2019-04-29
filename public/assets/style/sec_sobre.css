@@ -1,11 +1,12 @@
 #Sobre {
     position: relative;
     margin: 5em 3em;
-    padding: 1 0em 31px;
+    padding-bottom: 142px;
     max-width: 100%;
     display: flex;
     flex-direction: row;
     top: 27vh;
+   
 }
 
 .container-sobre {
@@ -16,6 +17,12 @@
     width: 50%;
 }
 
+.content p {
+    font-size: 1.1vw;
+    font-family: sans-serif;
+    color: #bebebe;
+    margin: 21px 22px;
+}
 
 .texts-head {
     padding: 15px;
@@ -23,7 +30,6 @@
     max-width: 100%;
     border-radius: 25px;
     color: #000000b0;
-
     background: linear-gradient(30deg, #41824e, #51789e, #1565c0, #ff3d87, #e77a8c);
     background-size: 580% 580%;
     -webkit-animation: GradTransition 30s ease infinite;
@@ -32,6 +38,16 @@
     box-shadow: 0 1px 50px;
 }
 
+.text-head h1 {
+    font-size: 3.5vw;
+    font-family: 'SF Compact Display Medium';
+    font-weight: 600;
+}
+
+.text-sub-head h2 {
+    margin-left: 3px;
+    font-size: 1.7vw;
+}
 
 @-webkit-keyframes GradTransition {
     0% {
@@ -112,7 +128,7 @@
     /* margin: 3px 80px; */
     top: 213px;
     right: 32px;
-    width: 18em;
+    width: 13vw;
     border-radius: 100%;
     position: absolute;
     /* right: 0; */
@@ -158,19 +174,16 @@
 
 #text-img-sobre {
     text-align: center;
-    /* margin: 17.3em 2.8em; */
     position: absolute;
     font-size: 1.7vw;
     color: #131313;
     transition: 800ms;
     font-weight: 600;
-    padding: 9px 1em;
-    /* border: 1px solid; */
-    top: 1.5em;
-    right: 0.8em;
+    top: 57px;
+    right: 61px;
     z-index: 1;
     font-family: "SF Compact Display Medium";
-    animation: shake 13.5s infinite cubic-bezier(0.77, 0, 0.175, 1);
+    animation: shake 13.5s infinite cubic-bezier(0.77, 0, 0.175, 1)
 }
 
 .hcard {
@@ -186,111 +199,6 @@
 .hcard2 {
     transition: 480ms;
 }
-
-
-
-
-/* #Sobre {
-    position: relative;
-    padding-top: 100px;
-
-    font-size: 12px;
-    max-width: 100%;
-}
-
-.texts-head {
-    padding: 15px;
-    margin: 5px;
-    max-width: 700px;
-    border-radius: 25px;
-    color: #000000b0;
-    background: linear-gradient(270deg, #b14b8f, #0586c2, #4098ca, #602a92);
-    background-size: 800% 800%;
-    -webkit-animation: GradTransition 30s ease infinite;
-    -moz-animation: GradTransition 30s ease infinite;
-    animation: GradTransition 30s ease infinite;
-    box-shadow: 0 1px 50px;
-
-}
-
-@-webkit-keyframes GradTransition {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes GradTransition {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes GradTransition { 
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-
-
-.beffore-sobre {
-    padding: 3px;
-    margin: 5px;
-    max-width: 700px;
-
-    border-radius: 25px;
-    color: #000000b0;
-    
-    box-shadow: 0 1px 50px;
-
-    background: linear-gradient(270deg, #4b90b1, #00c698, #4098ca, #d72482);
-    background-size: 800% 800%;
-
-    -webkit-animation: GradTransition 23s ease infinite;
-    -moz-animation: GradTransition 23s ease infinite;
-    animation: GradTransition 23s ease infinite;
-}
-
-.img-profile {
-    margin: 5px 80px;
-    width: 350px;
-    border-radius: 20px;
-    position: absolute;
-    right: 0;
-}
-
-#text-img-sobre {
-    text-align: center;
-    margin: 17.3em 2.8em;
-    position: absolute;
-    right: 0;
-    font-size: 21px;
-    color: white;
-    transition: 800ms;
-    padding: 12px 5em;
-    border: 2px solid;
-    border-radius: 14px;
-}
-
-#text-img-sobre:hover {
-    transform:scale(1.05, 1.05);
-    box-shadow: 0 1px 30px rgba(255, 255, 255, 0.342);
-    text-shadow: 0 1px 80px;
-}
-
-
-.hcard {
-    transition: 880ms;
-    opacity: .98;
-    border-radius: 20px;
-}
-
-.hcard:hover {
-    box-shadow: 0 -1px 100px;
-    transform: scale( .98, .98);
-}
-
-.hcard2 { 
-    transition: 480ms;
-} */
-
 
 .int-sobre {
     background-image: url(../img/mojave.jpg);
@@ -486,11 +394,12 @@
     animation: GradTransition 60s ease infinite;
     box-shadow: 0 1px 50px;
     width: 101%;
-    height: 30.3vw;
+    height: 537px;
     border-radius: 45px;
     position: relative;
     opacity: 0;
     text-align: center;
+    margin-bottom: 100px;
 }
 
 .content-txt-st-inf {
@@ -550,7 +459,7 @@
     font-weight: 600;
     color: #000000d2;
     padding: 0 15px;
-  
+
 }
 
 .material-icons {
