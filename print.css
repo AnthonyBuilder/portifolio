@@ -1,0 +1,10 @@
+
+ @media print {
+    /* Aqui vai as declarações desejadas */
+  }
+
+@media screen and (max-width: 480px) {
+    * {
+        font-size: 10px;
+    }
+}

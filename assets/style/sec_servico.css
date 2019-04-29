@@ -1,0 +1,377 @@
+.text-bottom-serv {
+  margin: 0 1.5vw;
+}
+
+.text-bottom-serv h2 {
+  font-size: 1.8vw;
+  padding: 8vh 1vw;
+  width: 86%;
+}
+
+.container-content {
+  width: 101%;
+  height: 75vh;
+  margin-top: 30px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  will-change: transform, opacity, filter, scroll-position, transition;
+}
+
+#servicos-beffore {
+  position: absolute;
+  padding: 3px;
+  margin: -5em 0em;
+  width: 59.8em;
+  border-radius: 25px;
+  color: #000000b0;
+}
+
+#servicos-container {
+  width: 100%;
+  position: relative;
+
+  opacity: 0;
+  height: 31em;
+  padding: 10em 0em;
+  margin-top: 31vh;
+}
+
+.texts-head-servicos {
+  padding: 15px;
+  margin: 5px 4em;
+  width: 47em;
+  color: #000000b0;
+}
+
+.row-serv {
+  display: flex;
+  flex-direction: row;
+  height: 33em;
+  text-align: center;
+  width: 100%;
+}
+
+.crd-img {
+  width: 21vw;
+  height: 54.1vh;
+  margin: 25px;
+  border-radius: 25px;
+  box-shadow: 0 2px 45px -5px;
+
+  background: #d63372;
+  transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.crd-img::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 4%;
+  top: 14px;
+  width: 21vw;
+  height: 54.1vh;
+  opacity: 0.8;
+  border-radius: 50px;
+  background: inherit;
+  filter: blur(16px);
+  -webkit-transition: all 0.2s;
+  transition: 300ms all;
+}
+
+.crd-img:nth-last-child(2)::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0%;
+  top: 9px;
+  width: 21vw;
+  height: 54.1vh;
+  opacity: 0.8;
+  border-radius: 50px;
+  background: inherit;
+}
+
+.crd-img:hover::after {
+  -webkit-filter: blur(30px);
+  -moz-filter: blur(30px);
+  -o-filter: blur(30px);
+  -ms-filter: blur(30px);
+  filter: blur(30px);
+  transition: 600ms all;
+}
+
+
+.tx-sv {
+  color: #131313;
+  background: linear-gradient(170.82deg, rgb(243, 126, 161), rgb(226, 92, 121));
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 10px;
+  width: 44%;
+  box-shadow: 0 1px 15px -5px black;
+}
+
+
+#contents {
+  margin: 4em 0em;
+  width: 100%;
+  height: 586px;
+  padding: 12px;
+  opacity: 0;
+  padding-top: 30px;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+
+.text-list-crd {
+  position: absolute;
+  width: 20.8vw;
+  margin: 0vh 1.5px;
+}
+
+.text-list-crd h1 {
+  font-size: 1.9vw;
+  margin: 8px;
+  background: #0000008a;
+  padding: 2vw 4vh;
+  border: 0;
+  border-radius: 13px;
+  color: white;
+  transition: 420ms;
+  box-shadow: 0 1px 30px -5px black;
+  transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+  text-align: left;
+  height: 12vh;
+}
+
+.text-list-crd h1:hover {
+  transform: scale3d(1.05, 1.05, 2);
+  background-color: #000000be;
+  border-radius: 9px;
+}
+
+.text-head-h1 {
+  background: linear-gradient(50deg, #ffa977, #ff466e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.txt-beff-serv {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(50deg, #3283c5, #d63372, #d65b8a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 28vw;
+  margin: -220px 25px;
+  opacity: .6;
+  transition: 2000ms;
+  font-family: "SF Compact Display Medium";
+}
+
+@-webkit-keyframes GradTransition {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes GradTransition {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes GradTransition {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+
+.arrow-span {
+  content: "\203A";
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transition: 600ms;
+  transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+  opacity: 0;
+}
+
+.arrow-span-js {
+  content: "\203A";
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transition: 600ms;
+  transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+  opacity: 0;
+}
+
+
+.text-list-crd h1:hover .arrow-span {
+  font-size: 67px;
+  margin: -26px 56%;
+  animation: flash 2s infinite;
+  opacity: 1;
+  color: #ffffffb0;
+}
+
+.text-list-crd h1:hover .arrow-span-js {
+  margin: -26px 36%;
+  font-size: 67px;
+  animation: flash 2s infinite;
+  opacity: 1;
+  color: #ffffffb0;
+}
+
+.text-list-crd a {
+  text-decoration: none;
+}
+
+
+.pr-crd-serv {
+  box-shadow: 0 3px 30px -13px black;
+  border: 5px solid;
+  border-radius: 100%;
+  color: #2b2b2bbd;
+  background: #39de74ba;
+  font-size: 3vw;
+  margin: 0px 3vw;
+  padding: 5.2vw 0;
+  transition: 500ms;
+}
+
+
+.pr-crd-serv:hover {
+  background: #5e5e5e;
+  cursor: pointer;
+}
+
+.sub-crd-serv {
+  font-size: 1.9vw;
+  transition: 500ms;
+  color: #272727ad;
+  /* border: 5px solid; */
+  border-radius: 44px;
+  margin: 2vw 5px;
+  color: #abababbd;
+  background: #00000098;
+  padding: 5px 0;
+}
+
+.crd {
+  display: -webkit-box;
+}
+
+.crd-collapsable {
+  position: relative;
+  width: 33vw;
+  text-align: left;
+  height: 54vh;
+  filter: brightness(87%);
+  background: linear-gradient(88.602deg, rgb(246, 87, 129), rgb(219, 78, 160));
+  -webkit-animation: GradTransition 20s ease;
+  -moz-animation: GradTransition 20s ease;
+  animation: GradTransition 20s ease;
+  background-size: 200% 200%;
+  top: 24px;
+  padding: 66px;
+  border-radius: 21px;
+  display: none;
+  opacity: 0;
+}
+
+
+.crd-collapsable h1 {
+  font-size: 3vw;
+  color: #292929;
+}
+
+.crd-collapsable h2 {
+  font-size: 1.4vw;
+  color: #00000087;
+}
+
+.crd-collapse-wrapper {
+  line-height: 5.2vh;
+}
+
+.title-card-serv {
+  font-weight: 100;
+  color: white;
+  position: relative;
+  padding: 4.3vh 0;
+  font-size: 1.9vw;
+  font-family: "SF Compact Display Medium", sans-serif;
+}
