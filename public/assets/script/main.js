@@ -158,9 +158,9 @@ window.onload = function () {
         var txtTitleMainProjSec = document.querySelector('.title-section-proj');
         var imgProjItm = document.querySelectorAll('.img-proj-itm');
 
-        imgProjItm[0].style.height = `${posY * 2 / 129}vh`;
-        imgProjItm[1].style.height = `${posY * 2 / 129}vh`;
-        imgProjItm[2].style.height = `${posY * 2 / 129}vh`;
+        imgProjItm[0].style.height = `${posY * 2 / 139}vh`;
+        imgProjItm[1].style.height = `${posY * 2 / 139}vh`;
+
         txtBefforeServ.style.top = `${posY * 4 / 200}%`;
         txtBefforeServ.style.transition = `${posY / 3 * 2}ms`;
         txtTitleMainProjSec.style.top = `${posY * 2 / 200}%`;
@@ -401,7 +401,7 @@ function getFeeds() {
 // define no servidor um novo feed com o nome
 
 function setFeeds() {
-    var formD = new FormData(form)
+    var formD = new FormData(form);
     xhttpPost('ajax/feedSaveData', function () {
         success(function () {
             console.log(xhttp.responseText);

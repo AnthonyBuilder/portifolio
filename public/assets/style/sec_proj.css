@@ -101,10 +101,10 @@
 }
 
 .img-proj-itm {
-    width: 18%;
+     width: 22%;
     height: 50vh;
-    border-radius: 10px;
+    border-radius: 29px;
     margin: 5px;
-    transition: 900ms;
-    box-shadow: 0 1px 10px -5px;
+    transition: 700ms;
+    box-shadow: 0 5px 20px -5px;
 }

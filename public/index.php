@@ -440,10 +440,7 @@
                     <div class="cards-proj">
                         <div class="row-proj-crd">
                             <div class="wrapper-crd-item">
-                                <div class="itm-crd-proj" onclick="this.parentNode.classList.toggle('tgg-on');"
-                                    id="crd-left"
-                                    style="background: linear-gradient(10deg, rgb(32, 128, 192), rgb(37, 71, 184));">
-                                    <h2 class="txt-off-crd">Drop</h2>
+                                <div class="itm-crd-proj" id="crd-left" style="background: linear-gradient(10deg, rgb(32, 128, 192), rgb(37, 71, 184));"> <h2 class="txt-off-crd">Drop</h2>
                                 </div>
                             </div>
 
@@ -455,9 +452,8 @@
                                     </div>
 
                                     <div class="row-imgs-proj">
-                                        <img src="assets/img/tumb_wood.jpg" class="img-proj-itm">
-                                        <img src="assets/img/tumb_phot.jpg" class="img-proj-itm">
-                                        <img src="assets/img/avpaul.jpg" class="img-proj-itm">
+                                        <img src="assets/img/PNG/front.png" class="img-proj-itm">
+                                        <img src="assets/img/PNG/back.png" class="img-proj-itm">
                                     </div>
                                 </div>
                             </div>

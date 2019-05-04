@@ -33,6 +33,42 @@ body {
     opacity: 0;
 }
 
+
+.mt-ic-arrow {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+.ic-forw-serv {
+    font-size: 2vw;
+    background: rgb(34, 34, 34);
+    border: 2px solid;
+    border-radius: 100%;
+    padding: 9px;
+    color: whitesmoke;
+    box-shadow: 0 1px 30px -10px rgb(43, 43, 43);
+    transition: 500ms;
+    animation: shake 13s infinite cubic-bezier(0.77, 0, 0.175, 1);
+    position: absolute;
+    left: 94px;
+    top: 143px;
+    z-index: 1;
+}
+.ic-forw-serv:hover {
+    background: #525252;
+    cursor: pointer;
+}
+
 .ul-ti h1 {
     top: -12px;
     color: rgb(44, 44, 44);
@@ -91,6 +127,10 @@ body {
     margin: 45px 14px;
 }
 
+.content {
+    width: 54%;
+    position: absolute;
+}
 
 .content-popup {
     -webkit-animation: fadeIn 2s cubic-bezier(0.77, 0, 0.175, 1);

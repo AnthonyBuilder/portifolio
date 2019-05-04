@@ -9,7 +9,7 @@ keyAn = true;
 var currentURL = window.location.href;
 var s_url_current = currentURL.split('?');
 
-if (s_url_current[1] === 'loader=false') {
+if (s_url_current[1] === 'loader=false' || s_url_current[1] === 'loader=false#') {
 
     loaderElms.style.display = "none";
 
