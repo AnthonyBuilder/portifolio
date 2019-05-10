@@ -1,1 +1,0 @@
-PDFObject.embed("/pdf/sample-3pp.pdf", "#example1");
