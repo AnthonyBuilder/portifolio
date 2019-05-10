@@ -17,7 +17,7 @@ h5,
 h6,
 .h6 {
     font-family: "SF Compact Display Thin";
-
+   
     font-weight: 600;
     margin-top: 0;
 }
@@ -64,7 +64,6 @@ body {
     top: 143px;
     z-index: 1;
 }
-
 .ic-forw-serv:hover {
     background: #525252;
     cursor: pointer;
@@ -155,9 +154,8 @@ body {
 }
 
 .t-popup {
-    color: #c1c1c1c7;
+        color: #c1c1c1c7;
 }
-
 .s-popup {
     padding: 5px 0px;
     margin-top: 5px;
@@ -298,19 +296,16 @@ body {
     color: #0f0f0f;
 }
 
-
-
 .bottom-content {
-    width: 97.4%;
+    font-family: sans-serif;
+    width: 100%;
     position: fixed;
     bottom: 0;
-    height: 6vh;
-    background-color: #ffffffe6;
-    margin: 3vh;
-    border-radius: 40px;
-
+    height: 60px;
+    background-color: #0f0f0f;
+    margin: 0 0em;
     transition: 500ms;
-    box-shadow: 0 1px 25px -5px black;
+    box-shadow: 0 -3px 25px -5px black;
 }
 
 .bottom-content ul {
@@ -320,14 +315,16 @@ body {
 }
 
 .bottom-content h2 {
-    font-size: 1vw;
+    font-size: 112%;
     font-weight: 600;
-    margin-left: 18px;
-    color: rgb(80, 80, 80);
+    margin-left: 20px;
+    color: rgb(94, 94, 94);
 }
 
 .bottom-content div {
+    font-size: 1.6vh;
     margin: 18px 20px;
+    padding-bottom: 6px;
 }
 
 aside {
@@ -336,7 +333,7 @@ aside {
     position: fixed;
     top: 280px;
     left: 100px;
-    font-size: 0.9vw;
+        font-size: 0.9vw;
     flex-basis: 25%;
     max-width: 25%;
     z-index: 1;

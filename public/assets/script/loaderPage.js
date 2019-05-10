@@ -65,3 +65,10 @@ function setStart() {
         }, 1500);
     }, 10000);
 }
+
+/**
+ *
+ * trago uma tentativa de mostrar um olho no olho,
+ * que diz sempre que esse é o cara.
+ *
+ */
