@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Portifolio Anthony</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-            
+
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style/fluid.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style/main.css" />
 
@@ -19,9 +19,13 @@
     <link rel="stylesheet" href="assets/style/responsive/media_1366.css">
 
     <link rel="stylesheet" href="assets/style/page_loader.css">
-    <link rel="stylesheet" href="assets/fonts/font.css"/>
 
-    <link href="https://fonts.googleapis.com/css?family=Nixie+One|Nova+Mono|Varela+Round|Sarabun|Julius+Sans+One|Lilita+One&" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/font.css" />
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Nixie+One|Nova+Mono|Varela+Round|Sarabun|Julius+Sans+One|Lilita+One&"
+        rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <script src="assets/rainbow/rainbowvis.js" type="text/javascript"></script>
@@ -34,51 +38,53 @@
 
     <div class="loading-elms">
         <div class="contElms">
-        <h1  class="loader-h1">Carregando</h1>
-        <div class="prog-anim" style="background: rgb(39, 39, 39);"></div>
-    </div>
+            <h1 class="loader-h1">Carregando</h1>
+            <div class="prog-anim" style="background: rgb(39, 39, 39);"></div>
+        </div>
     </div>
 
     <div class="elms-after-loading">
         <header>
-            <div class="wrapper-header">
-                <h2 id="text-mainnome" class="back-color-textm anim-header-itm">Anthony José</h2>
-                <div class="wrapper-header-items anim-header-itm">
-                <ul>
-                    <li>
-                        <a href="#int-sobre">
-                            <h2 class="text-nav-button txt-header-button  anim-header-itm">Sobre</h2>
-                        </a>
-                    </li>
+            <div>
+                <div class="wrapper-header">
+                    <h2 id="text-mainnome" class="back-color-textm anim-header-itm">Anthony José</h2>
+                    <div class="wrapper-header-items anim-header-itm">
+                        <ul>
+                            <li>
+                                <a href="#int-sobre">
+                                    <h2 class="text-nav-button txt-header-button  anim-header-itm">Sobre</h2>
+                                </a>
+                            </li>
 
-                    <li>
-                        <a href="#servicos-container">
-                            <h2 class="text-nav-button txt-header-button anim-header-itm">Serviços</h2>
-                        </a>
-                    </li>
+                            <li>
+                                <a href="#servicos-container">
+                                    <h2 class="text-nav-button txt-header-button anim-header-itm">Serviços</h2>
+                                </a>
+                            </li>
 
-                    <li>
-                        <a href="#servicos-container">
-                            <h2 class="text-nav-button txt-header-button anim-header-itm">Projetos</h2>
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="pg_serv/index.html" >
-                            <h2 class="text-nav-button txt-header-button anim-header-itm">Github</h2>
-                        </a>
-                    </li>
+                            <li>
+                                <a href="#projetos">
+                                    <h2 class="text-nav-button txt-header-button anim-header-itm">Projetos</h2>
+                                </a>
+                            </li>
 
-                    <li>
-                        <a href="#rodape">
-                            <h2 class="text-nav-button txt-header-button anim-header-itm">Feedback</h2>
-                        </a>
-                    </li>
-                </ul>
+                            <li>
+                                <a href="#githubsec">
+                                    <h2 class="text-nav-button txt-header-button anim-header-itm">Github</h2>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#rodape">
+                                    <h2 class="text-nav-button txt-header-button anim-header-itm">Feedback</h2>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h2 id="text-rigth-cpl" class="anim-header-itm">Curriculo</h2>
+
+                    <img class="img-nav anim-header-itm" src="assets/img/Myimg.jpg">
                 </div>
-                <h2 id="text-rigth-cpl"  class="anim-header-itm">Curriculo</h2>
-        
-                <img class="img-nav anim-header-itm" src="assets/img/Myimg.jpg">
             </div>
         </header>
 
@@ -93,9 +99,9 @@
                 <h2 class="txt-main-bottom">Programador PHP</h2>
                 <h2 class="txt-main-bottom">MySql</h2>
             </div>
-       
-            <svg class="scene" style="width:101%; opacity: 0" width="100%" height="113vh"
-                preserveAspectRatio="none" viewBox="0 0 1440 800">
+
+            <svg class="scene" style="width:101%; opacity: 0" width="100%" height="113vh" preserveAspectRatio="none"
+                viewBox="0 0 1440 800">
                 <path class="path-svg"
                     d="M -84.52,-81.13 C -94.62,-73.4 -88.88,-59.55 -90.33,-48.91 -89.29,27.31 -89.61,103.5 -88.33,179.8 -85.99,416.1 -81.32,888.9 -81.32,888.9 -81.32,888.9 974.5,888.7 1587,891.9 1518,719.9 1487,644 1429,533 1388,437.7 1447,259.7 1400,187 1362,132 1270,90.53 1207,39.93 1161,2.932 1071,-74.45 1071,-74.45 1071,-74.45 914.5,-77.77 848.2,-80.17 537.6,-80.84 227,-81.38 -83.6,-81.6 -83.91,-81.44 -84.21,-81.29 -84.52,-81.13 Z"
                     pathdata:id="M -84.52,-81.13 C -94.62,-73.4 -88.88,-59.55 -90.33,-48.91 -89.29,27.31 -89.61,103.5 -88.33,179.8 -85.99,416.1 -81.32,888.9 -81.32,888.9 -81.32,888.9 974.5,888.7 1587,891.9 1576,704.7 1517,625.7 1459,514.7 1418,419.4 1430,288.5 1382,187 1349,116.3 1296,54.47 1240,0.3429 1205,-33.51 1120,-83.59 1120,-83.59 1120,-83.59 914.5,-77.77 848.2,-80.17 537.6,-80.84 227,-81.38 -83.6,-81.6 -83.91,-81.44 -84.21,-81.29 -84.52,-81.13 Z">
@@ -107,7 +113,7 @@
                 <path class="path-svg"
                     d="M -85.01,-74.02 C -92.39,-66.64 -85.37,-55.79 -87.81,-46.91 -86.65,265.1 -84.66,577.2 -83.18,889.2 317.2,888.3 717.5,885.8 1118,890.4 1152,890.6 1187,890.9 1221,890 1219,768.3 1224,643.6 1187,526 1153,417 1091,319.3 1029,224.1 998.8,178.5 968.8,132.6 936.6,88.23 891.7,27.39 772.2,-78.96 772.2,-78.96 772.2,-78.96 222.1,-81.07 -85.01,-74.02 Z"
                     pathdata:id="M -85.01,-74.02 C -92.39,-66.64 -85.37,-55.79 -87.81,-46.91 -86.65,265.1 -84.66,577.2 -83.18,889.2 317.2,888.3 717.5,885.8 1118,890.4 1152,890.6 1187,890.9 1221,890 1219,768.3 1175,659.3 1150,544.3 1128,438.4 1143,312.6 1081,227.1 1004,121.1 925.8,114.8 851.3,54.73 762,-17.34 772.2,-78.96 772.2,-78.96 772.2,-78.96 222.1,-81.07 -85.01,-74.02 Z">
-                </path> 
+                </path>
                 <path class="path-svg"
                     d="M -92.42,-79.11 C -89.97,243.8 -87.52,566.7 -85.07,889.6 201.8,889.9 488.7,889.9 775.5,895.6 880.4,896.9 985.2,894 1090,892.5 1064,773.3 1037,651.6 976.1,544.8 946.7,495.8 914.6,448.3 882,401.3 820.9,314.4 742.3,252 666.4,177.4 583.2,98.01 496.5,12.18 386.7,-23.38 328.4,-45.64 232.6,-81.38 232.6,-81.38 232.6,-81.38 9.82,-84.94 -92.42,-79.11 Z"
                     pathdata:id="M -92.42,-79.11 C -89.97,243.8 -87.52,566.7 -85.07,889.6 201.8,889.9 488.7,889.9 775.5,895.6 880.4,896.9 1063,889.5 1063,889.5 1063,889.5 1081,768.2 997.4,608.7 958.5,534.8 969.9,436.8 918.5,370.8 848.4,280.8 717,260.3 629.9,186.5 552.6,121.2 491.5,38.73 426.3,-38.61 412.9,-54.44 387.9,-87.47 387.9,-87.47 387.9,-87.47 9.82,-84.94 -92.42,-79.11 Z">
@@ -125,71 +131,67 @@
                     pathdata:id="M -85.59,444.4 -85.59,890.6 546.9,895.6 C 546.9,895.6 517.4,695.4 339.9,593.4 187.7,505.9 57.98,629.2 -85.59,444.4 Z">
                 </path>
 
-                 <defs>
-						<linearGradient id="gradient-1" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop stop-color="#66333e" />
-                            <stop offset="1" stop-color="#4AA8FF" />
-                        </linearGradient>
-                        <linearGradient id="gradient-2" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop stop-color="#7f404d" />
-                            <stop offset="1" stop-color="#4297e5" />
-                        </linearGradient>
-                        <linearGradient id="gradient-3" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop stop-color="#994d5d" />
-                            <stop offset="1" stop-color="#4aa8ff" />
-                        </linearGradient>
-                        <linearGradient id="gradient-4" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop stop-color="#b25a6c" />
-                            <stop offset="1" stop-color="#5cb0ff" />
-                        </linearGradient>
-                        <linearGradient id="gradient-5" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop stop-color="#cc677c" />
-                            <stop offset="1" stop-color="#6eb9ff" />
-                        </linearGradient>
-                        <linearGradient id="gradient-6" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop stop-color="#e5748b" />
-                            <stop offset="1" stop-color="#80c2ff" />
-                        </linearGradient>
-                            <linearGradient id="gradient-7" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop stop-color="#FF819B" />
-                            <stop offset="1" stop-color="#92caff" />
-                        </linearGradient>
-				    <defs>
-                        
+                <defs>
+                    <linearGradient id="gradient-1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop stop-color="#66333e" />
+                        <stop offset="1" stop-color="#4AA8FF" />
+                    </linearGradient>
+                    <linearGradient id="gradient-2" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop stop-color="#7f404d" />
+                        <stop offset="1" stop-color="#4297e5" />
+                    </linearGradient>
+                    <linearGradient id="gradient-3" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop stop-color="#994d5d" />
+                        <stop offset="1" stop-color="#4aa8ff" />
+                    </linearGradient>
+                    <linearGradient id="gradient-4" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop stop-color="#b25a6c" />
+                        <stop offset="1" stop-color="#5cb0ff" />
+                    </linearGradient>
+                    <linearGradient id="gradient-5" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop stop-color="#cc677c" />
+                        <stop offset="1" stop-color="#6eb9ff" />
+                    </linearGradient>
+                    <linearGradient id="gradient-6" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop stop-color="#e5748b" />
+                        <stop offset="1" stop-color="#80c2ff" />
+                    </linearGradient>
+                    <linearGradient id="gradient-7" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop stop-color="#FF819B" />
+                        <stop offset="1" stop-color="#92caff" />
+                    </linearGradient>
+                    <defs>
             </svg>
-            <div class="grad-bottom-fluid"></div>            
+
+            <div class="grad-bottom-fluid"></div>
         </div>
 
         <div class="int-sobre" id="int-sobre" onmousemove="mojMoveImg(event)">
-        <div class="int-top"></div>
+            <div class="int-top"></div>
             <div class="wrapper-txt-int-sobre">
                 <div id="dtxts_sec_in_sobre" class="dtxts-sec-sobre els-anim-moj">
-                    <h1 class="els-anim-moj" style="font-family: 'SF Compact Display Medium'">Olá, eu sou Desenvolvedor de Software em São paulo, Brasil.</h1>
+                    <h1 class="els-anim-moj" style="font-family: 'SF Compact Display Medium'">Olá, eu sou Desenvolvedor
+                        de Software em São paulo, Brasil.</h1>
                     <p class="els-anim-moj" style="font-family: 'SF Compact Display Thin'; font-weight: 600;">
-                    Posso ajuda-lo a desenvolver seu proximo produto.<br>
-                    Construo aplicações full-stack, web aplications.<br>
-                    Existe algo que possamos discutir ?</p>          
+                        Posso ajuda-lo a desenvolver seu proximo produto.<br>
+                        Construo aplicações full-stack, web aplications.<br>
+                        Existe algo que possamos discutir ?</p>
                 </div>
 
-                <div id="dtxts_sec_in_sobre"  class="els-anim-moj">
-                    <h2 class="txt-s-link">Vamos conversar <a href="#Sobre">anthonyj2017@icloud.com</a></h2>  
+                <div id="dtxts_sec_in_sobre" class="els-anim-moj">
+                    <h2 class="txt-s-link">Vamos conversar <a href="#Sobre">anthonyj2017@icloud.com</a></h2>
                 </div>
             </div>
 
             <div class="int-bottom"></div>
         </div>
-        
 
-          
-
-        <div id="Sobre"  class="anim-els-in">
-            
-        
+        <div id="Sobre" class="anim-els-in">
             <div class="container-sobre anim-els-in">
                 <div class="anim-els-in">
                     <img class="img-profile" id="img-profile" src="assets/img/profile.jpg">
                 </div>
-               
+
                 <div class="beffore-sobre hcard hcard2 div-texts-resp">
                     <div class="texts-head hcard  div-texts-resp">
                         <div class="text-head">
@@ -231,74 +233,73 @@
             </div>
 
 
-        <div class="sec-ant-fts">
-            <div class="content-txt-st-inf">
-                <div class="wrapper">
-                    <div class="texts">
-                        <div class="wrapper-txts">
-                            <div class="txt-title">
-                                <div class="txts-top">
-                                    <i class="mt-ic-arrow ic-forw">arrow_back</i>
-                                    <h1 style="font-family: 'SF Compact Display Medium'; font-weight: 600;">Anthony José De Almeida Silva</h1>
-                                </div>
+            <div class="sec-ant-fts">
+                <div class="content-txt-st-inf">
+                    <div class="wrapper">
+                        <div class="texts">
+                            <div class="wrapper-txts">
+                                <div class="txt-title">
+                                    <div class="txts-top">
+                                        <i class="mt-ic-arrow ic-forw">arrow_back</i>
+                                        <h1 style="font-family: 'SF Compact Display Medium'; font-weight: 600;">Anthony
+                                            José De Almeida Silva</h1>
+                                    </div>
 
-                                <div class="row-imgs-info">
-                                    
-                                    <img class="img-prof-rig" src="assets/img/Imgant.png">
+                                    <div class="row-imgs-info">
+
+                                        <img class="img-prof-rig" src="assets/img/Imgant2.jpg">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="infos-prof">
+                                    <div class="els-sub-info">
+                                        <div class="txt-sub">
+                                            <i class="material-icons">cake</i>
+                                            <h2>17 Anos</h2>
+                                        </div>
+                                        <div class="txt-sub">
+                                            <i class="material-icons">location_city</i>
+                                            <h2>Francisco Morato</h2>
+                                        </div>
+                                        <div class="txt-sub">
+                                            <i class="material-icons">room</i>
+                                            <h2>São Paulo</h2>
+                                        </div>
+                                        <div class="txt-sub">
+                                            <i class="material-icons">work</i>
+                                            <h2>Desenvolvedor de Software</h2>
+                                        </div>
+
+                                        <div class="txt-sub">
+                                            <i class="material-icons">email</i>
+                                            <h2>anthonyj2017@icloud.com</h2>
+                                        </div>
+                                        <div class="txt-sub">
+                                            <i class="material-icons">phone</i>
+                                            <h2>(11) 94280-7999</h2>
+                                        </div>
+                                    </div>
+
+                                    <div class="els-sub-info">
+                                        <div class="txt-sub">
+                                            <img src="https://img.icons8.com/material/24/000000/instagram-new.png">
+                                            <h2>anthony.jar</h2>
+                                        </div>
+                                        <div class="txt-sub">
+                                            <img src="https://img.icons8.com/material/24/000000/facebook.png">
+                                            <h2>Anthony José</h2>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <hr>
-                            <div class="infos-prof">
-                                <div class="els-sub-info">
-                                    <div class="txt-sub">
-                                        <i class="material-icons">cake</i>
-                                        <h2>17 Anos</h2>
-                                    </div>
-                                    <div class="txt-sub">
-                                        <i class="material-icons">location_city</i>
-                                        <h2>Francisco Morato</h2>
-                                    </div>
-                                    <div class="txt-sub">
-                                        <i class="material-icons">room</i>
-                                        <h2>São Paulo</h2>
-                                    </div>
-                                    <div class="txt-sub">
-                                        <i class="material-icons">work</i>
-                                        <h2>Desenvolvedor de Software</h2>
-                                    </div>
-                                
-                                    <div class="txt-sub">
-                                        <i class="material-icons">email</i>
-                                        <h2>anthonyj2017@icloud.com</h2>
-                                    </div>
-                                    <div class="txt-sub">
-                                        <i class="material-icons">phone</i>
-                                        <h2>(11) 94280-7999</h2>
-                                    </div>
-                                </div>
-
-                                <div class="els-sub-info">
-                                    <div class="txt-sub">
-                                        <img src="https://img.icons8.com/material/24/000000/instagram-new.png">
-                                        <h2>anthony.jar</h2>
-                                    </div>
-                                    <div class="txt-sub">
-                                        <img src="https://img.icons8.com/material/24/000000/facebook.png">
-                                        <h2>Anthony José</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        
                         </div>
                     </div>
                 </div>
+                <h2 style="font-size: 1.3vw; font-weight: 100; color: #afafaf;">Anthony José - 2019<h2>
             </div>
-            <h2 style="font-size: 1.3vw; font-weight: 100; color: #afafaf;">Anthony José - 2019<h2>
         </div>
-        
-    </div>
 
-        <div id="servicos-container" class="anim-els-in-serv" onmousemove="showCoords(event)">
+        <div id="servicos-container" class="anim-els-in-serv" onmousemove="mGrCards(event)">
             <h1 class="txt-beff-serv anim-els-in-serv-beff">Serviços</h1>
             <div id="servicos-beffore" class="anim-els-in-serv">
                 <div class="texts-head-servicos">
@@ -310,34 +311,40 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="container-content">
                 <div id="contents" class="contents">
                     <div class="row-serv" id="cardRowMain">
-                    
+
                         <div class="card-serv crd">
-                            <div class="crd-img crd-img-sc crd-img-h">             
+                            <div class="crd-img crd-img-sc crd-img-h">
                                 <h2 class="title-card-serv">Responsabilidades</h2>
                                 <div class="text-list-crd">
-                                    <a href="pg_serv/index.html"><h1>Legibilidade</h1></a>
-                                    <a href="pg_serv/index.html#responsividade"><h1>Responsividade</h1></a>
-                                    <a href="pg_serv/index.html#flex"><h1>Flexibilidade</h1></a>
+                                    <a href="pg_serv/index.html">
+                                        <h1>Legibilidade</h1>
+                                    </a>
+                                    <a href="pg_serv/index.html#responsividade">
+                                        <h1>Responsividade</h1>
+                                    </a>
+                                    <a href="pg_serv/index.html#flex">
+                                        <h1>Flexibilidade</h1>
+                                    </a>
                                 </div>
-                            
+
                             </div>
-                  
+
                         </div>
 
                         <div class="card-serv2 crd">
-                                 
-                             <div class="crd-img crd-img-sc crd-img-h">    
-                             <h2 class="title-card-serv">Desenvolvimento Web</h2>
+
+                            <div class="crd-img crd-img-sc crd-img-h">
+                                <h2 class="title-card-serv">Desenvolvimento Web</h2>
                                 <div class="content-crd-serv">
-                                        <h1 class="pr-crd-serv">100%</h1>
-                                        <h2 class="sub-crd-serv">HTML5 JS CSS</h2>
+                                    <h1 class="pr-crd-serv">100%</h1>
+                                    <h2 class="sub-crd-serv">HTML5 JS CSS</h2>
                                 </div>
                             </div>
-                            
+
                             <div class="crd-collapsable">
                                 <div class="crd-collapse-wrapper">
                                     <h1 class="anim-txts-coll">Frameworks</h1>
@@ -353,16 +360,16 @@
                         </div>
 
                         <div class="card-serv3 crd">
-                         
-                            
+
+
                             <div class="crd-img crd-img-sc crd-img-h">
-                            <h2 class="title-card-serv">Mobile</h2>
+                                <h2 class="title-card-serv">Mobile</h2>
                                 <div class="content-crd-serv">
-                                        <h1 class="pr-crd-serv">100%</h1>
-                                        <h2 class="sub-crd-serv">Android Studio</h2>
+                                    <h1 class="pr-crd-serv">100%</h1>
+                                    <h2 class="sub-crd-serv">Android Studio</h2>
                                 </div>
                             </div>
-                            
+
                             <div class="crd-collapsable">
                                 <div class="crd-collapse-wrapper">
                                     <h1 class="anim-txts-coll">Frameworks</h1>
@@ -374,20 +381,20 @@
                                     <h1 class="anim-txts-coll">Fron-End</h1>
                                     <h2 class="anim-txts-coll">Ajax, Jquery, JavaScript, CSS, HTML 5</h2>
                                 </div>
-                            </div>              
+                            </div>
                         </div>
 
                         <div class="card-serv4 crd">
-                     
+
                             <div class="crd-img crd-img-sc crd-img-h">
-                                                
-                            <h2 class="title-card-serv">Desktop</h2>
+
+                                <h2 class="title-card-serv">Desktop</h2>
                                 <div class="content-crd-serv">
-                                        <h1 class="pr-crd-serv">100%</h1>
-                                        <h2 class="sub-crd-serv">C#</h2>
+                                    <h1 class="pr-crd-serv">100%</h1>
+                                    <h2 class="sub-crd-serv">C#</h2>
                                 </div>
                             </div>
-                            
+
                             <div class="crd-collapsable">
                                 <div class="crd-collapse-wrapper">
                                     <h1 class="anim-txts-coll">Frameworks</h1>
@@ -403,15 +410,15 @@
                         </div>
 
                         <div class="card-serv5 crd">
-                   
+
                             <div class="crd-img crd-img-sc crd-img-h">
-                            <h2 class="title-card-serv">MySQL</h2>
+                                <h2 class="title-card-serv">MySQL</h2>
                                 <div class="content-crd-serv">
-                                        <h1 class="pr-crd-serv">100%</h1>
-                                        <h2 class="sub-crd-serv">PHP PDO BLOB</h2>
+                                    <h1 class="pr-crd-serv">100%</h1>
+                                    <h2 class="sub-crd-serv">PHP PDO BLOB</h2>
                                 </div>
                             </div>
-                            
+
                             <div class="crd-collapsable">
                                 <div class="crd-collapse-wrapper">
                                     <h1 class="anim-txts-coll">Frameworks</h1>
@@ -430,8 +437,8 @@
             </div>
         </div>
 
-   
-        <div class="sec-proj">
+
+        <div class="sec-proj" id="projetos">
             <div class="content-proj">
                 <div class="wrapper-proj">
                     <div class="title-section-proj">
@@ -440,7 +447,9 @@
                     <div class="cards-proj">
                         <div class="row-proj-crd">
                             <div class="wrapper-crd-item">
-                                <div class="itm-crd-proj" id="crd-left" style="background: linear-gradient(10deg, rgb(32, 128, 192), rgb(37, 71, 184));"> <h2 class="txt-off-crd">Drop</h2>
+                                <div class="itm-crd-proj" id="crd-left"
+                                    style="background: linear-gradient(10deg, rgb(32, 128, 192), rgb(37, 71, 184));">
+                                    <h2 class="txt-off-crd">Drop</h2>
                                 </div>
                             </div>
 
@@ -470,8 +479,8 @@
             </div>
         </div>
 
-        <img src="assets/img/vision.png" alt="" class="img-txt-vision">
         <div class="githubsec" id="githubsec">
+
             <svg style="position: absolute;" width="2000" height="750" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g fill="none" fill-rule="evenodd" id="svg_1">
@@ -511,26 +520,29 @@
                         <path
                             d="m1378.598359,674.890223l1.35999,-0.743a0.395,0.395 0 0 0 0,-0.692l-1.35999,-0.744a0.397,0.397 0 0 1 -0.156,-0.155l-0.743,-1.36a0.395,0.395 0 0 0 -0.692,0l-0.743,1.36a0.393,0.393 0 0 1 -0.157,0.156l-1.36,0.745a0.395,0.395 0 0 0 0,0.692l1.36,0.743c0.066,0.036 0.12,0.09 0.157,0.157l0.743,1.36c0.15,0.273 0.542,0.273 0.692,0l0.744,-1.36a0.4,0.4 0 0 1 0.15699,-0.157"
                             fill="#7B63AB" class="svg_53" />
-
                     </g>
                 </g>
             </svg>
 
             <div class="wrapper-git-sec">
                 <div class="prof-git anim-gitsec">
-                    <img src="assets/img/profile.jpg"> 
-                    <h2 style=" position: relative;
-                                left: 139px;
-                                top: -41px;">
-                                <a href="https://github.com/AnthonyBuilder" 
-                                style="color: #7bcc94;text-decoration: none;">AnthonyBuilder</a><h2>
+
+                    <img src="assets/img/profile.jpg">
+
+                    <h2 style="position: relative; left: 139px; top: -41px;">
+                        <a href="https://github.com/AnthonyBuilder"
+                            style="color: #7bcc94;text-decoration: none;">AnthonyBuilder</a>
+                    </h2>
                 </div>
+
                 <div class="content-git-sec">
                     <div class="fonts">
-                        <h1 style="font-weight: 900; font-family: 'Gotham Light';" class="anim-gitsec">Github</h1>
-                        <h2 style="font-weight: 100; font-family: 'Gotham Light'" class="anim-gitsec">AnthonyBuilder</h2>
+                        <h1 style="font-weight: 600;" class="anim-gitsec">Github</h1>
+                        <h2 style="font-weight: 100;" class="anim-gitsec">AnthonyBuilder
+                        </h2>
                     </div>
                 </div>
+
             </div>
         </div>
 
@@ -551,8 +563,9 @@
 
                         <div class="feedbacks-coments">
                             <div class="feeds-wrapper">
+                                <!-- Cards de feedbacks retornados do back-end -->
                                 <div class="row-coments">
-                            
+
                                 </div>
                             </div>
                         </div>
@@ -562,12 +575,12 @@
             </div>
         </div>
 
-        
+
         <div class="bottom-content">
             <div>
                 <ul>
                     <li>
-                        <h2 style="color: rgb(173, 173, 173)">Anthony José</h2>
+                        <h2 style="color: rgb(0, 0, 0);">Anthony José</h2>
                     </li>
                     <li>
                         <h2>Telefone: +55 (11) 942807999</h2>
@@ -585,11 +598,12 @@
 </body>
 
 
-<script src="assets/script/anime.min.js"></script>
-<script src="assets/script/main.js"> </script>
+<script src="../animejs/anime.min.js"></script>
+<script src="assets/js/main.min.js"> </script>
 <script src="assets/script/fluid.js"></script>
 <script src="assets/script/loaderPage.js"></script>
 <script src="assets/script/myAnime.js"></script>
 <script src="assets/script/xhttp.js"></script>
 <script src="assets/script/models/actionsBottomNav.js"></script>
+<script src="assets/script/pdfObject.js"></script>
 </html>
